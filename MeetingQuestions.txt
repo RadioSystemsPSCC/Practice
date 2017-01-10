@@ -1,1 +1,17 @@
 Meeting Questions
+
+1.) How often would you like to update/meet? Are these meetings going to be in person?
+
+//Im thinking of not mentioning node.js and react.js in the question below since it seems to be required for Electron.
+//Also, I left git off becasue that doesn't have anything to do with him
+//We can change this if you guys want to
+
+2.) Are there any technologies that we need to know or learn for this project other than .NET, 
+ javascript, Electron?
+
+
+//For the question below, I'm assuming that we need to use the same type of SQL that is used for RCS's database. This 
+//might be wrong lol. Someone let me know if it is
+
+3.) Do you use microsoft SQL, or Oracle, or what for your database that our device will be connecting to? And we should
+-use that same type of SQL for our device, correct?
