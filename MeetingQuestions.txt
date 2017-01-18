@@ -2,23 +2,29 @@ Meeting Questions
 
 1.) a)How often would you like to update/meet? 
 	b)Should the time be the same for both virtual and physical meetings each week? 
-	  //(They said they wanted a mixture of both.)
+	 
 	c)What method for virtual meeting does the company use? 
-	//I noticed a Skype account	referenced in the letter.
+	//I noticed a Skype account	referenced in the signature block.
 
 2.) a) Who is our point of contact? 
 	Is the point of contact the same for all questions, 
 	or does it change based on type of questions we have?
-	b) Who would be the best person to interview about the full work process to be performed by the application?
+	b) Who would be the best person/people to interview about the full work process to be 
+	performed by the application?
 
-//Im thinking of not mentioning node.js and react.js in the question below since it seems to be required for Electron.
-//Also, I left git off becasue that doesn't have anything to do with him
-//We can change this if you guys want to
+3.) a) Beyond the provided application list, does the company have a listing of preferred 
+    application/library/modules for project? Such as for database work and PDF, etc.
 
-3.) a) Beyond the provided application list, does the company have a listing of preferred application and 
-	libraries for us to use for the project? Such as for database work and PDF, etc.
+	b) Can you provide a copy of your coding standards and graphic information (fonts, colors, images, 
+	backgrounds) that we should be following for this project?  
 
-	b) Can you provide a copy of your coding standards that we should be following for this project?  
+4.) Can the company provide a copy of the contract the customer is signing in the business process 
+	described for this project (or a copy of the current application being used if it was 
+	previously automated)?
 
-4.) Can the company provide a copy of the contract that is being automated?
+5.) What project development process does Radio Systems ordinarily use?	
+	
+6.) Is there anything else you would like us to know up front about this project?
+
+
 
