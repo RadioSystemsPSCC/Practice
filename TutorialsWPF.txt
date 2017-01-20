@@ -12,6 +12,9 @@ Course: Windows Presentation Foundation 1: Build Dramatic Desktop Applications
 Course: Windows Presentation Foundation 2: Layout 
 Course: Windows Presentation Foundation 3: Events and the Event Model 
 
+Added: Youtube video series - C# WPF Tutorial for beginners (Window Presentation...) 
+by ProgrammingKnowledge  [a lot of these tutorials are database oriented]
+
 Prerequisites/Review Courses:
 VISUAL STUDIO 
 Visual Studio 2015 Essentials list of Visual Studio courses on Lynda.com:
