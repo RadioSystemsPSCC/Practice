@@ -1,0 +1,10 @@
+// code for users ta
+
+INSERT INTO meets 
+(meetId, meetDay, meetDate, meetTime, meetName, meetType, meetLocation, meetWarmups)
+VALUES
+(null, 'Saturday', '2015/07/25', '07:00:00','City Meet - 10 & under', 'Championship meet at UT Aquatic', ' Allan Jones Pool', '');
+);
+
+  
+
