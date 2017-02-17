@@ -55,31 +55,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Content\Contact1.xaml">
+    <Page Include="Views\Contact1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Content\Freedom4.xaml">
+    <Page Include="Views\Freedom4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Content\Installation6.xaml">
+    <Page Include="Views\Installation6.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Content\Protection3.xaml">
+    <Page Include="Views\Protection3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Content\Safety2.xaml">
+    <Page Include="Views\Safety2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Content\Signature7.xaml">
+    <Page Include="Views\Signature7.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Content\Solutions5.xaml">
+    <Page Include="Views\Solutions5.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -91,25 +91,25 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Content\Contact1.xaml.cs">
+    <Compile Include="Views\Contact1.xaml.cs">
       <DependentUpon>Contact1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Content\Freedom4.xaml.cs">
+    <Compile Include="Views\Freedom4.xaml.cs">
       <DependentUpon>Freedom4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Content\Installation6.xaml.cs">
+    <Compile Include="Views\Installation6.xaml.cs">
       <DependentUpon>Installation6.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Content\Protection3.xaml.cs">
+    <Compile Include="Views\Protection3.xaml.cs">
       <DependentUpon>Protection3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Content\Safety2.xaml.cs">
+    <Compile Include="Views\Safety2.xaml.cs">
       <DependentUpon>Safety2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Content\Signature7.xaml.cs">
+    <Compile Include="Views\Signature7.xaml.cs">
       <DependentUpon>Signature7.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Content\Solutions5.xaml.cs">
+    <Compile Include="Views\Solutions5.xaml.cs">
       <DependentUpon>Solutions5.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scrips\" />
   </ItemGroup>
