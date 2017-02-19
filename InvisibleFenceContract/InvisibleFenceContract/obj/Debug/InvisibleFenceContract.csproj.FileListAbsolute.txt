@@ -26,3 +26,5 @@ E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Safety2.baml
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Signature7.baml
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Solutions5.baml
+E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\ThemedWindowStyle.baml

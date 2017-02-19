@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InvisibleFenceContract"
         mc:Ignorable="d"
-         Title="Invisible Fence. Brand" Height="768" Width="1366">
+        Icon='Images/logo.jpg'
+         Title="" Height="768" Width="1366">
 
     <Window.Resources>
 

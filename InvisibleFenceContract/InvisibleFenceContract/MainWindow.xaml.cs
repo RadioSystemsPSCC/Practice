@@ -24,6 +24,7 @@ namespace InvisibleFenceContract
         public MainWindow()
         {
             InitializeComponent();
+            Main.Source = new Uri("Views/Contact1.xaml", UriKind.RelativeOrAbsolute);
         }
 
         private void btnLeftMenuHide_Click(object sender, RoutedEventArgs e)
