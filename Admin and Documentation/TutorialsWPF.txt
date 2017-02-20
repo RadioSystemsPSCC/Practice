@@ -1,4 +1,4 @@
-LYNDA.COM
+﻿LYNDA.COM
 
 Overview Tutorial:
 
@@ -46,6 +46,9 @@ Courses:
 Microsoft XAML Fundamentals 1: Core Concepts
 Microsoft XAML Fundamentals 2: Content and Properties
 Microsoft XAML Fundamentals 3: Type Converters and Resources
+
+//added XAML tutorial -D.O.
+https://www.tutorialspoint.com/xaml/index.htm
 
 
 

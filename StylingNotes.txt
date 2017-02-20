@@ -1,6 +1,0 @@
-Styling notes:
-            Header font: Rockwell
-            Body font: default
-            Green Font: #A6D473
-            Blue Font: #0F4CD6
-            Orange Font: #E96C2D -->

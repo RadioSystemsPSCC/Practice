@@ -1,9 +1,0 @@
-Scenario: Clocking out
-Actor: Employee
-
-Employee returns to job site? and connects with CRM (Do they have to return or do they just get on wifi?)
-CRM authenticates?? Does the system do this and how? Login? Open session? 
-Employee updates contract information and PDF?? Does PDF upload? Is it stored in the CRM, or just referenced by path or emailed to someone else?
-CRM stores data (Does this project use Json objects, XML or something else for web API? ) 
-(Does web API clear sqLite once uploaded?) and logs out??
-
