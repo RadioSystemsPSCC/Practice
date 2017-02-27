@@ -2,18 +2,24 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:InvisibleFenceContract">
 
-    <Style TargetType='{x:Type local:ThemedWindow}' x:Name='ThemedWindowStyle'>
+    <Style TargetType="{x:Type local:ThemedWindow}" x:Key='ThemedWindowStyle'>
         <Style.Resources>
             <SolidColorBrush x:Key='BorderBrush' Color='#ECECEC' />
             <SolidColorBrush x:Key='CaptionBackgroundBrush' Color='#114977' />
             <SolidColorBrush x:Key='CaptionForegroundBrush' Color='white' />
+            <local:MaximizeVisibilityConverter x:Key='MaximizeVisibilityConverter'/>
+            <local:MinimizeVisibilityConverter x:Key='MinimizeVisibilityConverter' />
+
         </Style.Resources>
-        <Setter Property='Background' Value='Transparent' />
+        <!-- Is ending style.Resources before setter my problem??
+          Time: 45:02 in tape going for white background!!-->
+        <Setter Property='Background' Value='White' />
         <Setter Property='AllowsTransparency' Value='True' />
         <Setter Property='MinWidth' Value='100' />
         <Setter Property='MinHeight' Value='100' />
         <Setter Property='WindowStyle' Value='None' />
         <Setter Property='Template'>
+            <!--*******Start here 5:00 -->
             <Setter.Value>
                 <ControlTemplate TargetType='{x:Type local:ThemedWindow}' x:Name='PART_WindowTemplate'>
                     <Grid x:Name='PART_WindowFrame'>
@@ -45,29 +51,27 @@
                                             Visibility='{TemplateBinding ResizeMode, Converter={StaticResource MinimizeVisibilityConverter}}'
                                             Margin='0,0,4,0'/>
                                     <Button x:Name='PART_WindowCaptionMaximizeButton' 
-                                            Content='[]' 
+                                            Content='[ ]' 
                                             Visibility='{TemplateBinding ResizeMode, Converter={StaticResource MaximizeVisibilityConverter}}'
                                             Margin='0,0,4,0'/>
                                     <Button x:Name='PART_WindowCaptionCloseButton' 
-                                            Content='X'
-                                            Visibility='{TemplateBinding ResizeMode, Converter={StaticResource CloseVisibilityConverter}}'
-                                            Margin='0,0,4,0'/>
+                                            Content='X'/>
                                 </StackPanel>
-                                <TextBlock x:Name='PART_WindowCaptionText' DockPanel.Dock='Left' Margin='6,0,0,0' Padding='0'>
+                                <TextBlock x:Name='PART_WindowCaptionText' DockPanel.Dock='Left' Margin='0' Padding='0'>
                                     <Image x:Name='PART_WindowCaptionIcon' 
-                                           Width='46' 
+                                           Width='36' 
                                            Height='16' 
-                                           Margin='0,0,6,0'
+                                           Margin='0'
                                            Source='{TemplateBinding Icon}'
                                            SnapsToDevicePixels='True'
                                            RenderOptions.EdgeMode='Aliased' />
-                                    <Run BaselineAlignment='Center' Text='TemplateBinding Title' 
+                                    <Run BaselineAlignment='Center' Text='Invisible Fence - Home' 
                                          Foreground='{DynamicResource CaptionForegroundBrush}' />
                                 </TextBlock>
 
                             </DockPanel>
                         </Border>
-                        <DockPanel Grid.Row='2' Grid.Column='2'>
+                        <DockPanel Grid.Row='2' Grid.Column='1'>
                             <ContentPresenter />
                         </DockPanel>
 

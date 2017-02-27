@@ -5,16 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:InvisibleFenceContract.Content"
       mc:Ignorable="d" 
-      d:DesignHeight="350" d:DesignWidth="625"
+      d:DesignHeight="768" d:DesignWidth="1366"
       Title="Solutions5">
 
     <!-- Styling notes:
             Header font: Rockwell
             Body font: default
-            Green Font: #a6c936
-			Light Blue: #0067b1
-			Dark Blue:#00375f
-            Orange Font: #f79727 -->
+            Green Font: #A6D473
+            Blue Font: #0F4CD6
+            Orange Font: #E96C2D -->
     <Grid Margin='10,0,10,0'>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />

@@ -19,7 +19,7 @@ namespace InvisibleFenceContract
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : ThemedWindow
     {
         public MainWindow()
         {
@@ -54,6 +54,41 @@ namespace InvisibleFenceContract
                 btnShow.Visibility = System.Windows.Visibility.Visible;
 
             }
+        }
+
+        private void btnContact1_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Source = new Uri("Views/Contact1.xaml", UriKind.RelativeOrAbsolute);
+        }
+
+        private void btnSafety2_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Source = new Uri("Views/Safety2.xaml", UriKind.RelativeOrAbsolute);
+        }
+
+        private void btnProtection3_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Source = new Uri("Views/Protection3.xaml", UriKind.RelativeOrAbsolute);
+        }
+
+        private void btnFreedom4_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Source = new Uri("Views/Freedom4.xaml", UriKind.RelativeOrAbsolute);
+        }
+
+        private void btnSolutions5_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Source = new Uri("Views/Solutions5.xaml", UriKind.RelativeOrAbsolute);
+        }
+
+        private void btnInstallation6_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Source = new Uri("Views/Installation6.xaml", UriKind.RelativeOrAbsolute);
+        }
+
+        private void btnSignature7_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Source = new Uri("Views/Signature7.xaml", UriKind.RelativeOrAbsolute);
         }
     }
 }

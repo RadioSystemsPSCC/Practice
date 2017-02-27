@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("menu.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/blueshouse2.ico")]
 
 

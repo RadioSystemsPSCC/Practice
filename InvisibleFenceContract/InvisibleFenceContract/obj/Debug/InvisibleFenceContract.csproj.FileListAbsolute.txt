@@ -11,7 +11,6 @@ E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb
-E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Contact1.g.cs
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Freedom4.g.cs
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Installation6.g.cs
@@ -28,6 +27,4 @@ E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Solutions5.baml
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\ThemedWindowStyle.baml
-C:\Users\Michelle\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config
-C:\Users\Michelle\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
-C:\Users\Michelle\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb
+E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\App.baml

@@ -4,102 +4,131 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:InvisibleFenceContract.Content"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="Contact1">
+      mc:Ignorable="d"
+      Title="Contact1" Height='768' Width='1366'>
 
 
     <!-- Styling notes:
             Header font: Rockwell
+            FontFamily="/InvisibleFencing;component/Fonts/#Gotham"
             Body font: default
             Green Font: #A6D473
             Blue Font: #0F4CD6
             Orange Font: #E96C2D -->
 
-    <Grid Margin='10,0,10,10'>
+    <Grid Margin='10,-2,10,12'>
+        <Grid.Resources>
+
+            <Style TargetType='RowDefinition' >
+                <Setter Property='Height' Value='44' />
+
+            </Style>
+            <Style TargetType='CheckBox'>
+                <Setter Property='VerticalAlignment' Value='Center' />
+            </Style>
+
+            <Style TargetType='TextBlock'>
+                <Setter Property='Height' Value='22' />
+                <Setter Property='VerticalAlignment' Value='Top' />
+                <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+                <Setter Property='FontSize' Value='12' />
+            </Style>
+            <Style TargetType='Label'>
+                <Setter Property='VerticalAlignment' Value='Center' />
+
+            </Style>
+            <Style TargetType='TextBox'>
+                <Setter Property='Height' Value='22' />
+                <Setter Property='VerticalAlignment' Value='Top' />
+            </Style>
+        </Grid.Resources>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width=' 240' />
-            <ColumnDefinition Width='80'/>
+            <ColumnDefinition Width='180' />
+            <ColumnDefinition Width='90'  />
+            <ColumnDefinition Width='180'/>
+            <ColumnDefinition Width='90' />
+            <ColumnDefinition Width='180' />
+            <ColumnDefinition Width='90' />
             <ColumnDefinition Width='180' />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="18"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="45"/>
-            <RowDefinition Height='45'/>
-            <RowDefinition Height="Auto"  />
-            <RowDefinition Height="Auto"  />
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height='45' />
+            <RowDefinition Height='32'/>
+            <RowDefinition Height='32' />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition  />
+            <RowDefinition   />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <!--  <Border x:Name='PageBorder1' Grid.Column='0' Grid.Row='0'  BorderBrush='#3333FF' BorderThickness='1' HorizontalAlignment='Left' Height='264' Margin='10,10,0,0' VerticalAlignment='Top' Width='454'></Border> -->
-        <DataGrid x:Name='dataGrid' HorizontalAlignment='Left' Margin='56,30,0,0' Grid.Row='6' VerticalAlignment='Top' Height='13' Width='12'/>
-        <TextBlock x:Name='titleBlock' Grid.Column='0' Grid.Row='1' TextWrapping='Wrap' Foreground='#0F4CD6'  FontFamily='Rockwell' FontSize='20' FontWeight='bold' Text='Invisible Fence.' />
-        <TextBlock x:Name='textBlock' Grid.Column='0' Grid.Row='1' TextWrapping='Wrap' Foreground='#0F4CD6' FontFamily='Rockwell' FontSize='10' FontWeight='Normal' Margin='180 9 0 0'  Text='Brand'/>
-        <TextBlock x:Name='headerPhone' Grid.Column='0' Grid.Row='2' TextWrapping='Wrap' Foreground='#0F4CD6' FontSize='8' Text='800-578-DOGS'/>
-        <TextBlock x:Name='headerPhone2' Grid.Column='0' Grid.Row='2' TextWrapping='Wrap' Foreground='#0F4CD6' FontSize='5' Margin='54 3 0 0' Text='(3657)'/>
-        <TextBlock x:Name='headerEmail' Grid.Column='0' Grid.Row='2' TextWrapping='Wrap' Foreground='#0F4CD6' FontSize='8' Margin='142 0 0 0' Text='InvisibleFence.com'/>
+
+        <Image Source='..\Images\Logo.jpg' Grid.Column='1' Grid.Row='1' Grid.ColumnSpan='2'   />
+
+        <TextBlock x:Name='headerPhone' Grid.Column='1' Grid.Row='2' TextWrapping='Wrap' Foreground='#0067b1' Text='800-578-DOGS'/>
+        <TextBlock x:Name='headerPhone2' Grid.Column='1' Grid.Row='2' TextWrapping='Wrap' Foreground='#0067b1' Margin='84 0 0 0' Text='(3657)' Grid.ColumnSpan='2'/>
+        <TextBlock x:Name='headerEmail' Grid.Column='2' Grid.Row='2' Foreground='#0067b1'  Text='InvisibleFence.com' HorizontalAlignment='Right'/>
 
         <!-- Name Row-->
         <!-- Name Form Group-->
-        <TextBlock Grid.Column='0' Grid.Row='3' Text="FirstName:" TextWrapping="Wrap" HorizontalAlignment="Left"  VerticalAlignment="Center" Padding="10" FontSize="10" Height='35' Margin='-10,6,0,15' Width='49'   />
-        <TextBox x:Name='txtFirstName' HorizontalAlignment='Left' Height='22' Margin='51,10,0,0' Grid.Row='3' TextWrapping='Wrap' Text='' VerticalAlignment='Top' Width='47'/>
-        <TextBlock x:Name='LastName' HorizontalAlignment='Left' Margin='115,5,0,0' Grid.Column='0' Grid.Row='3' TextWrapping='Wrap' Text='Last Name:' FontSize='10' VerticalAlignment='Top' Width='36'/>
-        <TextBox x:Name='txtLastName' HorizontalAlignment='Left' Height='22' Margin='151,10,0,0' Grid.Row='3' TextWrapping='Wrap' Text='' VerticalAlignment='Top' Width='47'/>
+        <TextBlock x:Name='FirstName' Grid.Column='1' Grid.Row='3' Text="First Name:"  HorizontalAlignment="Left"       />
+        <TextBox x:Name='txtFirstName' Grid.Column='1' Grid.Row='3' HorizontalAlignment='Left'  Text=''  Width='179' Grid.ColumnSpan='2' Margin='62,0,0,0'/>
+        <TextBlock x:Name='LastName' Grid.Column='3' Grid.Row='3' HorizontalAlignment='Left' Text='Last Name:'   />
+        <TextBox x:Name='txtLastName' Grid.Column='4' Grid.Row='3' HorizontalAlignment='Left' Text=''  Width='150'/>
         <!--Referred By Form Group -->
-        <Label Grid.Column='1' Grid.Row='3' Content="Referred by:" HorizontalAlignment="Left" FontSize="10" Margin='10,10,0,10'  Width='66' />
-        <TextBox x:Name='txtReferredBy' Grid.Column='2' Grid.Row='3' MaxLength='20'  Margin='0,10,0,15' Padding='5' HorizontalContentAlignment ='Left'   />
+        <TextBlock x:Name='ReferredBy' Grid.Column='5' Grid.Row='3' Text="Referred by:" HorizontalAlignment="Left"    />
+        <TextBox x:Name='txtReferredBy' Grid.Column='6' Grid.Row='3' MaxLength='20'   HorizontalContentAlignment ='Left'   />
         <!--End Name Row -->
 
         <!--Address Row -->
         <!-- Address Form Group -->
-        <Label Grid.Column='0' Content="Address:"   HorizontalAlignment="Left"  VerticalAlignment="Center" Padding="2" FontSize="10" Width='71' Height='23' Grid.Row='4' Margin='4,3,0,0'  />
+        <TextBlock x:Name='StreetAddress' Grid.Column='1' Grid.Row='4' Text="Address:"   HorizontalAlignment="Left"     />
 
-        <TextBox x:Name='txtStreetAddress' Grid.Column='0' Grid.Row='4'  MaxLength='40' Margin='49,13,48,0' Height='22' VerticalAlignment='Top'  />
+        <TextBox x:Name='txtStreetAddress' Grid.Column='1' Grid.Row='4'  MaxLength='75' HorizontalAlignment='Left' Width='204' Grid.ColumnSpan='2' Margin='62,0,0,0'    />
 
         <!--City Form Group -->
-        <Label Grid.Row='4' Content="City:" HorizontalAlignment="Left" VerticalAlignment="Center"  FontSize="10" Margin='203,9,0,10' Width='28' Height='26' />
-        <TextBox x:Name='txtCity' HorizontalAlignment='Right' VerticalAlignment='Center' MaxLength='20' HorizontalContentAlignment ='Left' Margin='0,13,10,14'  Width='69' Grid.Row='4' Grid.Column='1'   />
+        <TextBlock Grid.Column='3' Grid.Row='4' Text="City:    " HorizontalAlignment="Right"    />
+        <TextBox x:Name='txtCity'  Grid.Row='4' Grid.Column='4' RenderTransformOrigin='0.211,0.667' Margin='0,0,31,0' />
 
         <!-- State Form Group -->
-        <Label Grid.Column='2' Grid.Row='4' Content="State:"   HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="10"  Width='42' Margin='10,3,0,7' Height='22' />
-        <TextBox x:Name='txtState' Grid.Column='2' Grid.Row='4' Margin='65,13,0,11' MaxLength='40' HorizontalAlignment='Left' Width='51'  />
+        <TextBlock Grid.Column='5' Grid.Row='4' Text="State:"   HorizontalAlignment="Left"   />
+        <TextBox x:Name='txtState' Grid.Column='5' Grid.Row='4' HorizontalAlignment='Right'  Width='40' />
 
         <!--Zip Form Group -->
-        <Label Grid.Column='2' Grid.Row='4' Content="Zip:" HorizontalAlignment="Left" FontSize="10" Margin='144,13,0,9' Width='37' RenderTransformOrigin='0.5,0.5'  />
-        <TextBox x:Name='txtZip' Grid.Column='2' Grid.Row='4' MaxLength='20' HorizontalContentAlignment ='Left' Margin='181,13,-77,11'    />
+        <TextBlock Grid.Column='6' Grid.Row='4' Text="Zip:" Margin="48 0 0 0" HorizontalAlignment="Left"   />
+        <TextBox x:Name='txtZip' Grid.Column='6' Grid.Row='4' HorizontalAlignment ='Right' Width='80' />
         <!-- End Address Row -->
 
         <!--Phone/Email Row -->
         <!-- Home Phone Form Group-->
-        <Label Grid.Column='0' Grid.Row='5' Content='Home Phone:' HorizontalAlignment='Left' FontSize='10' Margin='0,10' Width='76' />
-        <TextBox x:Name='txtHomePhone' Grid.Column='0' Grid.Row='5' MaxLength='20' HorizontalAlignment='Center' Margin='69,16,77,10' Width='95' />
+        <TextBlock Grid.Column='1' Grid.Row='5' Text='Home Phone:' TextWrapping='Wrap' HorizontalAlignment='Left' Width='64' Height='35'  />
+        <TextBox x:Name='txtHomePhone' Grid.Column='1' Grid.Row='5' Grid.ColumnSpan='2' Width='125' HorizontalAlignment='Left' Margin='62,3,0,0'/>
         <!--Cell Phone Form Group -->
-        <Label Grid.Column='0' Grid.Row='5' Content='Cell Phone:' HorizontalAlignment='Right' FontSize='10' Margin='0,10,3,10' Width='64' />
-        <TextBox x:Name='txtCellPhone' Grid.Column='1' Grid.Row='5' MaxLength='20' HorizontalAlignment='Center' Margin='10,16,14,10' Width='57'  />
+        <TextBlock Grid.Column='3' Grid.Row='5' Text='Cell Phone:' HorizontalAlignment='Left' Width='64'  />
+        <TextBox x:Name='txtCellPhone' Grid.Column='4' Grid.Row='5' HorizontalAlignment='Left' Width='125'   />
         <!-- Email Form Group-->
-        <Label Grid.Column='2' Grid.Row='5' Content='Email: ' HorizontalAlignment='Left' FontSize='10' Margin='4,10,0,10' Width='35' />
-        <TextBox x:Name='txtEmail' Grid.Column='2' Grid.Row='5' MaxLength='30' HorizontalAlignment='Right' Width='209' Margin='0,16,-77,10' />
+        <Label Grid.Column='3' Grid.Row='5' Content='Email: ' HorizontalAlignment='Left' Margin='4,10,0,10' Width='35' />
+        <TextBox x:Name='txtEmail' Grid.Column='3' Grid.Row='5' MaxLength='30' HorizontalAlignment='Right' Width='209' Margin='0,16,-77,10' />
         <!--End Phone/Email Row-->
 
         <!-- Underground Row-->
-        <TextBlock Grid.Column='0' Grid.Row='6' VerticalAlignment='Center' FontSize='10'>My property contains unmarked underground:</TextBlock>
-        <CheckBox  x:Name='ckboxLighting' Grid.Column='1' Grid.Row='6' Content='Landscape Lighting' VerticalAlignment='Center' HorizontalAlignment='Right' FontSize='10' Grid.ColumnSpan='2' Margin='0,15,149,14' Width='112' />
-        <CheckBox x:Name='ckBoxSprinklers' Grid.Column='2' Grid.Row='6' Content='Sprinklers' VerticalAlignment='Center' HorizontalAlignment='Center' FontSize='10'/>
+        <TextBlock Grid.Column='1' Grid.Row='6'>My property contains unmarked underground:</TextBlock>
+        <CheckBox  x:Name='ckboxLighting' Grid.Column='2' Grid.Row='6' Content='Landscape Lighting' HorizontalAlignment='Right' Grid.ColumnSpan='2' Margin='0,15,149,14' Width='112' />
+        <CheckBox x:Name='ckBoxSprinklers' Grid.Column='3' Grid.Row='6' Content='Sprinklers' HorizontalAlignment='Center'/>
         <!--End Underground Row -->
 
         <!--First Pet Info Row -->
-        <Label Grid.Column='0' Grid.Row='7' Content='Pet Name:' VerticalAlignment='Center' HorizontalAlignment='Left' FontSize='10' />
-        <TextBox x:Name='petName1' HorizontalAlignment='Left' Height='21' Margin='56,2,0,0' Grid.Row='7' TextWrapping='Wrap'  VerticalAlignment='Center' Width='113'/>
-        <Label x:Name='lblBreed1' Content='Breed: ' FontSize='10' HorizontalAlignment='Left' Margin='188,1,0,0' Grid.Row='7' VerticalAlignment='Top' Height='23'/>
-        <TextBox x:Name='txtBreed1' Grid.Column='1' Grid.Row='7' HorizontalAlignment='Left' Margin='10,5,0,0' TextWrapping='Wrap' VerticalAlignment='Top' Width='61' Height='20'/>
-        <Label x:Name='lblAge1' Content='Age:' Grid.Column='2' HorizontalAlignment='Left' Margin='2,5,0,0' Grid.Row='7' VerticalAlignment='Top' Height='24' FontSize='10'/>
-        <TextBox x:Name='txtAge1' Grid.Column='2' HorizontalAlignment='Left' Height='20' Margin='37,8,0,0' Grid.Row='7' TextWrapping='Wrap'  VerticalAlignment='Top' Width='36'/>
-        <TextBlock x:Name='textBlockSensitive' Grid.Column='2' HorizontalAlignment='Left' Margin='89,5,0,0' Grid.Row='7' TextWrapping='Wrap' Text='Pre-existing Sensitivities: ' FontSize='10' VerticalAlignment='Top'/>
-        <CheckBox x:Name='sensitivitiesYes1' Content='Yes' Grid.Column='2' HorizontalAlignment='Right' Margin='0,10,-24,7' Grid.Row='7' VerticalAlignment='Center' Width='42'/>
-        <CheckBox x:Name='sensitivitiesNo1' Content='No' Grid.Column='2' HorizontalAlignment='Left' Margin='205,10,-124,0' Grid.Row='7' VerticalAlignment='Top' Width='100'/>
-        <Button x:Name='addAPet' Content='Add-A-Pet' HorizontalAlignment='Left' Margin='49,18,0,0' Grid.Row='8' VerticalAlignment='Top' Width='75'/>
+        <Label Grid.Column='1' Grid.Row='7' Content='Pet Name:'  HorizontalAlignment='Left'  />
+        <TextBox x:Name='petName1' Grid.Column='1' HorizontalAlignment='Left' Margin='56,2,0,0' Grid.Row='7' TextWrapping='Wrap' Width='113'/>
+        <Label x:Name='lblBreed1' Grid.Column='1' Content='Breed: '  HorizontalAlignment='Left' Margin='188,1,0,0' Grid.Row='7'  />
+        <TextBox x:Name='txtBreed1' Grid.Column='2' Grid.Row='7' HorizontalAlignment='Left' Margin='10,5,0,0' TextWrapping='Wrap'  Width='61' />
+        <Label x:Name='lblAge1' Content='Age:' Grid.Column='3' HorizontalAlignment='Left' Margin='2,5,0,0' Grid.Row='7' />
+        <TextBox x:Name='txtAge1' Grid.Column='3' HorizontalAlignment='Left'  Margin='37,8,0,0' Grid.Row='7' TextWrapping='Wrap'  Width='36'/>
+        <TextBlock x:Name='textBlockSensitive' Grid.Column='3' HorizontalAlignment='Left' Margin='89,5,0,0' Grid.Row='7' TextWrapping='Wrap' Text='Pre-existing Sensitivities: ' VerticalAlignment='Top'/>
+        <CheckBox x:Name='sensitivitiesYes1' Content='Yes' Grid.Column='3' HorizontalAlignment='Right' Margin='0,10,-24,7' Grid.Row='7' Width='42'/>
+        <CheckBox x:Name='sensitivitiesNo1' Content='No' Grid.Column='3' HorizontalAlignment='Left' Margin='205,10,-124,0' Grid.Row='7' Width='100'/>
+        <Button x:Name='addAPet' Grid.Column='1' Content='Add-A-Pet' HorizontalAlignment='Left' Margin='49,18,0,0' Grid.Row='8' Width='75'/>
 
 
 
