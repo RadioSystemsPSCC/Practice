@@ -28,3 +28,4 @@ E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\ThemedWindowStyle.baml
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\App.baml
+E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
