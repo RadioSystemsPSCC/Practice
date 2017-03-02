@@ -10,7 +10,9 @@
 
     <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width='188' />
             <ColumnDefinition />
+            <ColumnDefinition Width='*' />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,23 +20,23 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="0" Grid.Row="0" Padding="5" Background="#0F4CD6">
-            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="  CHOOSE YOUR SAFETY SOLUTION" Margin="0,0,226,0" Foreground="White" FontSize="16"/>
+        <Border Grid.Column="1" Grid.Row="0" Grid.ColumnSpan='2' Padding="5" Background="#0F4CD6">
+            <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="  CHOOSE YOUR SAFETY SOLUTION" Margin="0,0,226,0" Foreground="White" FontSize="16"/>
 
         </Border>
-        <CheckBox x:Name="lblBoundaryCheckBox" Content="Boundary Plus Technology&#xD;&#xA;MicroLite Plus Computer Collar Unit&#xD;&#xA;Lifetime Limited Warranty&#xD;&#xA;1-Year Power Cap Battery Plan" RenderTransformOrigin="0.525,-2.342" Margin="34,87,273,134" Grid.Row="1">
-        </CheckBox>
-        <CheckBox x:Name="lblGpsCheckBox" Content="GPS 2.0 Wire Free Technology&#xA;GPS 2.0 Mobile Collar Unit&#xA;2-Year Warranty" RenderTransformOrigin="1.151,0.462" Margin="34,12,296,229" Grid.Row="1"/>
-        <CheckBox x:Name="lblDigitalCheckBox" Content="Digital Technology&#xD;&#xA;MicroLite Computer Collar Unit&#xD;&#xA;Limited Lifetime Warranty&#xD;&#xA;1-Year Power Cap Battery Plan" HorizontalAlignment="Left" Margin="34,181,0,0" Grid.Row="1" VerticalAlignment="Top" Height="63" Width="185"/>
-        <Label x:Name="label" Content="Included with all Safety Solutions:" HorizontalAlignment="Left" Margin="295,73,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.445" FontStyle="Italic" Height="26" Width="183" FontWeight="Bold" FontSize="10" Foreground="#0F4CD6" />
-        <Label x:Name="label1" Content="Perfect Start Plus Training" HorizontalAlignment="Left" Margin="306,90,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="144" FontSize="10"/>
-        <Label x:Name="label2" Content="1-Year Performance Guarantee" HorizontalAlignment="Left" Margin="306,111,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="172" FontSize="10"/>
-        <Label x:Name="label3" Content="1-Year Service Plan" HorizontalAlignment="Left" Margin="306,137,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="110" FontSize="10"/>
-        <Label x:Name="label4" Content="Battery Back-Up/Wired Solution" HorizontalAlignment="Left" Margin="306,158,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="179" FontSize="10"/>
-        <Label x:Name="label5" Content="Surge Protector for wired solution" HorizontalAlignment="Left" Margin="306,181,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="190" FontSize="10"/>
-        <Label x:Name="lblGpsPrice" Content="lblGpsPrice" HorizontalAlignment="Left" Margin="51,57,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#0F4CD6" FontWeight="bold" FontSize="10"/>
-        <Label x:Name="lblBoundaryPrice" Content="lblBoundaryPrice" HorizontalAlignment="Left" Margin="51,144,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#0F4CD6" FontWeight="bold" FontSize="10"/>
-        <Label x:Name="lblDigitalPrice" Content="lblDigitalPrice" HorizontalAlignment="Left" Margin="51,237,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#0F4CD6" FontWeight="bold" FontSize="10"/>
+        <TextBlock Text="Boundary Plus Technology&#xD;&#xA;MicroLite Plus Computer Collar Unit&#xD;&#xA;Lifetime Limited Warranty&#xD;&#xA;1-Year Power Cap Battery Plan" RenderTransformOrigin="0.525,-2.342" Margin="34,87,273,134" Grid.Row="1" />
+
+        <TextBlock x:Name="lblGpsCheckBox" Grid.Column="1" Grid.Row="1" Text="GPS 2.0 Wire Free Technology&#xA;GPS 2.0 Mobile Collar Unit&#xA;2-Year Warranty" RenderTransformOrigin="1.151,0.462" Margin="34,12,296,229" />
+        <TextBlock x:Name="lblDigitalCheckBox" Grid.Column="1" Grid.Row="1" Text="Digital Technology&#xD;&#xA;MicroLite Computer Collar Unit&#xD;&#xA;Limited Lifetime Warranty&#xD;&#xA;1-Year Power Cap Battery Plan" HorizontalAlignment="Left" Margin="34,181,0,0"  VerticalAlignment="Top" Height="63" Width="185"/>
+        <TextBlock x:Name="label" Grid.Column="1" Grid.Row="1" Text="Included with all Safety Solutions:" HorizontalAlignment="Left" Margin="295,73,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.445" FontStyle="Italic" Height="26" Width="183" FontWeight="Bold" FontSize="10" Foreground="#0F4CD6" />
+        <TextBlock x:Name="label1" Grid.Column="1" Grid.Row="1" Text="Perfect Start Plus Training" HorizontalAlignment="Left" Margin="306,90,0,0"  VerticalAlignment="Top" Height="26" Width="144" FontSize="10"/>
+        <TextBlock x:Name="label2" Text="1-Year Performance Guarantee" HorizontalAlignment="Left" Margin="306,111,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="172" FontSize="10"/>
+        <TextBlock x:Name="label3" Grid.Column="1" Text="1-Year Service Plan" HorizontalAlignment="Left" Margin="306,137,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="110" FontSize="10"/>
+        <Label x:Name="label4" Grid.Column="1" Content="Battery Back-Up/Wired Solution" HorizontalAlignment="Left" Margin="306,158,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="179" FontSize="10"/>
+        <Label x:Name="label5" Grid.Column="1" Content="Surge Protector for wired solution" HorizontalAlignment="Left" Margin="306,181,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="190" FontSize="10"/>
+        <Label x:Name="lblGpsPrice" Grid.Column="1" Content="lblGpsPrice" HorizontalAlignment="Left" Margin="51,57,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#0F4CD6" FontWeight="bold" FontSize="10"/>
+        <Label x:Name="lblBoundaryPrice" Grid.Column="1" Content="lblBoundaryPrice" HorizontalAlignment="Left" Margin="51,144,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#0F4CD6" FontWeight="bold" FontSize="10"/>
+        <Label x:Name="lblDigitalPrice" Grid.Column="1" Content="lblDigitalPrice" HorizontalAlignment="Left" Margin="51,237,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#0F4CD6" FontWeight="bold" FontSize="10"/>
 
     </Grid>
 </Page>

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:InvisibleFenceContract.Content"
       mc:Ignorable="d"
-      Title="Contact1" Height='768' Width='1266'>
+      Title="Contact1" Height='768' Width='1366'>
 
 
     <!-- Styling notes:
