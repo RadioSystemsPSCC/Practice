@@ -10,8 +10,8 @@
 
     <!-- Styling notes:
             Header font: Rockwell
-            FontFamily="/InvisibleFencing;component/Fonts/#Gotham"
-            Body font: default
+            Body - FontFamily="/InvisibleFencing;component/Fonts/#Gotham"
+           
             Green Font: #A6D473
             Blue Font: #0F4CD6
             Orange Font: #E96C2D -->
@@ -42,6 +42,7 @@
                 <Setter Property='VerticalAlignment' Value='Top' />
             </Style>
         </Grid.Resources>
+        <!--Star on the end columns provides flexibility to grid width -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width='*' />
             <ColumnDefinition Width='90'  />
@@ -52,6 +53,7 @@
             <ColumnDefinition Width='180' />
             <ColumnDefinition Width='*' />
         </Grid.ColumnDefinitions>
+       <!-- Star on last row provides screen flexibility in length of page-->
         <Grid.RowDefinitions>
             <RowDefinition Height='32'/>
             <RowDefinition Height='32' />
@@ -64,7 +66,7 @@
             <RowDefinition />
             <RowDefinition Height='*'/>
         </Grid.RowDefinitions>
-        <!--  <Border x:Name='PageBorder1' Grid.Column='0' Grid.Row='0'  BorderBrush='#3333FF' BorderThickness='1' HorizontalAlignment='Left' Height='264' Margin='10,10,0,0' VerticalAlignment='Top' Width='454'></Border> -->
+        <!-- <Border x:Name='PageBorder1' Grid.Column='0'  Grid.Row='0'  BorderBrush='#3333FF' BorderThickness='1' HorizontalAlignment='Left' Height='264' Margin='10,10,0,0' VerticalAlignment='Top' Width='454'></Border> -->
 
         <Image Source='..\Images\Logo.jpg' Grid.Column='1' Grid.Row='1' Grid.ColumnSpan='2'   />
 
@@ -120,7 +122,7 @@
         <CheckBox x:Name='ckBoxSprinklers' Grid.Column='4' Grid.Row='6' Content='Sprinklers' HorizontalAlignment='Right' Margin='0,10,0,19'/>
         <!--End Underground Row -->
 
-        <!--First Pet Info Row -->
+        <!--First Pet Info Row includes sensitivities w/ notes -->
         <TextBlock Grid.Column='1' Grid.Row='7' Text='Pet Name:'  HorizontalAlignment='Left'   />
         <TextBox x:Name='petName1' Grid.Column='1' HorizontalAlignment='Left' Margin='62,0,0,0' Grid.Row='7' TextWrapping='Wrap' Width='144' Grid.ColumnSpan='2'/>
         <TextBlock x:Name='lblBreed1' Grid.Column='2' Grid.Row='7' Text='Breed: '  HorizontalAlignment='Left' Margin='143,0,0,0'   />
@@ -131,11 +133,9 @@
         <CheckBox x:Name='sensitivitiesYes1' Content='Yes' Grid.Column='6' HorizontalAlignment='Right' Margin='0,0,68,26' Grid.Row='7' Width='45' Height='18'/>
         <CheckBox x:Name='sensitivitiesNo1' Content='No' Grid.Column='6' HorizontalAlignment='Left' Margin='125,0,0,26' Grid.Row='7' Width='45' Height='18'/>
         <Button x:Name='addAPet' Grid.Column='1' Content='Add-A-Pet' HorizontalAlignment='Left' Margin='0,18,0,0' Grid.Row='8' Width='75'/>
-
-
-
-
-        <!--End Pet Info Row -->
-
+        <!--CODING NOTE***: During code behind this Textblock visibility should be set to collapsed and triggered to visibile if 'yes' is checked on 'sensitivitiesYes1' -->
+        <TextBox x:Name='sensitiveNotes' Grid.Column='5' Grid.ColumnSpan='2' Grid.Row='8' Grid.RowSpan='2' HorizontalAlignment='Left' Width='270' Height='40' TextWrapping='Wrap' Visibility='Visible' Text='Sensitivities Notes:' />
+        <!--End First Pet Info Row -->
+        <!--CODING NOTE Actual info of pets should be loaded as a datagrid instead of code above. Need to research MVVM implementation of datagrid for pet info so can be added, editted and deleted -->
     </Grid>
 </Page>
