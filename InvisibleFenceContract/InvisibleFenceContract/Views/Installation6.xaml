@@ -10,6 +10,7 @@
 
     <Grid Margin='10,0,10,0'>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition />
@@ -20,8 +21,7 @@
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
@@ -58,6 +58,8 @@
             <!-- Balance -->
             <RowDefinition Height="20"/>
             <!-- Prices valid 10 days -->
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!-- Row 1-->
