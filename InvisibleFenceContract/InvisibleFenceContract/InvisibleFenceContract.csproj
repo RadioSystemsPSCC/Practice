@@ -101,6 +101,14 @@
     <Compile Include="NativeMethods.cs" />
     <Compile Include="ThemedWindow.cs" />
     <Compile Include="ThemedWindowConverters.cs" />
+    <Compile Include="Viewmodels\Contact1ViewModel.cs" />
+    <Compile Include="Viewmodels\Freedom4ViewModel.cs" />
+    <Compile Include="Viewmodels\Installation6ViewModel.cs" />
+    <Compile Include="Viewmodels\Protection3ViewModel.cs" />
+    <Compile Include="Viewmodels\Safety2ViewModel.cs" />
+    <Compile Include="Viewmodels\Signature7ViewModel.cs" />
+    <Compile Include="Viewmodels\Solutions5ViewModel.cs" />
+    <Compile Include="Viewmodels\WindowViewModel.cs" />
     <Compile Include="Views\Contact1.xaml.cs">
       <DependentUpon>Contact1.xaml</DependentUpon>
     </Compile>
@@ -162,7 +170,7 @@
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scrips\" />
-    <Folder Include="Viewmodels\" />
+    <Folder Include="Viewmodels\Commands\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\logo.jpg" />
