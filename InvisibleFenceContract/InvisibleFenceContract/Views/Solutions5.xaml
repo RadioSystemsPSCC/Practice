@@ -16,6 +16,7 @@
             Orange Font: #E96C2D -->
     <Grid Margin='10,0,10,0'>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition />
@@ -26,12 +27,13 @@
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+        
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <!-- Title -->
             <RowDefinition Height="40" />
+            <RowDefinition Height="20"/>
             <!-- seperation space -->
             <RowDefinition Height="5"/>
             <!-- Safety Solution -->
@@ -46,99 +48,108 @@
             <RowDefinition Height="20"/>
             <!-- Space -->
             <RowDefinition Height="5"/>
+            <RowDefinition Height="20"/>
             <!-- Safety Wired -->
             <RowDefinition Height="20"/>
             <!-- GPS 2.0 -->
             <RowDefinition Height="20"/>
             <!-- Protection -->
             <RowDefinition Height="20"/>
+            <!-- Space -->
+            <RowDefinition Height="5"/>
             <!-- Freedom -->
             <RowDefinition Height="20"/>
             <!-- Space -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="5"/>
+            
             <!-- Training Title  -->
             <RowDefinition Height="20"/>
             <!-- Space -->
-            <RowDefinition Height="5"/>
-            <!-- Single Refresher -->
             <RowDefinition Height="20"/>
+            <!-- Single Refresher -->
+            <RowDefinition Height="*" />
 
 
         </Grid.RowDefinitions>
 
         <!-- Row 0 Solutions -->
-        <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="11" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="16" FontWeight="ExtraBold" Height="20" Margin="0" Padding="1">SOLUTIONS</Label>
+        <Label Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="11" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="16" FontWeight="ExtraBold" Height="20" Margin="0" Padding="1">SOLUTIONS</Label>
 
         <!-- Row 1 is blank space Seperator-->
         <!-- Row 2 Safty Solution-->
-        <Label Grid.Column="1" Grid.Row="2" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >SAFETY SOLUTION</Label>
-        <Label Grid.Column="8" Grid.Row="2" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="2" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
-
-        <!-- Row 3 Protection Solution-->
-        <Label Grid.Column="1" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#A6D473" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROTECTION SOLUTION</Label>
+        <Label Grid.Column="3" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >SAFETY SOLUTION</Label>
         <Label Grid.Column="8" Grid.Row="3" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
         <TextBox Grid.Column="9" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
-        <!-- Row 4 Freedom Solution -->
-        <Label Grid.Column="1" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#E96C2D" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >FREEDOM SOLUTION</Label>
+        <!-- Row 3 Protection Solution-->
+        <Label Grid.Column="3" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#A6D473" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROTECTION SOLUTION</Label>
         <Label Grid.Column="8" Grid.Row="4" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
         <TextBox Grid.Column="9" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+
+        <!-- Row 4 Freedom Solution -->
+        <Label Grid.Column="3" Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#E96C2D" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >FREEDOM SOLUTION</Label>
+        <Label Grid.Column="8" Grid.Row="5" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="9" Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
         <!-- Row 5 Blank Row -->
 
         <!-- Row 6 Pet ADD a pet -->
-        <Label Grid.Column="1" Grid.Row="6" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="ExtraBold" Height="20" Margin="0" Padding="1" >ADD-A-PET</Label>
-        <Label Grid.Column="3" Grid.Row="6" Grid.RowSpan="1" Grid.ColumnSpan="9" Content="(includes Computer Collar Unit, Training, and 1-Year Power Cap Plan)" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
+        <Label Grid.Column="3" Grid.Row="7" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="ExtraBold" Height="20" Margin="0" Padding="1" >ADD-A-PET</Label>
+        <Label Grid.Column="5" Grid.Row="7" Grid.RowSpan="1" Grid.ColumnSpan="9" Content="(includes Computer Collar Unit, Training, and 1-Year Power Cap Plan)" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
 
-        <!-- Row 7 is blank space seperator-->
+        <!-- Row 8 is blank space seperator-->
         <!-- Safety Wired -->
-        <Label Grid.Column="1" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">SAFETY Wired</Label>
-        <Label Grid.Column="5" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="9" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="7" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="8" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$499" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="9" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="8" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
-
-
-        <!-- GPS 2.0 Wired-->
-        <Label Grid.Column="1" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">GPS 2.0 Wire Free</Label>
-        <Label Grid.Column="5" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="2" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="12" Height="18" Margin="0,0,0,2" Padding="1"/>
-        <Label Grid.Column="7" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="8" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$699" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
+        <Label Grid.Column="3" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">SAFETY Wired</Label>
+        <Label Grid.Column="5" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="9" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="7" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="2" Height="18" Margin="0" Padding="1"/>
+        <Label Grid.Column="7" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox Grid.Column="8" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" MaxLength="2"  FontSize="12" Height="18" Margin="0" Padding="1"/>
         <TextBox Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
 
-        <!-- Protection-->
-        <Label Grid.Column="1" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#A6D473" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROTECTION</Label>
-        <Label Grid.Column="5" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="2" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="7" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="8" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="9" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
+        <!-- GPS 2.0 Wired-->
+        <Label Grid.Column="3" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">GPS 2.0 Wire Free</Label>
+        <Label Grid.Column="5" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="2" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="12" Height="18" Margin="0,0,0,2" Padding="1"/>
+        <TextBox Grid.Column="7" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" MaxLength="2" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <Label Grid.Column="7" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox Grid.Column="8" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" MaxLength="10"  FontSize="12" Height="18" Margin="0" Padding="1"/>
         <TextBox Grid.Column="9" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
-        <!-- freedom-->
-        <Label Grid.Column="1" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#E96C2D" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">FREEDOM</Label>
+
+        <!-- Protection
+        <Label Grid.Column="3" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#A6D473" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROTECTION</Label>
         <Label Grid.Column="5" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="2" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
         <Label Grid.Column="7" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
         <Label Grid.Column="8" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
+        <Label Grid.Column="9" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="9" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/> -->
+
+        <!-- freedom-->
+        <!-- <Label Grid.Column="3" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#E96C2D" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">FREEDOM</Label>
+        <Label Grid.Column="5" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="2" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="7" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
+        <Label Grid.Column="7" Grid.Row="" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox Grid.Column="8" Grid.Row="" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" MaxLength="2"  FontSize="12" Height="18" Margin="0" Padding="1"/> -->
         <!-- Is there actually a need for a box to fill in here because no $ sign for a box on the original contract, was that a typo?
         <Label Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/> 
         <TextBox Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/> -->
 
-        <!-- Row 12 is blank space-->
+        <!-- Row 11 is blank space-->
         <!-- Training-->
-        <Label Grid.Column="1" Grid.Row="13" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="ExtraBold" Height="20" Margin="0" Padding="1">TRAINING</Label>
+        <Label Grid.Column="3" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="ExtraBold" Height="20" Margin="0" Padding="1">TRAINING</Label>
 
-        <!-- Row 14 is blank space seperator-->
-        <!-- Single Refresher Train-->
-        <Label Grid.Column="1" Grid.Row="15" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1">Single Refresher Train</Label>
-        <Label Grid.Column="7" Grid.Row="15" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="8" Grid.Row="15" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$129" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="9" Grid.Row="15" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="15" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <!-- Row 13 is blank space seperator-->
+        <!-- Single Refresher Train  -->
+        <Label Grid.Column="3" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1">Single Refresher Train</Label>
+        <TextBox Grid.Column="7" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="2" Height="18" Margin="0" Padding="1"/>
+        <Label Grid.Column="7" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox Grid.Column="8" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" MaxLength="2"  FontSize="12" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="9" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
+        <Label Grid.Column="3" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1">Coupon Code</Label>
+        <TextBox Grid.Column="4" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="10" Height="18" Margin="0" Padding="1"/>
+        <Label Grid.Column="3" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Discount" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox Grid.Column="4" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" MaxLength="10"  FontSize="12" Height="18" Margin="0" Padding="1"/>
 
     </Grid>
 </Page>
