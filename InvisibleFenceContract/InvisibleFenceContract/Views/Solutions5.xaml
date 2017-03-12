@@ -79,17 +79,17 @@
         <!-- Row 2 Safty Solution-->
         <Label Grid.Column="3" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >SAFETY SOLUTION</Label>
         <Label Grid.Column="8" Grid.Row="3" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <TextBox Grid.Column="9" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
         <!-- Row 3 Protection Solution-->
         <Label Grid.Column="3" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#A6D473" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROTECTION SOLUTION</Label>
-        <Label Grid.Column="8" Grid.Row="4" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <Label Grid.Column="8" Grid.Row="4" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="9" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
         <!-- Row 4 Freedom Solution -->
         <Label Grid.Column="3" Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#E96C2D" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >FREEDOM SOLUTION</Label>
         <Label Grid.Column="8" Grid.Row="5" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <TextBox Grid.Column="9" Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
         <!-- Row 5 Blank Row -->
 
@@ -104,7 +104,7 @@
         <TextBox Grid.Column="7" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="2" Height="18" Margin="0" Padding="1"/>
         <Label Grid.Column="7" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
         <TextBox Grid.Column="8" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" MaxLength="2"  FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <TextBox Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
 
         <!-- GPS 2.0 Wired-->
@@ -113,27 +113,10 @@
         <TextBox Grid.Column="7" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" MaxLength="2" FontSize="12" Height="18" Margin="0" Padding="1" />
         <Label Grid.Column="7" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
         <TextBox Grid.Column="8" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" MaxLength="10"  FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <TextBox Grid.Column="9" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
 
-        <!-- Protection
-        <Label Grid.Column="3" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#A6D473" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROTECTION</Label>
-        <Label Grid.Column="5" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="2" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="7" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="8" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="9" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/> -->
-
-        <!-- freedom-->
-        <!-- <Label Grid.Column="3" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#E96C2D" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">FREEDOM</Label>
-        <Label Grid.Column="5" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="2" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="7" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label Grid.Column="7" Grid.Row="" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
-        <TextBox Grid.Column="8" Grid.Row="" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" MaxLength="2"  FontSize="12" Height="18" Margin="0" Padding="1"/> -->
-        <!-- Is there actually a need for a box to fill in here because no $ sign for a box on the original contract, was that a typo?
-        <Label Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="$" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/> 
-        <TextBox Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/> -->
-
+       
         <!-- Row 11 is blank space-->
         <!-- Training-->
         <Label Grid.Column="3" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="ExtraBold" Height="20" Margin="0" Padding="1">TRAINING</Label>
@@ -144,12 +127,18 @@
         <TextBox Grid.Column="7" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="2" Height="18" Margin="0" Padding="1"/>
         <Label Grid.Column="7" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
         <TextBox Grid.Column="8" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" MaxLength="2"  FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <TextBox Grid.Column="9" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
 
-        <Label Grid.Column="3" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1">Coupon Code</Label>
-        <TextBox Grid.Column="4" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="10" Height="18" Margin="0" Padding="1"/>
+        <!-- Coupon Code -->
+        <Label Grid.Column="3" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1">Coupon Code</Label>
+        <RadioButton Grid.Column="4" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18" ></RadioButton>
+        <TextBox Grid.Column="5" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="10" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="9" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        
+        <!-- Discount  -->
         <Label Grid.Column="3" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Discount" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
-        <TextBox Grid.Column="4" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" MaxLength="10"  FontSize="12" Height="18" Margin="0" Padding="1"/>
-
+        <RadioButton Grid.Column="4" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="18" ></RadioButton>
+        <TextBox Grid.Column="5" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" MaxLength="10"  FontSize="12" Height="18" Margin="0" Padding="1"/>
+        <TextBox Grid.Column="9" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
     </Grid>
 </Page>
