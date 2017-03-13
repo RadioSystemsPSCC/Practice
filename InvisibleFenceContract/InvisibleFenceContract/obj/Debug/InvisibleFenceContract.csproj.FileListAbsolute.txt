@@ -60,3 +60,6 @@ C:\Users\Michelle\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenc
 C:\Users\Michelle\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.g.resources
 C:\Users\Michelle\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 C:\Users\Michelle\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
+C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config
+C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
+C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb
