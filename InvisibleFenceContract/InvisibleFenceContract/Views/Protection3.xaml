@@ -22,33 +22,29 @@
             <RowDefinition Height="499*" />
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Padding="5" Background="#A6D473">
-            <TextBlock x:Name="textBlock" Grid.Column="1" Text="CHOOSE YOUR PROTECTION SOLUTION" Margin="0,0,226,0" Foreground="White" FontSize="16"/>
+        <Border Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Padding="5"  Background="#A6D473">
+            <TextBlock x:Name="textBlock" Grid.Column="1" Text="CHOOSE YOUR PROTECTION SOLUTION" Margin="5,5,221,0" Foreground="White" FontSize="16"/>
         </Border>
-        <TextBox x:Name="cbIndoor" Grid.Row="1" Grid.Column="1" Text="Indoor Shields Plus Unit&#xD;&#xA;2-Year Warranty" RenderTransformOrigin="0.525,-2.342" Margin="0,88,72,373"/>
 
-        <TextBox x:Name="cbOutdoor" Grid.Column="1" Grid.Row="1" RenderTransformOrigin="1.151,0.462" Margin="0,15,87,450" Text="Outdoor Shields Unit&#xD;&#xA;2-Year Warranty" />
-
-        <TextBox x:Name="cbMicro" Grid.Row="1" Text="Micro Shields Unit&#xD;&#xA;2-Year Warranty" HorizontalAlignment="Left" Margin="0,160,0,0" VerticalAlignment="Top" Height="32" Width="185" Grid.Column="1" />
-        <TextBox x:Name="lblGreen" Grid.Row="1" Grid.Column="2" Text="   Included with all &#xD;&#xA;Protection Solutions:" HorizontalAlignment="Left" Margin="54,136,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.445" FontStyle="Italic" Height="38" Width="114" FontWeight="Bold" FontSize="11" Foreground="#A6D473" />
-        <Label x:Name="lblIncluded" Grid.Row="1" Grid.Column="2" Content="Perfect Start Plus &#xD;&#xA;       Training" HorizontalAlignment="Left" Margin="67,174,0,0" VerticalAlignment="Top" Height="42" Width="130" FontSize="11"/>
-        <TextBox x:Name="cbShields" Text="Shields Computer Collar Unit&#xD;&#xA;1-Year Power Cap Battery Plan&#xD;&#xA;2-Year Warranty" HorizontalAlignment="Left" Margin="2,223,0,0" Grid.Row="1" VerticalAlignment="Top" Height="50" Width="179" Grid.Column="1"/>
-        <TextBox x:Name="cbMicroLite" Text="MicroLite Computer Collar Unit&#xD;&#xA;1-Year Power Cap Battery Plan&#xD;&#xA;Lifetime Limited Warranty" HorizontalAlignment="Left" Margin="0,304,0,0" VerticalAlignment="Top" Height="53" Width="185" Grid.Row="1" Grid.Column="1"/>
-        <Label x:Name="lblOutdoorPrice1" Content="lblOutdoorPrice1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="0,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="94"/>
-        <Label x:Name="lblOutdoorPrice2" Content="lblOutdoorPrice2" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.491,0.513" Foreground="#A6D473" Margin="134.5,49,9.5,427" />
-        <Label x:Name="lblIndoorPrice" Content="lblIndoorPrice1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="2,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="84"/>
-        <Label x:Name="lblIndoorPrice2" Content="lblIndoorPrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="126.5,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="94"/>
-        <Label x:Name="lblMicroPrice" Content="lblMicroPrice" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="2,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="79"/>
-        <Label x:Name="lblMicroPrice2" Content="lblMicroPrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="134.5,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="86"/>
-        <Label x:Name="lblShieldsPrice1" Content="lblShieldsPrice" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="0,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="86"/>
-        <Label x:Name="lblShieldsPrice2" Content="lblShieldsPrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="134.5,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="102"/>
-        <Label x:Name="lblMicroLitePrice" Content="lblMicroLitePrice" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="0,362,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="98"/>
-        <Label x:Name="lblMicroLitePrice2" Content="lblMicroLitePrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="138.5,362,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="112" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="99,54,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="92,131,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="103.5,367,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="92.5,197,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="98.5,278,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="tbText" Grid.Column="1" Grid.Row="1" Margin="40,0,30,362" Text="Outdoor Shields Unit&#xA;2-Year Warranty&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Indoor Shields Plus Unit&#xA;2-Year Warranty&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Micro Shields Unit&#xA;2-Year Warranty&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Shields Computer Collar Unit&#xA;1-Year Power Battery Cap Plan&#xA;2-Year Warranty&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;MicroLite Computer Collar Unit&#xA;1-Year Power Cap Battery Plan&#xA;Lifetime Limited Warranty" />
+        <TextBlock x:Name="lblGreen" Grid.Row="1" Grid.Column="2" Text="   Included with all &#xD;&#xA;Protection Solutions:" HorizontalAlignment="Left" Margin="54,136,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.445" FontStyle="Italic" Height="38" Width="114" FontWeight="Bold" FontSize="11" Foreground="#A6D473" />
+        <Label x:Name="lblIncluded" Grid.Row="1" Grid.Column="2" Content="Perfect Start Plus &#xD;&#xA;       Training" HorizontalAlignment="Left" Margin="67,165,0,0" VerticalAlignment="Top" Height="42" Width="130" FontSize="11"/>
+        <Label x:Name="lblOutdoorPrice1" Content="lblOutdoorPrice1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="40,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="94"/>
+        <!-- This label will not show!!! -->
+        <Label x:Name="lblOutdoorPrice2" Content="lblOutdoorPrice2" Grid.Row="1" Grid.Column="1" Foreground="#A6D473" Margin="178,31,70,695" Height="26" Width="94" />
+        <Label x:Name="lblIndoorPrice" Content="lblIndoorPrice1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="40,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="84"/>
+        <Label x:Name="lblIndoorPrice2" Content="lblIndoorPrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="174,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="94"/>
+        <Label x:Name="lblMicroPrice" Content="lblMicroPrice" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="40,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="79"/>
+        <Label x:Name="lblMicroPrice2" Content="lblMicroPrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="178,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="86"/>
+        <Label x:Name="lblShieldsPrice1" Content="lblShieldsPrice" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="40,239,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="86"/>
+        <Label x:Name="lblShieldsPrice2" Content="lblShieldsPrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="178,241,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="102"/>
+        <Label x:Name="lblMicroLitePrice" Content="lblMicroLitePrice" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="40,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="98"/>
+        <Label x:Name="lblMicroLitePrice2" Content="lblMicroLitePrice2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="182,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.105,0.076" Height="26" Width="112"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="139,36,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="135,101,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="143,322,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="135,164,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="135,246,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
 
     </Grid>
 </Page>
