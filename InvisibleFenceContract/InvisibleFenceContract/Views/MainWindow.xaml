@@ -1,0 +1,71 @@
+﻿<local:ThemedWindow x:Class="InvisibleFenceContract.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InvisibleFenceContract"
+        mc:Ignorable="d"
+        Icon='../Images/blueshouse2.ico'
+         Title="Invisible Fence - Home" Height="768" Width="1266" Padding='50' >
+        
+    <Window.Resources>
+
+        <Storyboard x:Key="sbShowLeftMenu" >
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-200,0,0,0" To="0,0,0,0" DecelerationRatio=".9" Duration="0:0:1" />
+
+        </Storyboard>
+        <Storyboard x:Key="sbHideLeftMenu">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-200,0,0,0" AccelerationRatio=".9" Duration="0:0:1" />
+        </Storyboard>
+
+        <Style TargetType='Button'>
+            <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+            <Setter Property='FontSize' Value='12' />
+            <Setter Property='TextBlock.Height' Value='22' />
+            <Setter Property='Width' Value='120' />
+            <Setter Property='Height' Value='20' />
+            <Setter Property='BorderBrush' Value='#08E0F0' />
+            <Setter Property='Background' Value='#114977' />
+            <Setter Property='Foreground' Value='White' />
+
+        </Style>
+
+
+    </Window.Resources>
+    <!-- Border color '#00a4e3' 0083b6 -->
+    <Grid Background='White'>
+        <StackPanel Panel.ZIndex="2" Name="pnlLeftMenu" Orientation="Horizontal" HorizontalAlignment="Left" Background='Transparent'  Margin="-200,0,0,0" Width='222'>
+            <Border BorderBrush="#0083b6" BorderThickness="1" Width="150" Background="#114977" />
+            <Grid Width='32'>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height='Auto' />
+                    <RowDefinition Height='Auto'/>
+                    <RowDefinition Height='Auto'/>
+                    <RowDefinition Height='Auto'/>
+                    <RowDefinition Height='Auto'/>
+                    <RowDefinition Height='Auto' />
+                    <RowDefinition Height='Auto' />
+                    <RowDefinition Height='Auto'/>
+                </Grid.RowDefinitions>
+                <Button x:Name="btnLeftMenuHide" Click="btnLeftMenuHide_Click" Width='25' Height='23' HorizontalAlignment='Right' VerticalAlignment='Top'
+                        Content="X" FontWeight='Bold' Background='Black' Foreground='White' Margin='-23,0,31,0' Grid.Row='0'/>
+                <Button x:Name="btnLeftMenuShow" Click="btnLeftMenuShow_Click" Content="Menu" Margin='-3,0,-84,22'  Grid.Row='0' Width='Auto' >
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Source="../Images/Menu.png"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="btnContact1" MinWidth="20" Content="Contact" Grid.Row='1' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnContact1_Click' />
+                <Button x:Name='btnSafety2' MinWidth='20' Content='Safety' Grid.Row='2' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnSafety2_Click'/>
+                <Button x:Name='btnProtection3' MinWidth='20' Content='Protection'  Grid.Row='3' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnProtection3_Click' />
+                <Button x:Name='btnFreedom4' Content='Freedom' Grid.Row='4' Margin='-136,2,48,2'  Width='Auto' Click='btnFreedom4_Click' />
+                <Button x:Name='btnSolutions5' MinWidth='20' Content='Solutions/Add-A-Pet'  Grid.Row='5' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnSolutions5_Click'  />
+                <Button x:Name="btnInstallation6" MinWidth="20" Content="Installation" Grid.Row='6' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnInstallation6_Click'/>
+                <Button x:Name='btnSignature7' MinWidth='20' Content='Signature' Grid.Row='7' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnSignature7_Click' />
+            </Grid>
+        </StackPanel>
+        <Frame x:Name='Main' Margin='-10,4,10,-14'/>
+    </Grid>
+</local:ThemedWindow>
