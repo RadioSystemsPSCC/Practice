@@ -57,11 +57,18 @@
                                     <Button x:Name='PART_WindowCaptionCloseButton' 
                                             Content='X'/>
                                 </StackPanel>
-                                <TextBlock x:Name='PART_WindowCaptionText' DockPanel.Dock='Left' Margin='0' Padding='0'>
+                                <TextBlock x:Name='PART_WindowCaptionText' DockPanel.Dock='Left' Margin='6,0,0,0' Padding='0'>
+                                     <Button x:Name="btnLeftMenuShow" Content="Menu"   Grid.Row='0' Width='Auto' >
+                                <Button.Template>
+                                    <ControlTemplate>
+                                        <Image Source="../Images/Menu.png"/>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
                                     <Image x:Name='PART_WindowCaptionIcon' 
                                            Width='36' 
                                            Height='16' 
-                                           Margin='0'
+                                           Margin='0,0,6,0'
                                            Source='{TemplateBinding Icon}'
                                            SnapsToDevicePixels='True'
                                            RenderOptions.EdgeMode='Aliased' />
@@ -70,7 +77,9 @@
                                 </TextBlock>
 
                             </DockPanel>
+
                         </Border>
+
                         <DockPanel Grid.Row='2' Grid.Column='1'>
                             <ContentPresenter />
                         </DockPanel>
@@ -81,7 +90,6 @@
                             <Setter TargetName='PART_WindowCaptionIcon' Property='Visibility' Value='Collapsed' />
                             <Setter TargetName='PART_WindowCaptionText' Property='Margin' Value='0' />
                         </Trigger>
-
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

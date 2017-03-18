@@ -9,6 +9,7 @@ using System.Windows.Interop;
 using System.Windows.Input;
 using System.Runtime.InteropServices;
 
+
 namespace InvisibleFenceContract
 {
     public class ThemedWindow : System.Windows.Window

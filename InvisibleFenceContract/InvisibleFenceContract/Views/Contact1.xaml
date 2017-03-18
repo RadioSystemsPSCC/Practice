@@ -4,9 +4,13 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:InvisibleFenceContract.Content"
+      xmlns:m='clr-namespace:InvisibleFenceContract.Models'
       mc:Ignorable="d"
       Title="Contact1" Height='768' Width='1366'>
 
+    <Page.Resources>
+        <m:Customer x:Key='customer' />
+    </Page.Resources>
 
     <!-- Styling notes:
             Header font: Rockwell
@@ -77,7 +81,7 @@
         <!-- Name Row-->
         <!-- Name Form Group-->
         <TextBlock x:Name='FirstName' Grid.Column='1' Grid.Row='3' Text="First Name:"  HorizontalAlignment="Left"       />
-        <TextBox x:Name='txtFirstName' Grid.Column='1' Grid.Row='3' HorizontalAlignment='Left'  Text=''  Width='179' Grid.ColumnSpan='2' Margin='62,0,0,0'/>
+        <TextBox x:Name='txtFirstName' Grid.Column='1' Grid.Row='3'  HorizontalAlignment='Left'  Text='{Binding FirstName}'  Width='179' Grid.ColumnSpan='2' Margin='62,0,0,0'/>
         <TextBlock x:Name='LastName' Grid.Column='3' Grid.Row='3' HorizontalAlignment='Left' Text='Last Name:'   />
         <TextBox x:Name='txtLastName' Grid.Column='4' Grid.Row='3' HorizontalAlignment='Left' Text=''  Width='150'/>
         <!--Referred By Form Group -->
