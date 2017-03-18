@@ -13,12 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InvisibleFenceContract.Content
+namespace InvisibleFenceContract.Views
 {
     /// <summary>
     /// Interaction logic for Solutions5.xaml
     /// </summary>
-    public partial class Solutions5 : Page
+    public partial class Solutions5 : UserControl
     {
         public Solutions5()
         {

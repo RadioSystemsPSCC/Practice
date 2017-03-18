@@ -61,7 +61,7 @@
                                      <Button x:Name="btnLeftMenuShow" Content="Menu"   Grid.Row='0' Width='Auto' >
                                 <Button.Template>
                                     <ControlTemplate>
-                                        <Image Source="../Images/Menu.png"/>
+                                        <Image Source="../Images/Menu.png" Height='24' Width='30'/>
                                     </ControlTemplate>
                                 </Button.Template>
                             </Button>

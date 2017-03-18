@@ -1,23 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class Contact1ViewModel : INotifyPropertyChanged
+    class Contact1ViewModel : BindableBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
 
-        private void OnPropertyChanged(String propertyName)
-        {
-
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
     }
 }

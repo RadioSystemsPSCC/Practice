@@ -1,17 +1,11 @@
-﻿<Page x:Class="InvisibleFenceContract.Content.Contact1"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:InvisibleFenceContract.Content"
-      xmlns:m='clr-namespace:InvisibleFenceContract.Models'
-      mc:Ignorable="d"
-      Title="Contact1" Height='768' Width='1366'>
-
-    <Page.Resources>
-        <m:Customer x:Key='customer' />
-    </Page.Resources>
-
+﻿<UserControl x:Class="InvisibleFenceContract.Views.Contact1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InvisibleFenceContract.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
     <!-- Styling notes:
             Header font: Rockwell
             Body - FontFamily="/InvisibleFencing;component/Fonts/#Gotham"
@@ -57,7 +51,7 @@
             <ColumnDefinition Width='180' />
             <ColumnDefinition Width='*' />
         </Grid.ColumnDefinitions>
-       <!-- Star on last row provides screen flexibility in length of page-->
+        <!-- Star on last row provides screen flexibility in length of page-->
         <Grid.RowDefinitions>
             <RowDefinition Height='32'/>
             <RowDefinition Height='32' />
@@ -119,7 +113,7 @@
         <TextBlock Grid.Column='5' Grid.Row='5' Text='Email: ' HorizontalAlignment='Left'  Width='55' />
         <TextBox x:Name='txtEmail' Grid.Column='6' Grid.Row='5'  HorizontalAlignment='Left' Width='180' />
         <!--End Phone/Email Row-->
-       <TextBlock  Grid.Column='1' Grid.Row='6' Grid.ColumnSpan='2' VerticalAlignment='Center' Margin='0,11,11,11'>My property contains unmarked underground:</TextBlock>
+        <TextBlock  Grid.Column='1' Grid.Row='6' Grid.ColumnSpan='2' VerticalAlignment='Center' Margin='0,11,11,11'>My property contains unmarked underground:</TextBlock>
         <CheckBox  x:Name='ckboxLighting' Grid.Column='3' Grid.Row='6' Grid.ColumnSpan='2' Content='Landscape Lighting' HorizontalAlignment='Left'  Width='140' Margin='0,10,0,19' />
         <CheckBox x:Name='ckBoxSprinklers' Grid.Column='4' Grid.Row='6' Content='Sprinklers' HorizontalAlignment='Right' Margin='0,10,0,19'/>
         <!--End Underground Row -->
@@ -132,8 +126,8 @@
                 <DataGridComboBoxColumn x:Name="ComboBoxColumn" Header="Breed"  SelectedItemBinding="{Binding PetBreed}"/>
             </DataGrid.Columns>
 
-        </DataGrid>   
-        
+        </DataGrid>
+
         <!--<TextBlock  Text='Pet Name:'  HorizontalAlignment='Left'   />
         <TextBox x:Name='petName1' Grid.Column='1' HorizontalAlignment='Left' Margin='62,0,0,0' Grid.Row='7' TextWrapping='Wrap' Width='144' Grid.ColumnSpan='2'/>
         <TextBlock x:Name='lblBreed1' Grid.Column='2' Grid.Row='7' Text='Breed: '  HorizontalAlignment='Left' Margin='143,0,0,0'   />
@@ -149,4 +143,4 @@
         <!--End First Pet Info Row -->
         <!--CODING NOTE Actual info of pets should be loaded as a datagrid instead of code above. Need to research MVVM implementation of datagrid for pet info so can be added, editted and deleted -->
     </Grid>
-</Page>
+</UserControl>

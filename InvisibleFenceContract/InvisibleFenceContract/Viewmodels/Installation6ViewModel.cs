@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class Installation6ViewModel
+    class Installation6ViewModel : BindableBase
     {
     }
 }

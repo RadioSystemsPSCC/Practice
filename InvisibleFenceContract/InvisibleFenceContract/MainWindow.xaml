@@ -5,73 +5,115 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InvisibleFenceContract"
         xmlns:vm='clr-namespace:InvisibleFenceContract.Viewmodels'
+        xmlns:v='clr-namespace:InvisibleFenceContract.Views'            
+        
         
         mc:Ignorable="d"
         Icon='/Images/blueshouse2.ico'
          Title="Invisible Fence - Home" Height="768" Width="1266" Padding='50' >
 
     <Window.DataContext>
-        <vm:WindowViewModel />
+        <vm:MainWindowViewModel />
     </Window.DataContext>
 
     <Window.Resources>
+
         <DataTemplate DataType = "{x:Type vm:Contact1ViewModel}">
-            <!--Need to add view to template
-            <v: Contact1 />-->
+            <v:Contact1/>
         </DataTemplate>
-        <Storyboard x:Key="sbShowLeftMenu" >
-            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-200,0,0,0" To="0,0,0,0" DecelerationRatio=".9" Duration="0:0:1" />
-            <!--<DoubleAnimation
-                Storyboard.TargetName="MyRectangle" 
-                Storyboard.TargetProperty="Opacity"
-                From="1.0" To="0" Duration="0:0:5" />-->
-        </Storyboard>
-        <Storyboard x:Key="sbHideLeftMenu">
-            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-200,0,0,0" AccelerationRatio=".9" Duration="0:0:1" />
-        </Storyboard>
 
-        <Style TargetType='Button'>
-            <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
-            <Setter Property='FontSize' Value='12' />
-            <Setter Property='TextBlock.Height' Value='22' />
-            <Setter Property='Width' Value='120' />
-            <Setter Property='Height' Value='20' />
-            <Setter Property='BorderBrush' Value='#08E0F0' />
-            <Setter Property='Background' Value='#114977' />
-            <Setter Property='Foreground' Value='White' />
+        <DataTemplate DataType = "{x:Type vm:Safety2ViewModel}">
+            <v:Safety2/>
+        </DataTemplate>
 
-        </Style>
+        <DataTemplate DataType = "{x:Type vm:Protection3ViewModel}">
+            <v:Protection3/>
+        </DataTemplate>
 
+        <DataTemplate DataType = "{x:Type vm:Freedom4ViewModel}">
+            <v:Freedom4/>
+        </DataTemplate>
 
+        <DataTemplate DataType = "{x:Type vm:Solutions5ViewModel}">
+            <v:Solutions5/>
+        </DataTemplate>
+
+        <DataTemplate DataType = "{x:Type vm:Installation6ViewModel}">
+            <v:Installation6/>
+        </DataTemplate>
+
+        <DataTemplate DataType = "{x:Type vm:Signature7ViewModel}">
+            <v:Signature7/>
+        </DataTemplate>
     </Window.Resources>
-    <!-- Border color '#00a4e3' 0083b6 -->
+
     <Grid Background='White'>
-        <StackPanel Panel.ZIndex="2" Name="pnlLeftMenu" Orientation="Horizontal" HorizontalAlignment="Left" Background='Transparent'  Margin="-200,0,0,0" Width='222'>
-            <Border BorderBrush="#0083b6" BorderThickness="1" Width="150" Background="#114977" />
-            <Grid Width='32'>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height='Auto' />
-                    <RowDefinition Height='Auto'/>
-                    <RowDefinition Height='Auto'/>
-                    <RowDefinition Height='Auto'/>
-                    <RowDefinition Height='Auto'/>
-                    <RowDefinition Height='Auto' />
-                    <RowDefinition Height='Auto' />
-                    <RowDefinition Height='Auto'/>
-                </Grid.RowDefinitions>
-                <Button x:Name="btnLeftMenuHide" Width='25' Height='23' HorizontalAlignment='Right' VerticalAlignment='Top'
-                        Content="X" FontWeight='Bold' Background='Black' Foreground='White' Margin='-23,0,31,0' Grid.Row='0'/>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height='30' />
+            <RowDefinition Height='Auto' />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+
+        <Grid x:Name = "NavBar"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "*" />
+                <ColumnDefinition Width = "*" />
+                <ColumnDefinition Width = "*" />
+                <ColumnDefinition Width = '*' />
+                <ColumnDefinition Width = "*" />
+                <ColumnDefinition Width = "*" />
+                <ColumnDefinition Width = '*' />
+
+            </Grid.ColumnDefinitions>
+
+            <Button Content = "Contact" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "contact" 
+            Grid.Column = "1" Grid.Row='0' />
+
+            <Button Content = "Safety" 
+            Command = "{Binding NavCommand}" 
+            CommandParameter = "safety" 
+            Grid.Column = "2"
+            Grid.Row='0'        />
+
+            <Button Content = "Protection" 
+            Command = "{Binding NavCommand}" 
+            CommandParameter = "protection" 
+            Grid.Column = "3"
+            Grid.Row='0'        />
+
+            <Button Content = "Freedom" 
+            Command = "{Binding NavCommand}" 
+            CommandParameter = "freedom" 
+            Grid.Column = "4"
+            Grid.Row='0'        />
+
+            <Button Content = "Solutions" 
+            Command = "{Binding NavCommand}" 
+            CommandParameter = "solutions" 
+            Grid.Column = "5"
+            Grid.Row='0'        />
+
+            <Button Content = "Installation" 
+            Command = "{Binding NavCommand}" 
+            CommandParameter = "installation" 
+            Grid.Column = "6"
+            Grid.Row='0'        />
+
+            <Button Content = "Signature" 
+            Command = "{Binding NavCommand}" 
+            CommandParameter = "signature" 
+            Grid.Column = "7"
+            Grid.Row='0'        />
 
 
-                <Button x:Name="btnContact1" MinWidth="20" Content="Contact" Grid.Row='1' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnContact1_Click' />
-                <Button x:Name='btnSafety2' MinWidth='20' Content='Safety' Grid.Row='2' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnSafety2_Click'/>
-                <Button x:Name='btnProtection3' MinWidth='20' Content='Protection'  Grid.Row='3' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnProtection3_Click' />
-                <Button x:Name='btnFreedom4' Content='Freedom' Grid.Row='4' Margin='-136,2,48,2'  Width='Auto' Click='btnFreedom4_Click' />
-                <Button x:Name='btnSolutions5' MinWidth='20' Content='Solutions/Add-A-Pet'  Grid.Row='5' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnSolutions5_Click'  />
-                <Button x:Name="btnInstallation6" MinWidth="20" Content="Installation" Grid.Row='6' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnInstallation6_Click'/>
-                <Button x:Name='btnSignature7' MinWidth='20' Content='Signature' Grid.Row='7' Margin='-136,2,48,2' Height='Auto' Width='Auto' Click='btnSignature7_Click' />
-            </Grid>
-        </StackPanel>
-        <Frame x:Name='Main' Margin='-10,4,10,-14'/>
+            <StackPanel Orientation=' Horizontal' Grid.ColumnSpan='6' Margin='39,48,0,-706' Grid.Column='1'>
+
+                <ContentControl Content = "{Binding CurrentViewModel}" Grid.Column="1"  />
+
+            </StackPanel>
+        </Grid>
     </Grid>
 </local:ThemedWindow>

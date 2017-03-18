@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class Safety2ViewModel
+    class Safety2ViewModel : BindableBase
     {
     }
 }

@@ -13,12 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InvisibleFenceContract.Content
+namespace InvisibleFenceContract.Views
 {
     /// <summary>
     /// Interaction logic for Signature7.xaml
     /// </summary>
-    public partial class Signature7 : Page
+    public partial class Signature7 : UserControl
     {
         public Signature7()
         {

@@ -13,12 +13,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace InvisibleFenceContract.Content
+namespace InvisibleFenceContract.Views
 {
     /// <summary>
     /// Interaction logic for Freedom4.xaml
     /// </summary>
-    public partial class Freedom4 : Page
+    public partial class Freedom4 : UserControl
     {
         public Freedom4()
         {

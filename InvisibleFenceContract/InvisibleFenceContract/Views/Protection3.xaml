@@ -1,13 +1,11 @@
-﻿<Page x:Class="InvisibleFenceContract.Content.Protection3"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:InvisibleFenceContract.Content"
-      mc:Ignorable="d" 
-      d:DesignHeight="768" d:DesignWidth="1366"
-      Title="Protection3">
-
+﻿<UserControl x:Class="InvisibleFenceContract.Views.Protection3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InvisibleFenceContract.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
     <Grid x:Name="Screen3" Margin="0,0,0,-29" RenderTransformOrigin="0.499,0.454">
 
         <Grid.ColumnDefinitions>
@@ -47,4 +45,4 @@
         <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="135,246,0,0" Grid.Row="1" TextWrapping="Wrap" Text="2 pack" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
 
     </Grid>
-</Page>
+</UserControl>

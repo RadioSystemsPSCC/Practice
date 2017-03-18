@@ -1,14 +1,13 @@
-﻿<Page x:Class="InvisibleFenceContract.Content.Safety2"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:InvisibleFenceContract.Content"
-      mc:Ignorable="d" 
-      d:DesignHeight="768" d:DesignWidth="1366"
-      Title="Safety2">
+﻿<UserControl x:Class="InvisibleFenceContract.Views.Safety2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InvisibleFenceContract.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
 
-    <Grid Margin="0,0,2,0">
+        <Grid Margin='11,-2,9,12'>
         <Grid.Resources>
             <!-- Style setter -->
             <Style TargetType='TextBlock'>
@@ -44,4 +43,4 @@
         <RadioButton x:Name="radioButton_Copy1" Content="Digital Technology&#xA;MicroLite Computer Collar Unit&#xA;Limited Lifetime Warranty&#xA; 1-Year Power Cap Battery Plan" Grid.Column="1" HorizontalAlignment="Left" Margin="40,191,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
     </Grid>
-</Page>
+</UserControl>
