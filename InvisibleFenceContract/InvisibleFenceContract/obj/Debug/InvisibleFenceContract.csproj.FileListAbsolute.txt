@@ -154,4 +154,3 @@ E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\MainWind
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.g.resources
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
-E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache

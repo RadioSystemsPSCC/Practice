@@ -63,6 +63,7 @@
                 <ColumnDefinition Width = '*' />
                 <ColumnDefinition Width = "*" />
                 <ColumnDefinition Width = "*" />
+                <ColumnDefinition Width='*' />
                 <ColumnDefinition Width = '*' />
 
             </Grid.ColumnDefinitions>
@@ -109,7 +110,7 @@
             Grid.Row='0'        />
 
 
-            <StackPanel Orientation=' Horizontal' Grid.ColumnSpan='6' Margin='39,48,0,-706' Grid.Column='1'>
+            <StackPanel Orientation=' Horizontal' Grid.ColumnSpan='7' Margin='39,48,0,-706' Grid.Column='1'>
 
                 <ContentControl Content = "{Binding CurrentViewModel}" Grid.Column="1"  />
 
