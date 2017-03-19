@@ -1,0 +1,89 @@
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\bin\Debug\ProjectPrototype.exe
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\bin\Debug\ProjectPrototype.pdb
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.csprojResolveAssemblyReference.cache
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\MainWindow.g.cs
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\App.g.cs
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.cache
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.lref
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\MainWindow.baml
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.g.resources
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.Properties.Resources.resources
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.csproj.GenerateResource.Cache
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+E:\Capstone\TestProjects\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\bin\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\bin\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\MainWindow.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\App.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.lref
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\MainWindow.baml
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.g.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.Properties.Resources.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.csproj.GenerateResource.Cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\bin\Debug\Newtonsoft.Json.dll
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\bin\Debug\Newtonsoft.Json.xml
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\bin\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\bin\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\bin\Debug\Newtonsoft.Json.dll
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\bin\Debug\Newtonsoft.Json.xml
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype.csprojResolveAssemblyReference.cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\MainWindow.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\App.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.lref
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\MainWindow.baml
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype.g.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype.Properties.Resources.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype - Copy\ProjectPrototype\obj\Debug\ProjectPrototype.csproj.GenerateResource.Cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype\ProjectPrototype\obj\Debug\ProjectPrototype.csprojResolveAssemblyReference.cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson.net\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson.net\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson.net\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\bin\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\bin\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\bin\Debug\Newtonsoft.Json.dll
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\bin\Debug\Newtonsoft.Json.xml
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.csprojResolveAssemblyReference.cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\MainWindow.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\App.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.lref
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\MainWindow.baml
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.g.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.Properties.Resources.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.csproj.GenerateResource.Cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype_Populate_WithJson\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+C:\Users\docon\Documents\Capstone\ProjectPrototype_Populate_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype_Populate_WithJson\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\bin\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\bin\Debug\ProjectPrototype.pdb
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\bin\Debug\Newtonsoft.Json.dll
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\bin\Debug\Newtonsoft.Json.xml
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\MainWindow.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\Views\Clients_UserControl.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\App.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\ProjectPrototype_MarkupCompile.lref
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\MainWindow.baml
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\Views\Clients_UserControl.baml
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\ProjectPrototype.g.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\ProjectPrototype.Properties.Resources.resources
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\ProjectPrototype.csproj.GenerateResource.Cache
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM\ProjectPrototype\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM_WorkingNewest\ProjectPrototype\bin\Debug\ProjectPrototype.exe.config
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM_WorkingNewest\ProjectPrototype\obj\Debug\ProjectPrototype.exe
+C:\Users\docon\Documents\Capstone\ProjectPrototype_JSON_MVVM_WorkingNewest\ProjectPrototype\obj\Debug\ProjectPrototype.pdb
