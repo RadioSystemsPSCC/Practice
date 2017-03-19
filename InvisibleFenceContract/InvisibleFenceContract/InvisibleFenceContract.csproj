@@ -79,6 +79,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Viewmodels\Commands\ViewCommand.cs" />
     <Compile Include="Views\Installation6.xaml.cs">
       <DependentUpon>Installation6.xaml</DependentUpon>
     </Compile>

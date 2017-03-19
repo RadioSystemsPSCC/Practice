@@ -4,9 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
+             xmlns:vm="clr-namespace:InvisibleFenceContract.Viewmodels"
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1366">
-    <Grid >
+
+    <UserControl.Resources>
+        <vm:Signature7ViewModel x:Key="sigViewModel"/>
+    </UserControl.Resources>
+    <Grid>
         <Grid.Resources>
             <Style TargetType='TextBlock'>
                 <Setter Property='FontFamily' Value="/InvisibleFencing;component/Fonts/#Gotham" />
@@ -39,6 +44,8 @@ within 45 days of the renewal, company will refund the full subscription price t
         <Viewbox x:Name="canvasView" Grid.Column="1" HorizontalAlignment="Left"  Margin="10,31,0,0" VerticalAlignment="Top" Width="346">
             <InkCanvas x:Name="CustomerSignatureCanvas" Grid.Column="1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="346" RenderTransformOrigin="0.44,0.07" Background="#FFE6E6E6" TouchDown="CustomerSignatureCanvas_TouchDown" TouchUp="CustomerSignatureCanvas_TouchUp"/>
         </Viewbox>
+        <Button x:Name="viewBt" Content="View" Grid.Column="1" HorizontalAlignment="Left" Margin="311,320,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ViewProperty, Source={StaticResource sigViewModel}}" />
+        <Button x:Name="button1" Content="Save" Grid.Column="1" HorizontalAlignment="Left" Margin="406,320,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </UserControl>
