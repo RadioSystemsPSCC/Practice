@@ -44,15 +44,19 @@
                         <Border Background='{DynamicResource BorderBrush}' x:Name="PART_WindowBorderBottom" Grid.Column="1" Grid.Row="3" />
                         <Border Background='{DynamicResource BorderBrush}' x:Name="PART_WindowBorderBottomLeft" Grid.Column="0" Grid.Row="3" />
                         <Border x:Name='PART_WindowCaption' Grid.Column='1' Grid.Row='1' Background='{DynamicResource CaptionBackgroundBrush}'>
+                            <!--From visibility of Minimize button and maximize button 
+                            '{TemplateBinding ResizeMode, Converter={StaticResource MinimizeVisibilityConverter}}'
+                            '{TemplateBinding ResizeMode, Converter={StaticResource MaximizeVisibilityConverter}}'
+                            -->
                             <DockPanel LastChildFill='True'>
                                 <StackPanel DockPanel.Dock='Right' Orientation='Horizontal' VerticalAlignment= 'Center'>
                                     <Button x:Name='PART_WindowCaptionMinimizeButton' 
                                             Content='_' 
-                                            Visibility='{TemplateBinding ResizeMode, Converter={StaticResource MinimizeVisibilityConverter}}'
+                                            Visibility='Collapsed'
                                             Margin='0,0,4,0'/>
                                     <Button x:Name='PART_WindowCaptionMaximizeButton' 
                                             Content='[ ]' 
-                                            Visibility='{TemplateBinding ResizeMode, Converter={StaticResource MaximizeVisibilityConverter}}'
+                                            Visibility='Collapsed'
                                             Margin='0,0,4,0'/>
                                     <Button x:Name='PART_WindowCaptionCloseButton' 
                                             Content='X'/>
