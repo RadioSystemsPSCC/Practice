@@ -75,43 +75,43 @@
         <!-- Name Row-->
         <!-- Name Form Group-->
         <TextBlock x:Name='FirstName' Grid.Column='1' Grid.Row='3' Text="First Name:"  HorizontalAlignment="Left"       />
-        <TextBox x:Name='txtFirstName' Grid.Column='1' Grid.Row='3'  HorizontalAlignment='Left'  Text='{Binding FirstName}'  Width='179' Grid.ColumnSpan='2' Margin='62,0,0,0'/>
+        <TextBox x:Name='txtFirstName' Grid.Column='1' Grid.Row='3'  HorizontalAlignment='Left'  Text='{Binding FirstName, Mode=TwoWay}'  Width='179' Grid.ColumnSpan='2' Margin='62,0,0,0'/>
         <TextBlock x:Name='LastName' Grid.Column='3' Grid.Row='3' HorizontalAlignment='Left' Text='Last Name:'   />
-        <TextBox x:Name='txtLastName' Grid.Column='4' Grid.Row='3' HorizontalAlignment='Left' Text=''  Width='150'/>
+        <TextBox x:Name='txtLastName' Grid.Column='4' Grid.Row='3' HorizontalAlignment='Left' Text='{Binding LastName, Mode=TwoWay}'  Width='150'/>
         <!--Referred By Form Group -->
         <TextBlock x:Name='ReferredBy' Grid.Column='5' Grid.Row='3' Text="Referred by:" HorizontalAlignment="Left"    />
-        <TextBox x:Name='txtReferredBy' Grid.Column='6' Grid.Row='3' MaxLength='20'   HorizontalContentAlignment ='Left'   />
+        <TextBox x:Name='txtReferredBy' Grid.Column='6' Grid.Row='3' MaxLength='20'   Text='{Binding ReferredBy, Mode=TwoWay}' HorizontalContentAlignment ='Left'   />
         <!--End Name Row -->
 
         <!--Address Row -->
         <!-- Address Form Group -->
         <TextBlock x:Name='StreetAddress' Grid.Column='1' Grid.Row='4' Text="Address:"   HorizontalAlignment="Left"     />
 
-        <TextBox x:Name='txtStreetAddress' Grid.Column='1' Grid.Row='4'  MaxLength='75' HorizontalAlignment='Left' Width='204' Grid.ColumnSpan='2' Margin='62,0,0,0'    />
+        <TextBox x:Name='txtStreetAddress' Grid.Column='1' Grid.Row='4'  MaxLength='75' HorizontalAlignment='Left' Width='204' Grid.ColumnSpan='2' Margin='62,0,0,0' Text='{Binding Address, Mode=TwoWay}'  />
 
         <!--City Form Group -->
         <TextBlock Grid.Column='3' Grid.Row='4' Text="City:    " HorizontalAlignment="Right" Width='55'    />
-        <TextBox x:Name='txtCity'  Grid.Row='4' Grid.Column='4' RenderTransformOrigin='0.211,0.667' Margin='0,0,31,0' />
+        <TextBox x:Name='txtCity'  Grid.Row='4' Grid.Column='4'  Margin='0,0,31,0' Text='{Binding City, Mode=TwoWay}' />
 
         <!-- State Form Group -->
         <TextBlock Grid.Column='5' Grid.Row='4' Text="State:"   HorizontalAlignment="Left"   />
-        <TextBox x:Name='txtState' Grid.Column='5' Grid.Row='4' HorizontalAlignment='Right'  Width='40' />
+        <TextBox x:Name='txtState' Grid.Column='5' Grid.Row='4' Text='{Binding State, Mode=TwoWay} ' HorizontalAlignment='Right'  Width='40' />
 
         <!--Zip Form Group -->
         <TextBlock Grid.Column='6' Grid.Row='4' Text="Zip:" Margin="48 0 0 0" HorizontalAlignment="Left"   />
-        <TextBox x:Name='txtZip' Grid.Column='6' Grid.Row='4' HorizontalAlignment ='Right' Width='80' />
+        <TextBox x:Name='txtZip' Grid.Column='6' Grid.Row='4' HorizontalAlignment ='Right' Width='80' Text='{Binding Zip, Mode=TwoWay}' />
         <!-- End Address Row -->
 
         <!--Phone/Email Row -->
         <!-- Home Phone Form Group-->
         <TextBlock Grid.Column='1' Grid.Row='5' Text='Home Phone:' TextWrapping='Wrap' HorizontalAlignment='Left' Width='64' Height='35'  />
-        <TextBox x:Name='txtHomePhone' Grid.Column='1' Grid.Row='5' HorizontalAlignment='Left' Width='153' Grid.ColumnSpan='2' Margin='62,0,0,0'/>
+        <TextBox x:Name='txtHomePhone' Grid.Column='1' Grid.Row='5' HorizontalAlignment='Left' Width='153' Grid.ColumnSpan='2' Margin='62,0,0,0' Text='{Binding HomePhone, Mode=TwoWay}'/>
         <!--Cell Phone Form Group -->
         <TextBlock Grid.Column='3' Grid.Row='5' Text='Cell Phone:' HorizontalAlignment='Left' Width='64'  />
-        <TextBox x:Name='txtCellPhone' Grid.Column='4' Grid.Row='5' HorizontalAlignment='Left' Width='125'   />
+        <TextBox x:Name='txtCellPhone' Grid.Column='4' Grid.Row='5' HorizontalAlignment='Left' Width='125' Text='{Binding CellPhone, Mode=TwoWay}'  />
         <!-- Email Form Group-->
         <TextBlock Grid.Column='5' Grid.Row='5' Text='Email: ' HorizontalAlignment='Left'  Width='55' />
-        <TextBox x:Name='txtEmail' Grid.Column='6' Grid.Row='5'  HorizontalAlignment='Left' Width='180' />
+        <TextBox x:Name='txtEmail' Grid.Column='6' Grid.Row='5'  HorizontalAlignment='Left' Width='180' Text='{Binding Email, Mode=TwoWay}'/>
         <!--End Phone/Email Row-->
         <TextBlock  Grid.Column='1' Grid.Row='6' Grid.ColumnSpan='2' VerticalAlignment='Center' Margin='0,11,11,11'>My property contains unmarked underground:</TextBlock>
         <CheckBox  x:Name='ckboxLighting' Grid.Column='3' Grid.Row='6' Grid.ColumnSpan='2' Content='Landscape Lighting' HorizontalAlignment='Left'  Width='140' Margin='0,10,0,19' />
