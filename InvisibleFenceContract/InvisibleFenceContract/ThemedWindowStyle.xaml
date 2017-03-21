@@ -58,8 +58,13 @@
                                             Content='[ ]' 
                                             Visibility='Collapsed'
                                             Margin='0,0,4,0'/>
-                                    <Button x:Name='PART_WindowCaptionCloseButton' 
-                                            Content='X'/>
+                                    <Button x:Name='PART_WindowCaptionCloseButton'>
+                                        <Button.Template>
+                                            <ControlTemplate>
+                                                <Image Source="../Images/close-button2.png" Height='24' Width='30'/>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
                                 </StackPanel>
                                 <TextBlock x:Name='PART_WindowCaptionText' DockPanel.Dock='Left' Margin='6,0,0,0' Padding='0'>
                                      <Button x:Name="btnLeftMenuShow" Content="Menu"   Grid.Row='0' Width='Auto' >
