@@ -55,66 +55,85 @@
             <RowDefinition Height = "*" />
         </Grid.RowDefinitions>
 
-        <Grid x:Name = "NavBar"  >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width = "*" />
-                <ColumnDefinition Width = "*" />
-                <ColumnDefinition Width = "*" />
-                <ColumnDefinition Width = '*' />
-                <ColumnDefinition Width = "*" />
-                <ColumnDefinition Width = "*" />
-                <ColumnDefinition Width='*' />
-                <ColumnDefinition Width = '*' />
+        <Grid x:Name = "NavBar"  Grid.Column='0'  Visibility='Visible' Background='#114977' Grid.RowSpan='3'  >
+            <Grid.Resources>
+                <Style TargetType="Grid">
+                    <Setter Property="Width" Value="188" />
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "28" />
+                <RowDefinition Height = "28" />
+                <RowDefinition Height = "28" />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = "28" />
+                <RowDefinition Height = "28" />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height='*' />
 
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width='180' />
             </Grid.ColumnDefinitions>
+
+            <Button Content = "X" 
+            Command = "{Binding Collapse}"
+            CommandParameter = "collapse" 
+            Grid.Column = "0" Grid.Row='0'
+            HorizontalAlignment='Right'
+            Width='27' Margin='0,0,-7,0' 
+            Background='Black' Foreground='White'/>
 
             <Button Content = "Contact" 
             Command = "{Binding NavCommand}"
             CommandParameter = "contact" 
-            Grid.Column = "1" Grid.Row='0' />
+            Grid.Column = "0" Grid.Row='1' />
 
             <Button Content = "Safety" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "safety" 
-            Grid.Column = "2"
-            Grid.Row='0'        />
+            Grid.Column = "0"
+            Grid.Row='2'        />
 
             <Button Content = "Protection" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "protection" 
-            Grid.Column = "3"
-            Grid.Row='0'        />
+            Grid.Column = "0"
+            Grid.Row='3'        />
 
             <Button Content = "Freedom" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "freedom" 
-            Grid.Column = "4"
-            Grid.Row='0'        />
+            Grid.Column = "0"
+            Grid.Row='4'        />
 
             <Button Content = "Solutions" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "solutions" 
-            Grid.Column = "5"
-            Grid.Row='0'        />
+            Grid.Column = "0"
+            Grid.Row='5'        />
 
             <Button Content = "Installation" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "installation" 
-            Grid.Column = "6"
-            Grid.Row='0'        />
+            Grid.Column = "0"
+            Grid.Row='6'        />
 
             <Button Content = "Signature" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "signature" 
-            Grid.Column = "7"
-            Grid.Row='0'        />
-
-
-            <StackPanel Orientation=' Horizontal' Grid.ColumnSpan='7' Margin='39,48,0,-706' Grid.Column='1'>
-
-                <ContentControl Content = "{Binding CurrentViewModel}" Grid.Column="1"  />
-
-            </StackPanel>
+            Grid.Column = "0"
+            Grid.Row='7'  />
         </Grid>
+
+
+        <StackPanel Orientation=' Horizontal' Margin='191,8,-1168,-510' Grid.RowSpan='9'>
+
+            <ContentControl Content = "{Binding CurrentViewModel}" Grid.Column="1"  />
+
+        </StackPanel>
     </Grid>
+
 </local:ThemedWindow>
