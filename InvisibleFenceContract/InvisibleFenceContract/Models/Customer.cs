@@ -8,7 +8,7 @@ using System.ComponentModel;
 
 namespace InvisibleFenceContract.Models
 {
-    class Customer : INotifyPropertyChanged
+    class Customer : BindableBase
     {
         private string firstName;
         private string lastName;
@@ -63,21 +63,6 @@ namespace InvisibleFenceContract.Models
             {
                 referredBy = value;
                 OnPropertyChanged("ReferredBy");
-            }
-        }
-
-        /// <summary>
-        /// Implementation of event for INotifyPropertyChanged
-        /// </summary>
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(String propertyName)
-        {
-            
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
 

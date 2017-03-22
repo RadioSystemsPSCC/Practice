@@ -95,7 +95,7 @@
 
         <!-- State Form Group -->
         <TextBlock Grid.Column='5' Grid.Row='4' Text="State:"   HorizontalAlignment="Left"   />
-        <TextBox x:Name='txtState' Grid.Column='5' Grid.Row='4' Text='{Binding State, Mode=TwoWay} ' HorizontalAlignment='Right'  Width='40' />
+        <TextBox x:Name='txtState' Grid.Column='5' Grid.Row='4' Text='{Binding State, Mode=TwoWay}' HorizontalAlignment='Right'  Width='40' />
 
         <!--Zip Form Group -->
         <TextBlock Grid.Column='6' Grid.Row='4' Text="Zip:" Margin="48 0 0 0" HorizontalAlignment="Left"   />
