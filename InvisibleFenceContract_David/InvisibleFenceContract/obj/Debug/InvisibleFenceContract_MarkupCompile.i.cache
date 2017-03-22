@@ -4,28 +4,16 @@
 winexe
 C#
 .cs
-<<<<<<< HEAD
-C:\Users\docon\Documents\Capstone\git_last\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\
-=======
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\
->>>>>>> b9f4c8c94ca91eb3a22c9f52195e7c87d77f3955
 InvisibleFenceContract
 none
 false
 DEBUG;TRACE
-<<<<<<< HEAD
-C:\Users\docon\Documents\Capstone\git_last\Practice\InvisibleFenceContract_David\InvisibleFenceContract\App.xaml
-92045355755
-
-34857095229
-201859270570
-=======
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\App.xaml
 92045355755
 
 341822504741
 20-1816452544
->>>>>>> b9f4c8c94ca91eb3a22c9f52195e7c87d77f3955
 ThemedWindowStyle.xaml;Views\Contact1.xaml;Views\Freedom4.xaml;Views\Installation6.xaml;Views\Protection3.xaml;Views\Safety2.xaml;MainWindow.xaml;Views\Signature7.xaml;Views\Solutions5.xaml;
 
 True
