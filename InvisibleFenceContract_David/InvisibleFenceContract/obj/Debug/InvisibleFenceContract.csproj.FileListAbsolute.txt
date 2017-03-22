@@ -160,6 +160,11 @@ C:\Users\docon\Documents\Capstone\project_github\Practice\InvisibleFenceContract
 C:\Users\docon\Documents\Capstone\project_github\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.g.resources
 C:\Users\docon\Documents\Capstone\project_github\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 C:\Users\docon\Documents\Capstone\project_github\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+C:\Users\docon\Documents\Capstone\git_last\Practice\InvisibleFenceContract_David\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config
+C:\Users\docon\Documents\Capstone\git_last\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
+C:\Users\docon\Documents\Capstone\git_last\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb
+=======
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\Views\Contact1.g.cs
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\Views\Freedom4.g.cs
@@ -203,3 +208,4 @@ C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleF
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.g.resources
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_David\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
+>>>>>>> b9f4c8c94ca91eb3a22c9f52195e7c87d77f3955
