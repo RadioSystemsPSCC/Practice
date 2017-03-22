@@ -119,3 +119,6 @@ E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\So
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.g.resources
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
+C:\Users\docon\Documents\Capstone\project_github\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config
+C:\Users\docon\Documents\Capstone\project_github\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
+C:\Users\docon\Documents\Capstone\project_github\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb
