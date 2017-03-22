@@ -32,13 +32,8 @@ namespace InvisibleFenceContract.Models
         /// , String lastName, String address, String
         /// </summary>
 
-<<<<<<< HEAD
-       
-      
-=======
 
 
->>>>>>> e8fd3674ed0cc547ac2cbac46e5d99e0a5a8c09c
         public String FirstName
         {
             get
@@ -206,31 +201,8 @@ namespace InvisibleFenceContract.Models
                 petAge = value;
                 OnPropertyChanged("PetAge");
             }
-<<<<<<< HEAD
-        }
-
-        protected virtual void SetProperty<T>(ref T member, T val,
-           [CallerMemberName] string propertyName = null)
-        {
-            if (object.Equals(member, val)) return;
-
-            member = val;
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged = delegate { };
-
-    }
-}
-=======
 
         }
     }
 }
 
->>>>>>> e8fd3674ed0cc547ac2cbac46e5d99e0a5a8c09c
