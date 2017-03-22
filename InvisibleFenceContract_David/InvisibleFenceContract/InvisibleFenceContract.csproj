@@ -188,7 +188,7 @@
     <Resource Include="Fonts\gothambold.ttf" />
     <Resource Include="Fonts\gothambook.otf" />
     <Resource Include="Fonts\gothammedium.otf" />
-    <None Include="App_Data\JSON_oneObject_Correct.JSON" />
+    <None Include="App_Data\JSON_singleObject.JSON" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
