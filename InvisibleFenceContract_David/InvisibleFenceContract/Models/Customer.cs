@@ -32,8 +32,13 @@ namespace InvisibleFenceContract.Models
         /// , String lastName, String address, String
         /// </summary>
 
+<<<<<<< HEAD
        
       
+=======
+
+
+>>>>>>> e8fd3674ed0cc547ac2cbac46e5d99e0a5a8c09c
         public String FirstName
         {
             get
@@ -201,6 +206,7 @@ namespace InvisibleFenceContract.Models
                 petAge = value;
                 OnPropertyChanged("PetAge");
             }
+<<<<<<< HEAD
         }
 
         protected virtual void SetProperty<T>(ref T member, T val,
@@ -221,3 +227,10 @@ namespace InvisibleFenceContract.Models
 
     }
 }
+=======
+
+        }
+    }
+}
+
+>>>>>>> e8fd3674ed0cc547ac2cbac46e5d99e0a5a8c09c

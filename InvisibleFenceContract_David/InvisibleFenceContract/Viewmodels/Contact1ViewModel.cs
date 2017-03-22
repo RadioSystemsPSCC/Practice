@@ -21,7 +21,11 @@ namespace InvisibleFenceContract.Viewmodels
 
         public void LoadStudents()
         {
+<<<<<<< HEAD
             string text = System.IO.File.ReadAllText(@"C:\Users\docon\Documents\Capstone\text_multi_object.JSON");
+=======
+            string text = System.IO.File.ReadAllText(@"~/App_Data/JSON_singleObject.JSON");
+>>>>>>> e8fd3674ed0cc547ac2cbac46e5d99e0a5a8c09c
 
             List<Customer> cc_Clients = JsonConvert.DeserializeObject<List<Customer>>(text);
 
