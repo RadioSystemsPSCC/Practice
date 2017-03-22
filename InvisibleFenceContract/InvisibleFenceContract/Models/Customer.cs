@@ -203,25 +203,21 @@ namespace InvisibleFenceContract.Models
             }
         }
 
-       /* public event PropertyChangedEventHandler PropertyChanged;
-
-        private void RaisePropertyChanged(string property)
+        protected virtual void SetProperty<T>(ref T member, T val,
+           [CallerMemberName] string propertyName = null)
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }*/
+            if (object.Equals(member, val)) return;
 
-        //public event PropertyChangedEventHandler OnPropertyChanged;
-
-        private void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
+            member = val;
+            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
     }
 }
