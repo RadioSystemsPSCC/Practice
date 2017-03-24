@@ -188,7 +188,7 @@
     <Resource Include="Fonts\gothambold.ttf" />
     <Resource Include="Fonts\gothambook.otf" />
     <Resource Include="Fonts\gothammedium.otf" />
-    <None Include="App_Data\JSON_singleObject.JSON" />
+    <None Include="Resources\JSON_singleObject.JSON" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -202,6 +202,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Content\" />
     <Folder Include="Scrips\" />
   </ItemGroup>

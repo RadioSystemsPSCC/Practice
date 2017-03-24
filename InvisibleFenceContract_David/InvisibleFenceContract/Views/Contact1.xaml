@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
+             xmlns:vm='clr-namespace:InvisibleFenceContract.Viewmodels'
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1366">
     <!-- Styling notes:
@@ -15,6 +16,7 @@
             Orange Font: #E96C2D -->
 
     <Grid Margin='11,-2,9,12'>
+        
         <Grid.Resources>
 
             <Style TargetType='RowDefinition' >
@@ -39,6 +41,7 @@
                 <Setter Property='Height' Value='22' />
                 <Setter Property='VerticalAlignment' Value='Top' />
             </Style>
+            
         </Grid.Resources>
         <!--Star on the end columns provides flexibility to grid width -->
         <Grid.ColumnDefinitions>
@@ -71,10 +74,11 @@
         <TextBlock x:Name='headerPhone' Grid.Column='1' Grid.Row='2' TextWrapping='Wrap' Foreground='#0067b1' Text='800-578-DOGS'/>
         <TextBlock x:Name='headerPhone2' Grid.Column='1' Grid.Row='2' TextWrapping='Wrap' Foreground='#0067b1' Margin='84 0 0 0' Text='(3657)' Grid.ColumnSpan='2'/>
         <TextBlock x:Name='headerEmail' Grid.Column='2' Grid.Row='2' Foreground='#0067b1'  Text='InvisibleFence.com' HorizontalAlignment='Right'/>
-
+             
         <!-- Name Row-->
         <!-- Name Form Group-->
         <TextBlock x:Name='FirstName' Grid.Column='1' Grid.Row='3' Text="First Name:"  HorizontalAlignment="Left"       />
+       
         <TextBox x:Name='txtFirstName' Grid.Column='1' Grid.Row='3'  HorizontalAlignment='Left'  Text='{Binding FirstName, Mode=TwoWay}'  Width='179' Grid.ColumnSpan='2' Margin='62,0,0,0'/>
         <TextBlock x:Name='LastName' Grid.Column='3' Grid.Row='3' HorizontalAlignment='Left' Text='Last Name:'   />
         <TextBox x:Name='txtLastName' Grid.Column='4' Grid.Row='3' HorizontalAlignment='Left' Text='{Binding LastName, Mode=TwoWay}'  Width='150'/>
@@ -113,11 +117,12 @@
         <TextBlock Grid.Column='5' Grid.Row='5' Text='Email: ' HorizontalAlignment='Left'  Width='55' />
         <TextBox x:Name='txtEmail' Grid.Column='6' Grid.Row='5'  HorizontalAlignment='Left' Width='180' Text='{Binding Email, Mode=TwoWay}'/>
         <!--End Phone/Email Row-->
-        <TextBlock  Grid.Column='1' Grid.Row='6' Grid.ColumnSpan='2' VerticalAlignment='Center' Margin='0,11,11,11'>My property contains unmarked underground:</TextBlock>
+            
+                <TextBlock  Grid.Column='1' Grid.Row='6' Grid.ColumnSpan='2' VerticalAlignment='Center' Margin='0,11,11,11'>My property contains unmarked underground:</TextBlock>
         <CheckBox  x:Name='ckboxLighting' Grid.Column='3' Grid.Row='6' Grid.ColumnSpan='2' Content='Landscape Lighting' HorizontalAlignment='Left'  Width='140' Margin='0,10,0,19' />
         <CheckBox x:Name='ckBoxSprinklers' Grid.Column='4' Grid.Row='6' Content='Sprinklers' HorizontalAlignment='Right' Margin='0,10,0,19'/>
         <!--End Underground Row -->
-
+    
         <!--First Pet Info Row includes sensitivities w/ notes -->
         <DataGrid ItemsSource='{Binding Pet}' AutoGenerateColumns='False' Grid.Column='1' Grid.Row='7' Grid.RowSpan='2' Grid.ColumnSpan='3' Height='88' VerticalAlignment='Top'>
             <DataGrid.Columns>
@@ -142,5 +147,7 @@
         <TextBox x:Name='sensitiveNotes' Grid.Column='5' Grid.ColumnSpan='2' Grid.Row='8' Grid.RowSpan='2' HorizontalAlignment='Left' Width='270' Height='40' TextWrapping='Wrap' Visibility='Visible' Text='Sensitivities Notes:' />
         <!--End First Pet Info Row -->
         <!--CODING NOTE Actual info of pets should be loaded as a datagrid instead of code above. Need to research MVVM implementation of datagrid for pet info so can be added, editted and deleted -->
+      
     </Grid>
+    
 </UserControl>
