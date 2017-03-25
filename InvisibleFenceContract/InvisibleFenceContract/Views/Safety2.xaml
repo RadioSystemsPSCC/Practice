@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1366">
 
-        <Grid Margin='11,-2,9,12'>
+    <Grid Margin='11,-2,9,12'>
         <Grid.Resources>
             <!-- Style setter -->
             <Style TargetType='TextBlock'>
