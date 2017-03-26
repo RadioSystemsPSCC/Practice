@@ -210,3 +210,6 @@ C:\Users\docon\Documents\Capstone\CAPSTONE_PRACTICE_FOLDER - Copy\Practice\Invis
 C:\Users\docon\Documents\Capstone\CAPSTONE_PRACTICE_FOLDER - Copy\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.g.resources
 C:\Users\docon\Documents\Capstone\CAPSTONE_PRACTICE_FOLDER - Copy\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 C:\Users\docon\Documents\Capstone\CAPSTONE_PRACTICE_FOLDER - Copy\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb

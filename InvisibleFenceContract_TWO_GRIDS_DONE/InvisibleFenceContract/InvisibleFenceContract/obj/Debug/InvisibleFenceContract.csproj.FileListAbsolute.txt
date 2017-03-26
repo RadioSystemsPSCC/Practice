@@ -26,3 +26,6 @@ E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Safety2.baml
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Signature7.baml
 E:\Capstone\TestProjects\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Solutions5.baml
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract_TWO_GRIDS_DONE\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb
