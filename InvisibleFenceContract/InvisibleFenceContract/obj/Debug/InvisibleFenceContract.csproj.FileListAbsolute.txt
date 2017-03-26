@@ -139,7 +139,6 @@ C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContr
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\de\MigraDoc.RtfRendering-WPF.resources.dll
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\de\PdfSharp-WPF.resources.dll
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\de\PdfSharp.Charting-WPF.resources.dll
-C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Contact1.g.cs
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Freedom4.g.cs
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Installation6.g.cs
