@@ -165,3 +165,5 @@ C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContr
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Start.g.cs
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Start.baml
