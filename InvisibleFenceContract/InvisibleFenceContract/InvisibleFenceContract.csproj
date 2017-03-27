@@ -86,6 +86,7 @@
     <Compile Include="Models\BindableBase.cs" />
     <Compile Include="Models\Pet.cs" />
     <Compile Include="Viewmodels\Commands\ViewCommand.cs" />
+    <Compile Include="Viewmodels\StartViewModel.cs" />
     <Compile Include="Views\Installation6.xaml.cs">
       <DependentUpon>Installation6.xaml</DependentUpon>
     </Compile>
@@ -94,6 +95,9 @@
     </Compile>
     <Compile Include="Views\Solutions5.xaml.cs">
       <DependentUpon>Solutions5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
     </Compile>
     <Page Include="ThemedWindowStyle.xaml">
       <SubType>Designer</SubType>
@@ -166,6 +170,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Start.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -187,6 +195,7 @@
     </EmbeddedResource>
     <None Include="Resources\JSON_oneObject_Correct.JSON" />
     <None Include="Resources\Pet.json" />
+    <None Include="Resources\Products.json" />
     <Resource Include="Fonts\gothambold.ttf" />
     <Resource Include="Fonts\gothambook.otf" />
     <Resource Include="Fonts\gothammedium.otf" />
