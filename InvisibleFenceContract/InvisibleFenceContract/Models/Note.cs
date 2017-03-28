@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InvisibleFenceContract.Models
 {
-    class Note
+    class Note : BindableBase
     {
         private string customerID;
         private string referralNoteType = "28";
@@ -19,10 +19,83 @@ namespace InvisibleFenceContract.Models
         private string presensitivitesExist;
         private string presensitivitiesNoteType = "33";
         private string presensitivitesNotes;
-         
-        private string petBreed;
-        private string petBirthday;
 
-       // CustomerNote.NoteTypeID = '28'
+        public String CustomerID
+        {
+            get
+            {
+                return customerID;
+            }
+            set
+            {
+                customerID = value;
+                OnPropertyChanged("CustomerID");
+            }
+        }
+
+        public String ReferralNote
+        {
+            get
+            {
+                return referralNote;
+            }
+            set
+            {
+                referralNote = value;
+                OnPropertyChanged("ReferralNote");
+            }
+        }
+
+        public String LightingNote
+        {
+            get
+            {
+                return lightingNote;
+            }
+            set
+            {
+                lightingNote = value;
+                OnPropertyChanged("LightingNote");
+            }
+        }
+
+        public String SprinklerNote
+        {
+            get
+            {
+                return sprinklerNote;
+            }
+            set
+            {
+                sprinklerNote = value;
+                OnPropertyChanged("SprinklerNote");
+            }
+        }
+
+        public String PresensitivitesExist
+        {
+            get
+            {
+                return presensitivitesExist;
+            }
+            set
+            {
+                presensitivitesExist = value;
+                OnPropertyChanged("PresensitivitesExist");
+            }
+        }
+
+        public String PresensitivitesNotes
+        {
+            get
+            {
+                return presensitivitesNotes;
+            }
+            set
+            {
+                presensitivitesNotes = value;
+                OnPropertyChanged("PetBirthday");
+            }
+        }
     }
 }
