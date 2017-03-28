@@ -12,6 +12,7 @@
             <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Left' Height='480' Width='600' />
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+            <!--http://www.codesolution.org/crud-operations-in-wpf-with-mvvm-framework/-->
             <DataGrid x:Name="dg1" ItemsSource="{Binding Customer}" SelectedItem="{Binding SelectedCustomer}" CanUserAddRows="False"  CanUserDeleteRows="False" SelectionMode="Single" SelectedIndex="{Binding SelectedIndex}" VerticalAlignment="Center" Width="Auto" Height='Auto' AutoGenerateColumns="False" Margin="350,100,0,0">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="First Name" Binding="{Binding Path=FirstName}"></DataGridTextColumn>
