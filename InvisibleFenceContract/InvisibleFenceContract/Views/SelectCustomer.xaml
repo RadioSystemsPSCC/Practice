@@ -4,10 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
-             mc:Ignorable="d" d:DesignWidth="768" Height='1536.75'>
+             mc:Ignorable="d" d:DesignWidth="1220" Height='1380'>
 
 
-    <StackPanel Orientation='Vertical' Background='#114977' Margin='0,0,-742,602' >
+    <StackPanel Orientation='Vertical' Background='#114977' Margin='0,0,-34,602' >
         <StackPanel Orientation='Horizontal' Height='80' Background='White' Margin='0,0,0,0'>
             <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Left' Height='480' Width='600' />
         </StackPanel>
