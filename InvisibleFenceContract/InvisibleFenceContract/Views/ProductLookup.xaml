@@ -5,8 +5,23 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
-    </Grid>
+              d:DesignHeight="1366" d:DesignWidth="768">
+
+
+    <StackPanel Orientation='Vertical' Background='#114977' Width='1366' Margin='0,0,-598,299' >
+        <StackPanel Orientation='Horizontal' Height='80' Background='White'>
+            <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Left' Height='480' Width='600' />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+            <DataGrid x:Name="dg1" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct}" CanUserAddRows="False"  CanUserDeleteRows="False" SelectionMode="Single" SelectedIndex="{Binding SelectedIndex}" VerticalAlignment="Center" Width="Auto" Height='Auto' AutoGenerateColumns="False" Margin="100,100">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Part ID" Binding="{Binding Path=PartID}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Part #" Binding="{Binding Path=PartNum}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Part Name" Binding="{Binding Path=PartName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Part Price" Binding="{Binding Path=PartPrice}"></DataGridTextColumn>
+                  </DataGrid.Columns>
+            </DataGrid>
+            </StackPanel>
+        </StackPanel>
+    
 </UserControl>

@@ -4,9 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-            
-    </Grid>
+             mc:Ignorable="d" d:DesignWidth="768" Height='1536.75'>
+
+
+    <StackPanel Orientation='Vertical' Background='#114977' Margin='0,0,-742,602' >
+        <StackPanel Orientation='Horizontal' Height='80' Background='White' Margin='0,0,0,0'>
+            <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Left' Height='480' Width='600' />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+            <DataGrid x:Name="dg1" ItemsSource="{Binding Customer}" SelectedItem="{Binding SelectedCustomer}" CanUserAddRows="False"  CanUserDeleteRows="False" SelectionMode="Single" SelectedIndex="{Binding SelectedIndex}" VerticalAlignment="Center" Width="Auto" Height='Auto' AutoGenerateColumns="False" Margin="350,100,0,0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="First Name" Binding="{Binding Path=FirstName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Last Name" Binding="{Binding Path=LastName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Address" Binding="{Binding Path=Address}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="City" Binding="{Binding Path=City}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="State" Binding="{Binding Path=State}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Zip" Binding="{Binding Path=Zip}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </StackPanel>
+
 </UserControl>
+
+

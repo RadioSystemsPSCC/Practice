@@ -4,16 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="1366" d:DesignWidth="768">
+             mc:Ignorable="d" Height='1213.224' Width='1540.868'>
 
 
-    <StackPanel Orientation='Vertical' Background='#114977' Width='1366' Margin='0,0,-598,299' >
+    <StackPanel Orientation='Vertical' Background='#114977' Margin='0,0,0,10' >
         <StackPanel Orientation='Horizontal' Height='80' Background='White'>
-            <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Left' Height='480' Width='600' />
+            <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Stretch' Height='480' Width='600' />
         </StackPanel>
-        <Button Content='Get Customers' Width='240' Height='40' HorizontalAlignment='Center' FontSize='22' VerticalAlignment='Center' Margin='560,200,560,24'/>
-        <Button Content='Return Customers' Width='240' Height='40' HorizontalAlignment='Center' FontSize='22' VerticalAlignment='Center' Margin='24,24'/>
-        <Button Content='Make Contract' Width='240' Height='40' HorizontalAlignment='Center' FontSize='22' VerticalAlignment='Center' Margin='24,24' />
+        <Button Content='Get Customers' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='560,200,560,24'/>
+        <Button Content='Return Customers' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='24,44'/>
+        <Button Content='Make Contract' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='24,44' />
     </StackPanel>
 </UserControl>
