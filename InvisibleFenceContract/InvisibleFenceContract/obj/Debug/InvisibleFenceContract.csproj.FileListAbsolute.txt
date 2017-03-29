@@ -170,3 +170,4 @@ C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceCo
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\SelectCustomer.g.cs
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\ProductLookup.baml
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\SelectCustomer.baml
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
