@@ -87,6 +87,7 @@
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Pet.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Viewmodels\Commands\ViewCommand.cs" />
     <Compile Include="Viewmodels\ProductLookupViewModel.cs" />
     <Compile Include="Viewmodels\SelectCustomerViewModel.cs" />

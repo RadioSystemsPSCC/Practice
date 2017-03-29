@@ -119,7 +119,6 @@ E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\So
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.g.resources
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.Properties.Resources.resources
 E:\2017Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
-C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\Newtonsoft.Json.dll
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\Newtonsoft.Json.xml
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config

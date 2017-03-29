@@ -9,7 +9,5 @@
                 <ResourceDictionary Source='ThemedWindowStyle.xaml' />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-
-               
     </Application.Resources>
 </Application>
