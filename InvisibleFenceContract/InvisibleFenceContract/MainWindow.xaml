@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:InvisibleFenceContract"
         xmlns:vm='clr-namespace:InvisibleFenceContract.Viewmodels'
         xmlns:v='clr-namespace:InvisibleFenceContract.Views'            
-        
-        
         mc:Ignorable="d"
         Icon='/Images/blueshouse2.ico'
          Title="Invisible Fence - Home" Height="768" Width="1266" Padding='50' >
@@ -92,18 +90,21 @@
             Grid.Column = "0" Grid.Row='1' />
 
             <Button Content = "Safety" 
+               Background='#0F4CD6'     
             Command = "{Binding NavCommand}" 
             CommandParameter = "safety" 
             Grid.Column = "0"
             Grid.Row='2'        />
 
-            <Button Content = "Protection" 
+            <Button Content = "Protection"
+               Background='#A6D473'
             Command = "{Binding NavCommand}" 
             CommandParameter = "protection" 
             Grid.Column = "0"
             Grid.Row='3'        />
 
-            <Button Content = "Freedom" 
+            <Button Content = "Freedom"
+               Background='#E96C2D' 
             Command = "{Binding NavCommand}" 
             CommandParameter = "freedom" 
             Grid.Column = "0"
