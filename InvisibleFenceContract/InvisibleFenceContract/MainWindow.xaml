@@ -92,18 +92,21 @@
             Grid.Column = "0" Grid.Row='1' />
 
             <Button Content = "Safety" 
-            Command = "{Binding NavCommand}" 
-            CommandParameter = "safety" 
-            Grid.Column = "0"
-            Grid.Row='2'        />
+            Command = "{Binding NavCommand}"
+              Background='#0F4CD6'       
+              CommandParameter = "safety" 
+              Grid.Column = "0"
+              Grid.Row='2'        />
 
             <Button Content = "Protection" 
-            Command = "{Binding NavCommand}" 
-            CommandParameter = "protection" 
-            Grid.Column = "0"
+              Command = "{Binding NavCommand}"
+              Background="#A6D473"
+              CommandParameter = "protection" 
+              Grid.Column = "0"
             Grid.Row='3'        />
 
-            <Button Content = "Freedom" 
+            <Button Content = "Freedom"
+               Background='#E96C2D'
             Command = "{Binding NavCommand}" 
             CommandParameter = "freedom" 
             Grid.Column = "0"
