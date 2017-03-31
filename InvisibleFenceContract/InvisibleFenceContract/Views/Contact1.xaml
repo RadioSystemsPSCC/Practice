@@ -15,7 +15,7 @@
             Orange Font: #E96C2D -->
 
     <Grid Margin='11,-2,9,12'>
-
+        <!--http://blog.scottlogic.com/2010/11/15/using-a-grid-as-the-panel-for-an-itemscontrol.html -->
         <ItemsControl ItemsSource = "{Binding Path = c_Clients}">
 
             <ItemsControl.ItemTemplate>
@@ -127,7 +127,7 @@
                         <DataGrid ItemsSource='{Binding Pet}' AutoGenerateColumns='False' Grid.Column='1' Grid.Row='7' Grid.RowSpan='2' Grid.ColumnSpan='3' Height='88' VerticalAlignment='Top'>
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="Pet Name" Binding="{Binding PetName}"/>
-                                <DataGridTextColumn Header="Pet Age" Binding="{Binding PetAge}"/>
+                                <DataGridTextColumn Header="Pet Birthday" Binding="{Binding PetBirthday}"/>
                                 <DataGridComboBoxColumn x:Name="ComboBoxColumn" Header="Breed"  SelectedItemBinding="{Binding PetBreed}"/>
                             </DataGrid.Columns>
 
