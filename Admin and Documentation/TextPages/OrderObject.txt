@@ -1,4 +1,15 @@
+This class should look like Customer in the Model folder. The private fields should be camelcase (partName)
+and the public property should be Pascal Case (PartName). This object should have the prices changing, 
+so it should look like the Customer class, but it should be linked to Bindable and it should 
+give calls to INotifiedPropertyChanged() like the Customer class does. If you have a question able the data, 
+look to make sure all the amounts and prices of products are represented in order as well as all the total 
+fields. 
 
+Randy will need this as soon as you can get it to me. He needs it to move data through the form to maintain
+totals.
+Thanks Michelle!
+
+Donna
 
 Order Object should hold:
 
@@ -73,7 +84,7 @@ int SingleTrainQuantity
 double SingleTrainPrice
 double SingleTrainTotal = SingleTrainQuantity * SingleTrainPrice
 
-int CouponCode
+string CouponCode
 double Discount
 
 double SolutionsPageTotal = SafetyWiredAddTotal + GPSAddTotal + SingleTrainTotal - Discount
@@ -106,15 +117,5 @@ double Balance = Total - Deposit
 
 
 
-This class should look like Customer in the Model folder. The private fields should be camelcase (partName)
-and the public property should be Pascal Case (PartName). This object should have the prices changing, 
-so it should look like the Customer class, but it should be linked to Bindable and it should 
-give calls to INotifiedPropertyChanged() like the Customer class does. If you have a question able the data, 
-look to make sure all the amounts and prices of products are represented in order as well as all the total 
-fields. 
 
-Randy will need this as soon as you can get it to me. He needs it to move data through the form to maintain
-totals.
-Thanks Michelle!
 
-Donna 
