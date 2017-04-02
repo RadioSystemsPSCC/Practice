@@ -18,6 +18,12 @@
 
     <Window.Resources>
 
+            <DataTemplate DataType="{x:Type vm:StartViewModel}">
+              <v:Start />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SelectCustomerViewModel}">
+              <v:SelectCustomer />
+            </DataTemplate>
         <DataTemplate DataType = "{x:Type vm:Contact1ViewModel}">
             <v:Contact1/>
         </DataTemplate>
@@ -45,6 +51,10 @@
         <DataTemplate DataType = "{x:Type vm:Signature7ViewModel}">
             <v:Signature7/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:ProductLookupViewModel}">
+        <v:ProductLookup />
+        </DataTemplate>
+
     </Window.Resources>
 
     <Grid Background='White'>
@@ -69,6 +79,12 @@
                 <RowDefinition Height = '28' />
                 <RowDefinition Height = "28" />
                 <RowDefinition Height = "28" />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' /> 
+                <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
                 <RowDefinition Height='*' />
@@ -129,6 +145,25 @@
             CommandParameter = "signature" 
             Grid.Column = "0"
             Grid.Row='7'  />
+
+            <TextBlock Text='Admin:'
+                       Foreground='White'
+                       Grid.Column='0'
+                       Grid.Row='10'/>
+            <Button Content = "Start" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "start" 
+            Grid.Column = "0" Grid.Row='11' />
+
+            <Button Content = "Select Customer" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "selectCustomer" 
+            Grid.Column = "0" Grid.Row='12' />
+
+            <Button Content = "Product Lookup" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "productLookup" 
+            Grid.Column = "0" Grid.Row='13' />
         </Grid>
 
 
