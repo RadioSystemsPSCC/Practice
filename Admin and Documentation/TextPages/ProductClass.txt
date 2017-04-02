@@ -1,0 +1,18 @@
+Product Object should hold:
+
+PartID
+PartNumber
+PartName 
+PartPrice
+IsTaxable
+
+
+Except where noted, this class should look like Customer. The private fields should be camelcase (partName)
+and the public property should be Pascal Case (PartName). This object should not have the prices changed, 
+so it should look like the Customer class, but it should *not* be linked to Bindable and it should *not* 
+give calls to INotifiedPropertyChanged() like the Customer class does. You only do these methods when the 
+values should change. If you have a question able the data, look in Products.json for examples. They are
+only going to be displayed and not changed, so I've left them as strings right now.
+
+Thanks Aaron!
+Donna 
