@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1366">
-    <Grid x:Name="Protection3" Margin="0,5,0,-34">
+    <Grid x:Name="Protect3" Margin="0,5,0,-34">
         <Grid.Resources>
             <!-- Style setter -->
             <Style TargetType='TextBlock'>
