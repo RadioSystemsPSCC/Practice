@@ -82,7 +82,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 43 "..\..\..\Views\Signature7.xaml"
+        #line 31 "..\..\..\Views\Signature7.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBox textBox;
         
@@ -90,7 +90,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 44 "..\..\..\Views\Signature7.xaml"
+        #line 32 "..\..\..\Views\Signature7.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Viewbox canvasView;
         
@@ -98,7 +98,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 45 "..\..\..\Views\Signature7.xaml"
+        #line 33 "..\..\..\Views\Signature7.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.InkCanvas CustomerSignatureCanvas;
         
@@ -106,7 +106,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 47 "..\..\..\Views\Signature7.xaml"
+        #line 35 "..\..\..\Views\Signature7.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button viewBt;
         
@@ -114,9 +114,17 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 48 "..\..\..\Views\Signature7.xaml"
+        #line 36 "..\..\..\Views\Signature7.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button button1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 37 "..\..\..\Views\Signature7.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.CheckBox checkBox1;
         
         #line default
         #line hidden
@@ -180,6 +188,9 @@ namespace InvisibleFenceContract.Views {
             return;
             case 10:
             this.button1 = ((System.Windows.Controls.Button)(target));
+            return;
+            case 11:
+            this.checkBox1 = ((System.Windows.Controls.CheckBox)(target));
             return;
             }
             this._contentLoaded = true;
