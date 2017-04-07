@@ -16,6 +16,12 @@
 
     <Window.Resources>
 
+            <DataTemplate DataType="{x:Type vm:StartViewModel}">
+              <v:Start />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SelectCustomerViewModel}">
+              <v:SelectCustomer />
+            </DataTemplate>
         <DataTemplate DataType = "{x:Type vm:Contact1ViewModel}">
             <v:Contact1/>
         </DataTemplate>
@@ -43,6 +49,10 @@
         <DataTemplate DataType = "{x:Type vm:Signature7ViewModel}">
             <v:Signature7/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:ProductLookupViewModel}">
+        <v:ProductLookup />
+        </DataTemplate>
+
     </Window.Resources>
 
     <Grid Background='White'>
@@ -69,6 +79,12 @@
                 <RowDefinition Height = "28" />
                 <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' /> 
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
+                <RowDefinition Height = '28' />
                 <RowDefinition Height='*' />
 
             </Grid.RowDefinitions>
@@ -90,6 +106,7 @@
             Grid.Column = "0" Grid.Row='1' />
 
             <Button Content = "Safety" 
+<<<<<<< HEAD
                Background='#0F4CD6'     
             Command = "{Binding NavCommand}" 
             CommandParameter = "safety" 
@@ -105,6 +122,23 @@
 
             <Button Content = "Freedom"
                Background='#E96C2D' 
+=======
+            Command = "{Binding NavCommand}"
+              Background='#0F4CD6'       
+              CommandParameter = "safety" 
+              Grid.Column = "0"
+              Grid.Row='2'        />
+
+            <Button Content = "Protection" 
+              Command = "{Binding NavCommand}"
+              Background="#A6D473"
+              CommandParameter = "protection" 
+              Grid.Column = "0"
+            Grid.Row='3'        />
+
+            <Button Content = "Freedom"
+               Background='#E96C2D'
+>>>>>>> 99e4a7e4524ae4ac004c52b0a224f866e2adea49
             Command = "{Binding NavCommand}" 
             CommandParameter = "freedom" 
             Grid.Column = "0"
@@ -127,6 +161,25 @@
             CommandParameter = "signature" 
             Grid.Column = "0"
             Grid.Row='7'  />
+
+            <TextBlock Text='Admin:'
+                       Foreground='White'
+                       Grid.Column='0'
+                       Grid.Row='10'/>
+            <Button Content = "Start" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "start" 
+            Grid.Column = "0" Grid.Row='11' />
+
+            <Button Content = "Select Customer" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "selectCustomer" 
+            Grid.Column = "0" Grid.Row='12' />
+
+            <Button Content = "Product Lookup" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "productLookup" 
+            Grid.Column = "0" Grid.Row='13' />
         </Grid>
 
 

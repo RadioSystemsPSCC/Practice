@@ -18,16 +18,16 @@
             </Style>
         </Grid.Resources>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width='*'/>
-            <ColumnDefinition Width='484' />
-            <ColumnDefinition Width='*' />
+            <ColumnDefinition Width='441*'/>
+            <ColumnDefinition Width='597' />
+            <ColumnDefinition Width='328*' />
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="textBlock" Grid.Column="1" FontSize="11" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="By signing here I agree to the terms and conditions listed on the back of this agreement:
 " VerticalAlignment="Top" Width="483" Height="16"/>
         <TextBlock x:Name="textBlock1" Grid.Column="1" HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="Purchaser Signature" VerticalAlignment="Top" Width="191" Height="16"/>
         <TextBlock x:Name="textBlock2" Grid.Column="1" HorizontalAlignment="Left" Margin="361,66,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Height="16" Width="25"/>
         <CheckBox  x:Name="checkBox" Grid.Column="1" FontSize="11" Content="Yes, I consent to be a referral source and authorize the disclosure of my contact information." Margin="10,87,10,0" VerticalAlignment="Top" Padding="0,-1,0,0" Height="19"/>
-        <TextBlock x:Name="textBlock3" Grid.Column="1" FontSize="10" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Power Cap&#174; Battery Plan Renewal Information: When Client's Power Cap&#174; Battery Plan (&quot;Plan&quot;)
+        <TextBlock x:Name="textBlock3" Grid.Column="1" FontSize="10" Margin="10,123,116,0" TextWrapping="Wrap" Text="Power Cap&#174; Battery Plan Renewal Information: When Client's Power Cap&#174; Battery Plan (&quot;Plan&quot;)
 is 30 days for expiration, Company will send a notice to the email address 
 provided by client. The notice will contain the client's account status, as well as any 
 revisions to the terms and conditions of the plan. The client has a valid credit card number 
@@ -39,13 +39,14 @@ want to have subscription automatically renewed, clent may turn off the auto ren
 option at any time by contacting Invisible Fence&#174; Brand Client Care at 800-578-3647
 or by emailing ccc@invisiblefence.net. If client subscription of one year or more is 
 automatically renewed, and client contacts Customer Care department for a refund
-within 45 days of the renewal, company will refund the full subscription price to client." VerticalAlignment="Top" Height="184" Width="499"/>
+within 45 days of the renewal, company will refund the full subscription price to client." VerticalAlignment="Top" Height="140"/>
         <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="361,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
-        <Viewbox x:Name="canvasView" Grid.Column="1" HorizontalAlignment="Left"  Margin="10,31,0,0" VerticalAlignment="Top" Width="346">
-            <InkCanvas x:Name="CustomerSignatureCanvas" Grid.Column="1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="346" RenderTransformOrigin="0.44,0.07" Background="#FFE6E6E6" TouchDown="CustomerSignatureCanvas_TouchDown" TouchUp="CustomerSignatureCanvas_TouchUp"/>
+        <Viewbox x:Name="canvasView" Grid.Column="1" HorizontalAlignment="Left"  Margin="10,31,0,0" VerticalAlignment="Top" Width="346" Height="35">
+            <InkCanvas x:Name="CustomerSignatureCanvas" Grid.Column="1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="346" RenderTransformOrigin="0.44,0.07" Background="#FFE6E6E6"/>
         </Viewbox>
-        <Button x:Name="viewBt" Content="View" Grid.Column="1" HorizontalAlignment="Left" Margin="311,320,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ViewProperty, Source={StaticResource sigViewModel}}" />
-        <Button x:Name="button1" Content="Save" Grid.Column="1" HorizontalAlignment="Left" Margin="406,320,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="viewBt" Content="View" Grid.Column="1" HorizontalAlignment="Left" Margin="311,320,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ViewProperty, Source={StaticResource sigViewModel}}" Height="20" />
+        <Button x:Name="button1" Content="Save" Grid.Column="1" HorizontalAlignment="Left" Margin="406,320,0,0" VerticalAlignment="Top" Width="75" Height="20"/>
+        <CheckBox x:Name="checkBox1" Content="I would like to receive an email of this contract." Grid.Column="1" HorizontalAlignment="Left" Margin="10,268,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>

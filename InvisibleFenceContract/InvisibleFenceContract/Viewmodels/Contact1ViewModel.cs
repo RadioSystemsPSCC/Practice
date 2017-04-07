@@ -25,10 +25,8 @@ namespace InvisibleFenceContract.Viewmodels
 
         public void LoadClients()
         {
-            
+
             string text = System.IO.File.ReadAllText(@"../../Resources/JSON_oneObject_Correct.JSON");
-            //string text = System.IO.File.ReadAllText(@"C:/Users/docon/Documents/Capstone/CAPSTONE_PRACTICE_FOLDER - Copy/Practice/JSON_oneObject_Correct.JSON");
-            //string text = System.IO.File.ReadAllText(@"C:/Users/docon/Documents/Capstone/git_last/Practice/text_multi_object.JSON");
             
             List<Customer> cc_Clients = JsonConvert.DeserializeObject<List<Customer>>(text);
 

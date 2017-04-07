@@ -15,17 +15,17 @@ namespace InvisibleFenceContract.Viewmodels
         {
             NavCommand = new MyICommand<string>(OnNav);
         }
+        private StartViewModel startViewModel = new StartViewModel();
+        private SelectCustomerViewModel selectCustomerViewModel = new SelectCustomerViewModel();
 
         private Contact1ViewModel contact1ViewModel = new Contact1ViewModel();
-
         private Safety2ViewModel safety2ViewModel = new Safety2ViewModel();
-
         private Protection3ViewModel protection3ViewModel = new Protection3ViewModel();
         private Freedom4ViewModel freedom4ViewModel = new Freedom4ViewModel();
         private Solutions5ViewModel solution5ViewModel = new Solutions5ViewModel();
         private Installation6ViewModel installation6ViewModel = new Installation6ViewModel();
         private Signature7ViewModel signature7ViewModel = new Signature7ViewModel();
-
+        private ProductLookupViewModel productLookupViewModel = new ProductLookupViewModel();
         private BindableBase _CurrentViewModel;
 
         public BindableBase CurrentViewModel
@@ -41,6 +41,12 @@ namespace InvisibleFenceContract.Viewmodels
 
             switch (destination)
             {
+                case "start":
+                    CurrentViewModel = startViewModel;
+                    break;
+                case "selectCustomer":
+                    CurrentViewModel = selectCustomerViewModel;
+                    break;
                 case "signature":
                     CurrentViewModel = signature7ViewModel;
                     break;
@@ -58,6 +64,9 @@ namespace InvisibleFenceContract.Viewmodels
                     break;
                 case "safety":
                     CurrentViewModel = safety2ViewModel;
+                    break;
+                case "productLookup":
+                    CurrentViewModel = productLookupViewModel;
                     break;
                 case "contact":
                 default:

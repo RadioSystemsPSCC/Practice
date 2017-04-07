@@ -13,6 +13,8 @@ namespace InvisibleFenceContract.Models
 {
     class Customer : BindableBase
     {
+        //Must add CustomerID to this model to select proper client, also remove petname, pet breed and petBirthday
+        //These must be fed in as a list to allow for multiple entries. Copying fields to pet. 
         private string firstName;
         private string lastName;
         private string referredBy;

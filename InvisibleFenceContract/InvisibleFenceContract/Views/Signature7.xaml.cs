@@ -24,20 +24,5 @@ namespace InvisibleFenceContract.Views
         {
             InitializeComponent();
         }
-
-        private void CustomerSignatureCanvas_TouchDown(object sender, TouchEventArgs e)
-        {
-            CustomerSignatureCanvas.Height = 100;
-            CustomerSignatureCanvas.Width = 500;
-            canvasView.Height = 100;
-            canvasView.Width = 500;
-            CustomerSignatureCanvas.EditingMode = InkCanvasEditingMode.Ink;
-        }
-
-        private void CustomerSignatureCanvas_TouchUp(object sender, TouchEventArgs e)
-        {
-            canvasView.Width = 346;
-            canvasView.Height = 35;
-        }
     }
 }

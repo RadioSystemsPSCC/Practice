@@ -1,0 +1,121 @@
+This class should look like Customer in the Model folder. The private fields should be camelcase (partName)
+and the public property should be Pascal Case (PartName). This object should have the prices changing, 
+so it should look like the Customer class, but it should be linked to Bindable and it should 
+give calls to INotifiedPropertyChanged() like the Customer class does. If you have a question able the data, 
+look to make sure all the amounts and prices of products are represented in order as well as all the total 
+fields. 
+
+Randy will need this as soon as you can get it to me. He needs it to move data through the form to maintain
+totals.
+Thanks Michelle!
+
+Donna
+
+Order Object should hold:
+
+string CustomerID
+
+//Command Parameter of radio button selected
+string PackageSelection ( of radio button selected)
+
+//Price based on parameter chosen, 0 if none selected
+double PackagePrice
+double SafetyTotal = PackagePrice
+
+//Page3
+//Need TextBoxes for quantities
+int OutdoorSheildQuantity
+double OutdoorSheildPrice1
+double OutdoorShieldPrice2
+double OutdoorShieldTotal = ((OutdoorShieldQuantity/2 * OutdoorShieldPrice2) + (OurdoorShieldQuantity%2 * OutdoorShieldPrice1))
+
+int IndoorShieldQuantity
+double IndoorShieldPrice1
+double IndoorShieldPrice2
+double IndoorShieldTotal = ((IndoorShieldQuantity/2 * IndoorShieldPrice2) + (IndoorShieldQuantity%2 * IndoorShieldPrice1))
+
+int MicroShieldQuantity
+double MicroShieldPrice1
+double MicroShieldPrice2
+double MicroShieldTotal = ((MicroShieldQuantity/2 * MicroShieldPrice2) + (MicroShieldQuantity%2 * MicroShieldPrice1))
+
+//Quantity and MicroShieldTotal need to be initialized to zero because this field has two different locations that can be changed from.
+//One on screen 3 and one of screen 4, so need to add MicroShieldTotal = MicroshieldTotal + {math below}
+int ShieldsCollarQuantity
+double ShieldsCollarPrice
+//error on current screen 3, only outdoor sheilds, indoor shields and micro shields have break for 2.
+double ShieldCollarTotal = ShieldCollarTotal +(ShieldsCollarQuantity * ShieldCollarPrice)
+
+int MicroLiteQuantity
+double MicroLitePrice
+double MicroLiteTotal = MicroLiteQuantity * MicroLitePrice
+double ProtectionTotal = OutdoorShieldTotal 
+
+//Freedom4
+int DoormanPetDoorQuantity
+double DoormanPetDoorPrice
+double DoormanPetDoorTotal = DoormanPetDoorQuantity * DoormanPetDoorPrice
+
+//needs to access SheildsCollarTotal that already exists and add quantity in this total
+//we need to declare new variables on this page to maintain separate page totals, but they need to be added
+//back into original total for order.
+
+int ShieldsCollarQuantity2
+double ShieldsCollarPrice2
+
+//previously declared and must be added back to keep totals correct 
+//simply math not part of class declaration
+ShieldCollarTotal = ShieldCollarTotal +(ShieldsCollarQuantity2 * ShieldCollarPrice2)
+ShieldsCollarQuantity = ShieldsCollarQuantity + ShieldsCollarQuantity2
+
+double FreedomTotal = DoormanPetDoorTotal + (ShieldsCollarQuantity2 * ShieldsCollarPrice2) 
+
+//Solution5
+//Add-a-pet
+int SafetyWiredAddQuantity
+double SafetyWiredAddPrice
+double SafetyWiredAddTotal = SafetyWiredAddQuantity * SafetyWiredAddPrice
+
+int GPSAddQuantity
+double GPSAddPrice
+double GPSAddTotal = GPSAddQuantity * GPSAddPrice
+
+int SingleTrainQuantity
+double SingleTrainPrice
+double SingleTrainTotal = SingleTrainQuantity * SingleTrainPrice
+
+string CouponCode
+double Discount
+
+double SolutionsPageTotal = SafetyWiredAddTotal + GPSAddTotal + SingleTrainTotal - Discount
+
+//Installation
+double OutdoorInstallationCost
+
+int IndoorXLoopQuantity
+double IndoorXLoopPrice
+double IndoorXLoopTotal = IndoorXLoopQuantity * IndoorXLoopPrice
+
+int OutdoorXLoopQuantity
+double OutdoorXLoopPrice
+double OutdoorXLoopTotal = OutdoorXLoopQuantity * OutdoorXLoopPrice
+
+int PetDoorInstallQuantity
+double PetDoorInstallPrice
+double PetDoorInstallTotal = PetDoorInstallQuatity * PetDoorInstallPrice
+
+double InstallationTotal = IndoorXLoopTotal + OutdoorXLoopTotal + PetDoorInstallTotal
+
+//Subtotal previous totals into solution total
+double SolutionTotal = SafetyTotal + ProtectionTotal + FreedomTotal + SolutionsPageTotal 
+double TaxRate (from API)
+double Tax = SolutionTotal * TaxRate
+(InstallationTotal gets displayed on final total stage, but previously calculated)
+double Total = SolutionTotal + Tax + InstallationTotal
+double Deposit (employee entry into textbox)
+double Balance = Total - Deposit  
+
+
+
+
+
