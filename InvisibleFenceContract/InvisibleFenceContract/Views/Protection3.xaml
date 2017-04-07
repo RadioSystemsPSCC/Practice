@@ -10,14 +10,14 @@
     <UserControl.DataContext>
         <Viewmodels:Protection3ViewModel/>
     </UserControl.DataContext>
-    <Grid x:Name="Protect3" Margin="0,5,0,-34">
+    <Grid x:Name="Protect3" Margin="11,-2,9,12">
         <Grid.Resources>
             <!-- Style setter -->
-            <Style TargetType='{x:Type TextBlock}'>
+            <Style TargetType='TextBlock'>
                 <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
                 <Setter Property='FontSize' Value='14' />
             </Style>
-            <Style TargetType='{x:Type Label}'>
+            <Style TargetType='Label'>
                 <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
             </Style>
         </Grid.Resources>
@@ -25,13 +25,13 @@
             <!-- Set column definition and amount-->
             <ColumnDefinition Width="188" />
             <ColumnDefinition Width="275" />
-            <ColumnDefinition Width="180" />
             <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="336" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height='60' />
+            <RowDefinition Height='120' />
             <RowDefinition Height='40'/>
             <RowDefinition Height='60'/>
             <RowDefinition Height='40'/>
@@ -44,15 +44,15 @@
         </Grid.RowDefinitions>
 
         <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Padding="5"  Background="#A6D473">
-            <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="CHOOSE YOUR PROTECTION SOLUTION" Margin="188,0,226,0" Foreground="White" FontSize="16"/>
+            <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="CHOOSE YOUR PROTECTION SOLUTION" Margin="188,0,0,0" Foreground="White" FontSize="16"/>
         </Border>
         <!--Columns 1 & 2 -->
         <!--OutdoorShields Row -->
-        <TextBlock x:Name='txtOutShield' Grid.Column='1' Grid.Row='1'  Text='Outdoor Shields Unit 2-Year Warranty' TextWrapping='Wrap' Margin ='20,0,30,0' Width='140' HorizontalAlignment='Left' VerticalAlignment='Center'   />
+        <TextBlock x:Name='txtOutShield' Grid.Column='1' Grid.Row='1'  Text='Outdoor Shields Unit 2-Year Warranty' TextWrapping='Wrap' Margin ='20,0,30,20' Width='140' HorizontalAlignment='Left' VerticalAlignment='Bottom'   />
         <Label x:Name="lblOutdoorPrice1" Content="{Binding OutdoorLabel1}" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="20,4,0,0" VerticalAlignment="Top" Height="26" Width="94"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="125,7,0,0" Grid.Row="2" TextWrapping="Wrap" Text="2 pack:" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
         <Label x:Name="lblOutdoorPrice2" Content="{Binding OutdoorLabel2}" Grid.Row="2" Grid.Column="1" Foreground="#A6D473" Margin="174,4,1,10" Height="26" RenderTransformOrigin='1.415,0.615' />
-        <TextBox x:Name='OutdoorShieldQuantity' Grid.Column='2' Grid.Row='1' Width='40' Height='20' HorizontalAlignment='Left' />
+        <TextBox x:Name='OutdoorShieldQuantity' Grid.Column='2' Grid.Row='1'  HorizontalAlignment='Left' Margin='0,0,0,28' VerticalAlignment='Bottom' Width='40' Height='20' />
 
         <!--IndoorShield Rows -->
         <TextBlock x:Name='txtIndoorShield' Grid.Column='1' Grid.Row='3' Text='Indoor Shields Plus Unit 2-Year Warranty' TextWrapping='Wrap' Margin='20,0,30,0' Width='140' HorizontalAlignment='Left' VerticalAlignment='Center' />
