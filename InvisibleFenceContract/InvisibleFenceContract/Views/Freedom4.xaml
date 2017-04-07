@@ -10,38 +10,59 @@
     <UserControl.DataContext>
         <Viewmodels:Freedom4ViewModel/>
     </UserControl.DataContext>
-    <Grid Margin="0">
+    <Grid Margin="11,-2,9,12">
         <Grid.Resources>
+            <!-- Style setter -->
+            <Style TargetType='{x:Type TextBlock}'>
+                <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+                <Setter Property='FontSize' Value='14' />
+            </Style>
+            <Style TargetType='{x:Type Label}'>
+                <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+            </Style>
             <Style TargetType='{x:Type TextBox}'>
                 <!-- setter to set vertical alignment -->
                 <Setter Property='VerticalAlignment' Value='Top' />
             </Style>
         </Grid.Resources>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width='188' />
-            <ColumnDefinition />
+            <ColumnDefinition Width='0' />
+            <ColumnDefinition Width='188'/>
+            <ColumnDefinition Width='330'/>
+            <ColumnDefinition Width='230'/>
             <ColumnDefinition Width='*' />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <!-- set row definition and amount-->
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height='48'/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height='88' />
+            <RowDefinition Height='48' />
+            <RowDefinition Height='88' />
+            <RowDefinition Height='48' />
+            <RowDefinition Height='*' />
         </Grid.RowDefinitions>
         <!-- Create border -->
-        <Border Grid.Column="1" Grid.Row="0" Grid.ColumnSpan='3' Padding="5" Background="#E96C2D" Margin="0,0,0,170" Grid.RowSpan="2">
-            <TextBlock x:Name="textBlock" Grid.Column="1"  Text="  CHOOSE YOUR FREEDOM SOLUTION" Margin="0,0,150,0" Foreground="White" FontSize="16"/>
+        <!-- Create border -->
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Padding="5"  Background="#E96C2D">
+            <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="CHOOSE YOUR FREEDOM SOLUTION" Margin="188,0,0,0" Foreground="White" FontSize="16"/>
         </Border>
 
-        <TextBox x:Name="lblBoundaryCheckBox" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.525,-2.342" Margin="3,90,24,0" Text="Shields Computer Collar Unit&#xA;1-Year Power Cap Battery Plan&#xA;2-Year Warranty" BorderThickness="0" Height="48" Grid.ColumnSpan="2"/>
-        <TextBox  x:Name="lblGpsCheckBox" Grid.Row="1"  Grid.Column="1" Text="Invisible Fence Brand&#xA;Doorman Pet Door&#xA;1-Year Warranty" RenderTransformOrigin="1.151,0.462" Margin="3,13,8,0" BorderThickness="0" Height="48" Grid.ColumnSpan="2"/>
-        <Label x:Name="lblIncluded" Grid.Row="1" Grid.Column="3"  Content="Included with Freedom Solution:" HorizontalAlignment="Left" Margin="18,48,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,-0.445" FontStyle="Italic" Height="26" Width="183" FontWeight="Bold" FontSize="10" Foreground="#E96C2D" />
-        <Label x:Name="label1" Grid.Column="3" Grid.Row="1" Content="Professional Training" HorizontalAlignment="Left" Margin="30,64,0,0" VerticalAlignment="Top" Height="26" Width="144" FontSize="10"/>
-        <Label x:Name="lblDoormanPrice" Grid.Row="1" Grid.Column="1" Content="{Binding Doorman}" HorizontalAlignment="Left" Margin="1,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#E96C2D" FontWeight="bold" FontSize="10" Height="23" Width="63"/>
-        <Label x:Name="lblShieldCollarPrice" Grid.Row="1" Grid.Column="1" Content="{Binding ShieldsComputerCollar}" HorizontalAlignment="Left" Margin="1,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.033,0.209" Foreground="#E96C2D" FontWeight="bold" FontSize="10" Height="23" Width="91" />
-        <TextBox x:Name="QBox1" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="97,141,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="23" RenderTransformOrigin="1.498,0.523"/>
-        <TextBox x:Name="QBox2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="84,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="23" />
-        <TextBlock x:Name="txtQuantity1" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Left" Margin="112,64,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" RenderTransformOrigin="0.485,0.571" Height="16" Width="46" />
-        <TextBlock x:Name="txtQuantity2" Grid.Row="1"  Grid.Column="1" HorizontalAlignment="Left" Margin="132,143,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" RenderTransformOrigin="0.485,0.571" Height="16" Width="46" />
+        <!--Doorman Pet Door -->
+        <TextBlock  x:Name="lblDoormanPetDoor" Grid.Row="3" Grid.Column="2" Text="Invisible Fence Brand Doorman Pet Door 1-Year Warranty" TextWrapping="Wrap" Margin="0,12,8,14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width='130' />
+        <Label x:Name="lblDoormanPrice" Grid.Row="4" Grid.Column="2" Content="{Binding Doorman}"  Margin="14,0,0,0"  Foreground="#E96C2D" FontWeight="bold"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="128"/>
+        <TextBox x:Name="PetDoorQuantity" Grid.Row="3" Grid.Column="3" Height="18" Margin="0,24,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Width="23" />
+        <TextBlock x:Name="txtPetDoorQuantity" Grid.Row="3"  Grid.Column="3" HorizontalAlignment="Left" Margin="48,24,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top"  Height="16" Width="88" />
 
+        <!--Shields Collar Unit -->
+        <TextBlock x:Name="lblShieldsCollar" Grid.Row="5" Grid.Column="2" Margin="3,20,0,0" Text="Shields Computer Collar Unit 1-Year Power Cap Battery Plan 2-Year Warranty" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment='Top' Height="48" Width='190'  />
+        <Label x:Name="lblBoundaryPrice" Grid.Row="6" Grid.Column="2" Content="{Binding ShieldsComputerCollar}" HorizontalAlignment="Left" Margin="4,0,0,0" VerticalAlignment="Top" Foreground="#E96C2D" FontWeight="bold" Height="23" Width="120" />
+        <TextBox x:Name="ShieldsCollarQuantity" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Left" Margin="0,24,0,0" Height="18"  TextWrapping="Wrap" VerticalAlignment="Top" Width="23" />
+        <TextBlock x:Name="txtShieldsCollarQuantity" Grid.Row="5"  Grid.Column="3" HorizontalAlignment="Left" Margin="48,24,0,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Height="16" Width="88" />
+
+        <!--"Included" Column 3 TextBlocks -->
+        <TextBlock x:Name="lblIncluded" Grid.Row="3" Grid.Column="4"  Text="Included with Freedom Solution:"  Margin="48,0,0,0"  FontStyle="Italic"  FontWeight="Bold"  Foreground="#E96C2D" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="26" Width="240" />
+        <TextBlock x:Name="labelColumn3" Grid.Column="4" Grid.Row="4" Text="Professional Training" HorizontalAlignment="Left" Margin="68,0,0,0" VerticalAlignment="Bottom" Height="26" Width="144" />
     </Grid>
 </UserControl>
