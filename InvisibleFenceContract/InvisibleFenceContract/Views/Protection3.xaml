@@ -7,9 +7,9 @@
              xmlns:Viewmodels="clr-namespace:InvisibleFenceContract.Viewmodels" x:Class="InvisibleFenceContract.Views.Protection3"
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1366">
-    <UserControl.DataContext>
+    <!--<UserControl.DataContext>
         <Viewmodels:Protection3ViewModel/>
-    </UserControl.DataContext>
+    </UserControl.DataContext>-->
     <Grid x:Name="Protect3" Margin="11,-2,9,12">
         <Grid.Resources>
             <!-- Style setter -->
