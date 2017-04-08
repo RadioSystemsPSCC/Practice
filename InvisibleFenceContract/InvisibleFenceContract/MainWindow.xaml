@@ -107,7 +107,7 @@
 
             <Button Content = "Safety" 
             Command = "{Binding NavCommand}"
-              Background='#0F4CD6'       
+              Background='#017EB8'       
               CommandParameter = "safety" 
               Grid.Column = "0"
               Grid.Row='2'        />
