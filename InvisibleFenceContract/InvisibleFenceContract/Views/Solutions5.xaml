@@ -54,11 +54,13 @@
             <RowDefinition Height="25"/>
             <!-- Coupon Code Checkbox 15-->
             <RowDefinition Height="25"/>
-            <!-- Coupon Code  -->
+            <!-- Coupon Code  16-->
             <RowDefinition Height="25"/>
-            <!-- Discount -->
+            <!-- Discount 17-->
             <RowDefinition Height="25"/>
-            <!-- Allow for varying screen size -->
+            <!--SolutionsPageTotal 18-->
+            <RowDefinition Height='25'/>
+            <!-- Allow for varying screen size 19 -->
             <RowDefinition Height="*" />
 
 
@@ -71,17 +73,17 @@
         <!-- Row 2 Safty Solution-->
         <Label Grid.Column="3" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >SAFETY SOLUTION</Label>
         <Label Grid.Column="8" Grid.Row="3" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75' />
+        <Label x:Name='lblSafetyTotal' Grid.Column="9" Grid.Row="3" Content="SafetyTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75' />
 
         <!-- Row 3 Protection Solution-->
         <Label Grid.Column="3" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#A6D473" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROTECTION SOLUTION</Label>
         <Label Grid.Column="8" Grid.Row="4" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75'/>
+        <Label x:Name='lblProtectionTotal' Grid.Column="9" Grid.Row="4" Content='ProtectionTotal' HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75'/>
 
         <!-- Row 4 Freedom Solution -->
         <Label Grid.Column="3" Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="7" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#E96C2D" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1" >FREEDOM SOLUTION</Label>
         <Label Grid.Column="8" Grid.Row="5" Content="Subtotal" Grid.RowSpan="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" Height="18" Margin="0" Padding="1"/>
-        <TextBox Grid.Column="9" Grid.Row="5" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" Width='75'/>
+        <Label x:Name='lblFreedomTotal' Grid.Column="9" Grid.Row="5" Content='FreedomTotal' HorizontalAlignment="Right" Width='75'/>
 
         <!-- Row 5 Blank Row -->
 
@@ -93,19 +95,19 @@
         <!-- Safety Wired -->
         <Label Grid.Column="3" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">SAFETY Wired</Label>
         <Label Grid.Column="4" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="9" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1"/>
-        <Label x:Name='lblADD_PT_NS' Grid.Column='5' Grid.Row='9' Content='ADD_PT_NS'  VerticalAlignment='Center' Height='20' FontSize ='12' />
-        <TextBox Grid.Column="6" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12"  Height="20" Width="40" Margin="0,0,20,0" Padding="1"/>
+        <Label x:Name='lblADD_PT_NS' Grid.Column='5' Grid.Row='9' Content='SafetyWiredAddPrice;'  VerticalAlignment='Center' Height='20' FontSize ='12' />
+        <TextBox x:Name='txtSafetyWiredAddQuantity' Grid.Column="6" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12"  Height="20" Width="40" Margin="0,0,20,0" Padding="1"/>
         <Label Grid.Column="7" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
-        <TextBox Grid.Column="9" Grid.Row="9" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75' />
+        <Label x:Name='lblsafetyWiredAddTotal' Grid.Column="9" Grid.Row="9" Content='safetyWiredAddTotal' HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75' />
 
 
         <!-- GPS 2.0 Wired-->
         <Label Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#0F4CD6" FontSize="12" FontWeight="Bold" Height="18" Margin="0" Padding="1">GPS 2.0 Wire Free</Label>
         <Label Grid.Column="4" Grid.Row="10" Grid.RowSpan="1" Content="Add-A-Pet" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="12" Height="18" Margin="0,0,0,3" Padding='1'/>
-        <Label x:Name='lblGPS_ADD_PT' Grid.Column='5' Grid.Row='10' Content='GPS-ADD-PT'  VerticalAlignment='Bottom' Height='20' FontSize ='12'/>
-        <TextBox Grid.Column="6" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12"  Height="20" Width="40" Margin="0,0,20,0" Padding="1"/>
-        <Label Grid.Column="7" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0,1,64,1" Padding="1" />
-        <TextBox Grid.Column="9" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75'/>
+        <Label x:Name='lblGPSAddPrice' Grid.Column='5' Grid.Row='10' Content='GPSAddPrice'  VerticalAlignment='Bottom' Height='20' FontSize ='12'/>
+        <TextBox x:Name='txtGPSAddQuantity' Grid.Column="6" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12"  Height="20" Width="40" Margin="0,0,20,0" Padding="1"/>
+        <Label Grid.Column="7" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Width="50" Margin="0,1,6,1" Padding="1" />
+        <Label x:Name='lblGPSAddTotal' Grid.Column="9" Grid.Row="10" Content="GPSAddTotal" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75'/>
 
 
         <!-- Row 11 is blank space-->
@@ -115,24 +117,24 @@
         <!-- Row 13 is blank space seperator-->
         <!-- Single Refresher Train  -->
         <Label Grid.Column="3" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1">Single Refresher Training</Label>
-        <Label x:Name='lblPS_01_00' Grid.Column='5' Grid.Row='14' Content='PS_00_01'  VerticalAlignment='Bottom' Height='22' FontSize ='12'/>
-        <TextBox Grid.Column="6" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12"  Height="20" Width="40" Margin="0,0,20,0" Padding="1"/>
+        <Label x:Name='lblSingleTrainPrice' Grid.Column='5' Grid.Row='14' Content='SingleTrainPrice'  VerticalAlignment='Bottom' Height='22' FontSize ='12'/>
+        <TextBox x:Name='txtSingleTrainQuantity' Grid.Column="6" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="12"  Height="20" Width="40" Margin="0,0,20,0" Padding="1"/>
         <Label Grid.Column="7" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Quantity" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
-        <TextBox Grid.Column="9" Grid.Row="14" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75'/>
+        <Label x:Name='lblSingleTrainTotal' Grid.Column="9" Grid.Row="14" Content="SingleTrainTotal" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height='20' Width='75'/>
 
         <!--Coupon Code Checkbox -->
         <TextBlock Grid.Column='3' Grid.Row='15' Text='Coupon Code?' />
-        <CheckBox x:Name='cbxDiscount' Grid.Row='15' Grid.Column='3'  HorizontalAlignment='Right' Height='20' Width='20' />
+        <CheckBox x:Name='ckbxDiscount' Grid.Row='15' Grid.Column='3'  HorizontalAlignment='Right' Height='20' Width='20' />
 
         <!-- Coupon Code -->
-        <Label Grid.Column="3" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Opacity='0' Height="18" Margin="0" Padding="1">Coupon Code</Label>
-        <TextBox x:Name='txtCouponCode' Grid.Column="4" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="10" Visibility='Collapsed' Height="18" Margin="0" Width='75'/>
-        <TextBox Grid.Column="9" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Right" VerticalAlignment="Top" Visibility='Collapsed' Height='20' Width='75'/>
-
+        <Label Grid.Column="3" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Visibility='Visible' Height="18" Margin="0" Padding="1">Coupon Code</Label>
+        <TextBox x:Name='txtCouponCode' Grid.Column="4" Grid.Row="16" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" MaxLength="10" Visibility='Visible' Height="18" Margin="0" Width='75'/>
         <!-- Discount  -->
-        <Label Grid.Column="3" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Discount" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility='Collapsed' FontSize="12" Height="18" Margin="0" Padding="1" />
-        <TextBox x:Name='txtDiscount' Grid.Column="11" Grid.Row="11" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center"   FontSize="12" Opacity='0' Height="18" Margin='34,7,0,0' Width='75'/>
-        <TextBox Grid.Column="9" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1" Visibility='Collapsed' HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height='20' Width='75'/>
+        <Label Grid.Column="3" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1" Content="Discount" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility='Visible' FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox x:Name='txtDiscount' Grid.Column="9" Grid.Row="17" Grid.RowSpan="1" Grid.ColumnSpan="1"  HorizontalAlignment="Left" VerticalAlignment="Center"   FontSize="12" Visibility='Visible' Height="18" Width='75'/>
+
+        <TextBlock Grid.Column='7' Grid.Row='18' Grid.ColumnSpan='2' Text='Add-A-Pet/Training Total' Margin='30,0,0,0' VerticalAlignment='Bottom' />
+        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="18" Content="SolutionPageTotal" Grid.RowSpan="1" Grid.ColumnSpan="1" Visibility='Visible' HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height='20' Width='75'/>
     </Grid>
 </UserControl>
 
