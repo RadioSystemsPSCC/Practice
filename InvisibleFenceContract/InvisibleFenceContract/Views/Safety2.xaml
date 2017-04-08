@@ -40,7 +40,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan='5' Padding="5" Background="#0F4CD6">
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan='5' Padding="5" Background="#017EB8">
             <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="  CHOOSE YOUR SAFETY SOLUTION" Margin="188,0,226,0" Foreground="White" FontSize="16"/>
 
         </Border>
@@ -55,7 +55,7 @@
         <Label x:Name="lblDigitalPrice" Grid.Column="1" Grid.Row="1" Content="{Binding DigitalTechnology}" HorizontalAlignment="Left" Margin="41,279,0,0" VerticalAlignment="Top"  Foreground="#0F4CD6" FontWeight="bold" />
 
         <!--Second Data Column -->
-        <TextBlock x:Name="label" Grid.Column="2" Grid.Row="1" Text="Included with all Safety Solutions:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,111,0,0" FontStyle="Italic" Height="26" Width="288" FontWeight="Bold"  Foreground="#0F4CD6" />
+        <TextBlock x:Name="label" Grid.Column="2" Grid.Row="1" Text="Included with all Safety Solutions:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,111,0,0" FontStyle="Italic" Height="26" Width="288" FontWeight="Bold"  Foreground="#017EB8" />
         <TextBlock x:Name="label1" Grid.Column="2" Grid.Row="1" Text="Perfect Start Plus Training" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="12,137,0,0" Height="26" Width="244" />
         <TextBlock x:Name="label2" Grid.Column="2" Grid.Row="1" Text="1-Year Performance Guarantee" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="12,163,0,0" Height="26" Width="244" />
         <TextBlock x:Name="label3" Grid.Column="2" Grid.Row="1" Text="1-Year Service Plan" HorizontalAlignment="Left" Margin="12,189,0,0" VerticalAlignment="Top" Height="26" Width="244" />
