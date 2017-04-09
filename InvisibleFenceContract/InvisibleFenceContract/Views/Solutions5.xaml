@@ -123,7 +123,7 @@
         <TextBlock Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="2" Text="(Add-A-Pet)" Margin="108,0,0,3" HorizontalAlignment="Left" />
         <Label x:Name='lblGPSAddPrice'  Grid.Column='5' Grid.Row='10' Content='GPSAddPrice'  />
         <TextBox x:Name='txtGPSAddQuantity' Grid.Column="6" Grid.Row="10" Margin="0,0,20,0" HorizontalAlignment="Right" Width="40" />
-        <TextBox Grid.Column="7" Grid.Row="10" Text="Quantity" Margin="0,1,6,1" HorizontalAlignment="Left"  Width="50"  />
+        <TextBlock Grid.Column="7" Grid.Row="10" Text="Quantity" Margin="0,1,6,1" HorizontalAlignment="Left"  Width="50"  />
         <Label x:Name='lblGPSAddTotal' Grid.Column="9" Grid.Row="10" Content="GPSAddTot"  HorizontalAlignment="Right" Width='75'/>
 
 
@@ -148,10 +148,10 @@
         <TextBox x:Name='txtCouponCode' Grid.Column="4" Grid.Row="16"  Text="" Visibility='Visible' HorizontalAlignment="Left"  Width='75'/>
         <!-- Discount  -->
         <TextBlock Grid.Column="8" Grid.Row="17" Text="Discount" Visibility='Visible' HorizontalAlignment="Left"  />
-        <TextBox x:Name='txtDiscount' Grid.Column="9" Grid.Row="17"  Text="" Visibility='Visible' Margin='0,2,6,0' HorizontalAlignment="Right" Width='75'/>
+        <TextBox x:Name='txtDiscount' Grid.Column="9" Grid.Row="17"  Text="" Visibility='Visible' Margin='0,0,6,0' HorizontalAlignment="Right" Width='75'/>
 
         <TextBlock Grid.Column='7' Grid.Row='18' Grid.ColumnSpan='2' Text='Add-A-Pet/Training Total' Margin='30,0,0,0'  />
-        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="18" Content="SolutionPgTot" Margin="0,2,6,0" HorizontalAlignment='Right' Width='75'/>
+        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="18" Content="SolutionPgTot" Margin="0,0,6,0" HorizontalAlignment='Right' Width='75'/>
     </Grid>
 </UserControl>
 

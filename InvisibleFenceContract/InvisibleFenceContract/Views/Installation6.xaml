@@ -30,31 +30,31 @@
             <!-- Outdoor Install -->
             <RowDefinition Height="40"/>
             <!-- Indoor Extension -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Outdoor Extension -->
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
             <!-- Pet Door Install -->
             <RowDefinition Height="30"/>
             <!-- space -->
 
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- solution total -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Tax  -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Labor/Install -->
             <RowDefinition Height="10"/>
             <!-- space -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Total -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Less Deposit -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Balance -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Prices valid 10 days -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
