@@ -118,7 +118,7 @@
 
         <!-- Balance -->
         <TextBlock Grid.Column="5" Grid.Row="12" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="DemiBold" Height="18" Margin="0" Padding="1" Text=' Balance'/>
-        <Label x:Name='lblBalance' Grid.Column="6" Grid.Row="12" Content="Balance" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Height='18' Width='80'/>
+        <Label x:Name='lblBalance' Grid.Column="6" Grid.Row="12" Content="lblBalance" HorizontalAlignment="Right" VerticalAlignment='Bottom' Padding='22,0,0,0'   Width='80'/>
 
         <!-- Prices are Valid for 10 days. Balance Payable at time of Delivery -->
         <TextBlock Grid.Column="3" Grid.Row="17" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text=" Prices are valid for 10 days. Balance payable at time of delivery."/>
