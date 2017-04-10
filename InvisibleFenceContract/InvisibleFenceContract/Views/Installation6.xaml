@@ -14,7 +14,7 @@
     <Grid Margin='12,0,8,0'>
         <Grid.ColumnDefinitions>
 
-            <ColumnDefinition Width='*'/>
+            <ColumnDefinition Width='188'/>
             <ColumnDefinition Width='115'/>
             <ColumnDefinition Width='115'/>
             <ColumnDefinition Width='115'/>
@@ -26,33 +26,35 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <!-- Title -->
-            <RowDefinition Height="40" />
+            <RowDefinition Height="120" />
             <!-- Outdoor Install -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
             <!-- Indoor Extension -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Outdoor Extension -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
             <!-- Pet Door Install -->
-            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
             <!-- space -->
-            <RowDefinition Height="20"/>
+
+            <RowDefinition Height="25"/>
             <!-- solution total -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Tax  -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Labor/Install -->
             <RowDefinition Height="10"/>
             <!-- space -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Total -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Less Deposit -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Balance -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <!-- Prices valid 10 days -->
-            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -60,9 +62,9 @@
         <Label Grid.Column="1" Grid.ColumnSpan="11" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="14" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROFESSIONAL INSTALLATION</Label>
 
         <!-- Row 1 Outdoor Installation -->
-        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Outdoor Installation:"/>
-        <TextBlock Grid.Column='5' Grid.Row='1' Text='Cost: ' HorizontalAlignment='Right' VerticalAlignment='Bottom' FontSize='12' />
-        <TextBox Grid.Column='6' Grid.Row='1' HorizontalAlignment='Right' VerticalAlignment="Bottom" MaxLength="10" Width='80'/>
+        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12" Height="18" Margin="0" Padding="1" Text="Outdoor Installation:"/>
+        <TextBlock Grid.Column='5' Grid.Row='1' Text='Cost: ' HorizontalAlignment='Right' VerticalAlignment='Top' FontSize='12' Margin='0,8,0,0'/>
+        <TextBox Grid.Column='6' Grid.Row='1' HorizontalAlignment='Right' VerticalAlignment="Top" Margin='0,8,0,0' Width='80'/>
 
         <!-- Row 2 Outdoor Extension Loop -->
         <TextBlock  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Outdoor Extension Loop (Up to 100')"/>
@@ -72,47 +74,53 @@
         <Label x:Name='lblOutdoorLoopTotal' Grid.Column="6" Grid.Row="2" Content="lblOLTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
 
         <!-- Row 3 IndoorExtendLoop    -->
-        <!-- Row 3 Pet Door Installation -->
-        <TextBlock Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Pet Door Installation'/>
-        <Label x:Name='lblPetDoorInstall' Grid.Column="3" Grid.Row="3" Content="lblPetDoorInstall" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
-        <TextBlock Grid.Column="4" Grid.Row="3" Text='Quantity: ' VerticalAlignment="Center" FontSize="12" Height="18" Margin="0,1" Padding="1" HorizontalAlignment='Left' Width='48' />
+        <TextBlock  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Indoor Extension Loop (Up to 100')"/>
+        <Label x:Name="lblIndoorLoop" Grid.Column="3" Grid.Row="3" Content="lblIndoorLoop" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBlock Grid.Column="4" Grid.Row="3" Text="Quantity: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
         <TextBox Grid.Column="5" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
-        <Label x:Name='lblPDInstallTotal' Grid.Column="6" Grid.Row="3"  Content="lblPDInstallTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Padding="1"/>
+        <Label x:Name='lblIndoorLoopTotal' Grid.Column="6" Grid.Row="3" Content="lblILTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+
+        <!-- Row 4 Pet Door Installation -->
+        <TextBlock Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Pet Door Installation'/>
+        <Label x:Name='lblPetDoorInstall' Grid.Column="3" Grid.Row="4" Content="lblPetDoorInstall" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBlock Grid.Column="4" Grid.Row="4" Text='Quantity: ' VerticalAlignment="Center" FontSize="12" Height="18" Margin="0,1" Padding="1" HorizontalAlignment='Left' Width='48' />
+        <TextBox Grid.Column="5" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Bottom" MaxLength="10" Padding="20"/>
+        <Label x:Name='lblPDInstallTotal' Grid.Column="6" Grid.Row="4"  Content="lblPDInstallTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Padding="1"/>
 
         <!-- Totals Section -->
         <!-- Solution Total -->
-        <TextBlock Grid.Column="5" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Solution Total: '/>
-        <Label x:Name='lblSolutionTotal' Grid.Column="6" Grid.Row="5" Content="lblSolutionTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+        <TextBlock Grid.Column="5" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Solution Total: '/>
+        <Label x:Name='lblSolutionTotal' Grid.Column="6" Grid.Row="6" Content="lblSolutionTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
 
         <!-- Installation Date  -->
-        <Label Grid.Column="2" Grid.Row="7"  Content="INSTALLATION DATE" FontSize="11" FontWeight="DemiBold" Foreground="#0F4CD6"  Height="18" Margin="0" Padding="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Border Grid.Column="2" Grid.Row="7" BorderBrush="Black" BorderThickness="1" />
-        <TextBox Grid.Column="2" Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center" MaxLength="100" Width="100" FontSize="16" />
-        <Border Grid.Column="2" Grid.Row="7" Grid.RowSpan='4' BorderBrush="Black" BorderThickness="1"/>
+        <Label Grid.Column="2" Grid.Row="8"  Content="INSTALLATION DATE" FontSize="11" FontWeight="DemiBold" Foreground="#017EB8"  Height="18" Margin="0" Padding="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Border Grid.Column="2" Grid.Row="8" BorderBrush="Black" BorderThickness="1" />
+        <TextBox Grid.Column="2" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" MaxLength="100" Width="100" FontSize="16" />
+        <Border Grid.Column="2" Grid.Row="8" Grid.RowSpan='4' BorderBrush="Black" BorderThickness="1"/>
 
         <!-- Tax -->
-        <TextBlock Grid.Column="5" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Tax: '/>
-        <Label x:Name='lblTaxTotal' Grid.Column="6" Grid.Row="6" Content="lblTaxTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+        <TextBlock Grid.Column="5" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Tax: '/>
+        <Label x:Name='lblTaxTotal' Grid.Column="6" Grid.Row="7" Content="lblTaxTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
 
         <!-- Labor/Install Total -->
-        <TextBlock Grid.Column="5" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Labor/Install Total: "/>
-        <Label x:Name='lblLaborTotal' Grid.Column="6" Grid.Row="7" Content="lblLaborTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+        <TextBlock Grid.Column="5" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Labor/Install Total: "/>
+        <Label x:Name='lblLaborTotal' Grid.Column="6" Grid.Row="8" Content="lblLaborTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
 
         <!-- Row Break -->
 
         <!-- Total -->
-        <TextBlock Grid.Column="5" Grid.Row="9" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="DemiBold" Height="18" Margin="0" Padding="1" Text='Total' />
-        <Label x:Name='lblTotal' Grid.Column="6" Grid.Row="9" Content="lblTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+        <TextBlock Grid.Column="5" Grid.Row="10" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="DemiBold" Height="18" Margin="0" Padding="1" Text='Total' />
+        <Label x:Name='lblTotal' Grid.Column="6" Grid.Row="10" Content="lblTotal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
 
         <!-- Less Deposit -->
-        <TextBlock Grid.Column="5" Grid.Row="10" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Less Deposit'/>
-        <TextBox Grid.Column="6" Grid.Row="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="2" Width='80'/>
-
-        <!-- Balance -->
-        <TextBlock Grid.Column="5" Grid.Row="11" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="DemiBold" Height="18" Margin="0" Padding="1" Text=' Balance'/>
+        <TextBlock Grid.Column="5" Grid.Row="11" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Less Deposit'/>
         <TextBox Grid.Column="6" Grid.Row="11" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="2" Width='80'/>
 
+        <!-- Balance -->
+        <TextBlock Grid.Column="5" Grid.Row="12" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="DemiBold" Height="18" Margin="0" Padding="1" Text=' Balance'/>
+        <Label x:Name='lblBalance' Grid.Column="6" Grid.Row="12" Content="lblBalance" HorizontalAlignment="Right" VerticalAlignment='Bottom' Padding='22,0,0,0'   Width='80'/>
+
         <!-- Prices are Valid for 10 days. Balance Payable at time of Delivery -->
-        <TextBlock Grid.Column="3" Grid.Row="16" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text=" Prices are valid for 10 days. Balance payable at time of delivery."/>
+        <TextBlock Grid.Column="3" Grid.Row="17" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text=" Prices are valid for 10 days. Balance payable at time of delivery."/>
     </Grid>
 </UserControl>

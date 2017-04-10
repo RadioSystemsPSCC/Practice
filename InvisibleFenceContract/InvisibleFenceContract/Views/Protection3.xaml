@@ -7,17 +7,17 @@
              xmlns:Viewmodels="clr-namespace:InvisibleFenceContract.Viewmodels" x:Class="InvisibleFenceContract.Views.Protection3"
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1366">
-    <UserControl.DataContext>
+    <!--<UserControl.DataContext>
         <Viewmodels:Protection3ViewModel/>
-    </UserControl.DataContext>
-    <Grid x:Name="Protect3" Margin="0,5,0,-34">
+    </UserControl.DataContext>-->
+    <Grid x:Name="Protect3" Margin="11,-2,9,12">
         <Grid.Resources>
             <!-- Style setter -->
-            <Style TargetType='{x:Type TextBlock}'>
+            <Style TargetType='TextBlock'>
                 <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
                 <Setter Property='FontSize' Value='14' />
             </Style>
-            <Style TargetType='{x:Type Label}'>
+            <Style TargetType='Label'>
                 <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
             </Style>
         </Grid.Resources>
@@ -25,13 +25,13 @@
             <!-- Set column definition and amount-->
             <ColumnDefinition Width="188" />
             <ColumnDefinition Width="275" />
-            <ColumnDefinition Width="180" />
             <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="336" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height='60' />
+            <RowDefinition Height='120' />
             <RowDefinition Height='40'/>
             <RowDefinition Height='60'/>
             <RowDefinition Height='40'/>
@@ -44,43 +44,44 @@
         </Grid.RowDefinitions>
 
         <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Padding="5"  Background="#A6D473">
-            <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="CHOOSE YOUR PROTECTION SOLUTION" Margin="188,0,226,0" Foreground="White" FontSize="16"/>
+            <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="CHOOSE YOUR PROTECTION SOLUTION" Margin="188,0,0,0" Foreground="White" FontSize="16"/>
         </Border>
         <!--Columns 1 & 2 -->
         <!--OutdoorShields Row -->
-        <TextBlock x:Name='txtOutShield' Grid.Column='1' Grid.Row='1'  Text='Outdoor Shields Unit 2-Year Warranty' TextWrapping='Wrap' Margin ='20,0,30,0' Width='140' HorizontalAlignment='Left' VerticalAlignment='Center'   />
+        <TextBlock x:Name='txtOutShield' Grid.Column='1' Grid.Row='1'  Text='Outdoor Shields Unit 2-Year Warranty' TextWrapping='Wrap' Margin ='20,0,30,20' Width='140' HorizontalAlignment='Left' VerticalAlignment='Bottom'   />
         <Label x:Name="lblOutdoorPrice1" Content="{Binding OutdoorLabel1}" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="20,4,0,0" VerticalAlignment="Top" Height="26" Width="94"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="125,7,0,0" Grid.Row="2" TextWrapping="Wrap" Text="2 pack:" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
         <Label x:Name="lblOutdoorPrice2" Content="{Binding OutdoorLabel2}" Grid.Row="2" Grid.Column="1" Foreground="#A6D473" Margin="174,4,1,10" Height="26" RenderTransformOrigin='1.415,0.615' />
-        <TextBox x:Name='OutdoorShieldQuantity' Grid.Column='2' Grid.Row='1' Width='40' Height='20' HorizontalAlignment='Left' />
-
+        <TextBox x:Name='OutdoorShieldQuantity' Grid.Column='2' Grid.Row='1'  HorizontalAlignment='Left' Margin='0,0,0,28' VerticalAlignment='Bottom' Width='40' Height='20' />
+        <TextBlock Grid.Column="2" Grid.Row="1" Text="Quantity" Margin="60,45,6,1" HorizontalAlignment="Left" Height='22' Width="55"  />
         <!--IndoorShield Rows -->
         <TextBlock x:Name='txtIndoorShield' Grid.Column='1' Grid.Row='3' Text='Indoor Shields Plus Unit 2-Year Warranty' TextWrapping='Wrap' Margin='20,0,30,0' Width='140' HorizontalAlignment='Left' VerticalAlignment='Center' />
         <Label x:Name="lblIndoorPrice" Content="{Binding IndoorShieldsLabel1}" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="20,4,0,0" VerticalAlignment="Top" Height="26" Width="94"/>
         <TextBlock x:Name="txtIndoor2Block" HorizontalAlignment="Left" Margin="118,5,0,0" Grid.Row="4" TextWrapping="Wrap" Text="2 pack:" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1" Width='50'/>
         <Label x:Name="lblIndoorPrice2" Content="{Binding IndoorShieldsLabel2}" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="174,2,0,0" VerticalAlignment="Top" Height="26" Width="94" />
         <TextBox x:Name='IndoorShieldQuantity' Grid.Column='2' Grid.Row='3' Width='40' Height='20' HorizontalAlignment='Left' />
+        <TextBlock Grid.Column="2" Grid.Row="3" Text="Quantity" Margin="60,4,6,1" HorizontalAlignment="Left" Height='22' Width="55"  />
         <!--MicroShields Row -->
         <TextBlock x:Name='txtMicroShield' Grid.Column='1' Grid.Row='5' Text='Micro Shields Unit 2-Year Warranty' TextWrapping='Wrap' Margin='20,0,30,0' HorizontalAlignment='Left' VerticalAlignment='Center' Width='120' />
         <Label x:Name="lblMicroPrice" Content="{Binding MShieldsUnit}" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="20,4,0,0" VerticalAlignment="Top" Height="26" Width="94"/>
         <TextBlock x:Name="txtMicro2Block" HorizontalAlignment="Left" Margin="114,7,0,0" Grid.Row="6" TextWrapping="Wrap" Text="2 pack:" Foreground="#A6D473" VerticalAlignment="Top" Grid.Column="1"/>
         <Label x:Name="lblMicroPrice2" Content="{Binding MShieldsUnit2}" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="174,4,0,0" VerticalAlignment="Top" Height="26" Width="90"/>
         <TextBox x:Name='MicroShieldQuantity' Grid.Column='2' Grid.Row='5' Width='40' Height='20' HorizontalAlignment='Left' />
-
+        <TextBlock Grid.Column="2" Grid.Row="5" Text="Quantity" Margin="60,4,0,0" HorizontalAlignment="Left" Height='22' Width="55"  />
         <!--Shields Collar Rows -->
         <TextBlock x:Name='txtShieldsCollar' Grid.Column='1' Grid.Row='7' Text='Shields Computer Collar Unit 1-Year Power Battery Cap Plan 2-Year Warranty' TextWrapping='Wrap' Margin='20,0,30,0' HorizontalAlignment='Left' VerticalAlignment='Center' Width='190'/>
         <Label x:Name="lblShieldsCollarPrice" Content="{Binding ShieldsComputerCollar}" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="20,4,0,0" VerticalAlignment="Top" Height="26" Width="118"/>
         <TextBox x:Name='ShieldsCollarQuantity' Grid.Column='2' Grid.Row='7' Width='40' Height='20' HorizontalAlignment='Left' />
-
+        <TextBlock Grid.Column="2" Grid.Row="7" Text="Quantity" Margin="60,4,0,0" HorizontalAlignment="Left" Height='22' Width="55"  />
         <!-- MicroCollar Rows-->
         <TextBlock x:Name='txtMicroCollar' Grid.Column="1" Grid.Row="9"  Text="MicroLite Computer Collar Unit 1-Year Power Cap Battery Plan Lifetime Limited Warranty" TextWrapping='Wrap' Margin='20,0,30,0' HorizontalAlignment='Left' VerticalAlignment='Center' Width='190' />
         <Label x:Name="lblMicroLitePrice" Content="{Binding MicroLiteComputerCollar}" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" Foreground="#A6D473" Margin="20,4,0,0" VerticalAlignment="Top" Height="26" Width="107"/>
         <TextBox x:Name='MicroCollarQuantity' Grid.Column='2' Grid.Row='9' Width='40' Height='20' HorizontalAlignment='Left' />
-
+        <TextBlock Grid.Column="2" Grid.Row="9" Text="Quantity" Margin="60,4,0,0" HorizontalAlignment="Left" Height='22' Width="55"  />
 
         <!--Column Three TextBlocks -->
-        <TextBlock x:Name="lblColumn3" Grid.Row="3" Grid.Column="3" Text="Included with all Protection Solutions:"  TextWrapping='Wrap' HorizontalAlignment="Center" Margin="21,19,0,0" VerticalAlignment="Top"  FontStyle="Italic" Height="35" Width="170" FontWeight="Bold"  Foreground="#A6D473" Grid.RowSpan='2' />
-        <TextBlock x:Name="lblColumn3IncludedTraining" Grid.Row="4" Grid.Column="3" Text="Perfect Start Plus Training" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="21,0,0,0" VerticalAlignment="Top" Height="42" Width="140" />
+        <TextBlock x:Name="lblColumn3" Grid.Row="3" Grid.Column="3" Text="Included with all Protection Solutions:"  TextWrapping='Wrap' HorizontalAlignment="Left" Margin="20,19,0,0" VerticalAlignment="Top"  FontStyle="Italic" Height="35" Width="170" FontWeight="Bold"  Foreground="#A6D473" Grid.RowSpan='2' />
+        <TextBlock x:Name="lblColumn3IncludedTraining" Grid.Row="4" Grid.Column="3" Text="Perfect Start Plus Training" TextWrapping="Wrap"  Margin="28,10,0,0"  HorizontalAlignment="Left" Height="42" Width="140" />
 
     </Grid>
 </UserControl>

@@ -31,7 +31,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width='188' />
             <ColumnDefinition Width='400'/>
-            <ColumnDefinition Width='400'/>
+            <ColumnDefinition Width='450'/>
             <ColumnDefinition Width='*' />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -40,7 +40,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan='5' Padding="5" Background="#0F4CD6">
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan='5' Padding="5" Background="#017EB8">
             <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="  CHOOSE YOUR SAFETY SOLUTION" Margin="188,0,226,0" Foreground="White" FontSize="16"/>
 
         </Border>
@@ -50,16 +50,16 @@
         <RadioButton x:Name="DigitalTechPackage" Command="{Binding ViewCommand}" CommandParameter="DigitalTechPackage" Content="Digital Technology&#xA;MicroLite Computer Collar Unit&#xA;Limited Lifetime Warranty&#xA; 1-Year Power Cap Battery Plan" Grid.Column="1" HorizontalAlignment="Left" Margin="20,211,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
         <!-- Price Labels -->
-        <Label x:Name="lblGpsPrice" Grid.Column="1" Grid.Row="1" Content="{Binding GpsLabel}" HorizontalAlignment="Left" Margin="41,89,0,0" VerticalAlignment="Top" Foreground="#0F4CD6" FontWeight="bold"  Height="24"/>
-        <Label x:Name="lblBoundaryPrice" Grid.Column="1" Grid.Row="1" Content="{Binding BoundaryPlus}" HorizontalAlignment="Left" Margin="41,181,0,0" VerticalAlignment="Top"  Foreground="#0F4CD6" FontWeight="bold" />
-        <Label x:Name="lblDigitalPrice" Grid.Column="1" Grid.Row="1" Content="{Binding DigitalTechnology}" HorizontalAlignment="Left" Margin="41,279,0,0" VerticalAlignment="Top"  Foreground="#0F4CD6" FontWeight="bold" />
+        <Label x:Name="lblGpsPrice" Grid.Column="1" Grid.Row="1" Content="{Binding GpsLabel}" HorizontalAlignment="Left" Margin="41,94,0,0" VerticalAlignment="Top" Foreground="#017EB8" FontWeight="bold"  Height="24" Width='88'/>
+        <Label x:Name="lblBoundaryPrice" Grid.Column="1" Grid.Row="1" Content="{Binding BoundaryPlus}" HorizontalAlignment="Left" Margin="41,181,0,0" VerticalAlignment="Top"  Foreground="#017EB8" FontWeight="bold" Height='24' Width='88'/>
+        <Label x:Name="lblDigitalPrice" Grid.Column="1" Grid.Row="1" Content="{Binding DigitalTechnology}" HorizontalAlignment="Left" Margin="41,279,0,0" VerticalAlignment="Top"  Foreground="#017EB8" FontWeight="bold" Height='24' Width='88'/>
 
         <!--Second Data Column -->
-        <TextBlock x:Name="label" Grid.Column="2" Grid.Row="1" Text="Included with all Safety Solutions:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,111,0,0" FontStyle="Italic" Height="26" Width="288" FontWeight="Bold"  Foreground="#0F4CD6" />
+        <TextBlock x:Name="label" Grid.Column="2" Grid.Row="1" Text="Included with all Safety Solutions:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,111,0,0" FontStyle="Italic" Height="26" Width="288" FontWeight="Bold"  Foreground="#017EB8" />
         <TextBlock x:Name="label1" Grid.Column="2" Grid.Row="1" Text="Perfect Start Plus Training" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="12,137,0,0" Height="26" Width="244" />
         <TextBlock x:Name="label2" Grid.Column="2" Grid.Row="1" Text="1-Year Performance Guarantee" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="12,163,0,0" Height="26" Width="244" />
         <TextBlock x:Name="label3" Grid.Column="2" Grid.Row="1" Text="1-Year Service Plan" HorizontalAlignment="Left" Margin="12,189,0,0" VerticalAlignment="Top" Height="26" Width="244" />
-        <Label x:Name="label4" Grid.Column="2" Grid.Row="1" Content="Battery Back-Up/Wired Solution" HorizontalAlignment="Left" Margin="12,215,0,0"  VerticalAlignment="Top" Height="26" Width="244" />
-        <Label x:Name="label5" Grid.Column="2" Grid.Row="1" Content="Surge Protector for wired solution" HorizontalAlignment="Left" Margin="12,241,0,0" VerticalAlignment="Top" Height="26" Width="244" />
+        <TextBlock x:Name="label4" Grid.Column="2" Grid.Row="1" Text="Battery Back-Up/Wired Solution" HorizontalAlignment="Left" Margin="12,215,0,0"  VerticalAlignment="Top" Height="26" Width="244" />
+        <TextBlock x:Name="label5" Grid.Column="2" Grid.Row="1" Text="Surge Protector for wired solution" HorizontalAlignment="Left" Margin="12,241,0,0" VerticalAlignment="Top" Height="26" Width="244" />
     </Grid>
 </UserControl>

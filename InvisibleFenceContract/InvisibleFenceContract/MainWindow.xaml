@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:InvisibleFenceContract"
         xmlns:vm='clr-namespace:InvisibleFenceContract.Viewmodels'
         xmlns:v='clr-namespace:InvisibleFenceContract.Views'            
-        
-        
         mc:Ignorable="d"
         Icon='/Images/blueshouse2.ico'
          Title="Invisible Fence - Home" Height="768" Width="1266" Padding='50' >
@@ -18,12 +16,12 @@
 
     <Window.Resources>
 
-            <DataTemplate DataType="{x:Type vm:StartViewModel}">
-              <v:Start />
-            </DataTemplate>
-            <DataTemplate DataType="{x:Type vm:SelectCustomerViewModel}">
-              <v:SelectCustomer />
-            </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:StartViewModel}">
+            <v:Start />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:SelectCustomerViewModel}">
+            <v:SelectCustomer />
+        </DataTemplate>
         <DataTemplate DataType = "{x:Type vm:Contact1ViewModel}">
             <v:Contact1/>
         </DataTemplate>
@@ -52,7 +50,7 @@
             <v:Signature7/>
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:ProductLookupViewModel}">
-        <v:ProductLookup />
+            <v:ProductLookup />
         </DataTemplate>
 
     </Window.Resources>
@@ -83,7 +81,7 @@
                 <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
-                <RowDefinition Height = '28' /> 
+                <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
                 <RowDefinition Height = '28' />
@@ -109,7 +107,7 @@
 
             <Button Content = "Safety" 
             Command = "{Binding NavCommand}"
-              Background='#0F4CD6'       
+              Background='#017EB8'       
               CommandParameter = "safety" 
               Grid.Column = "0"
               Grid.Row='2'        />
