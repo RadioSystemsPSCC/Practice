@@ -35,12 +35,13 @@
 	"IsTaxable":"0"
   },
   {
-	"PartID":"29197",
-	"PartNumber":"PKG-PRE-ADD-PT",
-	"PartName":"Premium Package Add-A-Pet",
-	"PartPrice":"395.00",
-	"IsTaxable":"1"
-  }, {
+    "PartID": "29197",
+    "PartNumber": "PKG-PRE-ADD-PT",
+    "PartName": "Premium Package Add-A-Pet",
+    "PartPrice": "395.00",
+    "IsTaxable": "1"
+  },
+   {
 	"PartID":"29361",
 	"PartNumber":"RIG00-11933",
 	"PartName":"MICROLITE RECEIVER",

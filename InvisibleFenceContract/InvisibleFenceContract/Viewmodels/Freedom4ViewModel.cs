@@ -30,7 +30,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[3].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 29191)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -42,7 +49,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[9].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 57594)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
