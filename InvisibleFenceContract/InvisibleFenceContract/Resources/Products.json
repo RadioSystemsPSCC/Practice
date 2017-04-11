@@ -35,10 +35,17 @@
 	"IsTaxable":"0"
   },
   {
-	"PartID":"29197",
-	"PartNumber":"PKG-PRE-ADD-PT",
-	"PartName":"Premium Package Add-A-Pet",
-	"PartPrice":"395.00",
+    "PartID": "29197",
+    "PartNumber": "PKG-PRE-ADD-PT",
+    "PartName": "Premium Package Add-A-Pet",
+    "PartPrice": "395.00",
+    "IsTaxable": "1"
+  },
+   {
+	"PartID":"29361",
+	"PartNumber":"RIG00-11933",
+	"PartName":"MICROLITE RECEIVER",
+	"PartPrice":"389.00",
 	"IsTaxable":"1"
   },
   {
@@ -112,10 +119,17 @@
 	"IsTaxable":"1"
   },
   {
-	"PartID":"75858",
-	"PartNumber":"IN-SHLD-2",
-	"PartName":"Indoor Shields 2pk (With Transformer)",
-	"PartPrice":"299.00",
+    "PartID": "75858",
+    "PartNumber": "IN-SHLD-2",
+    "PartName": "Indoor Shields 2pk (With Transformer)",
+    "PartPrice": "299.00",
+    "IsTaxable": "1"
+  }, 
+  {
+	"PartID":"75859",
+	"PartNumber":"MCR-SHLD-2",
+	"PartName":"Micro Shield 2pk",
+	"PartPrice":"199.00",
 	"IsTaxable":"1"
   },
   {
