@@ -30,7 +30,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[6].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 29476)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -42,7 +49,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[15].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 75857)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -54,7 +68,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[8].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 52246)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -66,7 +87,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[16].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 75858)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -78,7 +106,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[7].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 51264)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -90,7 +125,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[6].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 75859)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -102,7 +144,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[9].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 57594)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
@@ -114,7 +163,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + c_Prices[17].PartPrice;
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 29361)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
