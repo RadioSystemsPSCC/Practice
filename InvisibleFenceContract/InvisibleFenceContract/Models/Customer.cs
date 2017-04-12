@@ -15,6 +15,7 @@ namespace InvisibleFenceContract.Models
     {
         //Must add CustomerID to this model to select proper client, also remove petname, pet breed and petBirthday
         //These must be fed in as a list to allow for multiple entries. Copying fields to pet. 
+        private string customerID;
         private string firstName;
         private string lastName;
         private string referredBy;
@@ -25,16 +26,24 @@ namespace InvisibleFenceContract.Models
         private string homePhone;
         private string cellPhone;
         private string email;
-        private string petName;
-        private string petBreed;
-        private string petAge;
+
 
         /// <summary>
         /// Initiates a new instance of the customer class
         /// , String lastName, String address, String
         /// </summary>
 
-
+        public String CustomerID
+        {
+            get
+            {
+                return customerID;
+            }
+            set
+            {
+                customerID = value;
+            }
+        }
 
         public String FirstName
         {
@@ -166,45 +175,7 @@ namespace InvisibleFenceContract.Models
             }
         }
 
-        public String PetName
-        {
-            get
-            {
-                return petName;
-            }
-            set
-            {
-                petName = value;
-                OnPropertyChanged("PetName");
-            }
-        }
 
-        public String PetBreed
-        {
-            get
-            {
-                return petBreed;
-            }
-            set
-            {
-                petBreed = value;
-                OnPropertyChanged("PetBreed");
-            }
-        }
-
-        public String PetAge
-        {
-            get
-            {
-                return petAge;
-            }
-            set
-            {
-                petAge = value;
-                OnPropertyChanged("PetAge");
-            }
-
-        }
     }
 }
 

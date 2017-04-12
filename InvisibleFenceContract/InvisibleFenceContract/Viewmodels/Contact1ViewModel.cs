@@ -15,7 +15,10 @@ namespace InvisibleFenceContract.Viewmodels
     {
         public Contact1ViewModel()
         {
+            
+            int CurrentCustomer = (int)App.Current.Properties["custID"];
             LoadClients();
+            
         }
         public List<Customer> c_Clients
         {
