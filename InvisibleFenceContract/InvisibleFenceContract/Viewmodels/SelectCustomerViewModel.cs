@@ -8,9 +8,5 @@ namespace InvisibleFenceContract.Viewmodels
 {
     class SelectCustomerViewModel : BindableBase 
     {
-        public SelectCustomerViewModel()
-        {
-            App.Current.Properties["custID"] = 23;
-        }
     }
 }

@@ -1,6 +1,5 @@
 [
   {
-    "customerID": 23,
     "firstName": "John",
     "lastName": "Smith",
     "referredBy": "Me",
@@ -10,8 +9,10 @@
     "zip": "37932",
     "homePhone": "865-555-5555",
     "cellPhone": "555-555-5555",
-    "email": "me@my.com"
-
+    "email": "me@my.com",
+    "petName": "Buffy",
+    "petBreed": "Collie",
+    "petAge": "5"
   }
 ]
 

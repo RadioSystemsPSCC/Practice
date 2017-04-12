@@ -1,18 +1,18 @@
 [
   {
-	"CustomerID":23,
+	"CustomerNumber":"23",
 	"PetName":"Buffy",
 	"PetBirthday":"12/31/1999",
 	"PetBreed":"PitBull"
   },
   {
-    "CustomerID":23,
+    "CustomerNumber":"23",
     "PetName":"Lassie",
     "PetBirthday":"01/31/2017",
     "PetBreed":"Collie"
   },
   {
-    "CustomerID":11,
+    "CustomerNumber":"11",
     "PetName":"Dancer",
     "PetBirthday":"09/11/2015",
     "PetBreed":"Standard Poodle"
