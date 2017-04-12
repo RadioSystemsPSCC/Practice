@@ -166,45 +166,9 @@ namespace InvisibleFenceContract.Models
             }
         }
 
-        public String PetName
-        {
-            get
-            {
-                return petName;
-            }
-            set
-            {
-                petName = value;
-                OnPropertyChanged("PetName");
-            }
-        }
+  
 
-        public String PetBreed
-        {
-            get
-            {
-                return petBreed;
-            }
-            set
-            {
-                petBreed = value;
-                OnPropertyChanged("PetBreed");
-            }
-        }
-
-        public String PetAge
-        {
-            get
-            {
-                return petAge;
-            }
-            set
-            {
-                petAge = value;
-                OnPropertyChanged("PetAge");
-            }
-
-        }
+        
     }
 }
 
