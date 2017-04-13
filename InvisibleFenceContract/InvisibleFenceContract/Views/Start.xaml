@@ -4,15 +4,62 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:InvisibleFenceContract.Views"
-             mc:Ignorable="d" Height='1213.224' Width='1540.868'>
+             mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="1366">
 
+    <Grid Background='#114977'>
+        <Grid.Resources>
 
-    <StackPanel Orientation='Vertical' Background='#114977' Margin='0,0,0,10' >
-        <StackPanel Orientation='Horizontal' Height='80' Background='White'>
-            <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Stretch' Height='480' Width='600' />
+            <Style TargetType='RowDefinition' >
+                <Setter Property='Height' Value='44' />
+
+            </Style>
+            <Style TargetType='CheckBox'>
+                <Setter Property='VerticalAlignment' Value='Center' />
+            </Style>
+
+            <Style TargetType='TextBlock'>
+                <Setter Property='Height' Value='22' />
+                <Setter Property='VerticalAlignment' Value='Top' />
+                <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+                <Setter Property='FontSize' Value='12' />
+            </Style>
+            <Style TargetType='Label'>
+                <Setter Property='VerticalAlignment' Value='Center' />
+
+            </Style>
+            <Style TargetType='TextBox'>
+                <Setter Property='Height' Value='22' />
+                <Setter Property='VerticalAlignment' Value='Top' />
+            </Style>
+        </Grid.Resources>
+        <!--Star on the end columns provides flexibility to grid width -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width='450' />
+            <ColumnDefinition Width='450' />
+            <ColumnDefinition Width='*' />
+        </Grid.ColumnDefinitions>
+        <!-- Star on last row provides screen flexibility in length of page-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height='32'/>
+            <RowDefinition Height='32' />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition  />
+            <RowDefinition   />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height='*'/>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Grid.Row="0" Padding="5" Background="White" Grid.ColumnSpan="3">
+            <Image Source='..\Images\Logo.jpg' Grid.Column='1' Grid.Row='1' Grid.ColumnSpan='2' Margin="0,0,-69,-5" HorizontalAlignment="Left" Width="1363"   />
+        </Border>
+        <StackPanel Orientation='Vertical' Background='#114977' Margin='225,30,225,198' Grid.RowSpan="8" Grid.Row="2" Grid.ColumnSpan="2" >
+            <Button Content='Get Customers' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='55,200,55,24'/>
+            <Button Content='Return Customers' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='24,44'/>
+            <Button Content='Make Contract' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='24,44' />
         </StackPanel>
-        <Button Content='Get Customers' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='560,200,560,24'/>
-        <Button Content='Return Customers' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='24,44'/>
-        <Button Content='Make Contract' Width='340' Height='40' HorizontalAlignment='Center' FontSize='28' FontFamily='Gotham' VerticalAlignment='Center' Margin='24,44' />
-    </StackPanel>
+    </Grid>
+
+
 </UserControl>
