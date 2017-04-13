@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -12,6 +12,9 @@ namespace InvisibleFenceContract.Viewmodels
     {
         private string _CusID = "23";
         public string CusID
+
+		 private int _CusID;
+        public int CusID
         {
             get
             {
@@ -22,8 +25,15 @@ namespace InvisibleFenceContract.Viewmodels
                 if (_CusID != value)
                 {
                     _CusID = value;
+
                     OnPropertyChanged("CusID");
                 }
+
+                    OnPropertyChanged("CustomerID");
+                }
+
+            }
+        }
 
             }
         }
