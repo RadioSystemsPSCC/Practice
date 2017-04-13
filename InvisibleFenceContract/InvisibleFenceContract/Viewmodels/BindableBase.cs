@@ -10,7 +10,23 @@ namespace InvisibleFenceContract.Viewmodels
 {
     class BindableBase : INotifyPropertyChanged
     {
+        private string _CusID = "23";
+        public string CusID
+        {
+            get
+            {
+                return _CusID;
+            }
+            set
+            {
+                if (_CusID != value)
+                {
+                    _CusID = value;
+                    OnPropertyChanged("CusID");
+                }
 
+            }
+        }
         protected virtual void SetProperty<T>(ref T member, T val,
            [CallerMemberName] string propertyName = null)
         {
@@ -26,6 +42,8 @@ namespace InvisibleFenceContract.Viewmodels
         }
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
+
+
     }
 }
 
