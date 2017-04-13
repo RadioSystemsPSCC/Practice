@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -10,6 +10,9 @@ namespace InvisibleFenceContract.Viewmodels
 {
     class BindableBase : INotifyPropertyChanged
     {
+        private string _CusID = "23";
+        public string CusID
+
 		 private int _CusID;
         public int CusID
         {
@@ -22,12 +25,18 @@ namespace InvisibleFenceContract.Viewmodels
                 if (_CusID != value)
                 {
                     _CusID = value;
+
+                    OnPropertyChanged("CusID");
+                }
+
                     OnPropertyChanged("CustomerID");
                 }
 
             }
         }
 
+            }
+        }
         protected virtual void SetProperty<T>(ref T member, T val,
            [CallerMemberName] string propertyName = null)
         {
@@ -43,6 +52,8 @@ namespace InvisibleFenceContract.Viewmodels
         }
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
+
+
     }
 }
 

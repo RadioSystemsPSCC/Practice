@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
+using System.Windows;
 
 namespace InvisibleFenceContract.Viewmodels
 {
@@ -15,12 +16,237 @@ namespace InvisibleFenceContract.Viewmodels
     {
         public Contact1ViewModel()
         {
+            string currentCustomerID = this.CusID;
             LoadClients();
+            LoadPets();
         }
         public List<Customer> c_Clients
         {
             get;
             set;
+        }
+        public List<Pet> c_Pets
+        {
+            get;
+            set;
+        }
+        public string CustomerID
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if ((c_Clients[i].CustomerID == CusID) && (CusID != null))
+                    {
+                        return c_Clients[i].CustomerID;
+                    }
+                }
+                MessageBox.Show("Customer not found");
+                return null;
+            }
+            set
+            {
+                this.CustomerID = value;
+            }
+        }
+        public string FirstName
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if ((c_Clients[i].CustomerID == CusID))
+                    {
+                        return c_Clients[i].FirstName;
+                    }
+                }
+              
+                return null;
+            }
+            set
+            {
+                this.FirstName = value;
+            }
+        }
+
+        public string LastName
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if ((c_Clients[i].CustomerID == CusID))
+                    {
+                        return c_Clients[i].LastName;
+                    }
+                }
+                return null;
+            }
+            set
+            {
+                this.LastName = value;
+            }
+        }
+        public string ReferredBy
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if ((c_Clients[i].CustomerID == CusID))
+                    {
+                        return c_Clients[i].ReferredBy;
+                    }
+                }
+                
+                return null;
+            }
+            set
+            {
+                this.ReferredBy = value;
+            }
+        }
+        public string Address
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if ((c_Clients[i].CustomerID == CusID))
+                    {
+                        return c_Clients[i].Address;
+                    }
+                }
+               
+                return null;
+            }
+            set
+            {
+                this.Address = value;
+            }
+        }
+        public string City
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if (c_Clients[i].CustomerID == CusID)
+                    {
+                        return c_Clients[i].City;
+                    }
+                }
+               
+                return null;
+            }
+            set
+            {
+                this.City = value;
+            }
+        }
+        public string State
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if (c_Clients[i].CustomerID == CusID)
+                    {
+                        return c_Clients[i].State;
+                    }
+                }
+             
+                return null;
+            }
+            set
+            {
+                this.State = value;
+            }
+        }
+        public string Zip
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if (c_Clients[i].CustomerID == CusID)
+                    {
+                        return c_Clients[i].Zip;
+                    }
+                }
+               
+                return null;
+            }
+            set
+            {
+                this.Zip = value;
+            }
+        }
+        public string HomePhone
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if (c_Clients[i].CustomerID == CusID)
+                    {
+                        return c_Clients[i].HomePhone;
+                    }
+                }
+               
+                return null;
+            }
+            set
+            {
+                this.HomePhone = value;
+            }
+        }
+        public string CellPhone
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if (c_Clients[i].CustomerID == CusID)
+                    {
+                        return c_Clients[i].CellPhone;
+                    }
+                }
+               
+                return null;
+            }
+            set
+            {
+                this.CellPhone = value;
+            }
+        }
+        public string Email
+        {
+            get
+            {
+                for (int i = 0; i < c_Clients.Count; i++)
+                {
+                    if (c_Clients[i].CustomerID == CusID)
+                    {
+                        return c_Clients[i].Email;
+                    }
+                }
+                return null;
+            }
+            set
+            {
+                this.Email = value;
+                OnPropertyChanged("Email");
+            }
+        }
+
+        public void LoadPets()
+        {
+
+            string text = System.IO.File.ReadAllText(@"../../Resources/Pet.json");
+
+            List<Pet> cc_Pets = JsonConvert.DeserializeObject<List<Pet>>(text);
+            c_Pets = cc_Pets;
         }
 
         public void LoadClients()
