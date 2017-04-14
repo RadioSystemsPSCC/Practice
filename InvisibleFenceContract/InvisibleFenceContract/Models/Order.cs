@@ -8,834 +8,834 @@ namespace InvisibleFenceContract.Models
 {
     class Order : BindableBase
     {
-              
-            private string customerID;
-            private string packageSelection;
-            private double packagePrice;
-            private double safetyTotal;
-            private int outdoorShieldQuantity;
-            private double outdoorShieldPrice1;
-            private double outdoorShieldPrice2;
-            private double outdoorShieldTotal;
-            private double indoorShieldTotal;
-            private int indoorShieldQuantity = 0;
-            private double indoorShieldPrice1;
-            private double indoorShieldPrice2;
-            private int microShieldQuantity = 0;
-            private double microShieldPrice1;
-            private double microShieldPrice2;
-            private double microShieldTotal = 0;
-            private int shieldsCollarQuantity = 0;
-            private double shieldsCollarPrice;
-            private double shieldsCollarTotal;
-            private int microLiteQuantity = 0;
-            private double microLitePrice;
-            private double microLiteTotal;
-            private double protectionTotal;
-            private int doormanPetDoorQuantity;
-            private double doormanPetDoorPrice;
-            private double doormanPetDoorTotal;
-            private int shieldsCollarQuantity2;
-            private double shieldsCollarPrice2;
-            private double freedomTotal;
-            private int safetyWiredAddQuantity;
-            private double safetyWiredAddPrice;
-            private double safetyWiredAddTotal;
-            private int gPSAddQuantity;
-            private double gPSAddPrice;
-            private double gPSAddTotal;
-            private int singleTrainQuantity;
-            private double singleTrainPrice;
-            private double singleTrainTotal;
-            private string couponCode;
-            private double discount;
-            private double solutionsPageTotal;
-            private double outdoorInstallationCost;
-            private int indoorXLoopQuantity;
-            private double indoorXLoopPrice;
-            private double indoorXLoopTotal;
-            private int outdoorXLoopQuantity;
-            private double outdoorXLoopPrice;
-            private double outdoorXLoopTotal;
-            private int petDoorInstallQuantity;
-            private double petDoorInstallPrice;
-            private double petDoorInstallTotal;
-            private double installationTotal;
-            private double solutionTotal;
-            private double taxRate;
-            private double tax;
-            private double total;
-            private double deposit;
-            private double balance;
+
+        private string customerID;
+        private string packageSelection;
+        private double packagePrice;
+        private double safetyTotal;
+        private int outdoorShieldQuantity;
+        private double outdoorShieldPrice1;
+        private double outdoorShieldPrice2;
+        private double outdoorShieldTotal;
+        private double indoorShieldTotal;
+        private int indoorShieldQuantity = 0;
+        private double indoorShieldPrice1;
+        private double indoorShieldPrice2;
+        private int microShieldQuantity = 0;
+        private double microShieldPrice1;
+        private double microShieldPrice2;
+        private double microShieldTotal = 0;
+        private int shieldsCollarQuantity = 0;
+        private double shieldsCollarPrice;
+        private double shieldsCollarTotal;
+        private int microLiteQuantity = 0;
+        private double microLitePrice;
+        private double microLiteTotal;
+        private double protectionTotal;
+        private int doormanPetDoorQuantity;
+        private double doormanPetDoorPrice;
+        private double doormanPetDoorTotal;
+        private int shieldsCollarQuantity2;
+        private double shieldsCollarPrice2;
+        private double freedomTotal;
+        private int safetyWiredAddQuantity;
+        private double safetyWiredAddPrice;
+        private double safetyWiredAddTotal;
+        private int gPSAddQuantity;
+        private double gPSAddPrice;
+        private double gPSAddTotal;
+        private int singleTrainQuantity;
+        private double singleTrainPrice;
+        private double singleTrainTotal;
+        private string couponCode;
+        private double discount;
+        private double solutionsPageTotal;
+        private double outdoorInstallCost;
+        private int indoorXLoopQuantity;
+        private double indoorXLoopPrice;
+        private double indoorXLoopTotal;
+        private int outdoorXLoopQuantity;
+        private double outdoorXLoopPrice;
+        private double outdoorXLoopTotal;
+        private int petDoorInstallQuantity;
+        private double petDoorInstallPrice;
+        private double petDoorInstallTotal;
+        private double installTotal;
+        private double solutionTotal;
+        private double taxRate;
+        private double tax;
+        private double total;
+        private double deposit;
+        private double balance;
 
 
-            public string CustomerID
+        public string CustomerID
+        {
+            get
             {
-                get
-                {
-                    return customerID;
-                }
-                set
-                {
-                    customerID = value;
-                    OnPropertyChanged("CustomerID");
-                }
+                return customerID;
             }
-
-            //Command Parameter of radio button selected 
-            public string PackageSelection
+            set
             {
-                get
-                {
-                    return packageSelection;
-                }
-                set
-                {
-                    packageSelection = value;
-                    OnPropertyChanged("PackageSelection");
-                }
+                customerID = value;
+                OnPropertyChanged("CustomerID");
             }
+        }
 
-            //Price based on parameter chosen, 0 if none selected
-            public double PackagePrice
+        //Command Parameter of radio button selected 
+        public string PackageSelection
+        {
+            get
             {
-                get
-                {
-                    return packagePrice;
-                }
-                set
-                {
-                    packagePrice = value;
-                    OnPropertyChanged("PackagePrice");
-                }
+                return packageSelection;
             }
-
-            public double SafetyTotal
+            set
             {
-                get
-                {
-                    return safetyTotal;
-                }
-                set
-                {
-                    safetyTotal = value;
-                    OnPropertyChanged("SafetyTotal");
-                }
+                packageSelection = value;
+                OnPropertyChanged("PackageSelection");
             }
+        }
 
-            //Page 3
-            public int OutdoorShieldQuantity
+        //Price based on parameter chosen, 0 if none selected
+        public double PackagePrice
+        {
+            get
             {
-                get
-                {
-                    return outdoorShieldQuantity;
-                }
-                set
-                {
-                    outdoorShieldQuantity = value;
-                    OnPropertyChanged("OutdoorShieldQuantity");
-                }
+                return packagePrice;
             }
-
-            public double OutdoorShieldPrice1
+            set
             {
-                get
-                {
-                    return outdoorShieldPrice1;
-                }
-                set
-                {
-                    outdoorShieldPrice1 = value;
-                    OnPropertyChanged("OutdoorShieldPrice1");
-                }
+                packagePrice = value;
+                OnPropertyChanged("PackagePrice");
             }
+        }
 
-            public double OutdoorShieldPrice2
+        public double SafetyTotal
+        {
+            get
             {
-                get
-                {
-                    return outdoorShieldPrice2;
-                }
-                set
-                {
-                    outdoorShieldPrice2 = value;
-                    OnPropertyChanged("OutdoorShieldPrice2");
-                }
+                return safetyTotal;
             }
-
-            public double OutdoorShieldTotal
+            set
             {
-                get
-                {
-                    return outdoorShieldTotal;
-                }
-                set
-                {
-                    outdoorShieldTotal = value;
-                    OnPropertyChanged("OutdoorShieldTotal");
-                }
+                safetyTotal = value;
+                OnPropertyChanged("SafetyTotal");
             }
+        }
 
-            public int IndoorShieldQuantity
+        //Page 3
+        public int OutdoorShieldQuantity
+        {
+            get
             {
-                get
-                {
-                    return indoorShieldQuantity;
-
-                }
-                set
-                {
-                    indoorShieldQuantity = value;
-                    OnPropertyChanged("IndoorShieldQuantity");
-                }
+                return outdoorShieldQuantity;
             }
-
-            public double IndoorShieldPrice1
+            set
             {
-                get
-                {
-                    return indoorShieldPrice1;
-                }
-                set
-                {
-                    indoorShieldPrice1 = value;
-                    OnPropertyChanged("IndoorShieldPrice1");
-                }
+                outdoorShieldQuantity = value;
+                OnPropertyChanged("OutdoorShieldQuantity");
             }
+        }
 
-            public double IndoorShieldPrice2
+        public double OutdoorShieldPrice1
+        {
+            get
             {
-                get
-                {
-                    return indoorShieldPrice2;
-                }
-                set
-                {
-                    indoorShieldPrice2 = value;
-                    OnPropertyChanged("IndoorShieldPrice2");
-                }
+                return outdoorShieldPrice1;
             }
-
-            public double IndoorShieldTotal
+            set
             {
-                get
-                {
-                    return IndoorShieldTotal;
-                }
-                set
-                {
-                    indoorShieldTotal = value;
-                    OnPropertyChanged("IndoorShieldTotal");
-                }
+                outdoorShieldPrice1 = value;
+                OnPropertyChanged("OutdoorShieldPrice1");
+            }
+        }
+
+        public double OutdoorShieldPrice2
+        {
+            get
+            {
+                return outdoorShieldPrice2;
+            }
+            set
+            {
+                outdoorShieldPrice2 = value;
+                OnPropertyChanged("OutdoorShieldPrice2");
+            }
+        }
+
+        public double OutdoorShieldTotal
+        {
+            get
+            {
+                return outdoorShieldTotal;
+            }
+            set
+            {
+                outdoorShieldTotal = value;
+                OnPropertyChanged("OutdoorShieldTotal");
+            }
+        }
+
+        public int IndoorShieldQuantity
+        {
+            get
+            {
+                return indoorShieldQuantity;
 
             }
-
-            public int MicroShieldQuantity
+            set
             {
-                get
-                {
-                    return microShieldQuantity;
-                }
-                set
-                {
-                    microShieldQuantity = value;
-                    OnPropertyChanged("MicroShieldQuantity");
-                }
+                indoorShieldQuantity = value;
+                OnPropertyChanged("IndoorShieldQuantity");
+            }
+        }
+
+        public double IndoorShieldPrice1
+        {
+            get
+            {
+                return indoorShieldPrice1;
+            }
+            set
+            {
+                indoorShieldPrice1 = value;
+                OnPropertyChanged("IndoorShieldPrice1");
+            }
+        }
+
+        public double IndoorShieldPrice2
+        {
+            get
+            {
+                return indoorShieldPrice2;
+            }
+            set
+            {
+                indoorShieldPrice2 = value;
+                OnPropertyChanged("IndoorShieldPrice2");
+            }
+        }
+
+        public double IndoorShieldTotal
+        {
+            get
+            {
+                return IndoorShieldTotal;
+            }
+            set
+            {
+                indoorShieldTotal = value;
+                OnPropertyChanged("IndoorShieldTotal");
             }
 
-            public double MicroShieldPrice1
+        }
+
+        public int MicroShieldQuantity
+        {
+            get
             {
-                get
-                {
-                    return microShieldPrice1;
-                }
-                set
-                {
-                    microShieldPrice1 = value;
-                    OnPropertyChanged("MicroShieldPrice1");
-                }
+                return microShieldQuantity;
+            }
+            set
+            {
+                microShieldQuantity = value;
+                OnPropertyChanged("MicroShieldQuantity");
+            }
+        }
+
+        public double MicroShieldPrice1
+        {
+            get
+            {
+                return microShieldPrice1;
+            }
+            set
+            {
+                microShieldPrice1 = value;
+                OnPropertyChanged("MicroShieldPrice1");
+            }
+        }
+
+        public double MicroShieldPrice2
+        {
+            get
+            {
+                return microShieldPrice2;
+            }
+            set
+            {
+                microShieldPrice2 = value;
+                OnPropertyChanged("MicrosShieldPrice2");
+            }
+        }
+
+        public double MicroShieldTotal
+        {
+            get
+            {
+                return MicroShieldTotal;
+            }
+            set
+            {
+                MicroShieldTotal = value;
+                OnPropertyChanged("MicroShieldTotal");
+            }
+        }
+
+        public int ShieldsCollarQuantity
+        {
+            get
+            {
+                return shieldsCollarQuantity;
+            }
+            set
+            {
+                shieldsCollarQuantity = value;
+                OnPropertyChanged("ShieldsCollarQuantity");
+            }
+        }
+
+        public double ShieldsCollarPrice
+        {
+            get
+            {
+                return shieldsCollarPrice;
+            }
+            set
+            {
+                shieldsCollarPrice = value;
+                OnPropertyChanged("ShieldsCollarPrice");
+            }
+        }
+
+        public double ShieldsCollarTotal
+        {
+            get
+            {
+                return shieldsCollarTotal;
+            }
+            set
+            {
+                shieldsCollarTotal = value;
+                OnPropertyChanged("ShieldsCollarTotal");
             }
 
-            public double MicroShieldPrice2
+        }
+
+        public int MicroLiteQuantity
+        {
+            get
             {
-                get
-                {
-                    return microShieldPrice2;
-                }
-                set
-                {
-                    microShieldPrice2 = value;
-                    OnPropertyChanged("MicrosShieldPrice2");
-                }
+                return microLiteQuantity;
             }
-
-            public double MicroShieldTotal
+            set
             {
-                get
-                {
-                    return MicroShieldTotal;
-                }
-                set
-                {
-                    MicroShieldTotal = value;
-                    OnPropertyChanged("MicroShieldTotal");
-                }
+                microLiteQuantity = value;
+                OnPropertyChanged("MicroLiteQuantity");
             }
+        }
 
-            public int ShieldsCollarQuantity
+        public double MicroLitePrice
+        {
+            get
             {
-                get
-                {
-                    return shieldsCollarQuantity;
-                }
-                set
-                {
-                    shieldsCollarQuantity = value;
-                    OnPropertyChanged("ShieldsCollarQuantity");
-                }
+                return microLitePrice;
             }
-
-            public double ShieldsCollarPrice
+            set
             {
-                get
-                {
-                    return shieldsCollarPrice;
-                }
-                set
-                {
-                    shieldsCollarPrice = value;
-                    OnPropertyChanged("ShieldsCollarPrice");
-                }
+                microLitePrice = value;
+                OnPropertyChanged("MicroLitePrice");
             }
+        }
 
-            public double ShieldsCollarTotal
+        public double MicroLiteTotal
+        {
+            get
             {
-                get
-                {
-                    return shieldsCollarTotal;
-                }
-                set
-                {
-                    shieldsCollarTotal = value;
-                    OnPropertyChanged("ShieldsCollarTotal");
-                }
-
+                return microLiteTotal;
             }
-
-            public int MicroLiteQuantity
+            set
             {
-                get
-                {
-                    return microLiteQuantity;
-                }
-                set
-                {
-                    microLiteQuantity = value;
-                    OnPropertyChanged("MicroLiteQuantity");
-                }
+                microLiteTotal = value;
+                OnPropertyChanged("MicroLiteTotal");
             }
+        }
 
-            public double MicroLitePrice
+        public double ProtectionTotal
+        {
+            get
             {
-                get
-                {
-                    return microLitePrice;
-                }
-                set
-                {
-                    microLitePrice = value;
-                    OnPropertyChanged("MicroLitePrice");
-                }
+                return protectionTotal;
             }
-
-            public double MicroLiteTotal
+            set
             {
-                get
-                {
-                    return microLiteTotal;
-                }
-                set
-                {
-                    microLiteTotal = value;
-                    OnPropertyChanged("MicroLiteTotal");
-                }
+                protectionTotal = value;
+                OnPropertyChanged("ProtectionTotal");
             }
+        }
 
-            public double ProtectionTotal
+        //Freedom
+        public int DoormanPetDoorQuantity
+        {
+            get
             {
-                get
-                {
-                    return protectionTotal;
-                }
-                set
-                {
-                    protectionTotal = value;
-                    OnPropertyChanged("ProtectionTotal");
-                }
+                return doormanPetDoorQuantity;
             }
-
-            //Freedom
-            public int DoormanPetDoorQuantity
+            set
             {
-                get
-                {
-                    return doormanPetDoorQuantity;
-                }
-                set
-                {
-                    doormanPetDoorQuantity = value;
-                    OnPropertyChanged("DoormanPetDoorQuantity");
-                }
+                doormanPetDoorQuantity = value;
+                OnPropertyChanged("DoormanPetDoorQuantity");
             }
+        }
 
-            public double DoormanPetDoorPrice
+        public double DoormanPetDoorPrice
+        {
+            get
             {
-                get
-                {
-                    return doormanPetDoorPrice;
-                }
-                set
-                {
-                    doormanPetDoorPrice = value;
-                    OnPropertyChanged("DoormanPetDoorPrice");
-                }
+                return doormanPetDoorPrice;
             }
-
-            public double DoormanPetDoorTotal
+            set
             {
-                get
-                {
-                    return doormanPetDoorTotal;
-                }
-                set
-                {
-                    doormanPetDoorTotal = value;
-                    OnPropertyChanged("DoormanPetDoorTotal");
-                }
+                doormanPetDoorPrice = value;
+                OnPropertyChanged("DoormanPetDoorPrice");
             }
+        }
 
-            // access shieldsCollarTotal 
-            public int ShieldsCollarQuantity2
+        public double DoormanPetDoorTotal
+        {
+            get
             {
-                get
-                {
-                    return shieldsCollarQuantity2;
-                }
-                set
-                {
-                    shieldsCollarQuantity2 = value;
-                    OnPropertyChanged("ShieldsCollarQuantity2");
-                }
+                return doormanPetDoorTotal;
             }
-
-            public double ShieldsCollarPrice2
+            set
             {
-                get
-                {
-                    return shieldsCollarPrice2;
-                }
-                set
-                {
-                    shieldsCollarPrice2 = value;
-                    OnPropertyChanged("ShieldsCollarPrice2");
-                }
+                doormanPetDoorTotal = value;
+                OnPropertyChanged("DoormanPetDoorTotal");
             }
+        }
 
-
-
-
-
-            //Solution 5
-            //Add a Pet
-            public int SafetyWiredAddQuantity
+        // access shieldsCollarTotal 
+        public int ShieldsCollarQuantity2
+        {
+            get
             {
-                get
-                {
-                    return safetyWiredAddQuantity;
-                }
-                set
-                {
-                    safetyWiredAddQuantity = value;
-                    OnPropertyChanged("SafetyWiredAddQuantity");
-                }
+                return shieldsCollarQuantity2;
             }
-
-            public double SafetyWiredAddPrice
+            set
             {
-                get
-                {
-                    return safetyWiredAddPrice;
-                }
-                set
-                {
-                    safetyWiredAddPrice = value;
-                    OnPropertyChanged("SafetyWiredAddPrice");
-                }
+                shieldsCollarQuantity2 = value;
+                OnPropertyChanged("ShieldsCollarQuantity2");
             }
+        }
 
-            public double SafetyWiredAddTotal
+        public double ShieldsCollarPrice2
+        {
+            get
             {
-                get
-                {
-                    return safetyWiredAddTotal;
-                }
-                set
-                {
-                    safetyWiredAddTotal = value;
-                    OnPropertyChanged("SafetyWiredAddTotal");
-                }
+                return shieldsCollarPrice2;
             }
-
-            public double FreedomTotal
+            set
             {
-                get
-                {
-                    return freedomTotal;
-                }
-                set
-                {
-                    freedomTotal = value;
-                    OnPropertyChanged("FreedomTotal");
-                }
+                shieldsCollarPrice2 = value;
+                OnPropertyChanged("ShieldsCollarPrice2");
             }
+        }
 
-            public int GPSAddQuantity
+
+
+
+
+        //Solution 5
+        //Add a Pet
+        public int SafetyWiredAddQuantity
+        {
+            get
             {
-                get
-                {
-                    return gPSAddQuantity;
-                }
-                set
-                {
-                    gPSAddQuantity = value;
-                    OnPropertyChanged("GPSAddQuantity");
-                }
+                return safetyWiredAddQuantity;
             }
-
-            public double GPSAddPrice
+            set
             {
-                get
-                {
-                    return gPSAddQuantity;
-                }
-                set
-                {
-                    gPSAddPrice = value;
-                    OnPropertyChanged("GPSAddPrice");
-                }
+                safetyWiredAddQuantity = value;
+                OnPropertyChanged("SafetyWiredAddQuantity");
             }
+        }
 
-            public double GPSAddTotal
+        public double SafetyWiredAddPrice
+        {
+            get
             {
-                get
-                {
-                    return gPSAddTotal;
-                }
-                set
-                {
-                    gPSAddTotal = value;
-                    OnPropertyChanged("GPSAddTotal");
-                }
+                return safetyWiredAddPrice;
             }
-
-            public int SingleTrainQuantity
+            set
             {
-                get
-                {
-                    return singleTrainQuantity;
-                }
-                set
-                {
-                    singleTrainQuantity = value;
-                    OnPropertyChanged("SingleTrainQuantity");
-                }
+                safetyWiredAddPrice = value;
+                OnPropertyChanged("SafetyWiredAddPrice");
             }
+        }
 
-            public double SingleTrainPrice
+        public double SafetyWiredAddTotal
+        {
+            get
             {
-                get
-                {
-                    return singleTrainPrice;
-                }
-                set
-                {
-                    singleTrainPrice = value;
-                    OnPropertyChanged("SingleTrainPrice");
-                }
+                return safetyWiredAddTotal;
             }
-
-            public double SingleTrainTotal
+            set
             {
-                get
-                {
-                    return singleTrainTotal;
-                }
-                set
-                {
-                    singleTrainTotal = value;
-                    OnPropertyChanged("SingleTrainTotal");
-                }
+                safetyWiredAddTotal = value;
+                OnPropertyChanged("SafetyWiredAddTotal");
             }
+        }
 
-            public string CouponCode
+        public double FreedomTotal
+        {
+            get
             {
-                get
-                {
-                    return couponCode;
-                }
-                set
-                {
-                    couponCode = value;
-                    OnPropertyChanged("CouponCode");
-                }
+                return freedomTotal;
             }
-
-            public double Discount
+            set
             {
-                get
-                {
-                    return discount;
-                }
-                set
-                {
-                    discount = value;
-                    OnPropertyChanged("Discount");
-                }
+                freedomTotal = value;
+                OnPropertyChanged("FreedomTotal");
             }
+        }
 
-            public double SolutionsPageTotal
+        public int GPSAddQuantity
+        {
+            get
             {
-                get
-                {
-                    return solutionsPageTotal;
-                }
-                set
-                {
-                    solutionsPageTotal = value;
-                    OnPropertyChanged("SolutionsPageTotal");
-                }
+                return gPSAddQuantity;
             }
-
-            //Installation
-            public double OutdoorInstallationCost
+            set
             {
-                get
-                {
-                    return outdoorInstallationCost;
-                }
-                set
-                {
-                    outdoorInstallationCost = value;
-                    OnPropertyChanged("OutdoorInstallationCost");
-                }
+                gPSAddQuantity = value;
+                OnPropertyChanged("GPSAddQuantity");
             }
+        }
 
-            public int IndoorXLoopQuantity
+        public double GPSAddPrice
+        {
+            get
             {
-                get
-                {
-                    return indoorXLoopQuantity;
-                }
-                set
-                {
-                    indoorXLoopQuantity = value;
-                }
+                return gPSAddQuantity;
             }
-
-            public double IndoorXLoopPrice
+            set
             {
-                get
-                {
-                    return indoorXLoopPrice;
-                }
-                set
-                {
-                    indoorXLoopPrice = value;
-                    OnPropertyChanged("IndoorXLoopPrice");
-                }
+                gPSAddPrice = value;
+                OnPropertyChanged("GPSAddPrice");
             }
+        }
 
-            public double IndoorXLoopTotal
+        public double GPSAddTotal
+        {
+            get
             {
-                get
-                {
-                    return indoorXLoopTotal;
-                }
-                set
-                {
-                    indoorXLoopTotal = value;
-                    OnPropertyChanged("IndoorXLoopTotal");
-                }
+                return gPSAddTotal;
             }
-
-            public int OutdoorXLoopQuantity
+            set
             {
-                get
-                {
-                    return outdoorXLoopQuantity;
-                }
-                set
-                {
-                    outdoorXLoopQuantity = value;
-                    OnPropertyChanged("OutdoorXLoopQuantity");
-                }
+                gPSAddTotal = value;
+                OnPropertyChanged("GPSAddTotal");
             }
+        }
 
-            public double OutdoorXLoopPrice
+        public int SingleTrainQuantity
+        {
+            get
             {
-                get
-                {
-                    return outdoorXLoopPrice;
-                }
-                set
-                {
-                    outdoorXLoopPrice = value;
-                    OnPropertyChanged("OutdoorXLoopPrice");
-                }
+                return singleTrainQuantity;
             }
-
-            public double OutdoorXLoopTotal
+            set
             {
-                get
-                {
-                    return outdoorXLoopTotal;
-                }
-                set
-                {
-                    outdoorXLoopTotal = value;
-                    OnPropertyChanged("OutdoorXLoopTotal");
-                }
+                singleTrainQuantity = value;
+                OnPropertyChanged("SingleTrainQuantity");
             }
+        }
 
-            public int PetDoorInstallQuantity
+        public double SingleTrainPrice
+        {
+            get
             {
-                get
-                {
-                    return petDoorInstallQuantity;
-                }
-                set
-                {
-                    petDoorInstallQuantity = value;
-                }
+                return singleTrainPrice;
             }
-
-            public double PetDoorInstallPrice
+            set
             {
-                get
-                {
-                    return petDoorInstallPrice;
-                }
-                set
-                {
-                    petDoorInstallPrice = value;
-                    OnPropertyChanged("PetDoorInstallPrice");
-                }
+                singleTrainPrice = value;
+                OnPropertyChanged("SingleTrainPrice");
             }
+        }
 
-            public double PetDoorInstallTotal
+        public double SingleTrainTotal
+        {
+            get
             {
-                get
-                {
-                    return petDoorInstallTotal;
-                }
-                set
-                {
-                    petDoorInstallTotal = value;
-                    OnPropertyChanged("PetDoorInstallTotal");
-                }
+                return singleTrainTotal;
             }
-
-            public double InstallationTotal
+            set
             {
-                get
-                {
-                    return installationTotal;
-                }
-                set
-                {
-                    installationTotal = value;
-                    OnPropertyChanged("InstallationTotal");
-                }
+                singleTrainTotal = value;
+                OnPropertyChanged("SingleTrainTotal");
             }
+        }
 
-            //Subtotal previous totals into solution total
-            public double SolutionTotal
+        public string CouponCode
+        {
+            get
             {
-                get
-                {
-                    return solutionTotal;
-                }
-                set
-                {
-                    solutionTotal = value;
-                    OnPropertyChanged("SolutionTotal");
-                }
+                return couponCode;
             }
-
-            public double TaxRate
+            set
             {
-                get
-                {
-                    return taxRate;
-                }
-                set
-                {
-                    taxRate = value;
-                }
+                couponCode = value;
+                OnPropertyChanged("CouponCode");
             }
+        }
 
-            public double Tax
+        public double Discount
+        {
+            get
             {
-                get
-                {
-                    return tax;
-                }
-                set
-                {
-                    tax = value;
-                    OnPropertyChanged("Tax");
-                }
+                return discount;
             }
-
-            public double Total
+            set
             {
-                get
-                {
-                    return total;
-                }
-                set
-                {
-                    total = value;
-                    OnPropertyChanged("Total");
-                }
+                discount = value;
+                OnPropertyChanged("Discount");
             }
+        }
 
-            public double Deposit
+        public double SolutionsPageTotal
+        {
+            get
             {
-                get
-                {
-                    return deposit;
-                }
-                set
-                {
-                    deposit = value;
-                }
+                return solutionsPageTotal;
             }
-
-            public double Balance
+            set
             {
-                get
-                {
-                    return balance;
-                }
-                set
-                {
-                    balance = value;
-                    OnPropertyChanged("Balance");
-                }
+                solutionsPageTotal = value;
+                OnPropertyChanged("SolutionsPageTotal");
+            }
+        }
+
+        //Installation
+        public double OutdoorInstallCost
+        {
+            get
+            {
+                return outdoorInstallCost;
+            }
+            set
+            {
+                outdoorInstallCost = value;
+                OnPropertyChanged("OutdoorInstallCost");
+            }
+        }
+
+        public int IndoorXLoopQuantity
+        {
+            get
+            {
+                return indoorXLoopQuantity;
+            }
+            set
+            {
+                indoorXLoopQuantity = value;
+            }
+        }
+
+        public double IndoorXLoopPrice
+        {
+            get
+            {
+                return indoorXLoopPrice;
+            }
+            set
+            {
+                indoorXLoopPrice = value;
+                OnPropertyChanged("IndoorXLoopPrice");
+            }
+        }
+
+        public double IndoorXLoopTotal
+        {
+            get
+            {
+                return indoorXLoopTotal;
+            }
+            set
+            {
+                indoorXLoopTotal = value;
+                OnPropertyChanged("IndoorXLoopTotal");
+            }
+        }
+
+        public int OutdoorXLoopQuantity
+        {
+            get
+            {
+                return outdoorXLoopQuantity;
+            }
+            set
+            {
+                outdoorXLoopQuantity = value;
+                OnPropertyChanged("OutdoorXLoopQuantity");
+            }
+        }
+
+        public double OutdoorXLoopPrice
+        {
+            get
+            {
+                return outdoorXLoopPrice;
+            }
+            set
+            {
+                outdoorXLoopPrice = value;
+                OnPropertyChanged("OutdoorXLoopPrice");
+            }
+        }
+
+        public double OutdoorXLoopTotal
+        {
+            get
+            {
+                return outdoorXLoopTotal;
+            }
+            set
+            {
+                outdoorXLoopTotal = value;
+                OnPropertyChanged("OutdoorXLoopTotal");
+            }
+        }
+
+        public int PetDoorInstallQuantity
+        {
+            get
+            {
+                return petDoorInstallQuantity;
+            }
+            set
+            {
+                petDoorInstallQuantity = value;
+            }
+        }
+
+        public double PetDoorInstallPrice
+        {
+            get
+            {
+                return petDoorInstallPrice;
+            }
+            set
+            {
+                petDoorInstallPrice = value;
+                OnPropertyChanged("PetDoorInstallPrice");
+            }
+        }
+
+        public double PetDoorInstallTotal
+        {
+            get
+            {
+                return petDoorInstallTotal;
+            }
+            set
+            {
+                petDoorInstallTotal = value;
+                OnPropertyChanged("PetDoorInstallTotal");
+            }
+        }
+
+        public double InstallTotal
+        {
+            get
+            {
+                return installTotal;
+            }
+            set
+            {
+                installTotal = value;
+                OnPropertyChanged("InstallTotal");
+            }
+        }
+
+        //Subtotal previous totals into solution total
+        public double SolutionTotal
+        {
+            get
+            {
+                return solutionTotal;
+            }
+            set
+            {
+                solutionTotal = value;
+                OnPropertyChanged("SolutionTotal");
+            }
+        }
+
+        public double TaxRate
+        {
+            get
+            {
+                return taxRate;
+            }
+            set
+            {
+                taxRate = value;
+            }
+        }
+
+        public double Tax
+        {
+            get
+            {
+                return tax;
+            }
+            set
+            {
+                tax = value;
+                OnPropertyChanged("Tax");
+            }
+        }
+
+        public double Total
+        {
+            get
+            {
+                return total;
+            }
+            set
+            {
+                total = value;
+                OnPropertyChanged("Total");
+            }
+        }
+
+        public double Deposit
+        {
+            get
+            {
+                return deposit;
+            }
+            set
+            {
+                deposit = value;
+            }
+        }
+
+        public double Balance
+        {
+            get
+            {
+                return balance;
+            }
+            set
+            {
+                balance = value;
+                OnPropertyChanged("Balance");
             }
         }
     }
+}
 
 
 
