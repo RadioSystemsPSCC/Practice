@@ -1,0 +1,35 @@
+﻿<Window x:Class="DataGridCRUDExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataGridCRUDExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DataGrid ItemsSource="{Binding Products}" HorizontalAlignment="Right" Width="517"
+              SelectionMode="Single"
+              CanUserAddRows="true"
+              CanUserDeleteRows="true"
+              AutoGenerateColumns="false"
+              >
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+            <DataGridTextColumn Header="Sku" Binding="{Binding Sku}" />
+            <DataGridTextColumn Header="Price" Binding="{Binding Price}"/>
+            <DataGridTemplateColumn Header="Delete" Width="75">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Button Content="Update" Command="{Binding Save}"/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            <DataGridTemplateColumn Header="Delete" Width="75">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Button Content="Delete" Command="Delete"/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+</Window>

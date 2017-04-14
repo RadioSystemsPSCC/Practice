@@ -1,0 +1,14 @@
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\bin\Debug\DataGridCRUDExample.exe.config
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\bin\Debug\DataGridCRUDExample.exe
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\bin\Debug\DataGridCRUDExample.pdb
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample.csprojResolveAssemblyReference.cache
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\MainWindow.g.cs
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\App.g.cs
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample_MarkupCompile.cache
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample_MarkupCompile.lref
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\MainWindow.baml
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample.g.resources
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample.Properties.Resources.resources
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample.csproj.GenerateResource.Cache
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample.exe
+C:\Users\dwalk\Documents\GitHub\Practice\DataGridExample\obj\Debug\DataGridCRUDExample.pdb
