@@ -179,3 +179,9 @@ C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFe
 C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\ProductLookup.baml
 C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\SelectCustomer.baml
 C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Start.baml
+C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\ProductLookup.g.cs
+C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\SelectCustomer.g.cs
+C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Start.g.cs
+C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\ProductLookup.baml
+C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\SelectCustomer.baml
+C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Start.baml

@@ -10,7 +10,7 @@ namespace InvisibleFenceContract.Viewmodels
 {
     class BindableBase : INotifyPropertyChanged
     {
-        private string _CusID = "23";
+        private string _CusID = "88";
        //private int _CusID;
         public string CusID
         {

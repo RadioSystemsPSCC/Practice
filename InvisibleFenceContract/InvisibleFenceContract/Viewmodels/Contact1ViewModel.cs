@@ -19,6 +19,7 @@ namespace InvisibleFenceContract.Viewmodels
             string currentCustomerID = this.CusID;
             LoadClients();
             LoadPets();
+            pickPet();
         }
         public List<Customer> c_Clients
         {
@@ -26,6 +27,11 @@ namespace InvisibleFenceContract.Viewmodels
             set;
         }
         public List<Pet> c_Pets
+        {
+            get;
+            set;
+        }
+        public List<Pet> sel_Pets
         {
             get;
             set;
@@ -240,13 +246,27 @@ namespace InvisibleFenceContract.Viewmodels
             }
         }
 
+        public void pickPet()
+        {
+            List<Pet> pick_Pet = new List<Pet>();
+            foreach (Pet item in sel_Pets)
+            {
+                if (item.CustomerID == CustomerID)
+                {
+
+                    pick_Pet.Add(item);
+                }
+            }
+            c_Pets = pick_Pet;
+        }
+
         public void LoadPets()
         {
 
             string text = System.IO.File.ReadAllText(@"../../Resources/Pet.json");
 
             List<Pet> cc_Pets = JsonConvert.DeserializeObject<List<Pet>>(text);
-            c_Pets = cc_Pets;
+            sel_Pets = cc_Pets;
         }
 
         public void LoadClients()

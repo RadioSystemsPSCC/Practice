@@ -12,8 +12,15 @@
     "PetBreed":"Collie"
   },
   {
-    "CustomerID":"11",
-    "PetName":"Dancer",
+    "CustomerID": "88",
+    "PetName": "Dancer",
+    "PetBirthday": "09/11/2015",
+    "PetBreed": "Standard Poodle"
+  },
+
+  {
+    "CustomerID":"88",
+    "PetName":"Snapper",
     "PetBirthday":"09/11/2015",
     "PetBreed":"Standard Poodle"
   }
