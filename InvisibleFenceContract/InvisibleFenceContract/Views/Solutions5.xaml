@@ -90,17 +90,17 @@
         <!-- Row 2 Safety Solution-->
         <TextBlock Grid.Column="3" Grid.Row="3" Text="SAFETY SOLUTION" FontWeight="Bold" Foreground="#017EB8" HorizontalAlignment="Left"    />
         <TextBlock Grid.Column="8" Grid.Row="3" Text="Subtotal"  FontWeight='Bold'   HorizontalAlignment="Left" />
-        <Label x:Name='lblSafetyTotal' Grid.Column="9" Grid.Row="3" Content="SafetyTotal"  HorizontalAlignment="Right" Width='75'  />
+        <Label x:Name='lblSafetyTotal' Grid.Column="9" Grid.Row="3" Content="{Binding SafetyTotal}"  HorizontalAlignment="Right" Width='75'  />
 
         <!-- Row 3 Protection Solution-->
         <TextBlock Grid.Column="3" Grid.Row="4" Text="PROTECTION SOLUTION" Foreground="#A6D473" FontWeight="Bold" HorizontalAlignment="Left"  />
         <TextBlock Grid.Column="8" Grid.Row="4" Text="Subtotal"  FontWeight='Bold'  HorizontalAlignment="Left" />
-        <Label x:Name='lblProtectionTotal' Grid.Column="9" Grid.Row="4" Content='ProtectionTotal' HorizontalAlignment="Right" Width='95'/>
+        <Label x:Name='lblProtectionTotal' Grid.Column="9" Grid.Row="4" Content='{Binding ProtectionTotal}' HorizontalAlignment="Right" Width='95'/>
 
         <!-- Row 4 Freedom Solution -->
         <TextBlock Grid.Column="3" Grid.Row="5" Text="FREEDOM SOLUTION" Foreground="#E96C2D" FontWeight="Bold" HorizontalAlignment="Left" />
         <TextBlock Grid.Column="8" Grid.Row="5" Text="Subtotal"  FontWeight='Bold' HorizontalAlignment="Left" />
-        <Label x:Name='lblFreedomTotal' Grid.Column="9" Grid.Row="5" Content='FreedomTotal' HorizontalAlignment="Right" Width='85'/>
+        <Label x:Name='lblFreedomTotal' Grid.Column="9" Grid.Row="5" Content='{Binding FreedomTotal}' HorizontalAlignment="Right" Width='85'/>
 
         <!-- Row 5 Blank Row -->
 
@@ -112,19 +112,19 @@
         <!-- Safety Wired -->
         <TextBlock Grid.Column="3" Grid.Row="9" Text='SAFETY Wired' Foreground="#017EB8" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <TextBlock Grid.Column="3" Grid.Row="9" Grid.ColumnSpan="2" Text="(Add-A-Pet)" Margin="88,0,2,0" HorizontalAlignment="Left" VerticalAlignment="Center"  />
-        <Label x:Name='lblSafetyWiredAddPrice' Grid.Column='5' Grid.Row='9' Content='SafetyWiredAddPrice'  HorizontalAlignment='Left'  />
-        <TextBox x:Name='txtSafetyWiredAddQuantity' Grid.Column="6" Grid.Row="9" Text='' HorizontalAlignment="Right"   Height="20" Width="40" Margin="0,0,20,0" />
+        <Label x:Name='lblSafetyWiredAddPrice' Grid.Column='5' Grid.Row='9' Content='{Binding SafetyWiredAddPrice}'  HorizontalAlignment='Left'  />
+        <TextBox x:Name='txtSafetyWiredAddQuantity' Grid.Column="6" Grid.Row="9" Text='{Binding SafetywiredAddQuantity}' HorizontalAlignment="Right"   Height="20" Width="40" Margin="0,0,20,0" />
         <TextBlock Grid.Column="7" Grid.Row="9" Text="Quantity" HorizontalAlignment="Left"  />
-        <Label x:Name='lblsafetyWiredAddTotal' Grid.Column="9" Grid.Row="9" Content='SfyWireATot' HorizontalAlignment="Right" Width='79' />
+        <Label x:Name='lblsafetyWiredAddTotal' Grid.Column="9" Grid.Row="9" Content='{Binding SafetyWiredAddTotal}' HorizontalAlignment="Right" Width='79' />
 
 
         <!-- GPS 2.0 Wired-->
         <TextBlock Grid.Column="3" Grid.Row="10" Text="GPS 2.0 Wire Free"  Foreground="#017EB8" FontWeight="Bold" HorizontalAlignment="Left"/>
         <TextBlock Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="2" Text="(Add-A-Pet)" Margin="108,0,0,3" HorizontalAlignment="Left" />
-        <Label x:Name='lblGPSAddPrice'  Grid.Column='5' Grid.Row='10' Content='GPSAddPrice'  />
-        <TextBox x:Name='txtGPSAddQuantity' Grid.Column="6" Grid.Row="10" Margin="0,0,20,0" HorizontalAlignment="Right" Width="40" />
+        <Label x:Name='lblGPSAddPrice'  Grid.Column='5' Grid.Row='10' Content='{Binding GPSAddPrice}'  />
+        <TextBox x:Name='txtGPSAddQuantity' Grid.Column="6" Grid.Row="10" Text="{Binding GPSAddQuantity}" Margin="0,0,20,0" HorizontalAlignment="Right" Width="40" />
         <TextBlock Grid.Column="7" Grid.Row="10" Text="Quantity" Margin="0,1,6,1" HorizontalAlignment="Left"  Width="50"  />
-        <Label x:Name='lblGPSAddTotal' Grid.Column="9" Grid.Row="10" Content="GPSAddTot"  HorizontalAlignment="Right" Width='75'/>
+        <Label x:Name='lblGPSAddTotal' Grid.Column="9" Grid.Row="10" Content="{Binding GPSAddTotal}"  HorizontalAlignment="Right" Width='75'/>
 
 
         <!-- Row 11 is blank space-->
@@ -134,10 +134,10 @@
         <!-- Row 13 is blank space seperator-->
         <!-- Single Refresher Train  -->
         <TextBlock Grid.Column="3" Grid.Row="14" Text="Single Refresher Training" HorizontalAlignment="Left" />
-        <Label x:Name='lblSingleTrainPrice' Grid.Column='5' Grid.Row='14' Content='SingleTrainPrice'  HorizontalAlignment='Left'/>
-        <TextBox x:Name='txtSingleTrainQuantity' Grid.Column="6" Grid.Row="14" Text=""  Margin='0,0,20,0' HorizontalAlignment="Right" Width="40"/>
+        <Label x:Name='lblSingleTrainPrice' Grid.Column='5' Grid.Row='14' Content='{Binding SingleTrainPrice}'  HorizontalAlignment='Left'/>
+        <TextBox x:Name='txtSingleTrainQuantity' Grid.Column="6" Grid.Row="14" Text="{Binding SingleTrainQuantity, Mode=TwoWay}"  Margin='0,0,20,0' HorizontalAlignment="Right" Width="40"/>
         <TextBlock Grid.Column="7" Grid.Row="14" Text="Quantity" HorizontalAlignment="Left"  />
-        <Label x:Name='lblSingleTrainTotal' Grid.Column="9" Grid.Row="14" Content="SnglTrainTot"  HorizontalAlignment="Right"  Width='75'/>
+        <Label x:Name='lblSingleTrainTotal' Grid.Column="9" Grid.Row="14" Content="{Binding SingleTrainTotal, Mode=TwoWay}"  HorizontalAlignment="Right"  Width='75'/>
 
         <!--Coupon Code Checkbox -->
         <TextBlock Grid.Column='3' Grid.Row='15' Text='Coupon Code?' />
@@ -145,13 +145,13 @@
 
         <!-- Coupon Code -->
         <TextBlock Grid.Column="3" Grid.Row="16" Text="Coupon Code" Visibility='Visible' HorizontalAlignment="Left" />
-        <TextBox x:Name='txtCouponCode' Grid.Column="4" Grid.Row="16"  Text="" Visibility='Visible' HorizontalAlignment="Left"  Width='75'/>
+        <TextBox x:Name='txtCouponCode' Grid.Column="4" Grid.Row="16"  Text="{Binding CouponCode, Mode=TwoWay}" Visibility='Visible' HorizontalAlignment="Left"  Width='75'/>
         <!-- Discount  -->
         <TextBlock Grid.Column="8" Grid.Row="17" Text="Discount" Visibility='Visible' HorizontalAlignment="Left"  />
-        <TextBox x:Name='txtDiscount' Grid.Column="9" Grid.Row="17"  Text="" Visibility='Visible' Margin='0,0,6,0' HorizontalAlignment="Right" Width='75'/>
+        <TextBox x:Name='txtDiscount' Grid.Column="9" Grid.Row="17"  Text="{Binding Discount}" Visibility='Visible' Margin='0,0,6,0' HorizontalAlignment="Right" Width='75' />
 
         <TextBlock Grid.Column='7' Grid.Row='18' Grid.ColumnSpan='2' Text='Add-A-Pet/Training Total' Margin='30,0,0,0'  />
-        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="18" Content="SolutionPgTot" Margin="0,0,6,0" HorizontalAlignment='Right' Width='75'/>
+        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="18" Content="{Binding SolutionsPageTotal}" Margin="0,0,6,0" HorizontalAlignment='Right' Width='75'/>
     </Grid>
 </UserControl>
 
