@@ -11,10 +11,8 @@ namespace InvisibleFenceContract.Viewmodels
     class BindableBase : INotifyPropertyChanged
     {
         private string _CusID = "23";
+       //private int _CusID;
         public string CusID
-
-		 private int _CusID;
-        public int CusID
         {
             get
             {
@@ -30,13 +28,11 @@ namespace InvisibleFenceContract.Viewmodels
                 }
 
                     OnPropertyChanged("CustomerID");
-                }
-
             }
-        }
 
-            }
-        }
+          }
+        
+        
         protected virtual void SetProperty<T>(ref T member, T val,
            [CallerMemberName] string propertyName = null)
         {
