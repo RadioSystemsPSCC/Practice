@@ -37,8 +37,8 @@
         <!-- Star on last row provides screen flexibility in length of page-->
         <Grid.RowDefinitions>
             <RowDefinition Height='32'/>
-            <RowDefinition Height='32' />
-            <RowDefinition />
+            <RowDefinition Height='Auto' />
+            <RowDefinition Height='Auto'/>
             <RowDefinition />
             <RowDefinition Height='*'/>
         </Grid.RowDefinitions>
@@ -47,11 +47,7 @@
         <Border Grid.Column="0" Grid.Row="0" Padding="5" Background="White" Grid.ColumnSpan="3">
             <Image Source='..\Images\Logo.jpg' Grid.Column='1' Grid.Row='1' Grid.ColumnSpan='2' Margin="0,0,-69,-5" HorizontalAlignment="Left" Width="1363"   />
         </Border>
-        <!--<StackPanel Orientation='Horizontal' Height='80' Background='White'>
-            <Image Source='..\Images\planelogo.jpg' Margin='0,0,0,0' HorizontalAlignment='Left' Height='480' Width='600' />
-        </StackPanel>-->
-
-        <DataGrid x:Name="dg1" ItemsSource="{Binding c_Products}" SelectedItem="{Binding SelectedProduct}" CanUserAddRows="False"  CanUserDeleteRows="False" SelectionMode="Single" SelectedIndex="{Binding SelectedIndex}" VerticalAlignment="Center" Width="Auto" Height='32' AutoGenerateColumns="False" Margin="325,26,325,30" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2">
+        <DataGrid x:Name="dg1" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2"ItemsSource="{Binding c_Products}" SelectedItem="{Binding SelectedProduct}" CanUserAddRows="False"  CanUserDeleteRows="False" SelectionMode="Single" SelectedIndex="{Binding SelectedIndex}" VerticalAlignment="Center" Width="Auto" Height='Auto' AutoGenerateColumns="False" Margin="188,26,325,30" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Part ID" Binding="{Binding PartID}"/>
                 <DataGridTextColumn Header="Part #" Binding="{Binding PartNumber}"/>
@@ -63,3 +59,4 @@
         <!--</StackPanel>-->
     </Grid>
 </UserControl>
+
