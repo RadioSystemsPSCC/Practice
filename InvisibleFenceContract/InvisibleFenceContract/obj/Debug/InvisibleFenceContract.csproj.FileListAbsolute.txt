@@ -185,3 +185,6 @@ C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContr
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\ProductLookup.baml
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\SelectCustomer.baml
 C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\Views\Start.baml
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
