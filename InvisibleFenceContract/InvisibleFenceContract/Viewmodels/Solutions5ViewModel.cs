@@ -37,6 +37,7 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 SafetyWiredAddPrice = value;
+                OnPropertyChanged("SafetyWiredAddPrice");
             }
         }
 
@@ -56,6 +57,7 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 GPSAddPrice = value;
+                OnPropertyChanged("GPSAddPrice");
             }
         }
 
@@ -77,6 +79,7 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 SafetyWiredAddPrice = value;
+                OnPropertyChanged("SingleTrainPrice");
             }
         }
 
