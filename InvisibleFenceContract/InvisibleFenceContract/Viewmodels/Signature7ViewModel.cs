@@ -74,6 +74,22 @@ namespace InvisibleFenceContract.Viewmodels
                 gfx.DrawLine(XPens.Black, 15, 283, 400, 283);
                 gfx.DrawString("GPS 2.0 Wire Free Add-A-Pet " + "X    $699" + "    $", font, XBrushes.Black, 15, 300);
                 gfx.DrawLine(XPens.Black, 15, 303, 400, 303);
+                gfx.DrawString("PROTECTION Add-A-Pet " + "X    $" + "    $", font, XBrushes.Black, 15, 320);
+                gfx.DrawLine(XPens.Black, 15, 323, 400, 323);
+                gfx.DrawString("FREEDOM Add-A-Pet " + "X    $" + "    ", font, XBrushes.Black, 15, 340);
+                gfx.DrawLine(XPens.Black, 15, 343, 400, 343);
+
+                //Professional Installation
+                gfx.DrawString("PROFESSIONAL INSTALLATION", fontTitle, XBrushes.Black, 15, 370);
+                gfx.DrawString("Outdoor Installation " + "             $" + "    $", font, XBrushes.Black, 15, 390);
+                gfx.DrawLine(XPens.Black, 15, 393, 400, 393);
+                gfx.DrawString("Indoor Extension Loop (Up to 100') " + "       X $99" + "    $", font, XBrushes.Black, 15, 410);
+                gfx.DrawLine(XPens.Black, 15, 413, 400, 413);
+                gfx.DrawString("Outdoor Extension Loop (Up to 100') " + "        X $99" + "    $", font, XBrushes.Black, 15, 430);
+                gfx.DrawLine(XPens.Black, 15, 433, 400, 433);
+                gfx.DrawString("Pet Door Installation " + "            X $" + "       $", font, XBrushes.Black, 15, 450);
+                gfx.DrawLine(XPens.Black, 15, 453, 400, 453);
+
 
 
                 const string filename = "Contract.pdf";
