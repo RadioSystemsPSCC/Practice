@@ -41,7 +41,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height='32'/>
             <RowDefinition Height='32' />
-            
+
             <RowDefinition Height="Auto" />
             <RowDefinition Height='*'/>
         </Grid.RowDefinitions>
@@ -60,8 +60,10 @@
             <!--http://www.codesolution.org/crud-operations-in-wpf-with-mvvm-framework/-->
             <!--http://www.codesolution.org/crud-operations-in-wpf-with-mvvm-framework/-->
         </StackPanel>
-        <DataGrid x:Name="dg1" ItemsSource="{Binding c_Clients}" SelectedItem="{Binding SelectedCustomer}" CanUserAddRows="False"  CanUserDeleteRows="False" SelectionMode="Single" SelectedIndex="{Binding SelectedIndex}" VerticalAlignment="Center" Height='Auto' Width="Auto" AutoGenerateColumns="False" Margin="300,0,300,8" RenderTransformOrigin="0.5,0.611" Grid.Row="4" Grid.ColumnSpan="2">
+        <DataGrid x:Name="dg1" ItemsSource="{Binding c_Clients}" SelectedItem="{Binding SelectedCustomer}" CanUserAddRows="False"  CanUserDeleteRows="False" SelectionMode="Single" SelectedIndex="{Binding SelectedIndex}" VerticalAlignment="Center" Height='Auto' Width="Auto" AutoGenerateColumns="False" Margin="300,0,300,8" RenderTransformOrigin="0.5,0.611" Grid.Row="2" Grid.ColumnSpan="2" >
             <DataGrid.Columns>
+
+                <DataGridTextColumn Header='Customer ID' Binding='{Binding CustomerID}'/>
                 <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}"/>
                 <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}"/>
                 <DataGridTextColumn Header="Address" Binding="{Binding Address}"/>
