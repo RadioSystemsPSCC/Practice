@@ -26,7 +26,7 @@ namespace InvisibleFenceContract.Viewmodels
             set;
         }
 
-        public string OutdoorLabel1
+        public string OutdoorShieldPrice1
         {
             get
             {
@@ -41,11 +41,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                OutdoorLabel1 = value;
+                OutdoorShieldPrice1 = value;
             }
         }
 
-        public string OutdoorLabel2
+        public string OutdoorShieldPrice2
         {
             get
             {
@@ -60,11 +60,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                OutdoorLabel2 = value;
+                OutdoorShieldPrice2 = value;
             }
         }
 
-        public string IndoorShieldsLabel1
+        public string IndoorShieldPrice1
         {
             get
             {
@@ -79,11 +79,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                IndoorShieldsLabel1 = value;
+                IndoorShieldPrice1 = value;
             }
         }
 
-        public string IndoorShieldsLabel2
+        public string IndoorShieldPrice2
         {
             get
             {
@@ -98,11 +98,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                IndoorShieldsLabel2 = value;
+                IndoorShieldPrice2 = value;
             }
         }
 
-        public string MShieldsUnit
+        public string MicroShieldPrice
         {
             get
             {
@@ -117,11 +117,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                MShieldsUnit = value;
+                MicroShieldPrice = value;
             }
         }
 
-        public string MShieldsUnit2
+        public string MicroShieldPrice2
         {
             get
             {
@@ -136,11 +136,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                MShieldsUnit2 = value;
+                MicroShieldPrice2 = value;
             }
         }
 
-        public string ShieldsComputerCollar
+        public string ShieldsCollarPrice
         {
             get
             {
@@ -155,11 +155,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                ShieldsComputerCollar = value;
+                ShieldsCollarPrice = value;
             }
         }
 
-        public string MicroLiteComputerCollar
+        public string MicroLitePrice
         {
             get
             {
@@ -174,7 +174,7 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                MicroLiteComputerCollar = value;
+                MicroLitePrice = value;
             }
         }
 

@@ -26,7 +26,7 @@ namespace InvisibleFenceContract.Viewmodels
             set;
         }
         
-        public string Doorman
+        public string DoormanPetDoorPrice
         {
             get
             {
@@ -41,11 +41,11 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                Doorman = value;
+                DoormanPetDoorPrice = value;
             }
         }
 
-        public string ShieldsComputerCollar
+        public string ShieldsCollarPrice
         {
             get
             {
@@ -60,7 +60,7 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                ShieldsComputerCollar = value;
+                ShieldsCollarPrice = value;
             }
         }
 

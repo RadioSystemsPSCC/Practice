@@ -113,7 +113,7 @@
         <TextBlock Grid.Column="3" Grid.Row="9" Text='SAFETY Wired' Foreground="#017EB8" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" />
         <TextBlock Grid.Column="3" Grid.Row="9" Grid.ColumnSpan="2" Text="(Add-A-Pet)" Margin="88,0,2,0" HorizontalAlignment="Left" VerticalAlignment="Center"  />
         <Label x:Name='lblSafetyWiredAddPrice' Grid.Column='5' Grid.Row='9' Content='{Binding SafetyWiredAddPrice}'  HorizontalAlignment='Left'  />
-        <TextBox x:Name='txtSafetyWiredAddQuantity' Grid.Column="6" Grid.Row="9" Text='{Binding SafetywiredAddQuantity}' HorizontalAlignment="Right"   Height="20" Width="40" Margin="0,0,20,0" />
+        <TextBox x:Name='txtSafetyWiredAddQuantity' Grid.Column="6" Grid.Row="9" Text='{Binding SafetyWiredAddQuantity}' HorizontalAlignment="Right"   Height="20" Width="40" Margin="0,0,20,0" />
         <TextBlock Grid.Column="7" Grid.Row="9" Text="Quantity" HorizontalAlignment="Left"  />
         <Label x:Name='lblsafetyWiredAddTotal' Grid.Column="9" Grid.Row="9" Content='{Binding SafetyWiredAddTotal}' HorizontalAlignment="Right" Width='79' />
 
