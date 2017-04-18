@@ -188,3 +188,5 @@ C:\Users\docon\Documents\Capstone\PROJECT_ON_GITHUB\Practice\InvisibleFenceContr
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csprojResolveAssemblyReference.cache
+C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Randy Finger\Documents\Visual Studio 2015\Projects\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\System.Net.Http.Formatting.xml
