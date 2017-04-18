@@ -41,20 +41,22 @@ namespace InvisibleFenceContract.Viewmodels
                 XFont smallFont = new XFont("Times New Roman", 8, XFontStyle.Regular);
                 XFont smallItalFont = new XFont("Times New Roman", 8, XFontStyle.Italic);
                 XFont boldFont = new XFont("Times New Roman", 12, XFontStyle.Bold);
+                XFont smallBoldFont = new XFont("Times New Roman", 10, XFontStyle.Bold);
+
                 XImage logo = XImage.FromFile(@"../../Images/logo.jpg");
                 gfx.DrawImage(logo, 10, 5, logo.PixelWidth - 20, logo.PixelHeight);
                 gfx.DrawLine(XPens.CadetBlue, 10, 50, page.Width - 10, 50);
 
                 //Customer Information
-                gfx.DrawString("Name" + "Referred by", font, XBrushes.Black, 15, 70);
+                gfx.DrawString("Name" + "                     Referred by", font, XBrushes.Black, 15, 70);
                 gfx.DrawLine(XPens.Black, 15, 73, page.Width - 15, 73);
-                gfx.DrawString("Name" + "Referred by", font, XBrushes.Black, 15, 90);
+                gfx.DrawString("Address" + "          City" + "       State" + "   ZIP", font, XBrushes.Black, 15, 90);
                 gfx.DrawLine(XPens.Black, 15, 93, page.Width - 15, 93);
-                gfx.DrawString("Name" + "Referred by", font, XBrushes.Black, 15, 110);
+                gfx.DrawString("Home Phone" + "                 Cell Phone" + "           Email", font, XBrushes.Black, 15, 110);
                 gfx.DrawLine(XPens.Black, 15, 113, page.Width - 15, 113);
-                gfx.DrawString("Name" + "Referred by", font, XBrushes.Black, 15, 130);
+                gfx.DrawString("My Property contains unmarked underground: " + "   Landscape Lighting" + "   Sprinklers", font, XBrushes.Black, 15, 130);
                 gfx.DrawLine(XPens.Black, 15, 133, page.Width - 15, 133);
-                gfx.DrawString("Name" + "Referred by", font, XBrushes.Black, 15, 150);
+                gfx.DrawString("Pet Name(s)" + "     Breeds(s)" + "    Age(s)" + "      Pre-existing Sensitivities" + "    No" + "     Yes(if yes, please note below)", font, XBrushes.Black, 15, 150);
                 gfx.DrawLine(XPens.Black, 15, 153, page.Width - 15, 153);
 
                 //Solutions Totals
@@ -112,10 +114,13 @@ namespace InvisibleFenceContract.Viewmodels
                 gfx.DrawLine(XPens.Black, 15, 648, 400, 648);
                 gfx.DrawString("Balance                 $", boldFont, XBrushes.Black, 15, 665);
                 gfx.DrawLine(XPens.Black, 15, 668, 400, 668);
-                gfx.DrawString("Prices are valid for 10 days. Balance payable at time of delivery.", smallItalFont, XBrushes.Black, 15, 675);
+                gfx.DrawString("Prices are valid for 10 days. Balance payable at time of delivery.", smallItalFont, XBrushes.Black, 15, 677);
 
-
-
+                //Signature and fine print
+                gfx.DrawString("By signing here I agree to the terms and conditions listed on the back of this agreement:", smallBoldFont, XBrushes.Black, 15, 695);
+                gfx.DrawLine(XPens.Black, 15, 740, 400, 740);
+                gfx.DrawString("Purchaser Signature                                                                                    Date", smallItalFont, XBrushes.Black, 15, 747);
+                gfx.DrawString("Yes, I consent to be a referral source and authorize the disclosure of my contact information.", smallFont, XBrushes.Black, 15, 770);
 
 
                 const string filename = "Contract.pdf";
