@@ -8,29 +8,29 @@ using System.Threading.Tasks;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class BindableBase : INotifyPropertyChanged
+    public class BindableBase : INotifyPropertyChanged
     {
-        private string _CusID = "88";
-       //private int _CusID;
-        public string CusID
-        {
-            get
-            {
-                return _CusID;
-            }
-            set
-            {
-                if (_CusID != value)
-                {
-                    _CusID = value;
+       // private string _CusID = "88";
+       ////private int _CusID;
+       // public string CusID
+       // {
+       //     get
+       //     {
+       //         return _CusID;
+       //     }
+       //     set
+       //     {
+       //         if (_CusID != value)
+       //         {
+       //             _CusID = value;
 
-                    OnPropertyChanged("CusID");
-                }
+       //             OnPropertyChanged("CusID");
+       //         }
 
-                    OnPropertyChanged("CustomerID");
-            }
+       //             OnPropertyChanged("CustomerID");
+       //     }
 
-          }
+       //   }
         
         
         protected virtual void SetProperty<T>(ref T member, T val,

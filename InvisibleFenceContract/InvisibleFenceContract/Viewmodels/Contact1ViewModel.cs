@@ -14,9 +14,10 @@ namespace InvisibleFenceContract.Viewmodels
 {
     class Contact1ViewModel : BindableBase
     {
+        public int CusID = Convert.ToInt32(Application.Current.Properties["Cus_ID"]);
         public Contact1ViewModel()
         {
-            string currentCustomerID = this.CusID;
+            
             LoadClients();
             LoadPets();
             pickPet();
@@ -36,19 +37,19 @@ namespace InvisibleFenceContract.Viewmodels
             get;
             set;
         }
-        public string CustomerID
+        public int CustomerID
         {
             get
             {
                 for (int i = 0; i < c_Clients.Count; i++)
                 {
-                    if ((c_Clients[i].CustomerID == CusID) && (CusID != null))
+                    if ((c_Clients[i].CustomerID == CusID) && (CusID != 0))
                     {
                         return c_Clients[i].CustomerID;
                     }
                 }
                 MessageBox.Show("Customer not found");
-                return null;
+                return -1;
             }
             set
             {

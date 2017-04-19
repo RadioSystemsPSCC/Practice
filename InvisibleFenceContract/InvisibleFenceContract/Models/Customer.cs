@@ -7,15 +7,16 @@ using System.ComponentModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
-
+using InvisibleFenceContract.Viewmodels;
+using InvisibleFenceContract.Viewmodels.Commands;
 
 namespace InvisibleFenceContract.Models
 {
-    class Customer : BindableBase
+    public class Customer : BindableBase
     {
         //Must add CustomerID to this model to select proper client, also remove petname, pet breed and petBirthday
         //These must be fed in as a list to allow for multiple entries. Copying fields to pet. 
-        private string customerID;
+        private int customerID;
         private string firstName;
         private string lastName;
         private string referredBy;
@@ -26,14 +27,25 @@ namespace InvisibleFenceContract.Models
         private string homePhone;
         private string cellPhone;
         private string email;
-
-
+        public SelectCustomerViewModel Parent { get; set; }
+        private System.Windows.Input.ICommand select;
         /// <summary>
         /// Initiates a new instance of the customer class
         /// , String lastName, String address, String
         /// </summary>
 
-        public String CustomerID
+        public System.Windows.Input.ICommand Select
+        {
+            get
+            {
+                if (select == null)
+                {
+                    select = new SelectCustomer(this);
+                }
+                return select;
+            }
+        }
+        public int CustomerID
         {
             get
             {

@@ -12,31 +12,39 @@ using System.Windows;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    
-        class SelectCustomerViewModel : BindableBase
+
+    public class SelectCustomerViewModel : BindableBase
+    {
+        public int CusID = Convert.ToInt32(Application.Current.Properties["Cus_ID"]);
+        public SelectCustomerViewModel()
         {
-            public SelectCustomerViewModel()
-            {
-                LoadClients();
+            LoadClients();
+            
 
+        }
+
+        public List<Customer> c_Clients
+        {
+            get;
+            set;
+        }
+
+        public void LoadClients()
+        {
+
+            string text = System.IO.File.ReadAllText(@"../../Resources/JSON_oneObject_Correct.JSON");
+
+            List<Customer> cc_Clients = JsonConvert.DeserializeObject<List<Customer>>(text);
+
+            c_Clients = cc_Clients;
+            foreach (var customer in cc_Clients)
+            {
+                customer.Parent = this;
             }
-
-            public List<Customer> c_Clients
-            {
-                get;
-                set;
-            }
-
-            public void LoadClients()
-            {
-
-                string text = System.IO.File.ReadAllText(@"../../Resources/JSON_oneObject_Correct.JSON");
-
-                List<Customer> cc_Clients = JsonConvert.DeserializeObject<List<Customer>>(text);
-
-                c_Clients = cc_Clients;
-       }
-
+            c_Clients = cc_Clients;
+        }
     }
- }
+
+}
+
 
