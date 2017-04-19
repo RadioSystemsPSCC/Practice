@@ -102,7 +102,7 @@ namespace InvisibleFenceContract.Viewmodels
             }
         }
 
-        public string MicroShieldPrice
+        public string MicroShieldPrice1
         {
             get
             {
@@ -117,7 +117,7 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                MicroShieldPrice = value;
+                MicroShieldPrice1 = value;
             }
         }
 

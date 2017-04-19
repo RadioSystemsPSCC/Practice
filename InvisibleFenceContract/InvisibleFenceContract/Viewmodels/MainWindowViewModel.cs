@@ -182,33 +182,33 @@ namespace InvisibleFenceContract.Viewmodels
                 {
                     outdoorShieldPrice1 = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 75857 && outdoorShieldPrice2 == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    outdoorShieldPrice2 = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 52246 && indoorShieldPrice1 == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    indoorShieldPrice1 = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 75858 && indoorShieldPrice2 == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    indoorShieldPrice2 = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 51264 && microShieldPrice1 == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    microShieldPrice1 = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 75859 && microShieldPrice2 == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    microShieldPrice2 = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 57594 && shieldsCollarPrice == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    shieldsCollarPrice = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 29361 && microLitePrice == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    microLitePrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
                 {
