@@ -30,14 +30,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 29476)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                //for (int i = 0; i < c_Prices.Count; i++)
+                //{
+                //    if (c_Prices[i].PartID == 29476)
+                //    {
+                return "$" + Application.Current.Properties["OutdoorShieldPrice1"];
+                    //}
+                //}
+                //return null;
             }
             set
             {
@@ -102,7 +102,7 @@ namespace InvisibleFenceContract.Viewmodels
             }
         }
 
-        public string MicroShieldPrice
+        public string MicroShieldPrice1
         {
             get
             {
@@ -117,7 +117,7 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                MicroShieldPrice = value;
+                MicroShieldPrice1 = value;
             }
         }
 

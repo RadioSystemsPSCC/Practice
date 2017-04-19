@@ -34,7 +34,7 @@ namespace InvisibleFenceContract.Viewmodels
         private ProductLookupViewModel productLookupViewModel = new ProductLookupViewModel();
         private BindableBase _CurrentViewModel;
 
-        public int CusID;
+        public int CusID = 23;
         private string customerID;
         private string packageSelection;
         private double packagePrice;
@@ -146,7 +146,7 @@ namespace InvisibleFenceContract.Viewmodels
                     break;
             }
             if (destination.Length < 1)
-                CurrentViewModel = contact1ViewModel;
+                CurrentViewModel = selectCustomerViewModel;
         }
 
         public void LoadProduct()
@@ -161,28 +161,76 @@ namespace InvisibleFenceContract.Viewmodels
             {
                 Console.Write(e.ToString());
             }
+            for (int i = 0; i < AllPrices.Count; i++)
+            {
+                if (AllPrices[i].PartID == 29476)
+                {
+                    outdoorShieldPrice1 = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 75857)
+                {
+                    outdoorShieldPrice2 = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 52246)
+                {
+                    indoorShieldPrice1 = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 75858)
+                {
+                    indoorShieldPrice2 = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 51264)
+                {
+                    microShieldPrice1 = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 75859)
+                {
+                    microShieldPrice2 = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 57594) 
+                {
+                    shieldsCollarPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 29361)
+                {
+                    microLitePrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 29191)
+                {
+                    doormanPetDoorPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 76054)
+                {
+                    safetyWiredAddPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 63088)
+                {
+                    gPSAddPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 29084)
+                {
+                    singleTrainPrice = AllPrices[i].PartPrice;//Rightcode but price is different
+                }
+                else if (AllPrices[i].PartID == 28785)
+                {
+                    indoorXLoopPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 28786)
+                {
+                    outdoorXLoopPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 29193)
+                {
+                    petDoorInstallPrice = AllPrices[i].PartPrice;
+                }
 
-        //     private double outdoorShieldPrice1;
-        //private double outdoorShieldPrice2;
-        //private double indoorShieldPrice1;
-        //private double indoorShieldPrice2;
-        //private double microShieldPrice1;
-        //private double microShieldPrice2;
-        //private double shieldsCollarPrice;
-        //private double microLitePrice;
-        //private double doormanPetDoorPrice;
-        //private double safetyWiredAddPrice;
-        //private double gPSAddPrice;
-        //private double singleTrainPrice;
-        //private double indoorXLoopPrice;
-        //private double outdoorXLoopPrice;
-        //private double petDoorInstallPrice;
 
 
 
 
-    }
-    
+
+            }
+        }
         public void SetApplication()
         {
 
