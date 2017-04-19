@@ -176,7 +176,7 @@ namespace InvisibleFenceContract.Viewmodels
                 }
                 else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
                 {
-                    digitalTechnologyPrice= AllPrices[i].PartPrice;
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 29476 && outdoorShieldPrice1 == 0)
                 {
@@ -210,36 +210,41 @@ namespace InvisibleFenceContract.Viewmodels
                 {
                     microLitePrice = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 29191 && doormanPetDoorPrice == 0)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                    doormanPetDoorPrice = AllPrices[i].PartPrice;
                 }
-                
-
-
-                //private double outdoorShieldPrice2;
-                //private double indoorShieldPrice1;
-                //private double indoorShieldPrice2;
-                //private double microShieldPrice1;
-                //private double microShieldPrice2;
-                //private double shieldsCollarPrice;
-                //private double microLitePrice;
-                //private double doormanPetDoorPrice;
-                //private double safetyWiredAddPrice;
-                //private double gPSAddPrice;
-                //private double singleTrainPrice;
-                //private double indoorXLoopPrice;
-                //private double outdoorXLoopPrice;
-                //private double petDoorInstallPrice;
-
-
+                else if (AllPrices[i].PartID == 76054 && safetyWiredAddPrice == 0)
+                {
+                    safetyWiredAddPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 63088 && gPSAddPrice == 0)
+                {
+                    gPSAddPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 29084 && singleTrainPrice == 0)
+                {
+                    singleTrainPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 28786 && outdoorXLoopPrice == 0)
+                {
+                    outdoorXLoopPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 28785 && indoorXLoopPrice == 0)
+                {
+                    indoorXLoopPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 29193 && petDoorInstallPrice == 0)
+                {
+                    petDoorInstallPrice = AllPrices[i].PartPrice;
+                }
             }
 
-            }
-    
+        }
+
         public void SetApplication()
         {
-            
+
             Application.Current.Properties["Cus_ID"] = CusID;
             Application.Current.Properties["GPSPrice"] = gPSPrice;
             Application.Current.Properties["BoundaryPlusPrice"] = boundaryPlusPrice;
@@ -270,7 +275,7 @@ namespace InvisibleFenceContract.Viewmodels
             Application.Current.Properties["DoormanPetDoorPrice"] = doormanPetDoorPrice;
             Application.Current.Properties["DoormanPetDoorTotal"] = doormanPetDoorTotal;
             Application.Current.Properties["ShieldsCollarQuantity2"] = shieldsCollarQuantity2;
-            Application.Current.Properties["FreedomTotal"] =  freedomTotal;
+            Application.Current.Properties["FreedomTotal"] = freedomTotal;
             Application.Current.Properties["SafetyWiredAddQuantity"] = safetyWiredAddQuantity;
             Application.Current.Properties["SafetyWiredAddPrice"] = safetyWiredAddPrice;
             Application.Current.Properties["SafetyWiredAddTotal"] = safetyWiredAddTotal;
@@ -300,6 +305,6 @@ namespace InvisibleFenceContract.Viewmodels
             Application.Current.Properties["Total"] = total;
             Application.Current.Properties["Deposit"] = deposit;
             Application.Current.Properties["Balance"] = balance;
-    }
+        }
     }
 }
