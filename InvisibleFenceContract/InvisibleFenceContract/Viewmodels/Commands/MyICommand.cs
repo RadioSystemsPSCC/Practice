@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InvisibleFenceContract.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,4 +66,24 @@ namespace InvisibleFenceContract.Viewmodels.Commands
 
         #endregion
     }
+    public class SelectCustomer : ICommand
+    {
+        private Customer _selectCustomer;
+        public event EventHandler CanExecuteChanged;
+        public SelectCustomer(Customer selectModel)
+        {
+            _selectCustomer = selectModel;
+        }
+
+        public bool CanExecute(Object parameter)
+        {
+            return true;
+        }
+
+        public void Execute(Object parameter)
+        {
+            _selectCustomer.Parent.CusID = Convert.ToInt32(_selectCustomer.CustomerID);
+        }
+    }
 }
+

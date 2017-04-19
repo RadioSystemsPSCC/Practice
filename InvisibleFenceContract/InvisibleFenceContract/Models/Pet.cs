@@ -8,12 +8,12 @@ namespace InvisibleFenceContract.Models
 {
     class Pet : BindableBase
     {
-        private string customerID;
+        private int customerID;
         private string petName;
         private string petBreed;
         private string petBirthday;
 
-        public String CustomerID
+        public int CustomerID
         {
             get
             {
