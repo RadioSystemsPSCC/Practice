@@ -19,7 +19,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             NavCommand = new MyICommand<string>(OnNav);
             LoadProduct();
-            SetApplication();
+            //SetApplication();
         }
         private StartViewModel startViewModel = new StartViewModel();
         private SelectCustomerViewModel selectCustomerViewModel = new SelectCustomerViewModel();
@@ -34,7 +34,7 @@ namespace InvisibleFenceContract.Viewmodels
         private ProductLookupViewModel productLookupViewModel = new ProductLookupViewModel();
         private BindableBase _CurrentViewModel;
 
-        public int CusID;
+       /* public int CusID;
         private string customerID;
         private string packageSelection;
         private double packagePrice;
@@ -94,7 +94,7 @@ namespace InvisibleFenceContract.Viewmodels
         private double tax = 0;
         private double total = 0;
         private double deposit = 0;
-        private double balance = 0;
+        private double balance = 0;*/
 
 
         public BindableBase CurrentViewModel
@@ -166,83 +166,97 @@ namespace InvisibleFenceContract.Viewmodels
             }
             for (int i = 0; i < AllPrices.Count; i++)
             {
-                if (AllPrices[i].PartID == 62139 && gPSPrice == 0)
+                if (AllPrices[i].PartID == 62139)
                 {
-                    gPSPrice = AllPrices[i].PartPrice;
+                    Application.Current.Properties["GPSPrice"]= AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62138 && boundaryPlusPrice == 0)
+                else if (AllPrices[i].PartID == 62138)
                 {
-                    boundaryPlusPrice = AllPrices[i].PartPrice;
+                                   
+                   Application.Current.Properties[" BoundaryPlusPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                else if (AllPrices[i].PartID == 62100)
                 {
-                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                   
+                    Application.Current.Properties["DigitalTechnologyPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 29476 && outdoorShieldPrice1 == 0)
+                else if (AllPrices[i].PartID == 29476)
                 {
-                    outdoorShieldPrice1 = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["OutdoorShieldPrice1"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 75857 && outdoorShieldPrice2 == 0)
+                else if (AllPrices[i].PartID == 75857)
                 {
-                    outdoorShieldPrice2 = AllPrices[i].PartPrice;
+                   
+                    Application.Current.Properties["OutdoorShieldPrice2"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 52246 && indoorShieldPrice1 == 0)
+                else if (AllPrices[i].PartID == 52246)
                 {
-                    indoorShieldPrice1 = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["IndoorShieldPrice1"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 75858 && indoorShieldPrice2 == 0)
-                {
-                    indoorShieldPrice2 = AllPrices[i].PartPrice;
+                else if (AllPrices[i].PartID == 75858)
+                {                    
+                   
+                    Application.Current.Properties["IndoorShieldPrice2"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 51264 && microShieldPrice1 == 0)
-                {
-                    microShieldPrice1 = AllPrices[i].PartPrice;
+                else if (AllPrices[i].PartID == 51264)
+                {                    
+                    Application.Current.Properties["MicroShieldPrice1"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 75859 && microShieldPrice2 == 0)
-                {
-                    microShieldPrice2 = AllPrices[i].PartPrice;
+                else if (AllPrices[i].PartID == 75859)
+                {                  
+                    Application.Current.Properties["MicroShieldPrice2"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 57594 && shieldsCollarPrice == 0)
+                else if (AllPrices[i].PartID == 57594)
                 {
-                    shieldsCollarPrice = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["ShieldsCollarPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 29361 && microLitePrice == 0)
+                else if (AllPrices[i].PartID == 29361)
                 {
-                    microLitePrice = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["MicroLitePrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 29191 && doormanPetDoorPrice == 0)
+                else if (AllPrices[i].PartID == 29191)
                 {
-                    doormanPetDoorPrice = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["DoormanPetDoorPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 76054 && safetyWiredAddPrice == 0)
+                else if (AllPrices[i].PartID == 76054)
                 {
-                    safetyWiredAddPrice = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["SafetyWiredAddPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 63088 && gPSAddPrice == 0)
+                else if (AllPrices[i].PartID == 63088)
                 {
-                    gPSAddPrice = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["GPSAddPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 29084 && singleTrainPrice == 0)
+                else if (AllPrices[i].PartID == 29084)
                 {
-                    singleTrainPrice = AllPrices[i].PartPrice;
+                   
+                    Application.Current.Properties["SingleTrainPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 28786 && outdoorXLoopPrice == 0)
-                {
-                    outdoorXLoopPrice = AllPrices[i].PartPrice;
+                else if (AllPrices[i].PartID == 28786)
+                {                   
+                    Application.Current.Properties["OutdoorXLoopPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 28785 && indoorXLoopPrice == 0)
+                else if (AllPrices[i].PartID == 28785)
                 {
-                    indoorXLoopPrice = AllPrices[i].PartPrice;
+                   
+                    Application.Current.Properties["IndoorXLoopPrice"] = AllPrices[i].PartPrice;
                 }
-                else if (AllPrices[i].PartID == 29193 && petDoorInstallPrice == 0)
+                else if (AllPrices[i].PartID == 29193)
                 {
-                    petDoorInstallPrice = AllPrices[i].PartPrice;
+                    
+                    Application.Current.Properties["PetDoorInstallPrice"] = AllPrices[i].PartPrice;
                 }
             }
 
         }
 
-        public void SetApplication()
+       /* public void SetApplication()
         {
 
             Application.Current.Properties["Cus_ID"] = CusID;
@@ -305,6 +319,6 @@ namespace InvisibleFenceContract.Viewmodels
             Application.Current.Properties["Total"] = total;
             Application.Current.Properties["Deposit"] = deposit;
             Application.Current.Properties["Balance"] = balance;
-        }
+        }*/
     }
 }
