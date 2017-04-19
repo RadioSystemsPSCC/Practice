@@ -8,9 +8,7 @@
              mc:Ignorable="d" 
             d:DesignHeight="768" d:DesignWidth="1366">
 
-    <UserControl.DataContext>
-        <Viewmodels:Safety2ViewModel/>
-    </UserControl.DataContext>
+
 
     <Grid Margin='11,-2,9,12'>
         <Grid.Resources>

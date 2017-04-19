@@ -42,7 +42,7 @@ namespace InvisibleFenceContract.Views {
     public partial class Safety2 : System.Windows.Controls.UserControl, System.Windows.Markup.IComponentConnector {
         
         
-        #line 44 "..\..\..\Views\Safety2.xaml"
+        #line 42 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock textBlock;
         
@@ -50,7 +50,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 48 "..\..\..\Views\Safety2.xaml"
+        #line 46 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.RadioButton GPSPackage;
         
@@ -58,7 +58,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 49 "..\..\..\Views\Safety2.xaml"
+        #line 47 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.RadioButton BoundaryPackage;
         
@@ -66,7 +66,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 50 "..\..\..\Views\Safety2.xaml"
+        #line 48 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.RadioButton DigitalTechPackage;
         
@@ -74,7 +74,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 53 "..\..\..\Views\Safety2.xaml"
+        #line 51 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label lblGpsPrice;
         
@@ -82,7 +82,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 54 "..\..\..\Views\Safety2.xaml"
+        #line 52 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label lblBoundaryPrice;
         
@@ -90,7 +90,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 55 "..\..\..\Views\Safety2.xaml"
+        #line 53 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label lblDigitalPrice;
         
@@ -98,7 +98,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 58 "..\..\..\Views\Safety2.xaml"
+        #line 56 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock label;
         
@@ -106,7 +106,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 59 "..\..\..\Views\Safety2.xaml"
+        #line 57 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock label1;
         
@@ -114,7 +114,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 60 "..\..\..\Views\Safety2.xaml"
+        #line 58 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock label2;
         
@@ -122,7 +122,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 61 "..\..\..\Views\Safety2.xaml"
+        #line 59 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock label3;
         
@@ -130,7 +130,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 62 "..\..\..\Views\Safety2.xaml"
+        #line 60 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock label4;
         
@@ -138,7 +138,7 @@ namespace InvisibleFenceContract.Views {
         #line hidden
         
         
-        #line 63 "..\..\..\Views\Safety2.xaml"
+        #line 61 "..\..\..\Views\Safety2.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock label5;
         

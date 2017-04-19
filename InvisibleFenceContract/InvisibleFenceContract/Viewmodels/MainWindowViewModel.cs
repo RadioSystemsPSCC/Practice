@@ -38,6 +38,9 @@ namespace InvisibleFenceContract.Viewmodels
         private string customerID;
         private string packageSelection;
         private double packagePrice;
+        private double gPSPrice;
+        private double boundaryPlusPrice;
+        private double digitalTechnologyPrice;
         private double safetyTotal = 0;
         private int outdoorShieldQuantity = 0;
         private double outdoorShieldPrice1;
@@ -161,32 +164,86 @@ namespace InvisibleFenceContract.Viewmodels
             {
                 Console.Write(e.ToString());
             }
+            for (int i = 0; i < AllPrices.Count; i++)
+            {
+                if (AllPrices[i].PartID == 62139 && gPSPrice == 0)
+                {
+                    gPSPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62138 && boundaryPlusPrice == 0)
+                {
+                    boundaryPlusPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice= AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 29476 && outdoorShieldPrice1 == 0)
+                {
+                    outdoorShieldPrice1 = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                else if (AllPrices[i].PartID == 62100 && digitalTechnologyPrice == 0)
+                {
+                    digitalTechnologyPrice = AllPrices[i].PartPrice;
+                }
+                
 
-        //     private double outdoorShieldPrice1;
-        //private double outdoorShieldPrice2;
-        //private double indoorShieldPrice1;
-        //private double indoorShieldPrice2;
-        //private double microShieldPrice1;
-        //private double microShieldPrice2;
-        //private double shieldsCollarPrice;
-        //private double microLitePrice;
-        //private double doormanPetDoorPrice;
-        //private double safetyWiredAddPrice;
-        //private double gPSAddPrice;
-        //private double singleTrainPrice;
-        //private double indoorXLoopPrice;
-        //private double outdoorXLoopPrice;
-        //private double petDoorInstallPrice;
+
+                //private double outdoorShieldPrice2;
+                //private double indoorShieldPrice1;
+                //private double indoorShieldPrice2;
+                //private double microShieldPrice1;
+                //private double microShieldPrice2;
+                //private double shieldsCollarPrice;
+                //private double microLitePrice;
+                //private double doormanPetDoorPrice;
+                //private double safetyWiredAddPrice;
+                //private double gPSAddPrice;
+                //private double singleTrainPrice;
+                //private double indoorXLoopPrice;
+                //private double outdoorXLoopPrice;
+                //private double petDoorInstallPrice;
 
 
+            }
 
-
-    }
+            }
     
         public void SetApplication()
         {
-
+            
             Application.Current.Properties["Cus_ID"] = CusID;
+            Application.Current.Properties["GPSPrice"] = gPSPrice;
+            Application.Current.Properties["BoundaryPlusPrice"] = boundaryPlusPrice;
+            Application.Current.Properties["DigitalTechnologyPrice"] = digitalTechnologyPrice;
             Application.Current.Properties["PackageSelection"] = packageSelection;
             Application.Current.Properties["PackagePrice"] = packagePrice;
             Application.Current.Properties["SafetyTotal"] = safetyTotal;
