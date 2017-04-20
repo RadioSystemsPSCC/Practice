@@ -6,7 +6,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace InvisibleFenceContract.Viewmodels
 {
@@ -14,139 +13,51 @@ namespace InvisibleFenceContract.Viewmodels
     {
         public Solutions5ViewModel()
         {
-           
+            loadPrices();
         }
-  
-        public string SafetyTotal
+        public List<Product> c_Prices
         {
-            get
-            { 
-                return "$" + Application.Current.Properties["SafetyTotal"];
-            }
-            set
-            {
-                if (SafetyTotal != value)
-                {
-                    Application.Current.Properties["SafetyTotal"] = value;
-                    OnPropertyChanged("SafetyTotal");
-                }
-            }
+            get;
+            set;
         }
 
-
-        public string ProtectionTotal
-        {
-            get
-            {
-                return "$" + Application.Current.Properties["ProtectionTotal"];
-            }
-            set
-            {
-                if (ProtectionTotal != value)
-                {
-                    Application.Current.Properties["ProtectionTotal"] = value;
-                    OnPropertyChanged("ProtectionTotal");
-                }
-            }
-        }
-        public string FreedomTotal
-        {
-            get
-            {
-                return "$" + Application.Current.Properties["FreedomTotal"];
-            }
-            set
-            {
-                if (FreedomTotal != value)
-                {
-                    Application.Current.Properties["FreedomTotal"] = value;
-                    OnPropertyChanged("FreedomTotal");
-                }
-            }
-        }
-        
         public string SafetyWiredAddPrice
         {
             get
             {
-                return "$" + Application.Current.Properties["SafetyWiredAddPrice"];
-            }
-            set
-            {
-                if (SafetyWiredAddPrice != value)
+                for (int i = 0; i < c_Prices.Count; i++)
                 {
-                    Application.Current.Properties["SafetyWiredAddPrice"] = value;
-                    OnPropertyChanged("SafetyWiredAddPrice");
+                    if (c_Prices[i].PartID == 76054)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
                 }
-            }
-        }
-
-        public string SafetyWiredAddQuantity
-        {
-            get
-            {
-                return Application.Current.Properties["SafetyWiredAddQuantity"].ToString();
+                return null;
             }
             set
             {
-                if (SafetyWiredAddQuantity != value)
-                {
-                    Application.Current.Properties["SafetyWiredAddQuantity"] = value;
-                    OnPropertyChanged("SafetyWiredAdd");
-                }
+                SafetyWiredAddPrice = value;
+                OnPropertyChanged("SafetyWiredAddPrice");
             }
-        }
-
-        public string SafetyWiredAddTotal
-        {
-            get
-            {
-                return "$" + (Convert.ToDouble(Application.Current.Properties["SafetyWiredAddPrice"]) * Convert.ToDouble(Application.Current.Properties["SafetyWiredAddQuantity"]));
-            }
-            set
-            {
-                Application.Current.Properties["SafetyWiredAddTotal"] = value;
-                OnPropertyChanged("SafetyWiredAddTotal");
-            }
-
         }
 
         public string GPSAddPrice
         {
             get
             {
-                return "$" + Application.Current.Properties["GPSAddPrice"];
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 63088)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
-                Application.Current.Properties["GPSAddPrice"] = value;
+                GPSAddPrice = value;
                 OnPropertyChanged("GPSAddPrice");
-            }
-        }
-
-        public string GPSAddTotal
-        {
-            get
-            {
-                return "$" + (Convert.ToDouble(Application.Current.Properties["GPSAddPrice"]) * Convert.ToDouble(Application.Current.Properties["GPSAddQuantity"]));
-            }
-            set
-            {
-                Application.Current.Properties["GPSAddTotal"] = value;
-                OnPropertyChanged("GPSAddTotal");
-            }
-        }
-
-        public string GPSAddQuantity
-        {
-            get
-            {
-                return Application.Current.Properties["GPSAddQuantity"].ToString();
-            }
-            set
-            {
-                Application.Current.Properties["GPSAddQuantity"] = value;
-                OnPropertyChanged("GPSAddQuantity");
             }
         }
 
@@ -156,87 +67,35 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + Application.Current.Properties["SingleTrainPrice"];
+                for (int i = 0; i < c_Prices.Count; i++)
+                {
+                    if (c_Prices[i].PartID == 51264)
+                    {
+                        return "$" + c_Prices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
-                Application.Current.Properties["SingleTrainPrice"] = value;
+                SafetyWiredAddPrice = value;
                 OnPropertyChanged("SingleTrainPrice");
             }
         }
 
-        public string SingleTrainQuantity
+        public void loadPrices()
         {
-            get
+            try
             {
-                return Application.Current.Properties["SingleTrainQuantity"].ToString();
+                string file = File.ReadAllText(@"../../Resources/Products.JSON");
+                List<Product> prices = JsonConvert.DeserializeObject<List<Product>>(file);
+                c_Prices = prices;
             }
-            set
+            catch (Exception e)
             {
-                Application.Current.Properties["SingleTrainQuantity"] = value;
-                OnPropertyChanged("SingleTrainQuantity");
+                Console.Write(e.ToString());
             }
         }
-        public string SingleTrainTotal
-        {
-            get
-            {
-                return "$" + (Convert.ToDouble(Application.Current.Properties["SingleTrainPrice"]) * Convert.ToDouble(Application.Current.Properties["SingleTrainQuantity"]));
-            }
-            set
-            {
-                Application.Current.Properties["SingleTrainTotal"] = value;
-                OnPropertyChanged("SingleTrainTotal");
-            }
-        }
-
-        public string CouponCode
-        {
-            get
-            {
-                if (Application.Current.Properties["CouponCode"] == null)
-                {
-                    return "none";
-                }
-                else
-                {
-                    return Application.Current.Properties["CouponCode"].ToString();
-                }
-                
-            }
-            set
-            {
-                Application.Current.Properties["CouponCode"] = value;
-                OnPropertyChanged("CouponCode");
-            }
-        }
-
-        public string Discount
-        {
-            get
-            {
-                return "$" + (Convert.ToDouble(Application.Current.Properties["Discount"]));
-            }
-            set
-            {
-                Application.Current.Properties["Discount"] = value;
-                OnPropertyChanged("Discount");
-            }
-        }
-
-        public string SolutionsPageTotal
-        {
-            get
-            {
-                return "$" + (Convert.ToDouble(Application.Current.Properties["SafetyWiredAddTotal"]) + Convert.ToDouble(Application.Current.Properties["GPSAddTotal"]) + Convert.ToDouble(Application.Current.Properties["SingleTrainTotal"]));
-            }
-            set
-            {
-                Application.Current.Properties["SolutionsPageTotal"] = value;
-                OnPropertyChanged("SolutionsPageTotal");
-            }
-        }
-
     }
 }
 

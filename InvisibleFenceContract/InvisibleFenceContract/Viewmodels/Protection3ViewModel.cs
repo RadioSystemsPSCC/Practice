@@ -178,9 +178,6 @@ namespace InvisibleFenceContract.Viewmodels
             }
         }
 
- 
-      
-
         public void loadPrices()
         {
             try

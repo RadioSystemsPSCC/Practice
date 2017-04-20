@@ -56,7 +56,6 @@ namespace InvisibleFenceContract.Viewmodels
                 this.CustomerID = value;
             }
         }
-        [JsonRequired]
         public string FirstName
         {
             get
@@ -76,7 +75,7 @@ namespace InvisibleFenceContract.Viewmodels
                 this.FirstName = value;
             }
         }
-        [JsonRequired]
+
         public string LastName
         {
             get
@@ -114,7 +113,6 @@ namespace InvisibleFenceContract.Viewmodels
                 this.ReferredBy = value;
             }
         }
-        [JsonRequired]
         public string Address
         {
             get
@@ -134,7 +132,6 @@ namespace InvisibleFenceContract.Viewmodels
                 this.Address = value;
             }
         }
-        [JsonRequired]
         public string City
         {
             get
@@ -154,7 +151,6 @@ namespace InvisibleFenceContract.Viewmodels
                 this.City = value;
             }
         }
-        [JsonRequired]
         public string State
         {
             get
@@ -174,7 +170,6 @@ namespace InvisibleFenceContract.Viewmodels
                 this.State = value;
             }
         }
-        [JsonRequired]
         public string Zip
         {
             get
@@ -232,7 +227,6 @@ namespace InvisibleFenceContract.Viewmodels
                 this.CellPhone = value;
             }
         }
-        [JsonRequired]
         public string Email
         {
             get
