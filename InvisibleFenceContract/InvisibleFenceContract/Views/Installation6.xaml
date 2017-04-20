@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="InvisibleFenceContract.Views.Installation6"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InvisibleFenceContract.Views"
+             xmlns:vm='clr-namespace:InvisibleFenceContract.Viewmodels'
+             mc:Ignorable="d" 
+              d:DesignHeight="768" d:DesignWidth="1366">
+    
+    <!--Set data context for view-->
+
+
+    <Grid Margin='12,0,8,0'>
+        <Grid.Resources>
+            <Style TargetType='{x:Type TextBlock}'>
+            <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+            <Setter Property='FontSize' Value='14' />
+        </Style>
+        <Style TargetType='{x:Type Label}'>
+            <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+        </Style>
+        <Style TargetType='{x:Type TextBox}'>
+            <!-- setter to set vertical alignment -->
+            <Setter Property='VerticalAlignment' Value='Top' />
+                <Setter Property='Height' Value='22' />
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width='188'/>
+            <ColumnDefinition Width='115'/>
+            <ColumnDefinition Width='115'/>
+            <ColumnDefinition Width='115'/>
+            <ColumnDefinition Width='85'/>
+            <ColumnDefinition Width='115'/>
+            <ColumnDefinition Width='115'/>
+            <ColumnDefinition Width='*'/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!-- Title -->
+            <RowDefinition Height="120" />
+            <!-- Outdoor Install -->
+            <RowDefinition Height="40"/>
+            <!-- Indoor Extension -->
+            <RowDefinition Height="25"/>
+            <!-- Outdoor Extension -->
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <!-- Pet Door Install -->
+            <RowDefinition Height="30"/>
+            <!-- space -->
+
+            <RowDefinition Height="25"/>
+            <!-- solution total -->
+            <RowDefinition Height="25"/>
+            <!-- Tax  -->
+            <RowDefinition Height="25"/>
+            <!-- Labor/Install -->
+            <RowDefinition Height="10"/>
+            <!-- space -->
+            <RowDefinition Height="25"/>
+            <!-- Total -->
+            <RowDefinition Height="25"/>
+            <!-- Less Deposit -->
+            <RowDefinition Height="25"/>
+            <!-- Balance -->
+            <RowDefinition Height="25"/>
+            <!-- Prices valid 10 days -->
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Row-->
+        <Label Grid.Column="1" Grid.ColumnSpan="11" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="14" FontWeight="Bold" Height="18" Margin="0" Padding="1">PROFESSIONAL INSTALLATION</Label>
+
+        <!-- Row 1 Outdoor Installation -->
+        <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12" Height="18" Margin="0" Padding="1" Text="Outdoor Installation:"/>
+        <TextBlock Grid.Column='5' Grid.Row='1' Text='Cost: ' HorizontalAlignment='Right' VerticalAlignment='Top' FontSize='12' Margin='0,8,0,0'/>
+        <TextBox Grid.Column='6' Grid.Row='1' Text='{Binding OutdoorInstallCost}' HorizontalAlignment='Right' VerticalAlignment="Top" Margin='0,8,0,0' Width='75' />
+
+        <!-- Row 2 Outdoor Extension Loop -->
+        <TextBlock  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Outdoor Extension Loop (Up to 100')"/>
+        <Label x:Name="lblOutdoorLoop" Grid.Column="3" Grid.Row="2" Content="{Binding OutdoorXLoopPrice}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBlock Grid.Column="4" Grid.Row="2" Text="Quantity: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox Grid.Column="5" Grid.Row="2" Text="{Binding OutdoorXLoopQuantity}" HorizontalAlignment="Left" VerticalAlignment="Bottom" MaxLength="10" Width='40'/>
+        <Label x:Name='lblOutdoorLoopTotal' Grid.Column="6" Grid.Row="2" Content="{Binding OutdoorXLoopTotal}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+
+        <!-- Row 3 IndoorExtendLoop    -->
+        <TextBlock  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Indoor Extension Loop (Up to 100')"/>
+        <Label x:Name="lblIndoorLoop" Grid.Column="3" Grid.Row="3" Content="{Binding IndoorXLoopPrice}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBlock Grid.Column="4" Grid.Row="3" Text="Quantity: " HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBox Grid.Column="5" Grid.Row="3" Text="{Binding IndoorXLoopQuantity}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width='40'/>
+        <Label x:Name='lblIndoorLoopTotal' Grid.Column="6" Grid.Row="3" Content="{Binding IndoorXLoopTotal}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+
+        <!-- Row 4 Pet Door Installation -->
+        <TextBlock Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Pet Door Installation'/>
+        <Label x:Name='lblPetDoorInstall' Grid.Column="3" Grid.Row="4" Content="{Binding PetDoorInstallPrice}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" />
+        <TextBlock Grid.Column="4" Grid.Row="4" Text='Quantity: ' VerticalAlignment="Center" FontSize="12" Height="18" Margin="0,1" Padding="1" HorizontalAlignment='Left' Width='48' />
+        <TextBox Grid.Column="5" Grid.Row="4" Text="{Binding PetDoorInstallQuantity}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width='40'/>
+        <Label x:Name='lblPDInstallTotal' Grid.Column="6" Grid.Row="4"  Content="{Binding PetDoorInstallTotal}" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Padding="1"/>
+
+        <!-- Totals Section -->
+        <!-- Solution Total -->
+        <TextBlock Grid.Column="5" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Solution Total: '/>
+        <Label x:Name='lblSolutionTotal' Grid.Column="6" Grid.Row="6" Content="{Binding SolutionTotal}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+
+        <!-- Installation Date  -->
+        <Label Grid.Column="2" Grid.Row="8"  Content="INSTALLATION DATE" FontSize="11" FontWeight="DemiBold" Foreground="#017EB8"  Height="18" Margin="0" Padding="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Border Grid.Column="2" Grid.Row="8" BorderBrush="Black" BorderThickness="1" />
+        <TextBox Grid.Column="2" Grid.Row="10" Text="4/26/2017" HorizontalAlignment="Center" VerticalAlignment="Center" MaxLength="100" Width="100" FontSize="16" />
+        <Border Grid.Column="2" Grid.Row="8" Grid.RowSpan='4' BorderBrush="Black" BorderThickness="1"/>
+
+        <!-- Tax -->
+        <TextBlock Grid.Column="5" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Tax: '/>
+        <Label x:Name='lblTaxTotal' Grid.Column="6" Grid.Row="7" Content="{Binding Tax}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+
+        <!-- Labor/Install Total -->
+        <TextBlock Grid.Column="5" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text="Labor/Install Total: "/>
+        <Label x:Name='lblLaborTotal' Grid.Column="6" Grid.Row="8" Content="{Binding InstallTotal}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+
+        <!-- Row Break -->
+
+        <!-- Total -->
+        <TextBlock Grid.Column="5" Grid.Row="10" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="DemiBold" Height="18" Margin="0" Padding="1" Text='Total' />
+        <Label x:Name='lblTotal' Grid.Column="6" Grid.Row="10" Content="{Binding Total}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Padding="2"/>
+
+        <!-- Less Deposit -->
+        <TextBlock Grid.Column="5" Grid.Row="11" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text='Less Deposit'/>
+        <TextBox Grid.Column="6" Grid.Row="11" Text="{Binding Deposit}" HorizontalAlignment="Right" VerticalAlignment="Bottom" MaxLength="10" Padding="2" Width='80'/>
+
+        <!-- Balance -->
+        <TextBlock Grid.Column="5" Grid.Row="12" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="12" FontWeight="DemiBold" Height="18" Margin="0" Padding="1" Text=' Balance'/>
+        <Label x:Name='lblBalance' Grid.Column="6" Grid.Row="12" Content="{Binding Balance}" HorizontalAlignment="Right" VerticalAlignment='Bottom' Padding='22,0,0,0'   Width='80'/>
+
+        <!-- Prices are Valid for 10 days. Balance Payable at time of Delivery -->
+        <TextBlock Grid.Column="3" Grid.Row="17" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Height="18" Margin="0" Padding="1" Text=" Prices are valid for 10 days. Balance payable at time of delivery."/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,157 @@
+﻿<UserControl x:Class="InvisibleFenceContract.Views.Solutions5"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InvisibleFenceContract.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
+    <Grid Margin='10,0,10,0'>
+        <Grid.Resources>
+            <Style TargetType='TextBlock'>
+                <Setter Property='Height' Value='22' />
+                <Setter Property='VerticalAlignment' Value='Top' />
+                <Setter Property='FontFamily' Value='/InvisibleFencing;component/Fonts/#Gotham' />
+                <Setter Property='FontSize' Value='12' />
+            </Style>
+            <Style TargetType='Label'>
+                <Setter Property='Height' Value='22' />
+                <Setter Property='VerticalAlignment' Value='Top' />
+                <Setter Property='Padding' Value='1' />
+            </Style>
+            <Style TargetType='TextBox'>
+                <Setter Property='Height' Value='22' />
+                <Setter Property='VerticalAlignment' Value='Top' />
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="188"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width='140' />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!-- Title 0/1 -->
+            <RowDefinition Height="40" />
+            <RowDefinition Height="25"/>
+            <!-- seperation space 2-->
+            <RowDefinition Height="5"/>
+            <!-- Safety Solution 3-->
+            <RowDefinition Height="25"/>
+            <!-- Protection solution 4-->
+            <RowDefinition Height="25"/>
+            <!-- Freedom Solution 5-->
+            <RowDefinition Height="25"/>
+            <!-- Space 6-->
+            <RowDefinition Height="88"/>
+            <!-- Add-a-pet Title 7-->
+            <RowDefinition Height="25"/>
+            <!-- Space 8-->
+            <RowDefinition Height="5"/>
+            <!--Safety Wired 9 -->
+            <RowDefinition Height="25"/>
+            <!-- GPS 2.0 10-->
+            <RowDefinition Height="25"/>
+            <!-- Space 11-->
+            <RowDefinition Height="25"/>
+            <!-- Training Title 12 -->
+            <RowDefinition Height="25"/>
+            <!-- Space 13 -->
+            <RowDefinition Height="5"/>
+            <!-- Training 14 -->
+            <RowDefinition Height="25"/>
+            <!-- Coupon Code Checkbox 15-->
+            <RowDefinition Height="25"/>
+            <!-- Coupon Code  16-->
+            <RowDefinition Height="25"/>
+            <!-- Discount 17-->
+            <RowDefinition Height="25"/>
+            <!--SolutionsPageTotal 18-->
+            <RowDefinition Height='25'/>
+            <!-- Allow for varying screen size 19 -->
+            <RowDefinition Height="*" />
+
+
+        </Grid.RowDefinitions>
+
+        <!-- Row 0 Solutions -->
+        <TextBlock Grid.Column="3" Grid.Row="1" Text="SOLUTIONS"  FontSize="16" FontWeight="ExtraBold" HorizontalAlignment="Left" />
+
+        <!-- Row 1 is blank space Seperator-->
+        <!-- Row 2 Safety Solution-->
+        <TextBlock Grid.Column="3" Grid.Row="3" Text="SAFETY SOLUTION" FontWeight="Bold" Foreground="#017EB8" HorizontalAlignment="Left"    />
+        <TextBlock Grid.Column="8" Grid.Row="3" Text="Subtotal"  FontWeight='Bold' Margin='0,4,0,0'  HorizontalAlignment="Left" />
+        <Label x:Name='lblSafetyTotal' Grid.Column="9" Grid.Row="3" Content="{Binding SafetyTotal}" FontWeight='Bold' HorizontalAlignment="Right" Width='75'  />
+
+        <!-- Row 3 Protection Solution-->
+        <TextBlock Grid.Column="3" Grid.Row="4" Text="PROTECTION SOLUTION" Foreground="#A6D473" FontWeight="Bold" HorizontalAlignment="Left"  />
+        <TextBlock Grid.Column="8" Grid.Row="4" Text="Subtotal"  FontWeight='Bold' Margin='0,4,0,0' HorizontalAlignment="Left" />
+        <Label x:Name='lblProtectionTotal' Grid.Column="9" Grid.Row="4" Content='{Binding ProtectionTotal}' FontWeight='Bold' HorizontalAlignment="Right" Width='75'/>
+
+        <!-- Row 4 Freedom Solution -->
+        <TextBlock Grid.Column="3" Grid.Row="5" Text="FREEDOM SOLUTION" Foreground="#E96C2D" FontWeight="Bold" HorizontalAlignment="Left" />
+        <TextBlock Grid.Column="8" Grid.Row="5" Text="Subtotal"  FontWeight='Bold' Margin='0,4,0,0' HorizontalAlignment="Left" />
+        <Label x:Name='lblFreedomTotal' Grid.Column="9" Grid.Row="5" Content='{Binding FreedomTotal}'  FontWeight='Bold' HorizontalAlignment="Right" Width='75' />
+
+        <!-- Row 5 Blank Row -->
+
+        <!-- Row 6 Pet ADD a pet -->
+        <TextBlock Grid.Column="3" Grid.Row="7" Text="ADD-A-PET" FontSize="16" FontWeight="ExtraBold" HorizontalAlignment="Left"   />
+        <TextBlock Grid.Column="5" Grid.Row="7" Grid.ColumnSpan="4" Text="(includes Computer Collar Unit, Training, and 1-Year Power Cap Plan)" HorizontalAlignment="Left"  />
+
+        <!-- Row 8 is blank space seperator-->
+        <!-- Safety Wired -->
+        <TextBlock Grid.Column="3" Grid.Row="9" Text='SAFETY Wired' Foreground="#017EB8" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Grid.Column="3" Grid.Row="9" Grid.ColumnSpan="2" Text="(Add-A-Pet)" Margin="88,0,2,0" HorizontalAlignment="Left" VerticalAlignment="Center"  />
+        <Label x:Name='lblSafetyWiredAddPrice' Grid.Column='5' Grid.Row='9' Content='{Binding SafetyWiredAddPrice, Mode=TwoWay}'  HorizontalAlignment='Left'  />
+        <TextBox x:Name='txtSafetyWiredAddQuantity' Grid.Column="6" Grid.Row="9" Text='{Binding SafetyWiredAddQuantity, Mode=TwoWay}' HorizontalAlignment="Right"   Height="20" Width="40" Margin="0,0,20,0" />
+        <TextBlock Grid.Column="7" Grid.Row="9" Text="Quantity" HorizontalAlignment="Left"  />
+        <Label x:Name='lblsafetyWiredAddTotal' Grid.Column="9" Grid.Row="9" Content='{Binding SafetyWiredAddTotal, Mode=TwoWay}' FontWeight='Bold' HorizontalAlignment="Right" Width='75' />
+
+
+        <!-- GPS 2.0 Wired-->
+        <TextBlock Grid.Column="3" Grid.Row="10" Text="GPS 2.0 Wire Free"  Foreground="#017EB8" FontWeight="Bold" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Column="3" Grid.Row="10" Grid.ColumnSpan="2" Text="(Add-A-Pet)" Margin="108,0,0,3" HorizontalAlignment="Left" />
+        <Label x:Name='lblGPSAddPrice'  Grid.Column='5' Grid.Row='10' Content='{Binding GPSAddPrice, Mode=TwoWay}'  />
+        <TextBox x:Name='txtGPSAddQuantity' Grid.Column="6" Grid.Row="10" Text="{Binding GPSAddQuantity, Mode=TwoWay}" Margin="0,0,20,0" HorizontalAlignment="Right" Width="40" />
+        <TextBlock Grid.Column="7" Grid.Row="10" Text="Quantity" Margin="0,1,6,1" HorizontalAlignment="Left"  Width="50"  />
+        <Label x:Name='lblGPSAddTotal' Grid.Column="9" Grid.Row="10" Content="{Binding GPSAddTotal, Mode=TwoWay}" FontWeight='Bold' HorizontalAlignment="Right" Width='75'/>
+
+
+        <!-- Row 11 is blank space-->
+        <!-- Training-->
+        <Label Grid.Column="3" Grid.Row="12" Content="TRAINING" HorizontalAlignment="Left" FontSize="16" FontWeight="ExtraBold"  />
+
+        <!-- Row 13 is blank space seperator-->
+        <!-- Single Refresher Train  -->
+        <TextBlock Grid.Column="3" Grid.Row="14" Text="Single Refresher Training" HorizontalAlignment="Left" />
+        <Label x:Name='lblSingleTrainPrice' Grid.Column='5' Grid.Row='14' Content='{Binding SingleTrainPrice, Mode=TwoWay}'  HorizontalAlignment='Left'/>
+        <TextBox x:Name='txtSingleTrainQuantity' Grid.Column="6" Grid.Row="14" Text="{Binding SingleTrainQuantity, Mode=TwoWay}"  Margin='0,0,20,0' HorizontalAlignment="Right" Width="40"/>
+        <TextBlock Grid.Column="7" Grid.Row="14" Text="Quantity" HorizontalAlignment="Left"  />
+        <Label x:Name='lblSingleTrainTotal' Grid.Column="9" Grid.Row="14" Content="{Binding SingleTrainTotal, Mode=TwoWay}" FontWeight='Bold' HorizontalAlignment="Right"  Width='75'/>
+
+        <!--Coupon Code Checkbox -->
+        <TextBlock Grid.Column='3' Grid.Row='15' Text='Coupon Code?' />
+        <CheckBox x:Name='ckbxDiscount' Grid.Row='15' Grid.Column='3'  HorizontalAlignment='Right' Height='20' Width='20' />
+
+        <!-- Coupon Code -->
+        <TextBlock Grid.Column="3" Grid.Row="16" Text="Coupon Code" Visibility='Visible' HorizontalAlignment="Left" />
+        <TextBox x:Name='txtCouponCode' Grid.Column="4" Grid.Row="16"  Text="{Binding CouponCode, Mode=TwoWay}" Visibility='Visible' HorizontalAlignment="Left"  Width='75'/>
+        <!-- Discount  -->
+        <TextBlock Grid.Column="8" Grid.Row="17" Text="Discount" Visibility='Visible' HorizontalAlignment="Left"  />
+        <TextBox x:Name='txtDiscount' Grid.Column="9" Grid.Row="17"  Text="{Binding Discount, Mode=TwoWay}" Visibility='Visible' Margin='0,0,6,0' FontWeight='Bold' HorizontalAlignment="Right" Width='75' />
+
+        <TextBlock Grid.Column='7' Grid.Row='18' Grid.ColumnSpan='2' Text='Add-A-Pet/Training Total' Margin='30,0,0,0'  />
+        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="18" Content="{Binding SolutionsPageTotal, Mode=TwoWay}" Margin="0,0,6,0" FontWeight='Bold' HorizontalAlignment='Right' Width='75'/>
+    </Grid>
+</UserControl>
+
