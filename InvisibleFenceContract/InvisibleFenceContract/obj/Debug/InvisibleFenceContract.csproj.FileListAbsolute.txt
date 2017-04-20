@@ -49,3 +49,6 @@ E:\Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFen
 E:\Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.csproj.GenerateResource.Cache
 E:\Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
 E:\Capstone\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\bin\Debug\InvisibleFenceContract.exe.config
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.exe
+C:\Users\dwalk\Documents\GitHub\Practice\InvisibleFenceContract\InvisibleFenceContract\obj\Debug\InvisibleFenceContract.pdb

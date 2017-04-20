@@ -48,7 +48,7 @@ namespace InvisibleFenceContract.Viewmodels
                         return c_Clients[i].CustomerID;
                     }
                 }
-                MessageBox.Show("Customer not found");
+
                 return -1;
             }
             set
