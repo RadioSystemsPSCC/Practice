@@ -18,19 +18,19 @@ namespace InvisibleFenceContract.Viewmodels
             SetApplication();
         }
 
-        static Order order1 = Utility.GetOrder();
+        //static Order order1 = Utility.GetOrder();
 
-        private StartViewModel startViewModel = new StartViewModel();
-        private SelectCustomerViewModel selectCustomerViewModel = new SelectCustomerViewModel();
+        //private StartViewModel startViewModel = new StartViewModel();
+        //private SelectCustomerViewModel selectCustomerViewModel = new SelectCustomerViewModel();
 
-        private Contact1ViewModel contact1ViewModel = new Contact1ViewModel(order1);
-        private Safety2ViewModel safety2ViewModel = new Safety2ViewModel();
-        private Protection3ViewModel protection3ViewModel = new Protection3ViewModel();
-        private Freedom4ViewModel freedom4ViewModel = new Freedom4ViewModel();
-        private Solutions5ViewModel solution5ViewModel = new Solutions5ViewModel();
-        private Installation6ViewModel installation6ViewModel = new Installation6ViewModel();
-        private Signature7ViewModel signature7ViewModel = new Signature7ViewModel();
-        private ProductLookupViewModel productLookupViewModel = new ProductLookupViewModel();
+        //private Contact1ViewModel contact1ViewModel = new Contact1ViewModel();
+        //private Safety2ViewModel safety2ViewModel = new Safety2ViewModel();
+        //private Protection3ViewModel protection3ViewModel = new Protection3ViewModel();
+        //private Freedom4ViewModel freedom4ViewModel = new Freedom4ViewModel();
+        //private Solutions5ViewModel solution5ViewModel = new Solutions5ViewModel();
+        //private Installation6ViewModel installation6ViewModel = new Installation6ViewModel();
+        //private Signature7ViewModel signature7ViewModel = new Signature7ViewModel();
+        //private ProductLookupViewModel productLookupViewModel = new ProductLookupViewModel();
         private BindableBase _CurrentViewModel;
 
         public int CusID;
@@ -113,41 +113,41 @@ namespace InvisibleFenceContract.Viewmodels
             switch (destination)
             {
                 case "start":
-                    CurrentViewModel = startViewModel;
+                    CurrentViewModel = new StartViewModel();
                     break;
                 case "selectCustomer":
-                    CurrentViewModel = selectCustomerViewModel;
+                    CurrentViewModel = new SelectCustomerViewModel();
                     break;
                 case "signature":
-                    CurrentViewModel = signature7ViewModel;
+                    CurrentViewModel = new Signature7ViewModel();
                     break;
                 case "installation":
-                    CurrentViewModel = installation6ViewModel;
+                    CurrentViewModel = new Installation6ViewModel();
                     break;
                 case "solutions":
-                    CurrentViewModel = solution5ViewModel;
+                    CurrentViewModel = new Solutions5ViewModel();
                     break;
                 case "freedom":
-                    CurrentViewModel = freedom4ViewModel;
+                    CurrentViewModel = new Freedom4ViewModel();
                     break;
                 case "protection":
-                    CurrentViewModel = protection3ViewModel;
+                    CurrentViewModel = new Protection3ViewModel();
                     break;
                 case "safety":
-                    CurrentViewModel = safety2ViewModel;
+                    CurrentViewModel = new Safety2ViewModel(); 
                     break;
                 case "productLookup":
-                    CurrentViewModel = productLookupViewModel;
+                    CurrentViewModel = new ProductLookupViewModel();
                     break;
                 case "contact":
-                    CurrentViewModel = new Contact1ViewModel(order1);
+                    CurrentViewModel = new Contact1ViewModel();
                     break;
                 default:
-                    CurrentViewModel = new Contact1ViewModel(order1);
+                    CurrentViewModel = new Contact1ViewModel();
                     break;
             }
             if (destination.Length < 1)
-                CurrentViewModel = contact1ViewModel;
+                CurrentViewModel = new SelectCustomerViewModel();
         }
 
         public void LoadProduct()

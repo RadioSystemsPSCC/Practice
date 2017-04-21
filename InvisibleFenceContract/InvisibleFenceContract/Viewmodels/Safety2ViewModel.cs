@@ -20,13 +20,9 @@ namespace InvisibleFenceContract.Viewmodels
 
         public Safety2ViewModel()
         {
-            //Utility util = new Utility();
-            //Order order1 = (Order)Application.Current.Properties["myOrder"];
-
             loadPrices();
         }
-
-        public Order Order1 { get; set; }
+        
 
         public List<Product> safetyPrices
         {

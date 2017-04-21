@@ -10,22 +10,12 @@ namespace InvisibleFenceContract.Services
 {
     public static class Utility
     {
-        static Order order = new Order();
-        
-        public static Order GetOrder()
-        {
-            return order;
-        }
-
-        public static void SetOrder(Order o)
-        {
-            order = o;
-        }
+        public static Order Order = new Order();
 
         public static void InitialLoadOrderData()
         {
             //load all initial order details
-            order.Balance = 0;
+            Order.Balance = 10;
         }
     }
 }
