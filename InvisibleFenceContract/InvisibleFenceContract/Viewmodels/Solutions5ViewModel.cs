@@ -14,8 +14,15 @@ namespace InvisibleFenceContract.Viewmodels
     {
         public Solutions5ViewModel()
         {
-            loadAppVariablesIntoOrder();
+            
+            loadOrder();
 
+        }
+
+        public Order c_Order
+        {
+            get;
+            set;
         }
 
 
@@ -254,6 +261,11 @@ namespace InvisibleFenceContract.Viewmodels
             customerOrder.GPSAddQuantity = Convert.ToInt32(Application.Current.Properties["GPSAddQuantity"]);
             customerOrder.GPSAddTotal = Convert.ToInt32(Application.Current.Properties["GPSAddTotal"]);
 
+        }
+
+        public void loadOrder()
+        {
+            c_Order = Services.Utility.Order;
         }
 
     }

@@ -17,9 +17,7 @@ namespace InvisibleFenceContract.Viewmodels
     class Protection3ViewModel : BindableBase
     {
        
-
-
-        
+      
         public Protection3ViewModel()
         {
             loadOrder();
