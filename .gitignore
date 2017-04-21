@@ -1,0 +1,12 @@
+# Ignore `bin` dir
+
+bin/
+
+# or
+
+*/bin/*
+
+# Ignore 'debug'
+Debug/
+
+# or */Debug/*

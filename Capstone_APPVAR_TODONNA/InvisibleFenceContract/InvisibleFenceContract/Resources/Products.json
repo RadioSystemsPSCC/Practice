@@ -1,0 +1,142 @@
+[
+  {
+	"PartID":"28785",
+	"PartNumber":"LOOP-IN",
+	"PartName":"IndoorLoop",
+	"PartPrice":"99.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"28786",
+	"PartNumber":"LOOP-OUT",
+	"PartName":"Outdoor Loop",
+	"PartPrice":"99.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"29084",
+	"PartNumber":"PS-01-00",
+	"PartName":"1 Perfect Start Training Visit",
+	"PartPrice":"99.95",
+	"IsTaxable":"0"
+  },
+  {
+	"PartID":"29191",
+	"PartNumber":"RAC00-13211",
+	"PartName":"Invisible Fence Doorman",
+	"PartPrice":"699.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"29193",
+	"PartNumber":"SVC-DOORMAN",
+	"PartName":"Doorman Installation",
+	"PartPrice":"199.00",
+	"IsTaxable":"0"
+  },
+  {
+    "PartID": "29197",
+    "PartNumber": "PKG-PRE-ADD-PT",
+    "PartName": "Premium Package Add-A-Pet",
+    "PartPrice": "395.00",
+    "IsTaxable": "1"
+  },
+   {
+	"PartID":"29361",
+	"PartNumber":"RIG00-11933",
+	"PartName":"MICROLITE RECEIVER",
+	"PartPrice":"389.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"29476",
+	"PartNumber":"RAC00-12635",
+	"PartName":"OUTDOOR SHIELD \"PLUS\"",
+	"PartPrice":"199.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"51264",
+	"PartNumber":"PKG-RAC00-13547",
+	"PartName":"Micro Shield Kit (With Transformer)",
+	"PartPrice":"129.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"52246",
+	"PartNumber":"RAC00-14112",
+	"PartName":"Indoor Shield Plus-Techs Only",
+	"PartPrice":"189.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"57594",
+	"PartNumber":"PKG-RIG00-14107",
+	"PartName":"Shields Computer Collar Protection Solution",
+	"PartPrice":"219.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"62100",
+	"PartNumber":"PKG-DIG-TEC",
+	"PartName":"Digital Technology Solution",
+	"PartPrice":"1550.00",
+	"IsTaxable":"1"
+  },
+    {
+	"PartID":"62138",
+	"PartNumber":"PKG-BPLUS-TEC",
+	"PartName":"Boundary Plus Tecnology Solution",
+	"PartPrice":"1850.00",
+	"IsTaxable":"1"
+  },
+    {
+	"PartID":"62139",
+	"PartNumber":"PKG-GPS-TEC",
+	"PartName":"GPS Wireless Technology",
+	"PartPrice":"2999.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"63088",
+	"PartNumber":"PKG-GPS-ADD-PT",
+	"PartName":"GPS Add-A-Pet",
+	"PartPrice":"699.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"63095",
+	"PartNumber":"PKG-CCC-ADD-PT",
+	"PartName":"CCC Add-A-Pet w/Shield",
+	"PartPrice":"599.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"75857",
+	"PartNumber":"OUT-SHLD-2",
+	"PartName":"Outdoor Shields 2pk",
+	"PartPrice":"319.00",
+	"IsTaxable":"1"
+  },
+  {
+    "PartID": "75858",
+    "PartNumber": "IN-SHLD-2",
+    "PartName": "Indoor Shields 2pk (With Transformer)",
+    "PartPrice": "299.00",
+    "IsTaxable": "1"
+  }, 
+  {
+	"PartID":"75859",
+	"PartNumber":"MCR-SHLD-2",
+	"PartName":"Micro Shield 2pk",
+	"PartPrice":"199.00",
+	"IsTaxable":"1"
+  },
+  {
+	"PartID":"76054",
+	"PartNumber":"PKG-ADD-PT-NS",
+	"PartName":"CCC Add-A-Pet No Shield",
+	"PartPrice":"499.00",
+	"IsTaxable":"1"
+  }
+]  
