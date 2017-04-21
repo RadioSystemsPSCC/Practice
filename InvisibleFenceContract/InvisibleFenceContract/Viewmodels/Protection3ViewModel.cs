@@ -17,31 +17,24 @@ namespace InvisibleFenceContract.Viewmodels
     {
         public Protection3ViewModel()
         {
-            loadPrices();
+
         }
 
-        public List<Product> c_Prices
-        {
-            get;
-            set;
-        }
 
         public string OutdoorShieldPrice1
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 29476)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.OutdoorShieldPrice1;
             }
             set
             {
-                OutdoorShieldPrice1 = value;
+                if (value != this.OutdoorShieldPrice1)
+
+                {
+                    this.OutdoorShieldPrice1 = value;
+                    OnPropertyChanged("OutdoorShieldPrice1");
+                }
             }
         }
 
@@ -49,18 +42,51 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 75857)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.OutdoorShieldPrice2;
             }
             set
             {
-                OutdoorShieldPrice2 = value;
+                if (value != this.OutdoorShieldPrice2)
+                {
+                    this.OutdoorShieldPrice2 = value;
+                    OnPropertyChanged("OutdoorShieldPrice2");
+                }
+            }
+        }
+
+        public string OutdoorShieldQuantity
+        {
+            get
+            {
+                return this.OutdoorShieldQuantity.ToString();
+            }
+            set
+            {
+                if (value != this.OutdoorShieldQuantity)
+
+
+                {
+                    this.OutdoorShieldQuantity = value;
+                    OnPropertyChanged("OutdoorShieldQuantity");
+                }
+            }
+        }
+
+        public string OutdoorShieldTotal
+        {
+            get
+            {
+                return this.OutdoorShieldTotal;
+            }
+            set
+            {
+                if (value != this.OutdoorShieldTotal)
+
+
+                {
+                    this.OutdoorShieldTotal = value;
+                    OnPropertyChanged("OutdoorShieldTotal");
+                }
             }
         }
 
@@ -68,75 +94,145 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 52246)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.IndoorShieldPrice1;
             }
             set
             {
-                IndoorShieldPrice1 = value;
+                if (value != this.IndoorShieldPrice1)
+
+
+                {
+                    this.IndoorShieldPrice1 = value;
+                    OnPropertyChanged("IndoorShieldPrice1");
+                }
             }
         }
+
 
         public string IndoorShieldPrice2
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 75858)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.IndoorShieldPrice2;
             }
             set
             {
-                IndoorShieldPrice2 = value;
+                if (value != this.IndoorShieldPrice2)
+
+
+                {
+                    this.IndoorShieldPrice2 = value;
+                    OnPropertyChanged("IndoorShieldPrice2");
+                }
             }
         }
 
-        public string MicroShieldPrice
+        public string IndoorShieldQuantity
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 51264)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.IndoorShieldQuantity.ToString();
             }
             set
             {
-                MicroShieldPrice = value;
+                if (value != this.IndoorShieldQuantity)
+
+
+                {
+                    this.IndoorShieldQuantity = value;
+                    OnPropertyChanged("IndoorShieldQuantity");
+                }
             }
         }
+
+        public string IndoorShieldTotal
+        {
+            get
+            {
+                return this.IndoorShieldTotal;
+            }
+            set
+            {
+                if (value != this.IndoorShieldTotal)
+
+
+                {
+                    this.IndoorShieldTotal = value;
+                    OnPropertyChanged("IndoorShieldTotal");
+                }
+            }
+        }
+
+        public string MicroShieldPrice1
+        {
+            get
+            {
+                return this.MicroShieldPrice1;
+            }
+            set
+            {
+                if (value != this.MicroShieldPrice1)
+
+
+                {
+                    this.MicroShieldPrice1 = value;
+                    OnPropertyChanged("MicroShieldPrice1");
+                }
+            }
+        }
+
 
         public string MicroShieldPrice2
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 75859)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.MicroShieldPrice2;
             }
             set
             {
-                MicroShieldPrice2 = value;
+                if (value != this.MicroShieldPrice2)
+
+
+                {
+                    this.MicroShieldPrice2 = value;
+                    OnPropertyChanged("MicroShieldPrice2");
+                }
+            }
+        }
+
+        public string MicroShieldQuantity
+        {
+            get
+            {
+                return this.MicroShieldQuantity.ToString();
+            }
+            set
+            {
+                if (value != this.MicroShieldQuantity)
+
+
+                {
+                    this.MicroShieldQuantity = value;
+                    OnPropertyChanged("MicroShieldQuantity");
+                }
+            }
+        }
+
+        public string MicroShieldTotal
+        {
+            get
+            {
+                return this.MicroShieldTotal;
+            }
+            set
+            {
+                if (value != this.MicroShieldTotal)
+
+
+                {
+                    this.MicroShieldTotal = value;
+                    OnPropertyChanged("MicroShieldTotal");
+                }
             }
         }
 
@@ -144,52 +240,111 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 57594)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.ShieldsCollarPrice;
             }
             set
             {
-                ShieldsCollarPrice = value;
+                if (value != this.ShieldsCollarPrice)
+
+
+                {
+                    this.ShieldsCollarPrice = value;
+                    OnPropertyChanged("ShieldsCollarPrice");
+                }
             }
         }
+
+        public string ShieldsCollarQuantity
+        {
+            get
+            {
+                return this.ShieldsCollarQuantity.ToString();
+            }
+            set
+            {
+                if (value != this.ShieldsCollarQuantity)
+
+
+                {
+                    this.ShieldsCollarQuantity = value;
+                    OnPropertyChanged("ShieldsCollarQuantity");
+                }
+            }
+        }
+
+        public string ShieldsCollarTotal
+        {
+            get
+            {
+                return this.ShieldsCollarTotal;
+            }
+            set
+            {
+                if (value != this.ShieldsCollarTotal)
+
+
+                {
+                    this.ShieldsCollarTotal = value;
+                    OnPropertyChanged("ShieldsCollarTotal");
+                }
+            }
+        }
+
 
         public string MicroLitePrice
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 29361)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.MicroLitePrice;
             }
             set
             {
-                MicroLitePrice = value;
+                if (value != this.MicroLitePrice)
+
+
+                {
+                    this.MicroLitePrice = value;
+                    OnPropertyChanged("MicroLitePrice");
+                }
             }
         }
 
-        public void loadPrices()
+        public string MicroLiteQuantity
         {
-            try
+            get
             {
-                string file = File.ReadAllText(@"../../Resources/Products.JSON");
-                List<Product> prices = JsonConvert.DeserializeObject<List<Product>>(file);
-                c_Prices = prices;
+                return this.MicroLiteQuantity;
             }
-            catch (Exception e)
+            set
             {
-                Console.Write(e.ToString());
+                if (value != this.MicroLiteQuantity)
+
+                {
+                    this.MicroLiteQuantity = value;
+                    OnPropertyChanged("MicroLiteQuantity");
+                }
             }
         }
+
+        public string MicroLiteTotal
+        {
+            get
+            {
+                return this.MicroLiteTotal;
+            }
+            set
+            {
+                if (value != this.MicroLiteTotal)
+
+
+                {
+                    this.MicroLiteTotal = value;
+                    OnPropertyChanged("MicroLiteTotal");
+                }
+            }
+        }
+
+
+
     }
 }

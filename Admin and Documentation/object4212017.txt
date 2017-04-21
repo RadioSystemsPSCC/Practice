@@ -1,0 +1,1091 @@
+Protection3.xaml
+
+	public string OutdoorShieldPrice1
+	{
+		get
+		{
+			return this.OutdoorShieldPrice1;
+		}
+		set
+		{
+			if value != this.OutdoorShieldPrice1
+			{
+				this.OutdoorShieldPrice1 = value;
+				OnPropertyChanged("this.OutdoorShieldPrice1");
+			}
+		}
+	}
+
+	public string OutdoorShieldPrice2
+	{
+		get
+		{
+			return this.OutdoorShieldPrice2;
+		}
+		set
+		{
+			if value != this.OutdoorShieldPrice2
+			{
+				this.OutdoorShieldPrice2 = value;
+				OnPropertyChanged("this.OutdoorShieldPrice2");
+			}
+		}
+	}
+
+	public int OutdoorShieldQuantity
+	{
+		get
+		{
+			return this.OutdoorShieldQuantity.ToString();  
+		}
+		set
+		{
+			if value != this.OutdoorShieldQuantity
+			{
+				this.OutdoorShieldQuantity = value;
+				OnPropertyChanged("this.OutdoorShieldQuantity");
+			}
+		}
+	}
+
+	public string OutdoorShieldTotal
+	{
+		get
+		{
+			return this.OutdoorShieldTotal;  
+		}
+		set
+		{
+			if value != this.OutdoorShieldTotal
+			{
+				this.OutdoorShieldTotal = value;
+				OnPropertyChanged("this.OutdoorShieldTotal");
+			}
+		}
+	}
+
+	public string IndoorShieldPrice1
+	{
+		get
+		{
+			return this.IndoorShieldPrice1;  
+		}
+		set
+		{
+			if value != this.IndoorShieldPrice1
+			{
+				this.IndoorShieldPrice1 = value;
+				OnPropertyChanged("this.IndoorShieldPrice1");
+			}
+		}
+	}
+
+
+	public string IndoorShieldPrice2
+	{
+		get
+		{
+			return this.IndoorShieldPrice2;
+		}
+		set
+		{
+			if value != this.IndoorShieldPrice2
+			{
+				this.IndoorShieldPrice2 = value;
+				OnPropertyChanged("this.IndoorShieldPrice2");
+			}
+		}
+	}
+
+	public int IndoorShieldQuantity
+	{
+		get
+		{
+			return this.IndoorShieldQuantity.ToString();  
+		}
+		set
+		{
+			if value != this.IndoorShieldQuantity
+			{
+				this.IndoorShieldQuantity = value;
+				OnPropertyChanged("this.IndoorShieldQuantity");
+			}
+		}
+	}
+
+	public string IndoorShieldTotal
+	{
+		get
+		{
+			return this.IndoorShieldTotal;  
+		}
+		set
+		{
+			if value != this.IndoorShieldTotal
+			{
+				this.IndoorShieldTotal = value;
+				OnPropertyChanged("this.IndoorShieldTotal");
+			}
+		}
+	}
+
+	public string MicroShieldPrice1
+	{
+		get
+		{
+			return this.MicroShieldPrice1;  
+		}
+		set
+		{
+			if value != this.MicroShieldPrice1
+			{
+				this.MicroShieldPrice1 = value;
+				OnPropertyChanged("this.MicroShieldPrice1");
+			}
+		}
+	}
+
+
+	public string MicroShieldPrice2
+	{
+		get
+		{
+			return this.MicroShieldPrice2;
+		}
+		set
+		{
+			if value != this.MicroShieldPrice2
+			{
+				this.MicroShieldPrice2 = value;
+				OnPropertyChanged("this.MicroShieldPrice2");
+			}
+		}
+	}
+
+	public int MicroShieldQuantity
+	{
+		get
+		{
+			return this.MicroShieldQuantity.ToString();  
+		}
+		set
+		{
+			if value != this.MicroShieldQuantity
+			{
+				this.MicroShieldQuantity = value;
+				OnPropertyChanged("this.MicroShieldQuantity");
+			}
+		}
+	}
+
+	public string MicroShieldTotal
+	{
+		get
+		{
+			return this.  ;  
+		}
+		set
+		{
+			if value != this.
+			{
+				this.   = value;
+				OnPropertyChanged("this. ");
+			}
+		}
+	}
+
+	public string ShieldsCollarPrice
+	{
+		get
+		{
+			return this.ShieldsCollarPrice;  
+		}
+		set
+		{
+			if value != this.ShieldsCollarPrice
+			{
+				this.ShieldsCollarPrice = value;
+				OnPropertyChanged("this.ShieldsCollarPrice");
+			}
+		}
+	}
+
+	public int ShieldsCollarQuantity
+	{
+		get
+		{
+			return this.ShieldsCollarQuantity.ToString();  
+		}
+		set
+		{
+			if value != this.ShieldsCollarQuantity
+			{
+				this.ShieldsCollarQuantity = value;
+				OnPropertyChanged("this.ShieldsCollarQuantity");
+			}
+		}
+	}
+
+	public string ShieldsCollarTotal
+	{
+		get
+		{
+			return this.ShieldsCollarTotal;  
+		}
+		set
+		{
+			if value != this.ShieldsCollarTotal
+			{
+				this.ShieldsCollarTotal = value;
+				OnPropertyChanged("this.ShieldsCollarTotal");
+			}
+		}
+	}
+
+
+	public string MicroLitePrice
+	{
+		get
+		{
+			return this.MicroLitePrice;
+		}
+		set
+		{
+			if value != this.MicroLitePrice
+			{
+				this.MicroLitePrice = value;
+				OnPropertyChanged("this.MicroLitePrice");
+			}
+		}
+	}
+
+	public int MicroLiteQuantity
+	{
+		get
+		{
+			return this.MicroLiteQuantity;  
+		}
+		set
+		{
+			if value != this.MicroLiteQuantity
+			{
+				this.MicroLiteQuantity = value;
+				OnPropertyChanged("this.MicroLiteQuantity");
+			}
+		}
+	}
+
+	public string MicroLiteTotal
+	{
+		get
+		{
+			return this.MicroLiteTotal;  
+		}
+		set
+		{
+			if value != this.MicroLiteTotal
+			{
+				this.MicroLiteTotal = value;
+				OnPropertyChanged("this.MicroLiteTotal");
+			}
+		}
+	}
+	
+<!--Freedom4.xaml-->
+
+	public string DoormanPetDoorPrice
+	{
+		get
+		{
+			return this.DoormanPetDoorPrice;  
+		}
+		set
+		{
+			if value != this.DoormanPetDoorPrice
+			{
+				this.DoormanPetDoorPrice = value;
+				OnPropertyChanged("this.DoormanPetDoorPrice");
+			}
+		}
+	}
+
+
+	public int DoormanPetDoorQuantity
+	{
+		get
+		{
+			return this.DoormanPetDoorQuantity.ToString();
+		}
+		set
+		{
+			if value != this.DoormanPetDoorQuantity
+			{
+				this.DoormanPetDoorQuantity = value;
+				OnPropertyChanged("this.DoormanPetDoorQuantity");
+			}
+		}
+	}
+
+	public string DoormanPetDoorTotal
+	{
+		get
+		{
+			return this.DoormanPetDoorTotal;  
+		}
+		set
+		{
+			if value != this.DoormanPetDoorTotal
+			{
+				this.DoormanPetDoorTotal = value;
+				OnPropertyChanged("this.DoormanPetDoorTotal");
+			}
+		}
+	}
+
+
+	public string ShieldsCollarPrice
+	{
+		get
+		{
+			return this.ShieldsCollarPrice;
+		}
+		set
+		{
+			if value != this.ShieldsCollarPrice
+			{
+				this.ShieldsCollarPrice = value;
+				OnPropertyChanged("this.ShieldsCollarPrice");
+			}
+		}
+	}
+
+	public int ShieldsCollarQuantity2
+	{
+		get
+		{
+			return this.ShieldsCollarQuantity2;  
+		}
+		set
+		{
+			if value != this.ShieldsCollarQuantity2
+			{
+				this.ShieldsCollarQuantity2 = value;
+				OnPropertyChanged("this.ShieldsCollarQuantity2");
+			}
+		}
+	}
+
+<!--Solutions5.xaml-->
+
+	public string SafetyTotal
+	{
+		get
+		{
+			return this.SafetyTotal;
+		}
+		set
+		{
+			if value != this.SafetyTotal
+			{
+				this.SafetyTotal = value;
+				OnPropertyChanged("this.SafetyTotal");
+			}
+		}
+	}
+
+	public string ProtectionTotal
+	{
+		get
+		{
+			return this.ProtectionTotal;  
+		}
+		set
+		{
+			if value != this.ProtectionTotal
+			{
+				this.ProtectionTotal = value;
+				OnPropertyChanged("this.ProtectionTotal");
+			}
+		}
+	}
+
+
+	public string FreedomTotal
+	{
+		get
+		{
+			return this.FreedomTotal;
+		}
+		set
+		{
+			if value != this.FreedomTotal
+			{
+				this.FreedomTotal = value;
+				OnPropertyChanged("this.FreedomTotal");
+			}
+		}
+	}
+
+	public string SafetyWiredAddPrice
+	{
+		get
+		{
+			return this.SafetyWiredAddPrice;  
+		}
+		set
+		{
+			if value != this.SafetyWiredAddPrice
+			{
+				this.SafetyWiredAddPrice = value;
+				OnPropertyChanged("this.SafetyWiredAddPrice");
+			}
+		}
+	}
+
+
+	public int SafetyWiredAddQuantity
+	{
+		get
+		{
+			return this.SafetyWiredAddQuantity.ToString();
+		}
+		set
+		{
+			if value != this.SafetyWiredAddQuantity
+			{
+				this.SafetyWiredAddQuantity = value;
+				OnPropertyChanged("this.SafetyWiredAddQuantity");
+			}
+		}
+	}
+
+	public string SafetyWiredAddTotal
+	{
+		get
+		{
+			return this.SafetyWiredAddTotal;  
+		}
+		set
+		{
+			if value != this.SafetyWiredAddTotal
+			{
+				this.SafetyWiredAddTotal = value;
+				OnPropertyChanged("this.SafetyWiredAddTotal");
+			}
+		}
+	}
+
+
+	public string GPSAddPrice
+	{
+		get
+		{
+			return this.GPSAddPrice;
+		}
+		set
+		{
+			if value != this.GPSAddPrice
+			{
+				this.GPSAddPrice = value;
+				OnPropertyChanged("this.GPSAddPrice");
+			}
+		}
+	}
+
+	public int GPSAddQuantity
+	{
+		get
+		{
+			return this.GPSAddQuantity.ToString();  
+		}
+		set
+		{
+			if value != this.GPSAddQuantity
+			{
+				this.GPSAddQuantity = value;
+				OnPropertyChanged("this.GPSAddQuantity");
+			}
+		}
+	}
+
+	public string GPSAddTotal
+	{
+		get
+		{
+			return this.GPSAddTotal;
+		}
+		set
+		{
+			if value != this.GPSAddTotal
+			{
+				this.GPSAddTotal = value;
+				OnPropertyChanged("this.GPSAddTotal");
+			}
+		}
+	}
+
+	public string SingleTrainPrice
+	{
+		get
+		{
+			return this.SingleTrainPrice;
+		}
+		set
+		{
+			if value != this.SingleTrainPrice
+			{
+				this.SingleTrainPrice = value;
+				OnPropertyChanged("this.SingleTrainPrice");
+			}
+		}
+	}
+
+	public int SingleTrainQuantity
+	{
+		get
+		{
+			return this.SingleTrainQuantity;
+		}
+		set
+		{
+			if value != this.SingleTrainQuantity
+			{
+				this.SingleTrainQuantity = value;
+				OnPropertyChanged("this.SingleTrainQuantity");
+			}
+			}
+	}
+
+	public string SingleTrainTotal
+	{
+		get
+		{
+			return this.SingleTrainTotal;
+		}
+		set
+		{
+			if value != this.SingleTrainTotal
+			{
+				this.SingleTrainTotal = value;
+				OnPropertyChanged("this.SingleTrainTotal");
+			]
+		}
+	}
+
+	public string CouponCode
+	{
+		get
+		{
+			return this.CouponCode;
+		}
+		set
+		{
+			if value != this.CouponCode
+			{
+				this.CouponCode = value;
+				OnPropertyChanged("this.CouponCode");
+			}	
+		}
+	}
+
+	public string Discount
+	{
+		get
+		{
+			return this.Discount;
+		}
+		set
+		{
+			if value != this.Discount
+			{
+				this.Discount = value;
+				OnPropertyChanged("this.Discount");
+			}
+		}
+	}
+
+	public string SolutionPageTotal
+	{
+		get
+		{
+			return this.SolutionPageTotal;
+		}
+		set
+		{
+			if value != this.SolutionPageTotal
+			{
+				this.SolutionPageTotal = value;
+				OnPropertyChanged("this.SolutionPageTotal");
+			}
+		}
+	}
+
+<!--Installation6.xaml-->
+
+	public string OutdoorInstallCost
+	{
+		get
+		{
+			return this.OutdoorInstallCost;
+		}
+		set
+		{
+			if value != this.OutdoorInstallCost
+			{
+				this.OutdoorInstallCost = value;
+				OnPropertyChanged("this.OutdoorInstallCost");
+			}
+		}
+	}
+
+	public string OutdoorXLoopPrice
+	{
+		get
+		{
+			return this.OutdoorXLoopPrice;
+		}
+		set
+		{
+			if value != this.OutdoorXLoopPrice
+			{
+				this.OutdoorXLoopPrice = value;
+				OnPropertyChanged("this.OutdoorXLoopPrice");
+			}
+		}
+	}
+
+	public int OutdoorXLoopQuantity
+	{
+		get
+		{
+			return this.OutdoorXLoopQuantity.ToString();
+		}
+		set
+		{
+			if value != this.OutdoorXLoopQuantity
+			{
+				this.OutdoorXLoopQuantity = value;
+				OnPropertyChanged("this.OutdoorXLoopQuantity");
+			}
+		}
+	}
+
+	public string OutdoorXLoopTotal
+	{
+		get
+		{
+			return this.OutdoorXLoopTotal;
+		}
+		set
+		{
+			if value != this.OutdoorXLoopTotal
+			{
+				this.OutdoorXLoopTotal = value;
+				OnPropertyChanged("this.OutdoorXLoopTotal");
+			}	
+		}
+	}
+
+	public string IndoorXLoopPrice
+	{
+		get
+		{
+			return this.IndoorXLoopPrice;
+		}
+		set
+		{
+			if value != this.IndoorXLoopPrice
+			{
+				this.IndoorXLoopPrice = value;
+				OnPropertyChanged("this.IndoorXLoopPrice");
+			}	
+		}
+	}
+
+	public int IndoorXLoopQuantity
+	{
+		get
+		{
+			return this.IndoorXLoopQuantity;
+		}
+		set
+		{
+			if value != this.IndoorXLoopQuantity
+			{
+				this.IndoorXLoopQuantity = value;
+				OnPropertyChanged("this.IndoorXLoopQuantity");
+			}	
+		}
+	}
+
+
+	public string IndoorXLoopTotal
+	{
+		get
+		{
+			return this.IndoorXLoopTotal;
+		}
+		set
+		{
+			if value != this.IndoorXLoopTotal
+			{
+				this.IndoorXLoopTotal = value;
+				OnPropertyChanged("this.IndoorXLoopTotal");
+			}	
+		}
+	}
+
+	public string PetDoorInstallPrice
+	{
+		get
+		{
+			return this.PetDoorInstallPrice;
+		}
+		set
+		{
+			if value != this.PetDoorInstallPrice
+			{
+				this.PetDoorInstallPrice = value;
+				OnPropertyChanged("this.PetDoorInstallPrice");
+			}	
+		}
+	}
+
+	public int PetDoorInstallQuantity
+	{
+		get
+		{
+			return this.PetDoorInstallQuantity.ToString();
+		}
+		set
+		{
+			if value != this.PetDoorInstallQuantity
+			{
+				this.PetDoorInstallQuantity = value;
+				OnPropertyChanged("this.PetDoorInstallQuantity");
+			}	
+		}
+	}
+
+	public string PetDoorInstallTotal
+	{
+		get
+		{
+			return this.PetDoorInstallTotal;
+		}
+		set
+		{
+			if value != this.PetDoorInstallTotal
+			{
+				this.PetDoorInstallTotal = value;
+				OnPropertyChanged("this.PetDoorInstallTotal");
+			}	
+		}
+	}
+
+	public string SolutionTotal
+	{
+		get
+		{
+			return this.SolutionTotal;
+		}
+		set
+		{
+			if value != this.SolutionTotal
+			{
+				this.SolutionTotal = value;
+				OnPropertyChanged("this.SolutionTotal");
+			}	
+		}
+	}
+
+	public string Tax
+	{
+		get
+		{
+			return this.Tax ;
+		}
+		set
+		{
+			if value != this.Tax
+			{
+				this.Tax = value;
+				OnPropertyChanged("this.Tax");
+			}	
+		}
+	}
+
+
+	public string InstallTotal
+	{
+		get
+		{
+			return this.InstallTotal;
+		}
+		set
+		{
+			if value != this.InstallTotal
+			{
+				this.InstallTotal = value;
+				OnPropertyChanged("this.InstallTotal");
+			}
+		}
+	}
+
+	public string Total
+	{
+		get
+		{
+			return this.Total ;
+		}
+		set
+		{
+			if value != this.Total
+			{
+				this.Total = value;
+				OnPropertyChanged("this.Total ");
+			}	
+		}
+	}
+
+	public string Deposit
+	{
+		get
+		{
+			return this.Deposit;
+		}
+		set
+		{
+			if value != this.Deposit
+			{
+				this.Deposit = value;
+				OnPropertyChanged("this.Deposit");
+			}	
+		}
+	}
+
+	public string Balance
+	{
+		get
+		{
+			return this.Balance;
+		}
+		set
+		{
+			if value != this.Balance
+			{
+				this.Balance = value;
+				OnPropertyChanged("this.Balance");
+			}	
+		}
+	}
+
+<!--Contact1.xaml-->>
+
+	public string FirstName
+	{
+		get
+		{
+			return this.FirstName;
+		}
+		set
+		{
+			if value != this.FirstName
+			{
+				this.FirstName = value;
+				OnPropertyChanged("this.FirstName");
+			}	
+		}
+	}
+
+	public string LastName
+	{
+		get
+		{
+			return this.LastName;
+		}
+		set
+		{
+			if value != this.LastName
+			{
+				this.LastName = value;
+				OnPropertyChanged("this.LastName");
+			}	
+		}
+	}
+
+	public string ReferredBy
+	{
+		get
+		{
+			return this.ReferredBy;
+		}
+		set
+		{
+			if value != this.ReferredBy
+			{
+				this.ReferredBy = value;
+				OnPropertyChanged("this.ReferredBy");
+			}	
+		}
+	}
+
+	public string Address
+	{
+		get
+		{
+			return this.Address;
+		}
+		set
+		{
+			if value != this.Address
+			{
+				this.Address = value;
+				OnPropertyChanged("this.Address");
+			}	
+		}
+	}
+
+	public string City
+	{
+		get
+		{
+			return this.City;
+		}
+		set
+		{
+			if value != this.City
+			{
+				this.City = value;
+				OnPropertyChanged("this.City");
+			}	
+		}
+	}
+
+	public string State
+	{
+		get
+		{
+			return this.State;
+		}
+		set
+		{
+			if value != this.State
+			{
+				this.State = value;
+				OnPropertyChanged("this.State");
+			}	
+		}
+	}
+
+	public string Zip
+	{
+		get
+		{
+			return this.Zip;
+		}
+		set
+		{
+			if value != this.Zip
+			{
+				this.Zip = value;
+				OnPropertyChanged("this.Zip");
+			}	
+		}
+	}
+
+	public string HomePhone
+	{
+		get
+		{
+			return this.HomePhone;
+		}
+		set
+		{
+			if value != this.HomePhone
+			{
+				this.HomePhone = value;
+				OnPropertyChanged("this.HomePhone");
+			}	
+		}
+	}
+
+	public string CellPhone
+	{
+		get
+		{
+			return this.CellPhone;
+		}
+		set
+		{
+			if value != this.CellPhone
+			{
+				this.CellPhone = value;
+				OnPropertyChanged("this.CellPhone")
+			}
+		}
+	}
+
+	public string Email
+	{
+		get
+		{
+			return this.Email;
+		}
+		set
+		{
+			if value != this.Email
+			{
+				this.Email = value;
+				OnPropertyChanged("this.Email");
+			}	
+		}
+	}
+
+	public string PetName
+	{
+		get
+		{
+			return this.PetName;
+		}
+		set
+		{
+			if value != this.PetName
+			{
+				this.PetName = value;
+				OnPropertyChanged("this.PetName");
+			}	
+		}
+	}
+
+	public string PetBirthday
+	{
+		get
+		{
+			return this.PetBirthday;
+		}
+		set
+		{
+			if value != this.PetBirthday
+			{
+				this.PetBirthday = value;
+				OnPropertyChanged("this.PetBirthday");
+			}	
+		}
+	}
+
+	public string PetBreed
+	{
+		get
+		{
+			return this.PetBreed;
+		}
+		set
+		{
+			if value != this.PetBreed
+			{
+				this.PetBreed = value;
+				OnPropertyChanged("this.PetBreed");
+			}	
+		}
+	}

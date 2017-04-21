@@ -45,9 +45,9 @@
 
         </Border>
         <!-- Radio Buttons ******Name and GroupName changed -->
-        <RadioButton x:Name="GPSPackage" Command="{Binding ViewCommand}" CommandParameter="GPSPackage" Content="GPS 2.0 Wire Free Technology&#xA;GPS 2.0 Mobile Collar Unit&#xA;2-Year Warranty" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="20,43,0,0"  VerticalAlignment="Top"/>
-        <RadioButton x:Name="BoundaryPackage"  Command="{Binding ViewCommand}" CommandParameter="BoundaryPackage" Content="Boundary Plus Technology&#xA;MicroLite Plus Computer Collar Unit&#xA;Lifetime Limited Warranty&#xA;1-Year Power Cap Battery Plan" Grid.Column="1" HorizontalAlignment="Left" Margin="20,118,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <RadioButton x:Name="DigitalTechPackage" Command="{Binding ViewCommand}" CommandParameter="DigitalTechPackage" Content="Digital Technology&#xA;MicroLite Computer Collar Unit&#xA;Limited Lifetime Warranty&#xA; 1-Year Power Cap Battery Plan" Grid.Column="1" HorizontalAlignment="Left" Margin="20,211,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GPSPackage" Command="{Binding RadioCommand}" CommandParameter="GPSPackage" Content="GPS 2.0 Wire Free Technology&#xA;GPS 2.0 Mobile Collar Unit&#xA;2-Year Warranty" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="20,43,0,0"  VerticalAlignment="Top"/>
+        <RadioButton x:Name="BoundaryPackage"  Command="{Binding RadioCommand}" CommandParameter="BoundaryPackage" Content="Boundary Plus Technology&#xA;MicroLite Plus Computer Collar Unit&#xA;Lifetime Limited Warranty&#xA;1-Year Power Cap Battery Plan" Grid.Column="1" HorizontalAlignment="Left" Margin="20,118,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="DigitalTechPackage" Command="{Binding RadioCommand}" CommandParameter="DigitalTechPackage" Content="Digital Technology&#xA;MicroLite Computer Collar Unit&#xA;Limited Lifetime Warranty&#xA; 1-Year Power Cap Battery Plan" Grid.Column="1" HorizontalAlignment="Left" Margin="20,211,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
         <!-- Price Labels -->
         <Label x:Name="lblGpsPrice" Grid.Column="1" Grid.Row="1" Content="{Binding GpsLabel}" HorizontalAlignment="Left" Margin="41,94,0,0" VerticalAlignment="Top" Foreground="#017EB8" FontWeight="bold"  Height="24" Width='88'/>

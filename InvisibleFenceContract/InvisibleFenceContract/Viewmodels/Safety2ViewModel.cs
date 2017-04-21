@@ -30,7 +30,7 @@ namespace InvisibleFenceContract.Viewmodels
             set;
         }
 
-        public string GpsLabel
+        public string GPSPrice
         {
             get
             {
@@ -45,8 +45,8 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                GpsLabel = value;
-                OnPropertyChanged("gpsLabel");
+                GPSPrice = value;
+                OnPropertyChanged("GPSPrice");
             }
         }
 

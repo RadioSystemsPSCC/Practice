@@ -1,0 +1,61 @@
+ private string customerID; // instead to doing a string we are going to use CusID as index on Order (speed up because will not have to go through each Customer number)
+        private string packageSelection; ** //page 2
+        private double packagePrice; ** // page 2
+        private double safetyTotal; //show on page 5, tabulate on page 2
+        private int outdoorShieldQuantity;
+        private double outdoorShieldPrice1;
+        private double outdoorShieldPrice2;
+        private double outdoorShieldTotal;
+        private double indoorShieldTotal;
+        private int indoorShieldQuantity = 0;
+        private double indoorShieldPrice1;
+        private double indoorShieldPrice2;
+        private int microShieldQuantity = 0;
+        private double microShieldPrice1;
+        private double microShieldPrice2;
+        private double microShieldTotal = 0;
+        private int shieldsCollarQuantity = 0;
+        private double shieldsCollarPrice;
+        private double shieldsCollarTotal;
+        private int microLiteQuantity = 0;
+        private double microLitePrice;
+        private double microLiteTotal;
+        private double protectionTotal; // tabulated page 4, displayed page 5
+        private int doormanPetDoorQuantity;
+        private double doormanPetDoorPrice;
+        private double doormanPetDoorTotal;
+        private int shieldsCollarQuantity2;
+       	                                      //get rid of private double shieldsCollarPrice2;
+        private double freedomTotal; // tabulated page 4, displayed page 5
+        private int safetyWiredAddQuantity; // displayed page 5
+        private double safetyWiredAddPrice; // displayed page 5
+        private double safetyWiredAddTotal; // displayed page 5
+        private int gPSAddQuantity; // page 5
+        private double gPSAddPrice; // adding an extra pet and displaying it on page 5
+        private double gPSAddTotal; // page 5
+        private int singleTrainQuantity // page 5
+        private double singleTrainPrice; // page 5
+        private double singleTrainTotal; // page 5
+        private string couponCode; // page 5- need to add a command check box to make it collapse (wish list)
+        private double discount; // page 5- need to add a command check box to make it collapse (wish list)
+        private double solutionsPageTotal; // page 5
+        private double outdoorInstallCost;
+        private int indoorXLoopQuantity;
+        private double indoorXLoopPrice;
+        private double indoorXLoopTotal;
+        private int outdoorXLoopQuantity;
+        private double outdoorXLoopPrice;
+        private double outdoorXLoopTotal;
+        private int petDoorInstallQuantity;
+        private double petDoorInstallPrice;
+        private double petDoorInstallTotal;
+        private double installTotal;
+        private double solutionTotal;
+        private double taxRate;
+        private double tax;
+        private double total;
+        private double deposit;
+        private double balance;
+		
+		
+		We need to add the single training refresher price into the product.json
