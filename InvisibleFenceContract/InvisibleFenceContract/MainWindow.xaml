@@ -100,62 +100,62 @@
             Width='27' Margin='0,0,-7,0' 
             Background='Black' Foreground='White'/>
 
+            <Button Content = "Select Customer" 
+            Command = "{Binding NavCommand}"
+            CommandParameter = "selectCustomer" 
+            Grid.Column = "0" Grid.Row='2' />
+            
             <Button Content = "Contact" 
             Command = "{Binding NavCommand}"
             CommandParameter = "contact" 
-            Grid.Column = "0" Grid.Row='1' />
+            Grid.Column = "0" Grid.Row='3' />
 
             <Button Content = "Safety" 
             Command = "{Binding NavCommand}"
               Background='#017EB8'       
               CommandParameter = "safety" 
               Grid.Column = "0"
-              Grid.Row='2'        />
+              Grid.Row='4'        />
 
             <Button Content = "Protection" 
               Command = "{Binding NavCommand}"
               Background="#A6D473"
               CommandParameter = "protection" 
               Grid.Column = "0"
-            Grid.Row='3'        />
+            Grid.Row='5'        />
 
             <Button Content = "Freedom"
                Background='#E96C2D'
             Command = "{Binding NavCommand}" 
             CommandParameter = "freedom" 
             Grid.Column = "0"
-            Grid.Row='4'        />
+            Grid.Row='6'        />
 
             <Button Content = "Solutions" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "solutions" 
             Grid.Column = "0"
-            Grid.Row='5'        />
+            Grid.Row='7'        />
 
             <Button Content = "Installation" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "installation" 
             Grid.Column = "0"
-            Grid.Row='6'        />
+            Grid.Row='8'        />
 
             <Button Content = "Signature" 
             Command = "{Binding NavCommand}" 
             CommandParameter = "signature" 
             Grid.Column = "0"
-            Grid.Row='7'  />
+            Grid.Row='9'  />
 
             <TextBlock Text='Admin:'
                        Foreground='White'
                        Grid.Column='0'
-                       Grid.Row='10'/>
+                       Grid.Row='11'/>
             <Button Content = "Start" 
             Command = "{Binding NavCommand}"
             CommandParameter = "start" 
-            Grid.Column = "0" Grid.Row='11' />
-
-            <Button Content = "Select Customer" 
-            Command = "{Binding NavCommand}"
-            CommandParameter = "selectCustomer" 
             Grid.Column = "0" Grid.Row='12' />
 
             <Button Content = "Product Lookup" 
