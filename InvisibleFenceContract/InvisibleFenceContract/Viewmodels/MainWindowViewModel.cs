@@ -160,27 +160,27 @@ namespace InvisibleFenceContract.Viewmodels
                 Console.Write(e.ToString());
             }
 
-        //     private double outdoorShieldPrice1;
-        //private double outdoorShieldPrice2;
-        //private double indoorShieldPrice1;
-        //private double indoorShieldPrice2;
-        //private double microShieldPrice1;
-        //private double microShieldPrice2;
-        //private double shieldsCollarPrice;
-        //private double microLitePrice;
-        //private double doormanPetDoorPrice;
-        //private double safetyWiredAddPrice;
-        //private double gPSAddPrice;
-        //private double singleTrainPrice;
-        //private double indoorXLoopPrice;
-        //private double outdoorXLoopPrice;
-        //private double petDoorInstallPrice;
+            //     private double outdoorShieldPrice1;
+            //private double outdoorShieldPrice2;
+            //private double indoorShieldPrice1;
+            //private double indoorShieldPrice2;
+            //private double microShieldPrice1;
+            //private double microShieldPrice2;
+            //private double shieldsCollarPrice;
+            //private double microLitePrice;
+            //private double doormanPetDoorPrice;
+            //private double safetyWiredAddPrice;
+            //private double gPSAddPrice;
+            //private double singleTrainPrice;
+            //private double indoorXLoopPrice;
+            //private double outdoorXLoopPrice;
+            //private double petDoorInstallPrice;
 
 
 
 
-    }
-    
+        }
+
         public void SetApplication()
         {
 
@@ -211,7 +211,7 @@ namespace InvisibleFenceContract.Viewmodels
             Application.Current.Properties["DoormanPetDoorPrice"] = doormanPetDoorPrice;
             Application.Current.Properties["DoormanPetDoorTotal"] = doormanPetDoorTotal;
             Application.Current.Properties["ShieldsCollarQuantity2"] = shieldsCollarQuantity2;
-            Application.Current.Properties["FreedomTotal"] =  freedomTotal;
+            Application.Current.Properties["FreedomTotal"] = freedomTotal;
             Application.Current.Properties["SafetyWiredAddQuantity"] = safetyWiredAddQuantity;
             Application.Current.Properties["SafetyWiredAddPrice"] = safetyWiredAddPrice;
             Application.Current.Properties["SafetyWiredAddTotal"] = safetyWiredAddTotal;
@@ -241,6 +241,6 @@ namespace InvisibleFenceContract.Viewmodels
             Application.Current.Properties["Total"] = total;
             Application.Current.Properties["Deposit"] = deposit;
             Application.Current.Properties["Balance"] = balance;
-    }
+        }
     }
 }
