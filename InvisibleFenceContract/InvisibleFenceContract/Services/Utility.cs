@@ -14,8 +14,9 @@ namespace InvisibleFenceContract.Services
 
         public static void InitialLoadOrderData()
         {
+
             //load all initial order details
-            Order.Balance = 10;
+            Order.Balance = 0;
         }
     }
 }
