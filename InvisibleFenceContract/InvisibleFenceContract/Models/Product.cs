@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InvisibleFenceContract.Models
 {
-    class Product
+    public class Product
     {
         private int partID;
         private string partNumber;

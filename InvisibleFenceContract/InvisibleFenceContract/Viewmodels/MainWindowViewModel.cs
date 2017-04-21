@@ -5,22 +5,25 @@ using System.Windows;
 using System.IO;
 using Newtonsoft.Json;
 using InvisibleFenceContract.Models;
+using InvisibleFenceContract.Services;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class MainWindowViewModel : BindableBase
+    public class MainWindowViewModel : BindableBase
     {
-
         public MainWindowViewModel()
         {
             NavCommand = new MyICommand<string>(OnNav);
             LoadProduct();
             SetApplication();
         }
+
+        static Order order1 = Utility.GetOrder();
+
         private StartViewModel startViewModel = new StartViewModel();
         private SelectCustomerViewModel selectCustomerViewModel = new SelectCustomerViewModel();
 
-        private Contact1ViewModel contact1ViewModel = new Contact1ViewModel();
+        private Contact1ViewModel contact1ViewModel = new Contact1ViewModel(order1);
         private Safety2ViewModel safety2ViewModel = new Safety2ViewModel();
         private Protection3ViewModel protection3ViewModel = new Protection3ViewModel();
         private Freedom4ViewModel freedom4ViewModel = new Freedom4ViewModel();
@@ -104,7 +107,7 @@ namespace InvisibleFenceContract.Viewmodels
 
         public MyICommand<string> NavCommand { get; private set; }
 
-        private void OnNav(string destination)
+        public void OnNav(string destination)
         {
 
             switch (destination)
@@ -137,10 +140,10 @@ namespace InvisibleFenceContract.Viewmodels
                     CurrentViewModel = productLookupViewModel;
                     break;
                 case "contact":
-                    CurrentViewModel = new Contact1ViewModel();
+                    CurrentViewModel = new Contact1ViewModel(order1);
                     break;
                 default:
-                    CurrentViewModel = new Contact1ViewModel();
+                    CurrentViewModel = new Contact1ViewModel(order1);
                     break;
             }
             if (destination.Length < 1)

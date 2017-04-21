@@ -10,15 +10,23 @@ using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Windows;
 using System.Data;
+using InvisibleFenceContract.Services;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class Safety2ViewModel : BindableBase
+    public class Safety2ViewModel : BindableBase
     {
+        //order1 = (Order)Application.Current.Properties["myOrder"];
+
         public Safety2ViewModel()
         {
+            //Utility util = new Utility();
+            //Order order1 = (Order)Application.Current.Properties["myOrder"];
+
             loadPrices();
         }
+
+        public Order Order1 { get; set; }
 
         public List<Product> safetyPrices
         {

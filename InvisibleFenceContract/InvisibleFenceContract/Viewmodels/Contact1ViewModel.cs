@@ -12,16 +12,18 @@ using System.Windows;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class Contact1ViewModel : BindableBase
+    public class Contact1ViewModel : BindableBase
     {
         public int CusID = Convert.ToInt32(Application.Current.Properties["Cus_ID"]);
-        public Contact1ViewModel()
+        public Contact1ViewModel(Order o)
         {
+            Order1 = o;
             
             LoadClients();
             LoadPets();
             pickPet();
         }
+        public Order Order1 { get; set; }
         public List<Customer> c_Clients
         {
             get;
