@@ -36,13 +36,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.DoormanPetDoorPrice;
+                return this.DoormanPetDoorPrice;
             }
             set
             {
                 if (value != this.DoormanPetDoorPrice)
-
-                {
+    
+            {
                     this.DoormanPetDoorPrice = value;
                     OnPropertyChanged("DoormanPetDoorPrice");
                 }
@@ -59,8 +59,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.DoormanPetDoorQuantity)
-
-                {
+    
+            {
                     this.DoormanPetDoorQuantity = value;
                     OnPropertyChanged("DoormanPetDoorQuantity");
                 }
@@ -71,13 +71,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.DoormanPetDoorPrice) * Convert.ToInt32(this.DoormanPetDoorQuantity)).ToString();
+                return this.DoormanPetDoorTotal;
             }
             set
             {
                 if (value != this.DoormanPetDoorTotal)
-
-                {
+    
+            {
                     this.DoormanPetDoorTotal = value;
                     OnPropertyChanged("DoormanPetDoorTotal");
                 }
@@ -89,13 +89,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.ShieldsCollarPrice;
+                return this.ShieldsCollarPrice;
             }
             set
             {
                 if (value != this.ShieldsCollarPrice)
-
-                {
+    
+            {
                     this.ShieldsCollarPrice = value;
                     OnPropertyChanged("ShieldsCollarPrice");
                 }
@@ -111,46 +111,27 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.ShieldsCollarQuantity2)
-
-                {
+    
+            {
                     this.ShieldsCollarQuantity2 = value;
                     OnPropertyChanged("ShieldsCollarQuantity2");
                 }
             }
         }
 
-        public string ShieldsCollarTotal
+        public void loadPrices()
         {
-            get
+            try
             {
-                return (Convert.ToDouble(this.ShieldsCollarTotal) + (Convert.ToDouble(this.ShieldsCollarPrice) * Convert.ToInt32(this.ShieldsCollarQuantity2))).ToString();
+                string file = File.ReadAllText(@"../../Resources/Products.JSON");
+                List<Product> prices = JsonConvert.DeserializeObject<List<Product>>(file);
+                c_Prices = prices;
             }
-            set
+            catch (Exception e)
             {
-                if (value != this.ShieldsCollarTotal)
-                {
-                    this.ShieldsCollarTotal = value;
-                    OnPropertyChanged("ShieldsCollarTotal");
-                }
+                Console.Write(e.ToString());
             }
         }
-
-        public string FreedomTotal
-        {
-            get
-            {
-                return (Convert.ToDouble(this.DoormanPetDoorTotal) + (Convert.ToDouble(this.ShieldsCollarTotal))).ToString();
-            }
-            set
-            {
-                if (value != this.FreedomTotal)
-                {
-                    this.FreedomTotal = value;
-                    OnPropertyChanged("FreedomTotal");
-                }
-            }
-        }
-
         public void loadOrder()
         {
             c_Order = Services.Utility.Order;

@@ -20,9 +20,9 @@ namespace InvisibleFenceContract.Viewmodels
 
         public Safety2ViewModel()
         {
-
+            loadPrices();
         }
-
+        
 
         public List<Product> safetyPrices
         {
@@ -33,98 +33,73 @@ namespace InvisibleFenceContract.Viewmodels
         public string GPSPrice
         {
 
-            get
+                get
             {
-                return this.GPSPrice;
-            }
-            set
+                    return this.GPSPrice;
+                }
+                set
             {
-                if (value != this.GPSPrice)
+                    if (value != this.GPSPrice)
 
-                {
-                    this.GPSPrice = value;
-                    OnPropertyChanged("GPSPrice");
+                    {
+                        this.GPSPrice = value;
+                        OnPropertyChanged("GPSPrice");
+                    }
                 }
             }
-        }
 
         public string BoundaryPlusPrice
         {
             get
             {
-                return "$" + this.BoundaryPlusPrice;
-            }
-            set
-            {
-                BoundaryPlusPrice = value;
-                OnPropertyChanged("boundaryPlusPrice");
-            }
-        }
-
-        public string DigitalTechnologyPrice
-        {
-            get
-            {
-
-                return "$" + DigitalTechnologyPrice;
-            }
-
-            set
-            {
-                DigitalTechnologyPrice = value;
-                OnPropertyChanged("DigitalTechnologyPrice");
-            }
-        }
-
-        public string PackageSelection
-        {
-            get
-            {
-                return this.PackageSelection;
-            }
-            set
-            {
-                if (value != this.PackageSelection)
+                for (int i = 0; i < safetyPrices.Count; i++)
                 {
-                    this.PackageSelection = value;
-                    OnPropertyChanged("PackageSelection");
+                    if (safetyPrices[i].PartID == 62138)
+                    {
+                        return "$" + safetyPrices[i].PartPrice;
+                    }
                 }
-            }
-        }
-
-        public string PackagePrice
-        {
-            get
-            {
-                return "$" + this.PackagePrice;
+                return null;
             }
             set
             {
-                if (value != this.PackagePrice)
-                {
-                    this.PackagePrice = value;
-                    OnPropertyChanged("PackagePrice");
-                }
+                BoundaryPlus = value;
+                OnPropertyChanged("boundaryPlus");
             }
         }
 
-        public string SafetyTotal
+        public string DigitalTechnology
         {
             get
             {
-                return "$" + PackagePrice;
+                for (int i = 0; i < safetyPrices.Count; i++)
+                {
+                    if (safetyPrices[i].PartID == 62100)
+                    {
+                        return "$" + safetyPrices[i].PartPrice;
+                    }
+                }
+                return null;
             }
             set
             {
-                if (value != this.SafetyTotal)
-                {
-                    this.SafetyTotal = value;
-                    OnPropertyChanged("SafetyTotal");
-                }
+                DigitalTechnology = value;
+                OnPropertyChanged("digitalTechnology");
             }
         }
 
-
-
+        public void loadPrices()
+        {
+            try
+            {
+                string file = File.ReadAllText(@"../../Resources/Products.JSON");
+                List<Product> prices = JsonConvert.DeserializeObject<List<Product>>(file);
+                safetyPrices = prices;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.ToString());
+            }
+        }
     }
 }

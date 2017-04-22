@@ -14,7 +14,7 @@ namespace InvisibleFenceContract.Viewmodels
     {
         public Solutions5ViewModel()
         {
-
+            
             loadOrder();
 
         }
@@ -85,7 +85,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.SafetyWiredAddPrice;
+                return this.SafetyWiredAddPrice;
             }
             set
             {
@@ -122,7 +122,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.SafetyWiredAddPrice) * Convert.ToInt32(this.SafetyWiredAddQuantity)).ToString();
+                return this.SafetyWiredAddTotal;
             }
             set
             {
@@ -141,7 +141,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.GPSAddPrice;
+                return this.GPSAddPrice;
             }
             set
             {
@@ -177,7 +177,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.GPSAddPrice) * Convert.ToInt32(this.GPSAddQuantity)).ToString();
+                return this.GPSAddTotal;
             }
             set
             {
@@ -195,7 +195,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.SingleTrainPrice;
+                return this.SingleTrainPrice;
             }
             set
             {
@@ -227,7 +227,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.SingleTrainPrice) * Convert.ToInt32(this.SingleTrainQuantity)).ToString();
+                return this.SingleTrainTotal;
             }
             set
             {
@@ -261,7 +261,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.Discount;
+                return this.Discount;
             }
             set
             {
@@ -278,7 +278,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(SafetyWiredAddTotal) + Convert.ToDouble(GPSAddTotal) + Convert.ToDouble(SingleTrainTotal)).ToString();
+                return this.SolutionsPageTotal;
             }
             set
             {
