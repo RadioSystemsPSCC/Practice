@@ -14,13 +14,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.OutdoorInstallCost;
+                return "$" + this.OutdoorInstallCost;
             }
             set
             {
                 if (value != this.OutdoorInstallCost)
-    
-            {
+
+                {
                     this.OutdoorInstallCost = value;
                     OnPropertyChanged("OutdoorInstallCost");
                 }
@@ -31,13 +31,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.OutdoorXLoopPrice;
+                return "$" + this.OutdoorXLoopPrice;
             }
             set
             {
                 if (value != this.OutdoorXLoopPrice)
-    
-            {
+
+                {
                     this.OutdoorXLoopPrice = value;
                     OnPropertyChanged("OutdoorXLoopPrice");
                 }
@@ -53,8 +53,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.OutdoorXLoopQuantity)
-    
-            {
+
+                {
                     this.OutdoorXLoopQuantity = value;
                     OnPropertyChanged("OutdoorXLoopQuantity");
                 }
@@ -65,13 +65,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.OutdoorXLoopTotal;
+                return (Convert.ToDouble(this.OutdoorXLoopPrice) * Convert.ToInt32(this.OutdoorXLoopQuantity)).ToString();
+
             }
             set
             {
                 if (value != this.OutdoorXLoopTotal)
-    
-            {
+
+                {
                     this.OutdoorXLoopTotal = value;
                     OnPropertyChanged("OutdoorXLoopTotal");
                 }
@@ -82,13 +83,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.IndoorXLoopPrice;
+                return "$" + this.IndoorXLoopPrice;
             }
             set
             {
                 if (value != this.IndoorXLoopPrice)
-    
-            {
+
+                {
                     this.IndoorXLoopPrice = value;
                     OnPropertyChanged("IndoorXLoopPrice");
                 }
@@ -104,8 +105,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.IndoorXLoopQuantity)
-    
-            {
+
+                {
                     this.IndoorXLoopQuantity = value;
                     OnPropertyChanged("IndoorXLoopQuantity");
                 }
@@ -117,13 +118,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.IndoorXLoopTotal;
+                return (Convert.ToDouble(this.IndoorXLoopPrice) * Convert.ToInt32(this.IndoorXLoopQuantity)).ToString();
             }
             set
             {
                 if (value != this.IndoorXLoopTotal)
-    
-            {
+
+                {
                     this.IndoorXLoopTotal = value;
                     OnPropertyChanged("IndoorXLoopTotal");
                 }
@@ -134,13 +135,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.PetDoorInstallPrice;
+                return "$" + this.PetDoorInstallPrice;
             }
             set
             {
                 if (value != this.PetDoorInstallPrice)
-    
-            {
+
+                {
                     this.PetDoorInstallPrice = value;
                     OnPropertyChanged("PetDoorInstallPrice");
                 }
@@ -156,8 +157,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.PetDoorInstallQuantity)
-    
-            {
+
+                {
                     this.PetDoorInstallQuantity = value;
                     OnPropertyChanged("PetDoorInstallQuantity");
                 }
@@ -168,19 +169,19 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.PetDoorInstallTotal;
+                return (Convert.ToDouble(this.PetDoorInstallPrice) * Convert.ToInt32(this.PetDoorInstallQuantity)).ToString();
             }
             set
             {
                 if (value != this.PetDoorInstallTotal)
-    
-            {
+
+                {
                     this.PetDoorInstallTotal = value;
                     OnPropertyChanged("PetDoorInstallTotal");
                 }
             }
         }
-
+        //Subtract discount from SolutionTotal
         public string SolutionTotal
         {
             get
@@ -190,8 +191,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.SolutionTotal)
-    
-            {
+
+                {
                     this.SolutionTotal = value;
                     OnPropertyChanged("SolutionTotal");
                 }
@@ -225,8 +226,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.Tax)
-    
-            {
+
+                {
                     this.Tax = value;
                     OnPropertyChanged("Tax");
                 }
@@ -243,8 +244,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.InstallTotal)
-    
-            {
+
+                {
                     this.InstallTotal = value;
                     OnPropertyChanged("InstallTotal");
                 }
@@ -260,8 +261,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.Total)
-    
-            {
+
+                {
                     this.Total = value;
                     OnPropertyChanged("Total");
                 }
@@ -277,8 +278,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.Deposit)
-    
-            {
+
+                {
                     this.Deposit = value;
                     OnPropertyChanged("Deposit");
                 }
@@ -294,8 +295,8 @@ namespace InvisibleFenceContract.Viewmodels
             set
             {
                 if (value != this.Balance)
-    
-            {
+
+                {
                     this.Balance = value;
                     OnPropertyChanged("Balance");
                 }
