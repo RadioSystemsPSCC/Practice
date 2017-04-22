@@ -50,9 +50,9 @@
         <RadioButton x:Name="DigitalTechPackage" Command="{Binding RadioCommand}" CommandParameter="DigitalTechPackage" Content="Digital Technology&#xA;MicroLite Computer Collar Unit&#xA;Limited Lifetime Warranty&#xA; 1-Year Power Cap Battery Plan" Grid.Column="1" HorizontalAlignment="Left" Margin="20,211,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
         <!-- Price Labels -->
-        <Label x:Name="lblGpsPrice" Grid.Column="1" Grid.Row="1" Content="{Binding GpsLabel}" HorizontalAlignment="Left" Margin="41,94,0,0" VerticalAlignment="Top" Foreground="#017EB8" FontWeight="bold"  Height="24" Width='88'/>
-        <Label x:Name="lblBoundaryPrice" Grid.Column="1" Grid.Row="1" Content="{Binding BoundaryPlus}" HorizontalAlignment="Left" Margin="41,181,0,0" VerticalAlignment="Top"  Foreground="#017EB8" FontWeight="bold" Height='24' Width='88'/>
-        <Label x:Name="lblDigitalPrice" Grid.Column="1" Grid.Row="1" Content="{Binding DigitalTechnology}" HorizontalAlignment="Left" Margin="41,279,0,0" VerticalAlignment="Top"  Foreground="#017EB8" FontWeight="bold" Height='24' Width='88'/>
+        <Label x:Name="lblGpsPrice" Grid.Column="1" Grid.Row="1" Content="{Binding GPSPrice}" HorizontalAlignment="Left" Margin="41,94,0,0" VerticalAlignment="Top" Foreground="#017EB8" FontWeight="bold"  Height="24" Width='88'/>
+        <Label x:Name="lblBoundaryPrice" Grid.Column="1" Grid.Row="1" Content="{Binding BoundaryPlusPrice}" HorizontalAlignment="Left" Margin="41,181,0,0" VerticalAlignment="Top"  Foreground="#017EB8" FontWeight="bold" Height='24' Width='88'/>
+        <Label x:Name="lblDigitalPrice" Grid.Column="1" Grid.Row="1" Content="{Binding DigitalTechnologyPrice}" HorizontalAlignment="Left" Margin="41,279,0,0" VerticalAlignment="Top"  Foreground="#017EB8" FontWeight="bold" Height='24' Width='88'/>
 
         <!--Second Data Column -->
         <TextBlock x:Name="label" Grid.Column="2" Grid.Row="1" Text="Included with all Safety Solutions:" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,111,0,0" FontStyle="Italic" Height="26" Width="288" FontWeight="Bold"  Foreground="#017EB8" />

@@ -31,42 +31,91 @@ namespace InvisibleFenceContract.Viewmodels
             get;
             set;
         }
-        
+
         public string DoormanPetDoorPrice
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 29191)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.DoormanPetDoorPrice;
             }
             set
             {
-                DoormanPetDoorPrice = value;
+                if (value != this.DoormanPetDoorPrice)
+    
+            {
+                    this.DoormanPetDoorPrice = value;
+                    OnPropertyChanged("DoormanPetDoorPrice");
+                }
             }
         }
+
+
+        public string DoormanPetDoorQuantity
+        {
+            get
+            {
+                return this.DoormanPetDoorQuantity.ToString();
+            }
+            set
+            {
+                if (value != this.DoormanPetDoorQuantity)
+    
+            {
+                    this.DoormanPetDoorQuantity = value;
+                    OnPropertyChanged("DoormanPetDoorQuantity");
+                }
+            }
+        }
+
+        public string DoormanPetDoorTotal
+        {
+            get
+            {
+                return this.DoormanPetDoorTotal;
+            }
+            set
+            {
+                if (value != this.DoormanPetDoorTotal)
+    
+            {
+                    this.DoormanPetDoorTotal = value;
+                    OnPropertyChanged("DoormanPetDoorTotal");
+                }
+            }
+        }
+
 
         public string ShieldsCollarPrice
         {
             get
             {
-                for (int i = 0; i < c_Prices.Count; i++)
-                {
-                    if (c_Prices[i].PartID == 57594)
-                    {
-                        return "$" + c_Prices[i].PartPrice;
-                    }
-                }
-                return null;
+                return this.ShieldsCollarPrice;
             }
             set
             {
-                ShieldsCollarPrice = value;
+                if (value != this.ShieldsCollarPrice)
+    
+            {
+                    this.ShieldsCollarPrice = value;
+                    OnPropertyChanged("ShieldsCollarPrice");
+                }
+            }
+        }
+
+        public string ShieldsCollarQuantity2
+        {
+            get
+            {
+                return this.ShieldsCollarQuantity2;
+            }
+            set
+            {
+                if (value != this.ShieldsCollarQuantity2)
+    
+            {
+                    this.ShieldsCollarQuantity2 = value;
+                    OnPropertyChanged("ShieldsCollarQuantity2");
+                }
             }
         }
 
