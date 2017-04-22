@@ -19,7 +19,7 @@ namespace InvisibleFenceContract.Services
             set;
         }
 
-        
+
 
         public static void InitialLoadOrderData()
         {
@@ -111,12 +111,12 @@ namespace InvisibleFenceContract.Services
             {
                 if (AllPrices[i].PartID == 62139)
                 {
-                   Order.GPSPrice = AllPrices[i].PartPrice;
+                    Order.GPSPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 62138)
                 {
 
-                   Order.BoundaryPlusPrice = AllPrices[i].PartPrice;
+                    Order.BoundaryPlusPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 62100)
                 {
@@ -198,4 +198,5 @@ namespace InvisibleFenceContract.Services
             }
 
         }
+    }
 }
