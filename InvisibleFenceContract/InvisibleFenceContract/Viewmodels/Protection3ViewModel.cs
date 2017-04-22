@@ -24,6 +24,8 @@ namespace InvisibleFenceContract.Viewmodels
 
         }
 
+<<<<<<< HEAD
+=======
         public Order c_Order
         {
             get;
@@ -31,6 +33,7 @@ namespace InvisibleFenceContract.Viewmodels
         }
 
 
+>>>>>>> master
         public string OutdoorShieldPrice1
         {
             get
