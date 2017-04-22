@@ -10,3 +10,5 @@ bin/
 Debug/
 
 # or */Debug/*
+*/Debug/*
+*/.suo
