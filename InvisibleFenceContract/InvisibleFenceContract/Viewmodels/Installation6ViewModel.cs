@@ -9,7 +9,7 @@ namespace InvisibleFenceContract.Viewmodels
 {
     class Installation6ViewModel : BindableBase
     {
-<<<<<<< HEAD
+
         public string OutdoorInstallCost
         {
             get
@@ -302,8 +302,6 @@ namespace InvisibleFenceContract.Viewmodels
             }
         }
 
-
-=======
         public Installation6ViewModel()
         {
             loadOrder();
@@ -320,6 +318,5 @@ namespace InvisibleFenceContract.Viewmodels
             c_Order = Services.Utility.Order;
         }
 
->>>>>>> master
     }
 }
