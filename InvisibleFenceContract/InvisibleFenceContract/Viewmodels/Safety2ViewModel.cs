@@ -26,10 +26,14 @@ namespace InvisibleFenceContract.Viewmodels
 
         public Safety2ViewModel()
         {
-
+            loadOrder();
         }
 
-
+        public Order c_Order
+        {
+            get;
+            set;
+        }
         public List<Product> safetyPrices
         {
             get;
@@ -41,7 +45,7 @@ namespace InvisibleFenceContract.Viewmodels
 
             get
             {
-                return this._gPSPrice;
+                return "$" + this._gPSPrice;
             }
             set
             {
@@ -133,6 +137,10 @@ namespace InvisibleFenceContract.Viewmodels
             }
         }
 
+        public void loadOrder()
+        {
+            c_Order = Services.Utility.Order;
+        }
 
 
     }
