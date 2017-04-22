@@ -12,6 +12,8 @@ namespace InvisibleFenceContract.Models
         public string customerID;
         public string packageSelection;
         public double packagePrice;
+        public double boundaryPlusPrice;
+        public double digitalTechnologyPrice;
         public double safetyTotal;
         public int outdoorShieldQuantity;
         public double outdoorShieldPrice1;
@@ -41,7 +43,8 @@ namespace InvisibleFenceContract.Models
         public int safetyWiredAddQuantity;
         public double safetyWiredAddPrice;
         public double safetyWiredAddTotal;
-        public int gPSAddQuantity;     
+        public int gPSAddQuantity;
+        public double gPSPrice;    
         public double gPSAddPrice;
         public double gPSAddTotal;
         public int singleTrainQuantity;
@@ -79,6 +82,48 @@ namespace InvisibleFenceContract.Models
             {
                 customerID = value;
                 OnPropertyChanged("CustomerID");
+            }
+        }
+
+        public double DigitalTechnologyPrice
+        {
+            get
+            {
+                return digitalTechnologyPrice;
+            }
+            set
+            {
+                digitalTechnologyPrice = value;
+                OnPropertyChanged("CustomerID");
+            }
+        }
+
+        
+        public double BoundaryPlusPrice
+        {
+            get
+            {
+                return boundaryPlusPrice; 
+            }
+            set
+            {
+                boundaryPlusPrice = value;
+                OnPropertyChanged("BoundaryPlusPrice");
+            }
+        }
+
+        
+
+        public double GPSPrice
+        {
+            get
+            {
+                return gPSPrice; ;
+            }
+            set
+            {
+                gPSPrice = value;
+                OnPropertyChanged("GPSPrice");
             }
         }
 

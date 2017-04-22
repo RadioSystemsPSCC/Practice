@@ -67,7 +67,7 @@ namespace InvisibleFenceContract.Services
             Order.CouponCode = "";
             Order.Discount = 0;
             Order.SolutionsPageTotal = 0;
-            //Order.OutdoorInstallationCost = 0;
+            Order.OutdoorInstallCost = 0;
             Order.IndoorXLoopQuantity = 0;
             Order.IndoorXLoopPrice = 0;
             Order.IndoorXLoopTotal = 0;
@@ -116,84 +116,84 @@ namespace InvisibleFenceContract.Services
                 else if (AllPrices[i].PartID == 62138)
                 {
 
-                    Application.Current.Properties["myOrder.BoundaryPlusPrice"] = AllPrices[i].PartPrice;
+                   Order.BoundaryPlusPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 62100)
                 {
 
-                    Application.Current.Properties["myOrder.DigitalTechnologyPrice"] = AllPrices[i].PartPrice;
+                    Order.DigitalTechnologyPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 29476)
                 {
 
-                    Application.Current.Properties["myOrder.OutdoorShieldPrice1"] = AllPrices[i].PartPrice;
+                    Order.OutdoorShieldPrice1 = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 75857)
                 {
 
-                    Application.Current.Properties["myOrder.OutdoorShieldPrice2"] = AllPrices[i].PartPrice;
+                    Order.OutdoorShieldPrice2 = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 52246)
                 {
 
-                    Application.Current.Properties["myOrder.IndoorShieldPrice1"] = AllPrices[i].PartPrice;
+                    Order.IndoorShieldPrice1 = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 75858)
                 {
 
-                    Application.Current.Properties["myOrder.IndoorShieldPrice2"] = AllPrices[i].PartPrice;
+                    Order.IndoorShieldPrice2 = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 51264)
                 {
-                    Application.Current.Properties["myOrder.MicroShieldPrice1"] = AllPrices[i].PartPrice;
+                    Order.MicroShieldPrice1 = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 75859)
                 {
-                    Application.Current.Properties["myOrder.MicroShieldPrice2"] = AllPrices[i].PartPrice;
+                    Order.MicroShieldPrice2 = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 57594)
                 {
 
-                    Application.Current.Properties["myOrder.ShieldsCollarPrice"] = AllPrices[i].PartPrice;
+                    Order.ShieldsCollarPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 29361)
                 {
 
-                    Application.Current.Properties["myOrder.MicroLitePrice"] = AllPrices[i].PartPrice;
+                    Order.MicroLitePrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 29191)
                 {
 
-                    Application.Current.Properties["myOrder.DoormanPetDoorPrice"] = AllPrices[i].PartPrice;
+                    Order.DoormanPetDoorPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 76054)
                 {
 
-                    Application.Current.Properties["myOrder.SafetyWiredAddPrice"] = AllPrices[i].PartPrice;
+                    Order.SafetyWiredAddPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 63088)
                 {
 
-                    Application.Current.Properties["myOrder.GPSAddPrice"] = AllPrices[i].PartPrice;
+                    Order.GPSAddPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 29084)
                 {
 
-                    Application.Current.Properties["myOrder.SingleTrainPrice"] = AllPrices[i].PartPrice;
+                    Order.SingleTrainPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 28786)
                 {
-                    Application.Current.Properties["myOrder.OutdoorXLoopPrice"] = AllPrices[i].PartPrice;
+                    Order.OutdoorXLoopPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 28785)
                 {
 
-                    Application.Current.Properties["myOrder.IndoorXLoopPrice"] = AllPrices[i].PartPrice;
+                    Order.IndoorXLoopPrice = AllPrices[i].PartPrice;
                 }
                 else if (AllPrices[i].PartID == 29193)
                 {
 
-                    Application.Current.Properties["myOrder.PetDoorInstallPrice"] = AllPrices[i].PartPrice;
+                    Order.PetDoorInstallPrice = AllPrices[i].PartPrice;
                 }
             }
 
