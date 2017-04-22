@@ -17,6 +17,12 @@ namespace InvisibleFenceContract.Viewmodels
     public class Safety2ViewModel : BindableBase
     {
         //order1 = (Order)Application.Current.Properties["myOrder"];
+        private string _gPSPrice;
+        private string _boundaryPlusPrice;
+        private string _digitalTechnologyPrice;
+        private string _packageSelection;
+        private string _packagePrice;
+        private string _safetyTotal;
 
         public Safety2ViewModel()
         {
@@ -35,11 +41,11 @@ namespace InvisibleFenceContract.Viewmodels
 
             get
             {
-                return this.GPSPrice;
+                return this._gPSPrice;
             }
             set
             {
-                if (value != this.GPSPrice)
+                if (value != this._gPSPrice)
 
                 {
                     this.GPSPrice = value;
@@ -52,12 +58,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.BoundaryPlusPrice;
+                return "$" + this._boundaryPlusPrice;
             }
             set
             {
-                BoundaryPlusPrice = value;
-                OnPropertyChanged("boundaryPlusPrice");
+                if (value != this._boundaryPlusPrice)
+                    BoundaryPlusPrice = value;
+                OnPropertyChanged("BoundaryPlusPrice");
             }
         }
 
@@ -66,25 +73,27 @@ namespace InvisibleFenceContract.Viewmodels
             get
             {
 
-                return "$" + DigitalTechnologyPrice;
+                return "$" + _digitalTechnologyPrice;
             }
 
             set
             {
-                DigitalTechnologyPrice = value;
-                OnPropertyChanged("DigitalTechnologyPrice");
-            }
+                if (value != this._digitalTechnologyPrice)
+                {
+                    DigitalTechnologyPrice = value;
+                    OnPropertyChanged("DigitalTechnologyPrice");
+                }            }
         }
 
         public string PackageSelection
         {
             get
             {
-                return this.PackageSelection;
+                return this._packageSelection;
             }
             set
             {
-                if (value != this.PackageSelection)
+                if (value != this._packageSelection)
                 {
                     this.PackageSelection = value;
                     OnPropertyChanged("PackageSelection");
@@ -96,11 +105,11 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.PackagePrice;
+                return "$" + this._packagePrice;
             }
             set
             {
-                if (value != this.PackagePrice)
+                if (value != this._packagePrice)
                 {
                     this.PackagePrice = value;
                     OnPropertyChanged("PackagePrice");
@@ -112,11 +121,11 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + PackagePrice;
+                return "$" + this._safetyTotal;
             }
             set
             {
-                if (value != this.SafetyTotal)
+                if (value != this._safetyTotal)
                 {
                     this.SafetyTotal = value;
                     OnPropertyChanged("SafetyTotal");
