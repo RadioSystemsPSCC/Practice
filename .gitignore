@@ -9,8 +9,10 @@ bin/
 # Ignore 'debug'
 Debug/
 obj/
+bin/
 
 # or */Debug/*
 */Debug/*
 */.suo
 *.cache
+InvisibleFenceContract/.vs/
