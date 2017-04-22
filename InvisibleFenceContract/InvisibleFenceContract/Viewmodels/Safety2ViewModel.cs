@@ -32,25 +32,23 @@ namespace InvisibleFenceContract.Viewmodels
 
         public string GPSPrice
         {
-            get
+
+                get
             {
-                for (int i = 0; i < safetyPrices.Count; i++)
-                {
-                    if (safetyPrices[i].PartID == 62139)
+                    return this.GPSPrice;
+                }
+                set
+            {
+                    if (value != this.GPSPrice)
+
                     {
-                        return "$" + safetyPrices[i].PartPrice;
+                        this.GPSPrice = value;
+                        OnPropertyChanged("GPSPrice");
                     }
                 }
-                return null;
             }
-            set
-            {
-                GPSPrice = value;
-                OnPropertyChanged("GPSPrice");
-            }
-        }
 
-        public string BoundaryPlus
+        public string BoundaryPlusPrice
         {
             get
             {

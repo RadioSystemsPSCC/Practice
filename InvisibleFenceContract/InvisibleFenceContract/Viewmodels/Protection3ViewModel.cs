@@ -20,7 +20,6 @@ namespace InvisibleFenceContract.Viewmodels
 
         }
 
-
         public string OutdoorShieldPrice1
         {
             get
