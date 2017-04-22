@@ -41,7 +41,7 @@ namespace InvisibleFenceContract.Models
         public int safetyWiredAddQuantity;
         public double safetyWiredAddPrice;
         public double safetyWiredAddTotal;
-        public int gPSAddQuantity;
+        public int gPSAddQuantity;     
         public double gPSAddPrice;
         public double gPSAddTotal;
         public int singleTrainQuantity;
