@@ -12,3 +12,4 @@ Debug/
 # or */Debug/*
 */Debug/*
 */.suo
+*.cache

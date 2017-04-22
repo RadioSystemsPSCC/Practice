@@ -24,16 +24,12 @@ namespace InvisibleFenceContract.Viewmodels
 
         }
 
-<<<<<<< HEAD
-=======
         public Order c_Order
         {
             get;
             set;
         }
 
-
->>>>>>> master
         public string OutdoorShieldPrice1
         {
             get
