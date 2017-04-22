@@ -49,10 +49,10 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                if (value != this._gPSPrice)
+                if (value != this.GPSPrice)
 
                 {
-                    this.GPSPrice = value;
+                    this._gPSPrice = value;
                     OnPropertyChanged("GPSPrice");
                 }
             }
@@ -66,8 +66,8 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                if (value != this._boundaryPlusPrice)
-                    BoundaryPlusPrice = value;
+                if (value != this.BoundaryPlusPrice)
+                    _boundaryPlusPrice = value;
                 OnPropertyChanged("BoundaryPlusPrice");
             }
         }
@@ -82,9 +82,9 @@ namespace InvisibleFenceContract.Viewmodels
 
             set
             {
-                if (value != this._digitalTechnologyPrice)
+                if (value != this.DigitalTechnologyPrice)
                 {
-                    DigitalTechnologyPrice = value;
+                    _digitalTechnologyPrice = value;
                     OnPropertyChanged("DigitalTechnologyPrice");
                 }            }
         }
@@ -97,9 +97,9 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                if (value != this._packageSelection)
+                if (value != this.PackageSelection)
                 {
-                    this.PackageSelection = value;
+                    this._packageSelection = value;
                     OnPropertyChanged("PackageSelection");
                 }
             }
@@ -113,9 +113,9 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                if (value != this._packagePrice)
+                if (value != this.PackagePrice)
                 {
-                    this.PackagePrice = value;
+                    this._packagePrice = value;
                     OnPropertyChanged("PackagePrice");
                 }
             }
@@ -129,9 +129,9 @@ namespace InvisibleFenceContract.Viewmodels
             }
             set
             {
-                if (value != this._safetyTotal)
+                if (value != this.SafetyTotal)
                 {
-                    this.SafetyTotal = value;
+                    this._safetyTotal = value;
                     OnPropertyChanged("SafetyTotal");
                 }
             }
