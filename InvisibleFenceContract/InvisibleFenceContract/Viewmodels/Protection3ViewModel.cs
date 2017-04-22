@@ -10,16 +10,30 @@ using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Windows;
 using System.Data;
+using InvisibleFenceContract.Services;
 
 namespace InvisibleFenceContract.Viewmodels
 {
     class Protection3ViewModel : BindableBase
     {
+       
+      
         public Protection3ViewModel()
         {
+            loadOrder();
 
         }
 
+<<<<<<< HEAD
+=======
+        public Order c_Order
+        {
+            get;
+            set;
+        }
+
+
+>>>>>>> master
         public string OutdoorShieldPrice1
         {
             get
@@ -341,6 +355,11 @@ namespace InvisibleFenceContract.Viewmodels
                     OnPropertyChanged("MicroLiteTotal");
                 }
             }
+        }
+
+        public void loadOrder()
+        {
+             c_Order = Utility.Order;
         }
 
 

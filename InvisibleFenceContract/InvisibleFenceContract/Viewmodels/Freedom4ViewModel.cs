@@ -17,7 +17,13 @@ namespace InvisibleFenceContract.Viewmodels
     {
         public Freedom4ViewModel()
         {
-            loadPrices();
+            loadOrder();
+        }
+
+        public Order c_Order
+        {
+            get;
+            set;
         }
 
         public List<Product> c_Prices
@@ -126,5 +132,10 @@ namespace InvisibleFenceContract.Viewmodels
                 Console.Write(e.ToString());
             }
         }
+        public void loadOrder()
+        {
+            c_Order = Services.Utility.Order;
+        }
+
     }
 }
