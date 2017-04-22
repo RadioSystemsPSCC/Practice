@@ -354,7 +354,7 @@ namespace InvisibleFenceContract.Viewmodels
             Application.Current.Properties["PetDoorInstallPrice"] = petDoorInstallPrice;
             Application.Current.Properties["PetDoorInstallTotal"] = petDoorInstallTotal;
             Application.Current.Properties["InstallTotal"] = installTotal;
-            Order.SolutionTotal = 0;
+          
             Application.Current.Properties["TaxRate"] = taxRate;
             Application.Current.Properties["Tax"] = tax;
             Application.Current.Properties["Total"] = total;

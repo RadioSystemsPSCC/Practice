@@ -265,7 +265,7 @@ namespace InvisibleFenceContract.Models
         {
             get
             {
-                return IndoorShieldTotal;
+                return indoorShieldTotal;
             }
             set
             {
@@ -318,11 +318,11 @@ namespace InvisibleFenceContract.Models
         {
             get
             {
-                return MicroShieldTotal;
+                return microShieldTotal;
             }
             set
             {
-                MicroShieldTotal = value;
+                microShieldTotal = value;
                 OnPropertyChanged("MicroShieldTotal");
             }
         }
