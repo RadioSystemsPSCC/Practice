@@ -12,6 +12,7 @@ namespace InvisibleFenceContract.Services
 {
     public static class Utility
     {
+
         public static Order Order = new Order();
         private static List<Product> AllPrices
         {
@@ -19,7 +20,7 @@ namespace InvisibleFenceContract.Services
             set;
         }
 
-
+        
 
         public static void InitialLoadOrderData()
         {
@@ -66,7 +67,7 @@ namespace InvisibleFenceContract.Services
             Order.SingleTrainTotal = 0;
             Order.CouponCode = "";
             Order.Discount = 0;
-            Order.SolutionsPageTotal = 0;
+            Order.AddAPetTotal = 0;
             Order.OutdoorInstallCost = 0;
             Order.IndoorXLoopQuantity = 0;
             Order.IndoorXLoopPrice = 0;
@@ -84,10 +85,7 @@ namespace InvisibleFenceContract.Services
             Order.Total = 0;
             Order.Deposit = 0;
             Order.Balance = 0;
-        }
 
-        public static void LoadProduct()
-        {
             try
             {
                 string file = System.IO.File.ReadAllText(@"../../Resources/Products.JSON");
@@ -101,10 +99,7 @@ namespace InvisibleFenceContract.Services
                 Console.Write(e.ToString());
             }
 
-            Order order1 = new Order();
-            order1 = (Order)Application.Current.Properties["myOrder"];
-
-            Application.Current.Properties["myOrder"] = order1;
+          
 
 
             for (int i = 0; i < AllPrices.Count; i++)
@@ -196,7 +191,6 @@ namespace InvisibleFenceContract.Services
                     Order.PetDoorInstallPrice = AllPrices[i].PartPrice;
                 }
             }
-
         }
-    }
+        }
 }

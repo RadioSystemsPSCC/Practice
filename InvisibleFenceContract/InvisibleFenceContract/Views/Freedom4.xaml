@@ -37,8 +37,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height='88' />
             <RowDefinition Height='48' />
-            <RowDefinition Height='88' />
-            <RowDefinition Height='48' />
+            <RowDefinition Height='99' />
+            <RowDefinition Height='118' />
+            <RowDefinition Height='180' />
             <RowDefinition Height='*' />
         </Grid.RowDefinitions>
         <!-- Create border -->
@@ -47,6 +48,8 @@
             <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="CHOOSE YOUR FREEDOM SOLUTION" Margin="188,0,0,0" Foreground="White" FontSize="16"/>
         </Border>
 
+        <!-- Submit Button-->
+        <Button x:Name="submitBt" Grid.Column="4" Grid.Row="7" Content="Submit" Command="{Binding SubmitCommand}" Margin='12,0,0,8'  HorizontalAlignment="Left" VerticalAlignment='Bottom' Height="22" Width="75"/>
         <!--Doorman Pet Door -->
         <TextBlock  x:Name="lblDoormanPetDoor" Grid.Row="3" Grid.Column="2" Text="Invisible Fence Brand Doorman Pet Door 1-Year Warranty" TextWrapping="Wrap" Margin="0,12,8,14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width='130' />
         <Label x:Name="lblDoormanPrice" Grid.Row="4" Grid.Column="2" Content="{Binding DoormanPetDoorPrice}"  Margin="14,0,0,0"  Foreground="#E96C2D" FontWeight="bold"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="128"/>
@@ -56,11 +59,11 @@
         <!--Shields Collar Unit -->
         <TextBlock x:Name="lblShieldsCollar" Grid.Row="5" Grid.Column="2" Margin="3,20,0,0" Text="Shields Computer Collar Unit 1-Year Power Cap Battery Plan 2-Year Warranty" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment='Top' Height="48" Width='190'  />
         <Label x:Name="lblBoundaryPrice" Grid.Row="5" Grid.Column="2" Grid.RowSpan='2' Content="{Binding ShieldsCollarPrice}"  Margin="4,85,0,0"  Foreground="#E96C2D" FontWeight="bold" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="120"  />
-        <TextBox x:Name="ShieldsCollarQuantity" Grid.Row="5" Grid.Column="3"  Text="{Binding ShieldsCollarQuantity2, Mode=OneWayToSource }" Margin="0,24,0,0" Height="18"  TextWrapping="Wrap" VerticalAlignment="Top" Width="23" HorizontalAlignment="Left" />
+        <TextBox x:Name="ShieldsCollarQuantity" Grid.Row="5" Grid.Column="3"  Text="{Binding ShieldsCollarQuantity2, Mode=TwoWay }" Margin="0,24,0,0" Height="18"  TextWrapping="Wrap" VerticalAlignment="Top" Width="23" HorizontalAlignment="Left" />
         <TextBlock x:Name="txtShieldsCollarQuantity" Grid.Row="5"  Grid.Column="3" HorizontalAlignment="Right" Margin="0,24,94,0" TextWrapping="Wrap" Text="Quantity" VerticalAlignment="Top" Height="16" Width="88" />
 
         <!--"Included" Column 3 TextBlocks -->
         <TextBlock x:Name="lblIncluded" Grid.Row="3" Grid.Column="4"  Text="Included with Freedom Solution:"  Margin="48,0,0,0"  FontStyle="Italic"  FontWeight="Bold"  Foreground="#E96C2D" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="26" Width="240" />
-        <TextBlock x:Name="labelColumn3" Grid.Column="4" Grid.Row="4" Text="Professional Training" HorizontalAlignment="Left" Margin="68,8,0,0" VerticalAlignment="Top" Height="26" Width="144" />
+        <TextBlock x:Name="labelColumn3" Grid.Column="4" Grid.Row="4" Text="Professional Training" HorizontalAlignment="Left" Margin="68,8,0,0" VerticalAlignment="Top" Height="30" Width="144" />
     </Grid>
 </UserControl>

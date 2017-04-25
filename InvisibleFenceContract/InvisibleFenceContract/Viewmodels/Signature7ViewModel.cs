@@ -13,17 +13,69 @@ using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
 using System.IO;
 using System.Diagnostics;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
+using System.Windows.Ink;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Collections.Specialized;
+using System.Windows.Controls;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    class Signature7ViewModel : BindableBase
+    class Signature7ViewModel : BindableBase, INotifyPropertyChanged
     {
-
+        private StrokeCollection _strokes;
+        public InkCanvas ink;
         public ViewCommand ViewProperty { get; set; }
 
         public Signature7ViewModel()
         {
+            _strokes = new StrokeCollection();
+            ink = new InkCanvas();
+            (_strokes as INotifyCollectionChanged).CollectionChanged += Signature7ViewModel_CollectionChanged;
             this.ViewProperty = new ViewCommand(this);
+        }
+
+        public List<string> ContractInfo
+        {
+            get
+            {
+                return ContractInfo;
+            }
+            set
+            {
+                ContractInfo = value;
+            }
+        }
+
+        //Update stroke collection
+        private void Signature7ViewModel_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            using (FileStream fs = new FileStream("strokes.isf", FileMode.OpenOrCreate))
+            {
+                Signature_Strokes.Save(fs);
+                fs.Close();
+            }
+        }
+
+        new public event PropertyChangedEventHandler PropertyChanged;
+
+        new private void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public StrokeCollection Signature_Strokes
+        {
+            get
+            {
+                return _strokes;
+            }
+            set
+            {
+                Signature_Strokes = value;
+            }
         }
 
         public void ViewCommand()
@@ -48,15 +100,15 @@ namespace InvisibleFenceContract.Viewmodels
                 gfx.DrawLine(XPens.CadetBlue, 10, 50, page.Width - 10, 50);
 
                 //Customer Information
-                gfx.DrawString("Name" + "                     Referred by", font, XBrushes.Black, 15, 70);
+                gfx.DrawString("Name   " + "                     Referred by", font, XBrushes.Black, 15, 70);
                 gfx.DrawLine(XPens.Black, 15, 73, page.Width - 15, 73);
-                gfx.DrawString("Address" + "          City" + "       State" + "   ZIP", font, XBrushes.Black, 15, 90);
+                gfx.DrawString("Address   " + "          City" + "       State" + "   ZIP", font, XBrushes.Black, 15, 90);
                 gfx.DrawLine(XPens.Black, 15, 93, page.Width - 15, 93);
-                gfx.DrawString("Home Phone" + "                 Cell Phone" + "           Email", font, XBrushes.Black, 15, 110);
+                gfx.DrawString("Home Phone   " + "                 Cell Phone" + "           Email", font, XBrushes.Black, 15, 110);
                 gfx.DrawLine(XPens.Black, 15, 113, page.Width - 15, 113);
                 gfx.DrawString("My Property contains unmarked underground: " + "   Landscape Lighting" + "   Sprinklers", font, XBrushes.Black, 15, 130);
                 gfx.DrawLine(XPens.Black, 15, 133, page.Width - 15, 133);
-                gfx.DrawString("Pet Name(s)" + "     Breeds(s)" + "    Age(s)" + "      Pre-existing Sensitivities" + "    No" + "     Yes(if yes, please note below)", font, XBrushes.Black, 15, 150);
+                gfx.DrawString("Pet Name(s) " + "     Breeds(s) " + "    Age(s) " + "      Pre-existing Sensitivities" + "    No" + "     Yes(if yes, please note below)", font, XBrushes.Black, 15, 150);
                 gfx.DrawLine(XPens.Black, 15, 153, page.Width - 15, 153);
 
                 //Solutions Totals
@@ -117,7 +169,43 @@ namespace InvisibleFenceContract.Viewmodels
                 gfx.DrawString("Prices are valid for 10 days. Balance payable at time of delivery.", smallItalFont, XBrushes.Black, 15, 677);
 
                 //Signature and fine print
+                const string sigImageFileName = "signatureImg.png";
+                PngBitmapEncoder png = new PngBitmapEncoder();
                 gfx.DrawString("By signing here I agree to the terms and conditions listed on the back of this agreement:", smallBoldFont, XBrushes.Black, 15, 695);
+
+                //Create image of customer signature to display in pdf
+                try
+                {
+                    using (FileStream fs = new FileStream("strokes.isf", FileMode.Open, FileAccess.Read))
+                    {
+                        StrokeCollection sc = new StrokeCollection(fs);
+                        ink.Strokes = sc;
+                        fs.Close();
+                    }
+                    ink.Arrange(new Rect(0, 0, 350, 40));
+                    ink.Width = 350;
+                    ink.Height = 40;
+
+                    RenderTargetBitmap rtb = new RenderTargetBitmap(Convert.ToInt32(ink.Width), Convert.ToInt32(ink.Height), 96d, 96d, PixelFormats.Default);
+                    rtb.Render(ink);
+                    PngBitmapEncoder encoder = new PngBitmapEncoder();
+                    encoder.Frames.Add(BitmapFrame.Create(rtb));
+                    using (Stream fileStream = File.Create(sigImageFileName))
+                    {
+                        encoder.Save(fileStream);
+                    }
+
+                    //Draw Signature to pdf
+                    XImage sigImg = XImage.FromFile(sigImageFileName);
+                    double x = (250 - sigImg.PixelWidth * 72 / sigImg.HorizontalResolution) / 2;
+                    gfx.DrawImage(sigImg, x, 718);
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error creating image.");
+                }
+
                 gfx.DrawLine(XPens.Black, 15, 740, 400, 740);
                 gfx.DrawString("Purchaser Signature                                                                                    Date", smallItalFont, XBrushes.Black, 15, 747);
                 gfx.DrawString("Yes, I consent to be a referral source and authorize the disclosure of my contact information.", smallFont, XBrushes.Black, 15, 770);

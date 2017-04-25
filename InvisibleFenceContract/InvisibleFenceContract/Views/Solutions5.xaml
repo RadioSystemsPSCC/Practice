@@ -25,16 +25,16 @@
             </Style>
         </Grid.Resources>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="188"/>
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="88"/>
+            <ColumnDefinition Width='10'/>
+            <ColumnDefinition Width='10'/>
             <ColumnDefinition Width='140' />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width='120'/>
+            <ColumnDefinition Width='120'/>
+            <ColumnDefinition Width='120'/>
+            <ColumnDefinition Width='120'/>
+            <ColumnDefinition Width='120'/>
+            <ColumnDefinition Width='120'/>
             <ColumnDefinition />
 
             <ColumnDefinition Width="*"/>
@@ -77,6 +77,7 @@
             <RowDefinition Height="25"/>
             <!--SolutionsPageTotal 18-->
             <RowDefinition Height='25'/>
+            <RowDefinition Height='150' />
             <!-- Allow for varying screen size 19 -->
             <RowDefinition Height="*" />
 
@@ -85,22 +86,24 @@
 
         <!-- Row 0 Solutions -->
         <TextBlock Grid.Column="3" Grid.Row="1" Text="SOLUTIONS"  FontSize="16" FontWeight="ExtraBold" HorizontalAlignment="Left" />
+        <TextBlock Grid.Column="9" Grid.Row="1" Text="TOTALS"  FontSize="16" FontWeight="ExtraBold" HorizontalAlignment="Left" />
 
-        <!-- Row 1 is blank space Seperator-->
+        <!-- Submit Button-->
+        <Button x:Name="submitBt" Grid.Column="0" Grid.Row="1" Grid.RowSpan='19' Grid.ColumnSpan='9' Content="Submit" Command="{Binding SubmitCommand}" HorizontalAlignment="Left" Margin="762,538,0,0"  VerticalAlignment="Top" Height="22" Width="75"/>
         <!-- Row 2 Safety Solution-->
         <TextBlock Grid.Column="3" Grid.Row="3" Text="SAFETY SOLUTION" FontWeight="Bold" Foreground="#017EB8" HorizontalAlignment="Left"    />
         <TextBlock Grid.Column="8" Grid.Row="3" Text="Subtotal"  FontWeight='Bold'   HorizontalAlignment="Left" />
-        <Label x:Name='lblSafetyTotal' Grid.Column="9" Grid.Row="3" Content="{Binding SafetyTotal}"  HorizontalAlignment="Right" Width='75'  />
+        <Label x:Name='lblSafetyTotal' Grid.Column="9" Grid.Row="3" Content="{Binding SafetyTotal}"  HorizontalAlignment="Right" Width='75' Height="Auto"  />
 
         <!-- Row 3 Protection Solution-->
         <TextBlock Grid.Column="3" Grid.Row="4" Text="PROTECTION SOLUTION" Foreground="#A6D473" FontWeight="Bold" HorizontalAlignment="Left"  />
         <TextBlock Grid.Column="8" Grid.Row="4" Text="Subtotal"  FontWeight='Bold'  HorizontalAlignment="Left" />
-        <Label x:Name='lblProtectionTotal' Grid.Column="9" Grid.Row="4" Content='{Binding ProtectionTotal}' HorizontalAlignment="Right" Width='95'/>
+        <Label x:Name='lblProtectionTotal' Grid.Column="9" Grid.Row="4" Content='{Binding ProtectionTotal}' HorizontalAlignment="Right" Width='75'/>
 
         <!-- Row 4 Freedom Solution -->
         <TextBlock Grid.Column="3" Grid.Row="5" Text="FREEDOM SOLUTION" Foreground="#E96C2D" FontWeight="Bold" HorizontalAlignment="Left" />
         <TextBlock Grid.Column="8" Grid.Row="5" Text="Subtotal"  FontWeight='Bold' HorizontalAlignment="Left" />
-        <Label x:Name='lblFreedomTotal' Grid.Column="9" Grid.Row="5" Content='{Binding FreedomTotal}' HorizontalAlignment="Right" Width='85'/>
+        <Label x:Name='lblFreedomTotal' Grid.Column="9" Grid.Row="5" Content='{Binding FreedomTotal}' HorizontalAlignment="Right" Width='75'/>
 
         <!-- Row 5 Blank Row -->
 
@@ -115,7 +118,7 @@
         <Label x:Name='lblSafetyWiredAddPrice' Grid.Column='5' Grid.Row='9' Content='{Binding SafetyWiredAddPrice}'  HorizontalAlignment='Left'  />
         <TextBox x:Name='txtSafetyWiredAddQuantity' Grid.Column="6" Grid.Row="9" Text='{Binding SafetyWiredAddQuantity}' HorizontalAlignment="Right"   Height="20" Width="40" Margin="0,0,20,0" />
         <TextBlock Grid.Column="7" Grid.Row="9" Text="Quantity" HorizontalAlignment="Left"  />
-        <Label x:Name='lblsafetyWiredAddTotal' Grid.Column="9" Grid.Row="9" Content='{Binding SafetyWiredAddTotal}' HorizontalAlignment="Right" Width='79' />
+        <Label x:Name='lblsafetyWiredAddTotal' Grid.Column="9" Grid.Row="9" Content='{Binding SafetyWiredAddTotal}' HorizontalAlignment="Right" Width='75' />
 
 
         <!-- GPS 2.0 Wired-->
@@ -126,8 +129,9 @@
         <TextBlock Grid.Column="7" Grid.Row="10" Text="Quantity" Margin="0,1,6,1" HorizontalAlignment="Left"  Width="50"  />
         <Label x:Name='lblGPSAddTotal' Grid.Column="9" Grid.Row="10" Content="{Binding GPSAddTotal}"  HorizontalAlignment="Right" Width='75'/>
 
-
         <!-- Row 11 is blank space-->
+        <TextBlock Grid.Column='8' Grid.Row='11'  Text='Total' FontWeight='Bold'  />
+        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="11" Content="{Binding AddAPetTotal}"  HorizontalAlignment='Right' Width='75'/>
         <!-- Training-->
         <Label Grid.Column="3" Grid.Row="12" Content="TRAINING" HorizontalAlignment="Left" FontSize="16" FontWeight="ExtraBold"  />
 
@@ -150,8 +154,7 @@
         <TextBlock Grid.Column="8" Grid.Row="17" Text="Discount" Visibility='Visible' HorizontalAlignment="Left"  />
         <TextBox x:Name='txtDiscount' Grid.Column="9" Grid.Row="17"  Text="{Binding Discount}" Visibility='Visible' Margin='0,0,6,0' HorizontalAlignment="Right" Width='75' />
 
-        <TextBlock Grid.Column='7' Grid.Row='18' Grid.ColumnSpan='2' Text='Add-A-Pet/Training Total' Margin='30,0,0,0'  />
-        <Label x:Name='lblSolutionsPageTotal' Grid.Column="9" Grid.Row="18" Content="{Binding SolutionsPageTotal}" Margin="0,0,6,0" HorizontalAlignment='Right' Width='75'/>
+
     </Grid>
 </UserControl>
 

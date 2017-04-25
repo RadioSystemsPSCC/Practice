@@ -9,22 +9,19 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Windows;
-using InvisibleFenceContract.Services;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    public class Contact1ViewModel : BindableBase
+    class Contact1ViewModel : BindableBase
     {
         public int CusID = Convert.ToInt32(Application.Current.Properties["Cus_ID"]);
         public Contact1ViewModel()
         {
-            Utility.Order.Balance = 20;
             
             LoadClients();
             LoadPets();
             pickPet();
         }
-        public Order Order1 { get; set; }
         public List<Customer> c_Clients
         {
             get;

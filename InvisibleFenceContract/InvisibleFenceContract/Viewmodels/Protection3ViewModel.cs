@@ -11,37 +11,69 @@ using System.IO;
 using System.Windows;
 using System.Data;
 using InvisibleFenceContract.Services;
+using InvisibleFenceContract.Viewmodels.Commands;
+using System.Windows.Input;
 
 namespace InvisibleFenceContract.Viewmodels
 {
     class Protection3ViewModel : BindableBase
     {
-       
-      
+        private string outdoorShieldPrice1;
+        private string outdoorShieldPrice2;
+        private string outdoorShieldQuantity;
+        private string outdoorShieldTotal;
+        private string indoorShieldPrice1;
+        private string indoorShieldPrice2;
+        private string indoorShieldQuantity;
+        private string indoorShieldTotal;
+        private string microShieldPrice1;
+        private string microShieldPrice2;
+        private string microShieldQuantity;
+        private string microShieldTotal;
+        private string shieldsCollarPrice;
+        private string shieldsCollarQuantity;
+        private string shieldsCollarTotal;
+        private string microLitePrice;
+        private string microLiteQuantity;
+        private string microLiteTotal;
+        private string protectionTotal;
+
+        private ICommand submitCommand;
+        
+
         public Protection3ViewModel()
         {
             loadOrder();
 
+
         }
 
-        public Order c_Order
+        public Order c_Order { get; set; }
+
+        public ICommand SubmitCommand
         {
-            get;
-            set;
+            get
+            {
+                if (submitCommand == null)
+                {
+                    submitCommand = new SubmitCommand(this.c_Order);
+                }
+                return submitCommand;
+            }
         }
 
         public string OutdoorShieldPrice1
         {
             get
             {
-                return this.OutdoorShieldPrice1;
+                return "$" + this.c_Order.OutdoorShieldPrice1;
             }
             set
             {
                 if (value != this.OutdoorShieldPrice1)
 
                 {
-                    this.OutdoorShieldPrice1 = value;
+                    this.c_Order.OutdoorShieldPrice1 = Convert.ToDouble(value);
                     OnPropertyChanged("OutdoorShieldPrice1");
                 }
             }
@@ -51,13 +83,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.OutdoorShieldPrice2;
+                return "$" + this.c_Order.OutdoorShieldPrice2;
             }
             set
             {
                 if (value != this.OutdoorShieldPrice2)
                 {
-                    this.OutdoorShieldPrice2 = value;
+                    this.c_Order.OutdoorShieldPrice2 = Convert.ToDouble(value);
                     OnPropertyChanged("OutdoorShieldPrice2");
                 }
             }
@@ -67,7 +99,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.OutdoorShieldQuantity.ToString();
+                return this.c_Order.OutdoorShieldQuantity.ToString();
             }
             set
             {
@@ -75,17 +107,19 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.OutdoorShieldQuantity = value;
+                    this.c_Order.OutdoorShieldQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("OutdoorShieldQuantity");
                 }
             }
         }
 
+
+
         public string OutdoorShieldTotal
         {
             get
             {
-                return this.OutdoorShieldTotal;
+                return "$" + (((Convert.ToInt32(this.c_Order.OutdoorShieldQuantity) / 2) * Convert.ToDouble(this.c_Order.OutdoorShieldPrice2)) + ((Convert.ToInt32(this.c_Order.OutdoorShieldQuantity) % 2) * Convert.ToDouble(this.c_Order.OutdoorShieldPrice1))).ToString();
             }
             set
             {
@@ -93,7 +127,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.OutdoorShieldTotal = value;
+                    this.c_Order.OutdoorShieldTotal = Convert.ToDouble(value);
                     OnPropertyChanged("OutdoorShieldTotal");
                 }
             }
@@ -103,7 +137,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.IndoorShieldPrice1;
+                return "$" + this.c_Order.IndoorShieldPrice1;
             }
             set
             {
@@ -111,7 +145,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.IndoorShieldPrice1 = value;
+                    this.c_Order.IndoorShieldPrice1 = Convert.ToDouble(value);
                     OnPropertyChanged("IndoorShieldPrice1");
                 }
             }
@@ -122,7 +156,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.IndoorShieldPrice2;
+                return "$" + this.c_Order.IndoorShieldPrice2;
             }
             set
             {
@@ -130,7 +164,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.IndoorShieldPrice2 = value;
+                    this.c_Order.IndoorShieldPrice2 = Convert.ToDouble(value);
                     OnPropertyChanged("IndoorShieldPrice2");
                 }
             }
@@ -140,7 +174,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.IndoorShieldQuantity.ToString();
+                return this.c_Order.IndoorShieldQuantity.ToString();
             }
             set
             {
@@ -148,7 +182,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.IndoorShieldQuantity = value;
+                    this.c_Order.IndoorShieldQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("IndoorShieldQuantity");
                 }
             }
@@ -158,7 +192,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.IndoorShieldTotal;
+                return "$" + (((Convert.ToInt32(this.c_Order.IndoorShieldQuantity) / 2) * Convert.ToDouble(this.c_Order.IndoorShieldPrice2)) + ((Convert.ToInt32(this.c_Order.IndoorShieldQuantity) % 2) * Convert.ToDouble(this.c_Order.IndoorShieldPrice1))).ToString();
             }
             set
             {
@@ -166,7 +200,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.IndoorShieldTotal = value;
+                    this.c_Order.IndoorShieldTotal = Convert.ToDouble(value);
                     OnPropertyChanged("IndoorShieldTotal");
                 }
             }
@@ -176,7 +210,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.MicroShieldPrice1;
+                return "$" + this.c_Order.MicroShieldPrice1;
             }
             set
             {
@@ -184,7 +218,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.MicroShieldPrice1 = value;
+                    this.c_Order.MicroShieldPrice1 = Convert.ToDouble(value);
                     OnPropertyChanged("MicroShieldPrice1");
                 }
             }
@@ -195,7 +229,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.MicroShieldPrice2;
+                return "$" + this.c_Order.MicroShieldPrice2;
             }
             set
             {
@@ -203,7 +237,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.MicroShieldPrice2 = value;
+                    this.c_Order.MicroShieldPrice2 = Convert.ToDouble(value);
                     OnPropertyChanged("MicroShieldPrice2");
                 }
             }
@@ -213,7 +247,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.MicroShieldQuantity.ToString();
+                return this.c_Order.MicroShieldQuantity.ToString();
             }
             set
             {
@@ -221,7 +255,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.MicroShieldQuantity = value;
+                    this.c_Order.MicroShieldQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("MicroShieldQuantity");
                 }
             }
@@ -231,7 +265,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.MicroShieldTotal;
+                return "$" + (((Convert.ToInt32(this.c_Order.MicroShieldQuantity) / 2) * Convert.ToDouble(this.c_Order.MicroShieldPrice2)) + ((Convert.ToInt32(this.c_Order.MicroShieldQuantity) % 2) * Convert.ToDouble(this.c_Order.MicroShieldPrice1))).ToString();
             }
             set
             {
@@ -239,7 +273,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.MicroShieldTotal = value;
+                    this.c_Order.MicroShieldTotal = Convert.ToDouble(value);
                     OnPropertyChanged("MicroShieldTotal");
                 }
             }
@@ -249,7 +283,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.ShieldsCollarPrice;
+                return "$" + this.c_Order.ShieldsCollarPrice;
             }
             set
             {
@@ -257,7 +291,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.ShieldsCollarPrice = value;
+                    this.c_Order.ShieldsCollarPrice = Convert.ToDouble(value);
                     OnPropertyChanged("ShieldsCollarPrice");
                 }
             }
@@ -267,7 +301,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.ShieldsCollarQuantity.ToString();
+                return this.c_Order.ShieldsCollarQuantity.ToString();
             }
             set
             {
@@ -275,7 +309,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.ShieldsCollarQuantity = value;
+                    this.c_Order.ShieldsCollarQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("ShieldsCollarQuantity");
                 }
             }
@@ -285,7 +319,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.ShieldsCollarTotal;
+                return "$" + (Convert.ToDouble(this.c_Order.ShieldsCollarPrice) * Convert.ToInt32(this.c_Order.ShieldsCollarQuantity));
             }
             set
             {
@@ -293,7 +327,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.ShieldsCollarTotal = value;
+                    this.c_Order.ShieldsCollarTotal = Convert.ToDouble(value);
                     OnPropertyChanged("ShieldsCollarTotal");
                 }
             }
@@ -304,7 +338,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.MicroLitePrice;
+                return "$" + this.c_Order.MicroLitePrice;
             }
             set
             {
@@ -312,7 +346,7 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.MicroLitePrice = value;
+                    this.c_Order.MicroLitePrice = Convert.ToDouble(value);
                     OnPropertyChanged("MicroLitePrice");
                 }
             }
@@ -322,14 +356,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.MicroLiteQuantity;
+                return this.c_Order.MicroLiteQuantity.ToString();
             }
             set
             {
                 if (value != this.MicroLiteQuantity)
 
                 {
-                    this.MicroLiteQuantity = value;
+                    this.c_Order.MicroLiteQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("MicroLiteQuantity");
                 }
             }
@@ -339,7 +373,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.MicroLiteTotal;
+                return "$" + (Convert.ToDouble(this.c_Order.MicroLitePrice) * Convert.ToInt32(this.c_Order.MicroLiteQuantity));
             }
             set
             {
@@ -347,17 +381,33 @@ namespace InvisibleFenceContract.Viewmodels
 
 
                 {
-                    this.MicroLiteTotal = value;
+                    this.c_Order.MicroLiteTotal = Convert.ToDouble(value);
                     OnPropertyChanged("MicroLiteTotal");
                 }
             }
         }
 
-        public void loadOrder()
+        public string ProtectionTotal
         {
-             c_Order = Utility.Order;
+            get
+            {
+                return (Convert.ToDouble(this.c_Order.OutdoorShieldTotal) + Convert.ToDouble(this.c_Order.IndoorShieldTotal) + Convert.ToDouble(this.c_Order.MicroShieldTotal) + Convert.ToDouble(shieldsCollarTotal) + Convert.ToDouble(microLiteTotal)).ToString();
+            }
+            set
+            {
+                if (value != this.ProtectionTotal)
+                {
+                    this.c_Order.ProtectionTotal = Convert.ToDouble(value);
+                    OnPropertyChanged("ProtectionTotal");
+                }
+            }
         }
 
+
+        public void loadOrder()
+        {
+            c_Order = Services.Utility.Order;
+        }
 
 
     }

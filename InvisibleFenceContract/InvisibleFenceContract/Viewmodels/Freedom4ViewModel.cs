@@ -10,40 +10,59 @@ using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Windows;
 using System.Data;
+using InvisibleFenceContract.Services;
+using InvisibleFenceContract.Viewmodels.Commands;
+using System.Windows.Input;
 
 namespace InvisibleFenceContract.Viewmodels
 {
     class Freedom4ViewModel : BindableBase
     {
+
+        private string doormanPetDoorPrice;
+        private string doormanPetDoorQuantity;
+        private string doormanPetDoorTotal;
+        private string shieldsCollarPrice;
+        private string shieldsCollarQuantity2;
+        private string shieldsCollarTotal;
+        private string freedomTotal;
+
+        private ICommand submitCommand;
+
+     
         public Freedom4ViewModel()
         {
+
             loadOrder();
         }
 
-        public Order c_Order
+        public Order c_Order { get; set; }
+
+        public ICommand SubmitCommand
         {
-            get;
-            set;
+            get
+            {
+                if (submitCommand == null)
+                {
+                    submitCommand = new SubmitCommand(this.c_Order);
+                }
+                return submitCommand;
+            }
         }
 
-        public List<Product> c_Prices
-        {
-            get;
-            set;
-        }
 
         public string DoormanPetDoorPrice
         {
             get
             {
-                return "$" + this.DoormanPetDoorPrice;
+                return "$" + this.c_Order.DoormanPetDoorPrice;
             }
             set
             {
                 if (value != this.DoormanPetDoorPrice)
 
                 {
-                    this.DoormanPetDoorPrice = value;
+                    this.c_Order.DoormanPetDoorPrice = Convert.ToDouble(value);
                     OnPropertyChanged("DoormanPetDoorPrice");
                 }
             }
@@ -54,14 +73,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.DoormanPetDoorQuantity.ToString();
+                return this.c_Order.DoormanPetDoorQuantity.ToString();
             }
             set
             {
                 if (value != this.DoormanPetDoorQuantity)
 
                 {
-                    this.DoormanPetDoorQuantity = value;
+                    this.c_Order.DoormanPetDoorQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("DoormanPetDoorQuantity");
                 }
             }
@@ -71,14 +90,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.DoormanPetDoorPrice) * Convert.ToInt32(this.DoormanPetDoorQuantity)).ToString();
+                return "$" + (Convert.ToDouble(this.c_Order.DoormanPetDoorPrice) * Convert.ToInt32(this.c_Order.DoormanPetDoorQuantity)).ToString();
             }
             set
             {
                 if (value != this.DoormanPetDoorTotal)
 
                 {
-                    this.DoormanPetDoorTotal = value;
+                    this.c_Order.DoormanPetDoorTotal = Convert.ToDouble(value);
                     OnPropertyChanged("DoormanPetDoorTotal");
                 }
             }
@@ -89,14 +108,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.ShieldsCollarPrice;
+                return "$" + this.c_Order.ShieldsCollarPrice;
             }
             set
             {
                 if (value != this.ShieldsCollarPrice)
 
                 {
-                    this.ShieldsCollarPrice = value;
+                    this.c_Order.ShieldsCollarPrice = Convert.ToDouble(value);
                     OnPropertyChanged("ShieldsCollarPrice");
                 }
             }
@@ -106,15 +125,15 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.ShieldsCollarQuantity2;
+                return this.c_Order.ShieldsCollarQuantity2.ToString();
             }
             set
             {
                 if (value != this.ShieldsCollarQuantity2)
 
                 {
-                    this.ShieldsCollarQuantity2 = value;
-                    OnPropertyChanged("ShieldsCollarQuantity2");
+                    this.c_Order.ShieldsCollarQuantity2 = Convert.ToInt32(value);
+                    OnPropertyChanged("ShieldCollarQuantity2");
                 }
             }
         }
@@ -123,13 +142,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.ShieldsCollarTotal) + (Convert.ToDouble(this.ShieldsCollarPrice) * Convert.ToInt32(this.ShieldsCollarQuantity2))).ToString();
+                return "$" + (Convert.ToDouble(this.c_Order.ShieldsCollarTotal) + (Convert.ToDouble(this.c_Order.ShieldsCollarPrice) * Convert.ToInt32(this.c_Order.ShieldsCollarQuantity2))).ToString();
             }
             set
             {
                 if (value != this.ShieldsCollarTotal)
                 {
-                    this.ShieldsCollarTotal = value;
+                    this.c_Order.ShieldsCollarTotal = Convert.ToDouble(value);
                     OnPropertyChanged("ShieldsCollarTotal");
                 }
             }
@@ -139,13 +158,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.DoormanPetDoorTotal) + (Convert.ToDouble(this.ShieldsCollarTotal))).ToString();
+                return "$" + (Convert.ToDouble(this.c_Order.DoormanPetDoorTotal) + (Convert.ToDouble(this.c_Order.ShieldsCollarTotal))).ToString();
             }
             set
             {
                 if (value != this.FreedomTotal)
                 {
-                    this.FreedomTotal = value;
+                    this.c_Order.FreedomTotal = Convert.ToDouble(value);
                     OnPropertyChanged("FreedomTotal");
                 }
             }
@@ -153,7 +172,7 @@ namespace InvisibleFenceContract.Viewmodels
 
         public void loadOrder()
         {
-            c_Order = Services.Utility.Order;
+            c_Order = Utility.Order;
         }
 
     }

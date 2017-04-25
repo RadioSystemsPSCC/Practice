@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InvisibleFenceContract.Models
 {
-    public class Pet : BindableBase
+    class Pet : BindableBase
     {
         private int customerID;
         private string petName;

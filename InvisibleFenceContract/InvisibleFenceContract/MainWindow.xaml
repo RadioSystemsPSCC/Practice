@@ -104,7 +104,7 @@
             Command = "{Binding NavCommand}"
             CommandParameter = "selectCustomer" 
             Grid.Column = "0" Grid.Row='2' />
-            
+
             <Button Content = "Contact" 
             Command = "{Binding NavCommand}"
             CommandParameter = "contact" 

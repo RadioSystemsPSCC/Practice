@@ -94,8 +94,8 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Services\Utility.cs" />
     <Compile Include="Services\WebAPIService.cs" />
-    <Compile Include="Viewmodels\Commands\RadioCommand.cs" />
     <Compile Include="Viewmodels\Commands\SelectCustomerCommand.cs" />
+    <Compile Include="Viewmodels\Commands\SubmitCommand.cs" />
     <Compile Include="Viewmodels\Commands\ViewCommand.cs" />
     <Compile Include="Viewmodels\ProductLookupViewModel.cs" />
     <Compile Include="Viewmodels\SelectCustomerViewModel.cs" />

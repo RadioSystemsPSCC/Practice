@@ -47,7 +47,7 @@ automatically renewed, and client contacts Customer Care department for a refund
 within 45 days of the renewal, company will refund the full subscription price to client." VerticalAlignment="Top" Height="140"/>
         <TextBox x:Name="textBox" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Height="35" Margin="361,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
         <Viewbox x:Name="canvasView" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left"  Margin="10,31,0,0" VerticalAlignment="Top" Width="346" Height="35">
-            <InkCanvas x:Name="CustomerSignatureCanvas" Grid.Column="1" Grid.Row='1' HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="346" RenderTransformOrigin="0.44,0.07" Background="#FFE6E6E6"/>
+            <InkCanvas x:Name="CustomerSignatureCanvas" Strokes="{Binding Signature_Strokes}" Grid.Column="1" Grid.Row='1' HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="346" RenderTransformOrigin="0.44,0.07" Background="#FFE6E6E6"/>
         </Viewbox>
         <Button x:Name="viewBt" Content="View" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="311,320,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ViewProperty, Source={StaticResource sigViewModel}}" Height="20" />
         <Button x:Name="button1" Content="Save" Grid.Column="1" Grid.Row='1' HorizontalAlignment="Left" Margin="406,320,0,0" VerticalAlignment="Top" Width="75" Height="20"/>

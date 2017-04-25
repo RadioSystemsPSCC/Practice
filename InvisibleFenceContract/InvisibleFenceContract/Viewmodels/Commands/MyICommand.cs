@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace InvisibleFenceContract.Viewmodels.Commands
 {
-    public class MyICommand<T> : ICommand
+    class MyICommand<T> : ICommand
     {
 
         Action<T> _TargetExecuteMethod;

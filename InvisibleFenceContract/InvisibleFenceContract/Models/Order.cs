@@ -9,67 +9,67 @@ namespace InvisibleFenceContract.Models
     public class Order : BindableBase
     {
 
-        public string customerID;
-        public string packageSelection;
-        public double packagePrice;
-        public double boundaryPlusPrice;
-        public double digitalTechnologyPrice;
-        public double safetyTotal;
-        public int outdoorShieldQuantity;
-        public double outdoorShieldPrice1;
-        public double outdoorShieldPrice2;
-        public double outdoorShieldTotal;
-        public double indoorShieldTotal;
-        public int indoorShieldQuantity = 0;
-        public double indoorShieldPrice1;
-        public double indoorShieldPrice2;
-        public int microShieldQuantity = 0;
-        public double microShieldPrice1;
-        public double microShieldPrice2;
-        public double microShieldTotal = 0;
-        public int shieldsCollarQuantity = 0;
-        public double shieldsCollarPrice;
-        public double shieldsCollarTotal;
-        public int microLiteQuantity = 0;
-        public double microLitePrice;
-        public double microLiteTotal;
-        public double protectionTotal;
-        public int doormanPetDoorQuantity;
-        public double doormanPetDoorPrice;
-        public double doormanPetDoorTotal;
-        public int shieldsCollarQuantity2;
-        public double shieldsCollarPrice2;
-        public double freedomTotal;
-        public int safetyWiredAddQuantity;
-        public double safetyWiredAddPrice;
-        public double safetyWiredAddTotal;
-        public int gPSAddQuantity;
-        public double gPSPrice;    
-        public double gPSAddPrice;
-        public double gPSAddTotal;
-        public int singleTrainQuantity;
-        public double singleTrainPrice;
-        public double singleTrainTotal;
-        public string couponCode;
-        public double discount;
-        public double solutionsPageTotal;
-        public double outdoorInstallCost;
-        public int indoorXLoopQuantity;
-        public double indoorXLoopPrice;
-        public double indoorXLoopTotal;
-        public int outdoorXLoopQuantity;
-        public double outdoorXLoopPrice;
-        public double outdoorXLoopTotal;
-        public int petDoorInstallQuantity;
-        public double petDoorInstallPrice;
-        public double petDoorInstallTotal;
-        public double installTotal;
-        public double solutionTotal;
-        public double taxRate;
-        public double tax;
-        public double total;
-        public double deposit;
-        public double balance;
+        private string customerID;
+        private string packageSelection;
+        private double packagePrice;
+        private double safetyTotal;
+        private double boundaryPlusPrice;
+        private int outdoorShieldQuantity;
+        private double outdoorShieldPrice1;
+        private double outdoorShieldPrice2;
+        private double outdoorShieldTotal;
+        private double indoorShieldTotal;
+        private int indoorShieldQuantity;
+        private double indoorShieldPrice1;
+        private double indoorShieldPrice2;
+        private int microShieldQuantity;
+        private double microShieldPrice1;
+        private double microShieldPrice2;
+        private double microShieldTotal;
+        private int shieldsCollarQuantity;
+        private double shieldsCollarPrice;
+        private double shieldsCollarTotal;
+        private int microLiteQuantity;
+        private double microLitePrice;
+        private double microLiteTotal;
+        private double protectionTotal;
+        private double digitalTechnologyPrice;
+        private int doormanPetDoorQuantity;
+        private double doormanPetDoorPrice;
+        private double doormanPetDoorTotal;
+        private int shieldsCollarQuantity2;
+        private double shieldsCollarPrice2;
+        private double freedomTotal;
+        private int safetyWiredAddQuantity;
+        private double safetyWiredAddPrice;
+        private double safetyWiredAddTotal;
+        private int gPSAddQuantity;
+        private double gPSPrice;
+        private double gPSAddPrice;
+        private double gPSAddTotal;
+        private int singleTrainQuantity;
+        private double singleTrainPrice;
+        private double singleTrainTotal;
+        private string couponCode;
+        private double discount;
+        private double addAPetTotal;
+        private double outdoorInstallCost;
+        private int indoorXLoopQuantity;
+        private double indoorXLoopPrice;
+        private double indoorXLoopTotal;
+        private int outdoorXLoopQuantity;
+        private double outdoorXLoopPrice;
+        private double outdoorXLoopTotal;
+        private int petDoorInstallQuantity;
+        private double petDoorInstallPrice;
+        private double petDoorInstallTotal;
+        private double installTotal;
+        private double solutionTotal;
+        private double taxRate;
+        private double tax;
+        private double total;
+        private double deposit;
+        private double balance;
 
 
         public string CustomerID
@@ -99,11 +99,12 @@ namespace InvisibleFenceContract.Models
         }
 
         
+
         public double BoundaryPlusPrice
         {
             get
             {
-                return boundaryPlusPrice; 
+                return boundaryPlusPrice;
             }
             set
             {
@@ -118,7 +119,7 @@ namespace InvisibleFenceContract.Models
         {
             get
             {
-                return gPSPrice; ;
+                return gPSPrice;
             }
             set
             {
@@ -265,7 +266,7 @@ namespace InvisibleFenceContract.Models
         {
             get
             {
-                return indoorShieldTotal;
+                return IndoorShieldTotal;
             }
             set
             {
@@ -322,6 +323,7 @@ namespace InvisibleFenceContract.Models
             }
             set
             {
+                if(value != MicroShieldTotal)
                 microShieldTotal = value;
                 OnPropertyChanged("MicroShieldTotal");
             }
@@ -561,7 +563,7 @@ namespace InvisibleFenceContract.Models
         {
             get
             {
-                return gPSAddQuantity;
+                return gPSAddPrice;
             }
             set
             {
@@ -648,16 +650,16 @@ namespace InvisibleFenceContract.Models
             }
         }
 
-        public double SolutionsPageTotal
+        public double AddAPetTotal
         {
             get
             {
-                return solutionsPageTotal;
+                return addAPetTotal;
             }
             set
             {
-                solutionsPageTotal = value;
-                OnPropertyChanged("SolutionsPageTotal");
+                addAPetTotal = value;
+                OnPropertyChanged("AddAPetTotal");
             }
         }
 

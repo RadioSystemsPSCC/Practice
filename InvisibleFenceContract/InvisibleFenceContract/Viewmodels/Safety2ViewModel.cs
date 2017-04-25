@@ -11,33 +11,40 @@ using System.IO;
 using System.Windows;
 using System.Data;
 using InvisibleFenceContract.Services;
+using InvisibleFenceContract.Viewmodels.Commands;
+using System.Windows.Input;
 
 namespace InvisibleFenceContract.Viewmodels
 {
     public class Safety2ViewModel : BindableBase
     {
-        //order1 = (Order)Application.Current.Properties["myOrder"];
-        private string _gPSPrice;
-        private string _boundaryPlusPrice;
-        private string _digitalTechnologyPrice;
-        private string _packageSelection;
-        private string _packagePrice;
-        private string _safetyTotal;
+        private string gPSPrice;
+        private string boundaryPlusPrice;
+        private string digitalTechnologyPrice;
+        private string packageSelection;
+        private string packagePrice;
+        private string safetyTotal;
+
+        private ICommand submitCommand;
+
 
         public Safety2ViewModel()
         {
             loadOrder();
         }
 
-        public Order c_Order
+        public Order c_Order { get; set; }
+
+        public ICommand SubmitCommand
         {
-            get;
-            set;
-        }
-        public List<Product> safetyPrices
-        {
-            get;
-            set;
+            get
+            {
+                if (submitCommand == null)
+                {
+                    submitCommand = new SubmitCommand(this.c_Order);
+                }
+                return submitCommand;
+            }
         }
 
         public string GPSPrice
@@ -45,14 +52,15 @@ namespace InvisibleFenceContract.Viewmodels
 
             get
             {
-                return "$" + this._gPSPrice;
+                return "$" + this.c_Order.GPSPrice;
+               
             }
             set
             {
                 if (value != this.GPSPrice)
 
                 {
-                    this._gPSPrice = value;
+                    this.c_Order.GPSPrice = Convert.ToDouble(value);
                     OnPropertyChanged("GPSPrice");
                 }
             }
@@ -62,13 +70,20 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this._boundaryPlusPrice;
+
+
+                return "$" + this.c_Order.BoundaryPlusPrice;
+               
             }
+
+
             set
             {
                 if (value != this.BoundaryPlusPrice)
-                    _boundaryPlusPrice = value;
-                OnPropertyChanged("BoundaryPlusPrice");
+                {
+                    this.c_Order.BoundaryPlusPrice = Convert.ToDouble(value);
+                    OnPropertyChanged("boundaryPlus");
+                }
             }
         }
 
@@ -76,30 +91,33 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-
-                return "$" + _digitalTechnologyPrice;
+               
+                return "$" + this.c_Order.DigitalTechnologyPrice;
             }
+
+
 
             set
             {
-                if (value != this.DigitalTechnologyPrice)
+                if (value != this.PackageSelection)
                 {
-                    _digitalTechnologyPrice = value;
+                    this.c_Order.DigitalTechnologyPrice = Convert.ToDouble(value);
                     OnPropertyChanged("DigitalTechnologyPrice");
-                }            }
+                }
+            }
         }
 
         public string PackageSelection
         {
             get
             {
-                return this._packageSelection;
+                return this.c_Order.PackageSelection;
             }
             set
             {
                 if (value != this.PackageSelection)
                 {
-                    this._packageSelection = value;
+                    this.c_Order.PackageSelection = value;
                     OnPropertyChanged("PackageSelection");
                 }
             }
@@ -109,13 +127,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this._packagePrice;
+                return "$" + this.c_Order.PackagePrice;
             }
             set
             {
                 if (value != this.PackagePrice)
                 {
-                    this._packagePrice = value;
+                    this.c_Order.PackagePrice = Convert.ToDouble(value);
                     OnPropertyChanged("PackagePrice");
                 }
             }
@@ -125,13 +143,13 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this._safetyTotal;
+                return "$" + this.c_Order.PackagePrice;
             }
             set
             {
                 if (value != this.SafetyTotal)
                 {
-                    this._safetyTotal = value;
+                    this.c_Order.SafetyTotal = Convert.ToDouble(value);
                     OnPropertyChanged("SafetyTotal");
                 }
             }
@@ -139,7 +157,7 @@ namespace InvisibleFenceContract.Viewmodels
 
         public void loadOrder()
         {
-            c_Order = Services.Utility.Order;
+            c_Order = Utility.Order;
         }
 
 

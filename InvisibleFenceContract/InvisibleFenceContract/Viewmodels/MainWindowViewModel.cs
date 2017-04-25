@@ -9,31 +9,30 @@ using InvisibleFenceContract.Services;
 
 namespace InvisibleFenceContract.Viewmodels
 {
-    public class MainWindowViewModel : BindableBase
+    class MainWindowViewModel : BindableBase
     {
+        
         public MainWindowViewModel()
         {
+            
             NavCommand = new MyICommand<string>(OnNav);
-            LoadProduct();
-            SetApplication();
+            
+            
         }
+        private StartViewModel startViewModel = new StartViewModel();
+        private SelectCustomerViewModel selectCustomerViewModel = new SelectCustomerViewModel();
 
-        //static Order order1 = Utility.GetOrder();
-
-        //private StartViewModel startViewModel = new StartViewModel();
-        //private SelectCustomerViewModel selectCustomerViewModel = new SelectCustomerViewModel();
-
-        //private Contact1ViewModel contact1ViewModel = new Contact1ViewModel();
-        //private Safety2ViewModel safety2ViewModel = new Safety2ViewModel();
-        //private Protection3ViewModel protection3ViewModel = new Protection3ViewModel();
-        //private Freedom4ViewModel freedom4ViewModel = new Freedom4ViewModel();
-        //private Solutions5ViewModel solution5ViewModel = new Solutions5ViewModel();
-        //private Installation6ViewModel installation6ViewModel = new Installation6ViewModel();
-        //private Signature7ViewModel signature7ViewModel = new Signature7ViewModel();
-        //private ProductLookupViewModel productLookupViewModel = new ProductLookupViewModel();
+        private Contact1ViewModel contact1ViewModel = new Contact1ViewModel();
+        private Safety2ViewModel safety2ViewModel = new Safety2ViewModel();
+        private Protection3ViewModel protection3ViewModel = new Protection3ViewModel();
+        private Freedom4ViewModel freedom4ViewModel = new Freedom4ViewModel();
+        private Solutions5ViewModel solution5ViewModel = new Solutions5ViewModel();
+        private Installation6ViewModel installation6ViewModel = new Installation6ViewModel();
+        private Signature7ViewModel signature7ViewModel = new Signature7ViewModel();
+        private ProductLookupViewModel productLookupViewModel = new ProductLookupViewModel();
         private BindableBase _CurrentViewModel;
 
-        public int CusID;
+        /*public int CusID;
         private string customerID;
         private string packageSelection;
         private double packagePrice;
@@ -90,7 +89,7 @@ namespace InvisibleFenceContract.Viewmodels
         private double tax = 0;
         private double total = 0;
         private double deposit = 0;
-        private double balance = 0;
+        private double balance = 0;*/
 
 
         public BindableBase CurrentViewModel
@@ -107,37 +106,37 @@ namespace InvisibleFenceContract.Viewmodels
 
         public MyICommand<string> NavCommand { get; private set; }
 
-        public void OnNav(string destination)
+        private void OnNav(string destination)
         {
 
             switch (destination)
             {
                 case "start":
-                    CurrentViewModel = new StartViewModel();
+                    CurrentViewModel = startViewModel;
                     break;
                 case "selectCustomer":
-                    CurrentViewModel = new SelectCustomerViewModel();
+                    CurrentViewModel = selectCustomerViewModel;
                     break;
                 case "signature":
-                    CurrentViewModel = new Signature7ViewModel();
+                    CurrentViewModel = signature7ViewModel;
                     break;
                 case "installation":
-                    CurrentViewModel = new Installation6ViewModel();
+                    CurrentViewModel = installation6ViewModel;
                     break;
                 case "solutions":
-                    CurrentViewModel = new Solutions5ViewModel();
+                    CurrentViewModel = solution5ViewModel;
                     break;
                 case "freedom":
-                    CurrentViewModel = new Freedom4ViewModel();
+                    CurrentViewModel = freedom4ViewModel;
                     break;
                 case "protection":
-                    CurrentViewModel = new Protection3ViewModel();
+                    CurrentViewModel = protection3ViewModel;
                     break;
                 case "safety":
-                    CurrentViewModel = new Safety2ViewModel(); 
+                    CurrentViewModel = safety2ViewModel;
                     break;
                 case "productLookup":
-                    CurrentViewModel = new ProductLookupViewModel();
+                    CurrentViewModel = productLookupViewModel;
                     break;
                 case "contact":
                     CurrentViewModel = new Contact1ViewModel();
@@ -147,9 +146,8 @@ namespace InvisibleFenceContract.Viewmodels
                     break;
             }
             if (destination.Length < 1)
-                CurrentViewModel = new SelectCustomerViewModel();
+                CurrentViewModel = contact1ViewModel;
         }
-
 
         public void LoadProduct()
         {
@@ -159,125 +157,10 @@ namespace InvisibleFenceContract.Viewmodels
                 List<Product> prices = JsonConvert.DeserializeObject<List<Product>>(file);
                 AllPrices = prices;
             }
-
-
             catch (Exception e)
             {
                 Console.Write(e.ToString());
             }
-
-            Order order1 = new Order();
-            order1 = (Order)Application.Current.Properties["myOrder"];
-
-            Application.Current.Properties["myOrder"] = order1;
-
-
-            for (int i = 0; i < AllPrices.Count; i++)
-            {
-                if (AllPrices[i].PartID == 62139)
-                {
-                    Application.Current.Properties["myOrder.GPSPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 62138)
-                {
-
-                    Application.Current.Properties["myOrder.BoundaryPlusPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 62100)
-                {
-
-                    Application.Current.Properties["myOrder.DigitalTechnologyPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 29476)
-                {
-
-                    Application.Current.Properties["myOrder.OutdoorShieldPrice1"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 75857)
-                {
-
-                    Application.Current.Properties["myOrder.OutdoorShieldPrice2"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 52246)
-                {
-
-                    Application.Current.Properties["myOrder.IndoorShieldPrice1"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 75858)
-                {
-
-                    Application.Current.Properties["myOrder.IndoorShieldPrice2"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 51264)
-                {
-                    Application.Current.Properties["myOrder.MicroShieldPrice1"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 75859)
-                {
-                    Application.Current.Properties["myOrder.MicroShieldPrice2"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 57594)
-                {
-
-                    Application.Current.Properties["myOrder.ShieldsCollarPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 29361)
-                {
-
-                    Application.Current.Properties["myOrder.MicroLitePrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 29191)
-                {
-
-                    Application.Current.Properties["myOrder.DoormanPetDoorPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 76054)
-                {
-
-                    Application.Current.Properties["myOrder.SafetyWiredAddPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 63088)
-                {
-
-                    Application.Current.Properties["myOrder.GPSAddPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 29084)
-                {
-
-                    Application.Current.Properties["myOrder.SingleTrainPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 28786)
-                {
-                    Application.Current.Properties["myOrder.OutdoorXLoopPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 28785)
-                {
-
-                    Application.Current.Properties["myOrder.IndoorXLoopPrice"] = AllPrices[i].PartPrice;
-                }
-                else if (AllPrices[i].PartID == 29193)
-                {
-
-                    Application.Current.Properties["myOrder.PetDoorInstallPrice"] = AllPrices[i].PartPrice;
-                }
-            }
-
-
-
-
-
-            /* public void LoadProduct()
-            {
-                try
-                {
-                    string file = File.ReadAllText(@"../../Resources/Products.JSON");
-                    List<Product> prices = JsonConvert.DeserializeObject<List<Product>>(file);
-                    AllPrices = prices;
-                }
-                catch (Exception e)
-                {
-                    Console.Write(e.ToString());
-                }*/
 
             //     private double outdoorShieldPrice1;
             //private double outdoorShieldPrice2;
@@ -300,7 +183,7 @@ namespace InvisibleFenceContract.Viewmodels
 
         }
 
-        public void SetApplication()
+        /*public void SetApplication()
         {
 
             Application.Current.Properties["Cus_ID"] = CusID;
@@ -354,12 +237,12 @@ namespace InvisibleFenceContract.Viewmodels
             Application.Current.Properties["PetDoorInstallPrice"] = petDoorInstallPrice;
             Application.Current.Properties["PetDoorInstallTotal"] = petDoorInstallTotal;
             Application.Current.Properties["InstallTotal"] = installTotal;
-          
+            Application.Current.Properties["SolutionTotal"] = solutionTotal;
             Application.Current.Properties["TaxRate"] = taxRate;
             Application.Current.Properties["Tax"] = tax;
             Application.Current.Properties["Total"] = total;
             Application.Current.Properties["Deposit"] = deposit;
             Application.Current.Properties["Balance"] = balance;
-        }
+        }*/
     }
 }

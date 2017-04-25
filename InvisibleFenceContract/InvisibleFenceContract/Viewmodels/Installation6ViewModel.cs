@@ -4,24 +4,73 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InvisibleFenceContract.Services;
+using InvisibleFenceContract.Viewmodels.Commands;
+using System.Windows.Input;
 
 namespace InvisibleFenceContract.Viewmodels
 {
     class Installation6ViewModel : BindableBase
     {
+        private string outdoorInstallCost;
+        private string outdoorXLoopPrice;
+        private string outdoorXLoopQuantity;
+        private string outdoorXLoopTotal;
+        private string indoorXLoopPrice;
+        private string indoorXLoopQuantity;
+        private string indoorXLoopTotal;
+        private string petDoorInstallPrice;
+        private string petDoorInstallQuantity;
+        private string petDoorInstallTotal;
+        private string discount;
+        private string singleTrainTotal;
+        private string safetyTotal;
+        private string protectionTotal;
+        private string freedomTotal;
+        private string addAPetTotal;
+        private string solutionTotal;
+        private string taxRate;
+        private string tax;
+        private string installTotal;
+        private string total;
+        private string deposit;
+        private string balance;
+
+        private ICommand submitCommand;
+
+        public Order c_Order { get; set; }
+
+        public Installation6ViewModel()
+        {
+            c_Order = Utility.Order;
+            loadOrder();
+        }
+
+
+        public ICommand SubmitCommand
+        {
+            get
+            {
+                if (submitCommand == null)
+                {
+                    submitCommand = new SubmitCommand(this.c_Order);
+                }
+                return submitCommand;
+            }
+        }
 
         public string OutdoorInstallCost
         {
             get
             {
-                return "$" + this.OutdoorInstallCost;
+                return "$" + this.outdoorInstallCost;
             }
             set
             {
                 if (value != this.OutdoorInstallCost)
 
                 {
-                    this.OutdoorInstallCost = value;
+                    this.c_Order.OutdoorInstallCost = Convert.ToDouble(value);
                     OnPropertyChanged("OutdoorInstallCost");
                 }
             }
@@ -31,14 +80,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.OutdoorXLoopPrice;
+                return "$" + this.outdoorXLoopPrice;
             }
             set
             {
                 if (value != this.OutdoorXLoopPrice)
 
                 {
-                    this.OutdoorXLoopPrice = value;
+                    this.c_Order.OutdoorXLoopPrice = Convert.ToDouble(value);
                     OnPropertyChanged("OutdoorXLoopPrice");
                 }
             }
@@ -48,14 +97,21 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.OutdoorXLoopQuantity.ToString();
+                if (!string.IsNullOrEmpty(this.outdoorXLoopQuantity))
+                {
+                    return this.outdoorXLoopQuantity.ToString();
+                }
+                else
+                {
+                    return string.Empty;
+                }
             }
             set
             {
                 if (value != this.OutdoorXLoopQuantity)
 
                 {
-                    this.OutdoorXLoopQuantity = value;
+                    this.c_Order.OutdoorXLoopQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("OutdoorXLoopQuantity");
                 }
             }
@@ -65,7 +121,7 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.OutdoorXLoopPrice) * Convert.ToInt32(this.OutdoorXLoopQuantity)).ToString();
+                return (Convert.ToDouble(this.outdoorXLoopPrice) * Convert.ToInt32(this.outdoorXLoopQuantity)).ToString();
 
             }
             set
@@ -73,7 +129,7 @@ namespace InvisibleFenceContract.Viewmodels
                 if (value != this.OutdoorXLoopTotal)
 
                 {
-                    this.OutdoorXLoopTotal = value;
+                    this.c_Order.OutdoorXLoopTotal = Convert.ToDouble(value);
                     OnPropertyChanged("OutdoorXLoopTotal");
                 }
             }
@@ -83,14 +139,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.IndoorXLoopPrice;
+                return "$" + this.indoorXLoopPrice;
             }
             set
             {
                 if (value != this.IndoorXLoopPrice)
 
                 {
-                    this.IndoorXLoopPrice = value;
+                    this.c_Order.IndoorXLoopPrice = Convert.ToDouble(value);
                     OnPropertyChanged("IndoorXLoopPrice");
                 }
             }
@@ -100,14 +156,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.IndoorXLoopQuantity;
+                return this.indoorXLoopQuantity;
             }
             set
             {
                 if (value != this.IndoorXLoopQuantity)
 
                 {
-                    this.IndoorXLoopQuantity = value;
+                    this.c_Order.IndoorXLoopQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("IndoorXLoopQuantity");
                 }
             }
@@ -118,14 +174,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.IndoorXLoopPrice) * Convert.ToInt32(this.IndoorXLoopQuantity)).ToString();
+                return (Convert.ToDouble(this.indoorXLoopPrice) * Convert.ToInt32(this.indoorXLoopQuantity)).ToString();
             }
             set
             {
                 if (value != this.IndoorXLoopTotal)
 
                 {
-                    this.IndoorXLoopTotal = value;
+                    this.c_Order.IndoorXLoopTotal = Convert.ToDouble(value);
                     OnPropertyChanged("IndoorXLoopTotal");
                 }
             }
@@ -135,14 +191,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return "$" + this.PetDoorInstallPrice;
+                return "$" + this.petDoorInstallPrice;
             }
             set
             {
                 if (value != this.PetDoorInstallPrice)
 
                 {
-                    this.PetDoorInstallPrice = value;
+                    this.c_Order.PetDoorInstallPrice = Convert.ToDouble(value);
                     OnPropertyChanged("PetDoorInstallPrice");
                 }
             }
@@ -152,14 +208,21 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.PetDoorInstallQuantity.ToString();
+                if (!string.IsNullOrEmpty(this.petDoorInstallQuantity))
+                {
+                    return this.petDoorInstallQuantity.ToString();
+                }
+                else
+                {
+                    return string.Empty;
+                }
             }
             set
             {
                 if (value != this.PetDoorInstallQuantity)
 
                 {
-                    this.PetDoorInstallQuantity = value;
+                    this.c_Order.PetDoorInstallQuantity = Convert.ToInt32(value);
                     OnPropertyChanged("PetDoorInstallQuantity");
                 }
             }
@@ -169,31 +232,97 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return (Convert.ToDouble(this.PetDoorInstallPrice) * Convert.ToInt32(this.PetDoorInstallQuantity)).ToString();
+                return "$" + (Convert.ToDouble(this.petDoorInstallPrice) * Convert.ToInt32(this.petDoorInstallQuantity)).ToString();
             }
             set
             {
                 if (value != this.PetDoorInstallTotal)
 
                 {
-                    this.PetDoorInstallTotal = value;
+                    this.c_Order.PetDoorInstallTotal = Convert.ToDouble(value);
                     OnPropertyChanged("PetDoorInstallTotal");
                 }
             }
         }
+
+        public string SafetyTotal
+        {
+            get
+            {
+                return this.safetyTotal;
+            }
+            set
+            {
+                if (value != this.SafetyTotal)
+                {
+                    this.c_Order.SafetyTotal = Convert.ToDouble(value);
+                    OnPropertyChanged("SafetyTotal");
+
+                }
+            }
+        }
+        public string ProtectionTotal
+        {
+            get
+            {
+                return this.protectionTotal;
+            }
+            set
+            {
+                if (value != this.ProtectionTotal)
+                {
+                    this.c_Order.ProtectionTotal = Convert.ToDouble(value);
+                    OnPropertyChanged("ProtectionTotal");
+                }
+            }
+        }
+
+        public string FreedomTotal
+        {
+            get
+            {
+                return this.freedomTotal;
+            }
+            set
+            {
+                if (value != this.FreedomTotal)
+                {
+                    this.c_Order.FreedomTotal = Convert.ToDouble(value);
+                    OnPropertyChanged("FreedomTotal");
+                }
+            }
+        }
+
+        public string AddAPetTotal
+        {
+            get
+            {
+                return this.addAPetTotal;
+            }
+            set
+            {
+                if (value != this.AddAPetTotal)
+                {
+                    this.c_Order.AddAPetTotal = Convert.ToDouble(value);
+                    OnPropertyChanged("AddAPetTotal");
+
+                }
+            }
+        }
+
         //Subtract discount from SolutionTotal
         public string SolutionTotal
         {
             get
             {
-                return this.SolutionTotal;
+                return "$" + Convert.ToDouble(this.safetyTotal) + Convert.ToDouble(this.protectionTotal) + Convert.ToDouble(this.freedomTotal) + Convert.ToDouble(this.addAPetTotal) + Convert.ToDouble(this.outdoorXLoopTotal) + Convert.ToDouble(this.indoorXLoopTotal);
             }
             set
             {
                 if (value != this.SolutionTotal)
 
                 {
-                    this.SolutionTotal = value;
+                    this.c_Order.SolutionTotal = Convert.ToDouble(value);
                     OnPropertyChanged("SolutionTotal");
                 }
             }
@@ -204,14 +333,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.TaxRate;
+                return this.taxRate;
             }
             set
             {
                 if (value != this.TaxRate)
 
                 {
-                    this.TaxRate = value;
+                    this.c_Order.TaxRate = Convert.ToDouble(value);
                     OnPropertyChanged("TaxRate");
                 }
             }
@@ -221,14 +350,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.Tax;
+                return "$" + (Convert.ToDouble(solutionTotal) * Convert.ToDouble(taxRate));
             }
             set
             {
                 if (value != this.Tax)
 
                 {
-                    this.Tax = value;
+                    this.c_Order.Tax = Convert.ToDouble(value);
                     OnPropertyChanged("Tax");
                 }
             }
@@ -239,14 +368,15 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.InstallTotal;
+
+                return "$" + (Convert.ToDouble(outdoorInstallCost) - Convert.ToDouble(discount) + Convert.ToDouble(petDoorInstallTotal) + Convert.ToDouble(singleTrainTotal));
             }
             set
             {
                 if (value != this.InstallTotal)
 
                 {
-                    this.InstallTotal = value;
+                    this.c_Order.InstallTotal = Convert.ToDouble(value);
                     OnPropertyChanged("InstallTotal");
                 }
             }
@@ -256,14 +386,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.Total;
+                return "$" + (Convert.ToDouble(this.solutionTotal) + Convert.ToDouble(this.tax) + Convert.ToDouble(this.installTotal));
             }
             set
             {
                 if (value != this.Total)
 
                 {
-                    this.Total = value;
+                    this.c_Order.Total = Convert.ToDouble(value);
                     OnPropertyChanged("Total");
                 }
             }
@@ -273,14 +403,14 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.Deposit;
+                return "$" + this.deposit;
             }
             set
             {
                 if (value != this.Deposit)
 
                 {
-                    this.Deposit = value;
+                    this.c_Order.Deposit = Convert.ToDouble(value);
                     OnPropertyChanged("Deposit");
                 }
             }
@@ -290,29 +420,20 @@ namespace InvisibleFenceContract.Viewmodels
         {
             get
             {
-                return this.Balance;
+                return "$" + (Convert.ToDouble(this.total) - Convert.ToDouble(this.deposit));
             }
             set
             {
                 if (value != this.Balance)
 
                 {
-                    this.Balance = value;
+                    this.c_Order.Balance = Convert.ToDouble(value);
                     OnPropertyChanged("Balance");
                 }
             }
         }
 
-        public Installation6ViewModel()
-        {
-            loadOrder();
-        }
 
-        public Order c_Order
-        {
-            get;
-            set;
-        }
 
         public void loadOrder()
         {

@@ -10,6 +10,8 @@ using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Windows;
 using System.Data;
+using InvisibleFenceContract.Viewmodels.Commands;
+using System.Windows.Input;
 
 namespace InvisibleFenceContract.Viewmodels
 {
@@ -20,10 +22,26 @@ namespace InvisibleFenceContract.Viewmodels
             loadPrices();
         }
 
+        private ICommand submitCommand;
+
         public List<Product> c_Products
         {
             get;
             set;
+        }
+
+        public Order c_Order { get; set; }
+
+        public ICommand SubmitCommand
+        {
+            get
+            {
+                if (submitCommand == null)
+                {
+                    submitCommand = new SubmitCommand(this.c_Order);
+                }
+                return submitCommand;
+            }
         }
 
         public void loadPrices()

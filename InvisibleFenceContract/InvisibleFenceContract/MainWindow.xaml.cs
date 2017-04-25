@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Media.Animation;
-using InvisibleFenceContract.Models;
 using InvisibleFenceContract.Services;
 
 namespace InvisibleFenceContract
@@ -26,8 +25,9 @@ namespace InvisibleFenceContract
         public MainWindow()
         {
             Utility.InitialLoadOrderData();
-
             InitializeComponent();
+            
+            
         }
 
        
