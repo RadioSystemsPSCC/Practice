@@ -1,0 +1,121 @@
+[
+  {
+    "customerID": "23",
+    "firstName": "John",
+    "lastName": "Smith",
+    "referredBy": "Bill Smith",
+    "address": "1313 Hummningbird Lane",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37557",
+    "homePhone": "334-704-5768",
+    "cellPhone": "213-555-4576",
+    "email": "john@aol.com"
+
+  },
+  {
+    "customerID": "21",
+    "firstName": "Jimmy",
+    "lastName": "Black",
+    "referredBy": "John Smith",
+    "address": "124 Hill Lane",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37932",
+    "homePhone": "334-335-3234",
+    "cellPhone": "334-774-2214",
+    "email": "jimmy@gmail.com"
+
+  },
+  {
+    "customerID": "88",
+    "firstName": "Michelle",
+    "lastName": "Smith",
+    "referredBy": "Jimmy Black",
+    "address": "14 kingston street",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37932",
+    "homePhone": "334-522-4432",
+    "cellPhone": "334-555-5555",
+    "email": "Michelle@aol.com"
+
+  },
+
+  {
+    "customerID": "89",
+    "firstName": "Heather",
+    "lastName": "Wilson",
+    "referredBy": "Shane Smith",
+    "address": "177 Willow Street",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37932",
+    "homePhone": "334-988-4455",
+    "cellPhone": "334-997-2245",
+    "email": "Heather@hotmail.com."
+
+  },
+
+  {
+    "customerID": "90",
+    "firstName": "Johnny",
+    "lastName": "Walker",
+    "referredBy": "Linda Walker",
+    "address": "11 Cloverfield Lane",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37932",
+    "homePhone": "334-555-7755",
+    "cellPhone": "334-443-1124",
+    "email": "JohnnyW@hotmail.com"
+
+  },
+
+  {
+    "customerID": "91",
+    "firstName": "Robert",
+    "lastName": "Black",
+    "referredBy": "Michael Black",
+    "address": "131 Brown road",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37932",
+    "homePhone": "334-555-5557",
+    "cellPhone": "334-423-9922",
+    "email": "Rblack@gmail.com"
+
+  },
+
+  {
+    "customerID": "92",
+    "firstName": "Hank",
+    "lastName": "Clark",
+    "referredBy": "Me",
+    "address": "1333 Hunter Lane",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37932",
+    "homePhone": "334-567-5425",
+    "cellPhone": "334-547-9855",
+    "email": "hank1@aol.com"
+
+  },
+
+  {
+    "customerID":  "93",
+    "firstName": "Wilma",
+    "lastName": "Johnson",
+    "referredBy": "Hank Clark",
+    "address": "499 oak lane",
+    "city": "Destin",
+    "state": "FL",
+    "zip": "37932",
+    "homePhone": "334-577-2234",
+    "cellPhone": "334-534-5576",
+    "email": "WJohnson21@gmail.com"
+
+  }
+]
+
+ 
